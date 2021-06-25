@@ -63,7 +63,8 @@ const Banner = () => {
                       marginTop: '40px',
                       color: '#fff',
                       '@media only screen and (max-width: 992px)': {
-                        fontSize: 4,
+                        fontSize: '22px',
+                        marginTop: '40px',
                       },
                     }}>
                     &lt;/Who we are&gt;	
@@ -75,7 +76,8 @@ const Banner = () => {
                       marginTop: '20px',
                       color: '#fff',
                       '@media only screen and (max-width: 992px)': {
-                        fontSize: 4,
+                        fontSize: '12px',
+                        marginTop: '0px',
                       },
                     }}>
                   We are a team of engineers, product designers, and investors, uniquely positioned to help founders build technologically outstanding businesses with global ambitions.
@@ -94,7 +96,8 @@ const Banner = () => {
                       marginTop: '40px',
                       color: '#fff',
                       '@media only screen and (max-width: 992px)': {
-                        fontSize: 4,
+                        fontSize: '22px',
+                        marginTop: '20px',
                       },
                     }}>
                   Team_
@@ -166,7 +169,8 @@ const Banner = () => {
                           marginTop: '80px',
                           color: '#fff',
                           '@media only screen and (max-width: 992px)': {
-                            fontSize: 4,
+                            fontSize: '22px',
+                            marginTop: '80px',
                           },
                           }}>
                         Venture_Partners
@@ -175,7 +179,7 @@ const Banner = () => {
               
               <Box as="span" sx={styles.banner.team.avatar}>
                 <Image src={VP} alt="Filippo B." />
-                <Text as="H3">Filippo Bonsanti</Text>
+                <Text as="H3">Filippo B.</Text>
                 <Box sx={styles.banner.team.title}>
                   <Text as="p">CMO @Indeed</Text>
                   <Box sx={styles.banner.team.socials}>
@@ -185,9 +189,9 @@ const Banner = () => {
               </Box>
               <Box as="span" sx={styles.banner.team.avatar}>
                 <Image src={VP} alt="Massimo C." />
-                <Text as="H3">Massimo Carnelos</Text>
+                <Text as="H3">Massimo C.</Text>
                 <Box as="p" sx={styles.banner.team.title}>
-                  <Text as="p">Head of Economic Office @Italian Embassy</Text>
+                  <Text as="p">Head of Economic @Italian Embassy</Text>
                   <Box sx={styles.banner.team.socials}>
                     <Link target={'_blank'} to={'https://www.linkedin.com/in/massimo-carnelos-077606b2/'}><FaLinkedin sx={styles.banner.team.icons}/></Link>
                   </Box>
@@ -195,7 +199,7 @@ const Banner = () => {
               </Box>
               <Box as="span" sx={styles.banner.team.avatar}>
                 <Image src={VP} alt="Aapo B." />
-                <Text as="H3">Aapo Boovellan</Text>
+                <Text as="H3">Aapo B.</Text>
                 <Box as="p" sx={styles.banner.team.title}>
                   <Text as="p">Founding Partner @Proxy.VC</Text>
                   <Box sx={styles.banner.team.socials}>
@@ -205,7 +209,7 @@ const Banner = () => {
               </Box>
               <Box as="span" sx={styles.banner.team.avatar}>
                 <Image src={VP} alt="Felix H." />
-                <Text as="h3">Felix Hovsepian</Text>
+                <Text as="h3">Felix H.</Text>
                 <Box as="p" sx={styles.banner.team.title}>
                   <Text as="p">Former Professor &#38; CTO</Text>
                   <Box sx={styles.banner.team.socials}>
@@ -215,7 +219,7 @@ const Banner = () => {
               </Box>
               <Box as="span" sx={styles.banner.team.avatar}>
                 <Image src={VP} alt="Marc S." />
-                <Text as="h3">Marx Sabas</Text>
+                <Text as="h3">Marx S.</Text>
                 <Box as="p" sx={styles.banner.team.title}>
                   <Text as="p">Mentor @Techstars, Wayra <br/> Investment Director @Ship2B</Text>
                   <Box sx={styles.banner.team.socials}>
@@ -224,18 +228,18 @@ const Banner = () => {
                 </Box>
               </Box>
             </Box>
-
-        </Flex>
-        <Box sx={styles.banner.footer}>
+            <Box sx={styles.banner.footer}>
               <Box sx={styles.banner.footer.contact}>
                 <span sx={{fontSize: '1',}}><FaMailBulk/> hello@siliconroundabout.tech</span>
                 <span sx={{fontSize: '1',}}><FaLocationArrow/> London, UK</span>
-                <span sx={{fontSize: '1'}}><FaCopyright/> Silicon Roundabout Ventures @2021</span>
               </Box>
               <Link target={'_blank'} to={'https://github.com/silicon-roundabout-ventures/'}><FaGithub sx={styles.banner.footer.icons}/></Link>
               <Link target={'_blank'} to={'https://twitter.com/SiliconLondon'}><FaTwitter sx={styles.banner.footer.icons}/></Link>
               <Link target={'_blank'} to={'https://www.linkedin.com/company/siliconroundabout/'}><FaLinkedinIn sx={styles.banner.footer.icons}/></Link>
-            </Box>
+              <span sx={{fontSize: '1'}}><FaCopyright/> Silicon Roundabout Ventures @2021</span>
+          </Box>
+        </Flex>
+        
       </Container>
     </Box>
   );
@@ -264,12 +268,20 @@ const styles = {
       rowGap: '40px',
       columnGap: '20px',
 
+      '@media only screen and (max-width: 992px)': {
+        marginTop: '10px',
+        rowGap: '60px',
+        columnGap: '60px',
+      },
+
       h3:{
         color: 'white',
-        fontSize: '4',
+        fontSize: '32px',
 
         '@media only screen and (max-width: 992px)': {
-          fontSize: '2',
+          fontSize: '16px',
+          maxWidth: 'max-content',
+          width: '200px',
         },
       },
       title:{
@@ -279,11 +291,13 @@ const styles = {
 
         p: {
           color: 'white',
-          fontSize: '2',
-        },
+          fontSize: '16px',
 
-        '@media only screen and (max-width: 992px)': {
-          fontSize: '1',
+          '@media only screen and (max-width: 992px)': {
+            fontSize: '10px',
+            maxWidth: 'max-content',
+            width: '200px',
+          },
         },
       },
 
@@ -328,9 +342,8 @@ const styles = {
         marginBottom: '60px',
 
         '@media only screen and (max-width: 992px)': {
-          width: '25px',
-          height: '25px',
-          margin: '15px',
+          width: '80px',
+          height: '80px',
         },
 
         img: {
@@ -347,6 +360,13 @@ const styles = {
       height: '100%',
       marginTop: '10%',
       alignItems: 'center',
+      flexWrap: 'wrap',
+
+      '@media only screen and (max-width: 992px)': {
+        marginTop: '120px',
+        paddingBottom: '40px',
+        justifyContent: 'space-evenly',
+      },
 
       contact: {
         fontSize: 2,
@@ -375,8 +395,10 @@ const styles = {
         display: 'inline-flex',
         alignItems: 'center',
 
+
         '@media only screen and (max-width: 992px)': {
-          display: 'none',
+          width: '2rem',
+          height: '2rem',
         },
       },
     },
@@ -392,6 +414,12 @@ const styles = {
       marginRight: '-15px',
       flexDirection: 'column',
       gap: '20px',
+
+      '@media only screen and (max-width: 992px)': {
+        marginLeft: '0px',
+        marginRight: '0px',
+  },
+
     },
     col: {
       pl: '40px',

@@ -89,15 +89,15 @@ const Banner = () => {
           </Box>
         </Flex>
         <Box sx={styles.banner.footer}>
-            <Box sx={styles.banner.footer.contact}>
-              <span sx={{fontSize: '1'}}><FaMailBulk/> hello@siliconroundabout.tech</span>
-              <span sx={{fontSize: '1'}}><FaLocationArrow/> London, UK</span>
+              <Box sx={styles.banner.footer.contact}>
+                <span sx={{fontSize: '1',}}><FaMailBulk/> hello@siliconroundabout.tech</span>
+                <span sx={{fontSize: '1',}}><FaLocationArrow/> London, UK</span>
+              </Box>
+              <Link target={'_blank'} to={'https://github.com/silicon-roundabout-ventures/'}><FaGithub sx={styles.banner.footer.icons}/></Link>
+              <Link target={'_blank'} to={'https://twitter.com/SiliconLondon'}><FaTwitter sx={styles.banner.footer.icons}/></Link>
+              <Link target={'_blank'} to={'https://www.linkedin.com/company/siliconroundabout/'}><FaLinkedinIn sx={styles.banner.footer.icons}/></Link>
               <span sx={{fontSize: '1'}}><FaCopyright/> Silicon Roundabout Ventures @2021</span>
-            </Box>
-            <Link target={'_blank'} to={'https://github.com/silicon-roundabout-ventures/'}><FaGithub sx={styles.banner.footer.icons}/></Link>
-            <Link target={'_blank'} to={'https://twitter.com/SiliconLondon'}><FaTwitter sx={styles.banner.footer.icons}/></Link>
-            <Link target={'_blank'} to={'https://www.linkedin.com/company/siliconroundabout/'}><FaLinkedinIn sx={styles.banner.footer.icons}/></Link>
-        </Box>
+          </Box>
       </Container>
     </Box>
   );
@@ -123,8 +123,15 @@ const styles = {
       flexDirection: 'row',
       justifyContent: 'space-between',
       height: '100%',
-      marginTop: '10%',
+      marginTop: '160px',
       alignItems: 'center',
+      flexWrap: 'wrap',
+
+      '@media only screen and (max-width: 992px)': {
+        marginTop: '120px',
+        paddingBottom: '40px',
+        justifyContent: 'space-evenly',
+      },
 
       contact: {
         fontSize: 2,
@@ -153,11 +160,14 @@ const styles = {
         display: 'inline-flex',
         alignItems: 'center',
 
+
         '@media only screen and (max-width: 992px)': {
-          display: 'none',
+          width: '2rem',
+          height: '2rem',
         },
       },
     },
+    
     container: {
       maxWidth: ['100%', null, null, null, null, '1240px', '1440px'],
     },

@@ -286,8 +286,9 @@ export default {
       borderColor: '#fff',
       height: 80,
       '&:focus': {
-        borderColor: '#5AC4FF',
-        width: '550px',
+        borderColor: '#fbfbfb',
+        color: '#fff',
+        width: '100%',
         boxShadow: (t) => `0 0 0 2px ${t.colors.primary}`,
         outline: 'none',
       },

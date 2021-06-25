@@ -217,15 +217,15 @@ const Banner = () => {
               </Box> */}
             </Box>
             <Box sx={styles.banner.footer}>
-            <Box sx={styles.banner.footer.contact}>
-              <span sx={{fontSize: '1'}}><FaMailBulk/> hello@siliconroundabout.tech</span>
-              <span sx={{fontSize: '1'}}><FaLocationArrow/> London, UK</span>
+              <Box sx={styles.banner.footer.contact}>
+                <span sx={{fontSize: '1',}}><FaMailBulk/> hello@siliconroundabout.tech</span>
+                <span sx={{fontSize: '1',}}><FaLocationArrow/> London, UK</span>
+              </Box>
+              <Link target={'_blank'} to={'https://github.com/silicon-roundabout-ventures/'}><FaGithub sx={styles.banner.footer.icons}/></Link>
+              <Link target={'_blank'} to={'https://twitter.com/SiliconLondon'}><FaTwitter sx={styles.banner.footer.icons}/></Link>
+              <Link target={'_blank'} to={'https://www.linkedin.com/company/siliconroundabout/'}><FaLinkedinIn sx={styles.banner.footer.icons}/></Link>
               <span sx={{fontSize: '1'}}><FaCopyright/> Silicon Roundabout Ventures @2021</span>
-            </Box>
-            <Link target={'_blank'} to={'https://github.com/silicon-roundabout-ventures/'}><FaGithub sx={styles.banner.footer.icons}/></Link>
-            <Link target={'_blank'} to={'https://twitter.com/SiliconLondon'}><FaTwitter sx={styles.banner.footer.icons}/></Link>
-            <Link target={'_blank'} to={'https://www.linkedin.com/company/siliconroundabout/'}><FaLinkedinIn sx={styles.banner.footer.icons}/></Link>
-        </Box>
+          </Box>
           </Box>
           {/* <Box sx={styles.banner.col}>
             <Box sx={styles.banner.imageBox}>
@@ -261,9 +261,15 @@ const styles = {
       flexDirection: 'row',
       justifyContent: 'space-between',
       height: '100%',
-      marginTop: '15%',
+      marginTop: '160px',
       alignItems: 'center',
-      zIndex: 10,
+      flexWrap: 'wrap',
+
+      '@media only screen and (max-width: 992px)': {
+        marginTop: '120px',
+        paddingBottom: '40px',
+        justifyContent: 'space-evenly',
+      },
 
       contact: {
         fontSize: 2,
@@ -292,11 +298,15 @@ const styles = {
         display: 'inline-flex',
         alignItems: 'center',
 
+
         '@media only screen and (max-width: 992px)': {
-          display: 'none',
+          width: '2rem',
+          height: '2rem',
         },
       },
     },
+
+
     container: {
       maxWidth: ['100%', null, null, null, null, '1240px', '1440px'],
     },
@@ -309,9 +319,15 @@ const styles = {
     },
     col: {
       pl: '40px',
-      pr: '15px',
+      pr: '0px',
       flex: ['1 1 100%', null, '0 0 50%'],
       zIndex: '100',
+
+      '@media only screen and (max-width: 992px)': {
+        pl: '15px',
+        pr: '15px',
+      },
+
     },
     content: {
       paddingRight: [0, 0, 0, 0, '40px', 0, 0],
@@ -382,7 +398,7 @@ const styles = {
       maxWidth: ['150px', null, null, '345px'],
       boxShadow: '0px 10px 50px rgba(48, 98, 145, 0.08)',
       marginTop: ['15px', '40px'],
-      height: ['50px', null, null, '50px', null, null, '50px'],
+      height: ['100%', null, null, '100%', null, null, '100%'],
       marginBottom: ['20px', '30px', null, null, '40px'],
 
       // input: {

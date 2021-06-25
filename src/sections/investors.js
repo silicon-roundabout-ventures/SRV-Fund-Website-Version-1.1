@@ -65,7 +65,7 @@ const Banner = () => {
            <Text as="h3">Launching Soon!</Text>
            <Box as="form" id={"investor_interest"} sx={styles.banner.form} onSubmit={(e) => e.preventDefault()}>            
                   <Label htmlFor="email">Notify me when we reach singularity!</Label>
-                  <Input required type="email" name="email" id="email" mb={3} />
+                  <Input defaultValue="email address" required type="email" name="email" id="email" mb={3} />
 
                   <Button type="submit">Submit</Button>
           </Box>
@@ -75,12 +75,12 @@ const Banner = () => {
               <Box sx={styles.banner.footer.contact}>
                 <span sx={{fontSize: '1',}}><FaMailBulk/> hello@siliconroundabout.tech</span>
                 <span sx={{fontSize: '1',}}><FaLocationArrow/> London, UK</span>
-                <span sx={{fontSize: '1'}}><FaCopyright/> Silicon Roundabout Ventures @2021</span>
               </Box>
               <Link target={'_blank'} to={'https://github.com/silicon-roundabout-ventures/'}><FaGithub sx={styles.banner.footer.icons}/></Link>
               <Link target={'_blank'} to={'https://twitter.com/SiliconLondon'}><FaTwitter sx={styles.banner.footer.icons}/></Link>
               <Link target={'_blank'} to={'https://www.linkedin.com/company/siliconroundabout/'}><FaLinkedinIn sx={styles.banner.footer.icons}/></Link>
-        </Box>
+              <span sx={{fontSize: '1'}}><FaCopyright/> Silicon Roundabout Ventures @2021</span>
+          </Box>
       </Container>
     </Box>
   );
@@ -103,8 +103,15 @@ const styles = {
       flexDirection: 'row',
       justifyContent: 'space-between',
       height: '100%',
-      marginTop: '120px',
+      marginTop: '160px',
       alignItems: 'center',
+      flexWrap: 'wrap',
+
+      '@media only screen and (max-width: 992px)': {
+        marginTop: '160px',
+        paddingBottom: '40px',
+        justifyContent: 'space-evenly',
+      },
 
       contact: {
         fontSize: 2,
@@ -133,12 +140,13 @@ const styles = {
         display: 'inline-flex',
         alignItems: 'center',
 
+
         '@media only screen and (max-width: 992px)': {
-          display: 'none',
+          width: '2rem',
+          height: '2rem',
         },
       },
     },
-
 
     container: {
       maxWidth: ['100%', null, null, null, null, '1240px', '1440px'],
@@ -198,7 +206,7 @@ const styles = {
         paddingLeft: '25px',
         width: '100%',
         height: '100%',
-        color: 'rgba(2, 7, 62, .4)',
+        color: '#fff',
         boxShadow: 'none !important',
         outline: 'none !important',
         borderRadius: '8px',

@@ -129,7 +129,7 @@ const Banner = () => {
                     color: '#fff',
                     '@media only screen and (max-width: 992px)': {
                       fontSize: '22px',
-                      marginTop: '100px',
+                      marginTop: '120px',
                     },
                   }}>
                 Community_Startups ()
@@ -189,12 +189,12 @@ const Banner = () => {
               <Box sx={styles.banner.footer.contact}>
                 <span sx={{fontSize: '1',}}><FaMailBulk/> hello@siliconroundabout.tech</span>
                 <span sx={{fontSize: '1',}}><FaLocationArrow/> London, UK</span>
-                <span sx={{fontSize: '1'}}><FaCopyright/> Silicon Roundabout Ventures @2021</span>
               </Box>
               <Link target={'_blank'} to={'https://github.com/silicon-roundabout-ventures/'}><FaGithub sx={styles.banner.footer.icons}/></Link>
               <Link target={'_blank'} to={'https://twitter.com/SiliconLondon'}><FaTwitter sx={styles.banner.footer.icons}/></Link>
               <Link target={'_blank'} to={'https://www.linkedin.com/company/siliconroundabout/'}><FaLinkedinIn sx={styles.banner.footer.icons}/></Link>
-            </Box>
+              <span sx={{fontSize: '1'}}><FaCopyright/> Silicon Roundabout Ventures @2021</span>
+          </Box>
       </Container>
     </Box>
   );
@@ -234,7 +234,9 @@ const styles = {
         fontSize: '4',
 
         '@media only screen and (max-width: 992px)': {
-          fontSize: '2',
+          fontSize: '16px',
+          maxWidth: 'max-content',
+          width: '200px',
         },
       },
       title:{
@@ -248,20 +250,21 @@ const styles = {
         },
 
         '@media only screen and (max-width: 992px)': {
-          fontSize: '1',
+          fontSize: '10px',
+          maxWidth: 'max-content',
+          width: '200px',
         },
       },
 
-      icons: {
-        color:'white',
-        marginLeft: '5px',
-        marginRight: '5px',
-      },
+      // icons: {
+      //   color:'white',
+      //   marginLeft: '5px',
+      //   marginRight: '5px',
+      // },
 
       socials: {
         display: 'flex',
         flexDirection: 'row',
-
       },
 
       contact: {
@@ -293,8 +296,8 @@ const styles = {
         marginBottom: '60px',
 
         '@media only screen and (max-width: 992px)': {
-          width: '40px',
-          height: '40px',
+          width: '45px',
+          height: '45px',
           margin: '15px',
         },
 
@@ -316,12 +319,22 @@ const styles = {
       rowGap: '40px',
       columnGap: '20px',
 
+      '@media only screen and (max-width: 992px)': {
+        rowGap: '80px',
+        columnGap: '40px',
+        marginTop: '20px',
+      },
+
+
+
       h3:{
         color: 'white',
         fontSize: '4',
 
         '@media only screen and (max-width: 992px)': {
-          fontSize: '2',
+          fontSize: '16px',
+          maxWidth: 'max-content',
+          width: '200px',
         },
       },
       title:{
@@ -380,8 +393,8 @@ const styles = {
         marginBottom: '60px',
 
         '@media only screen and (max-width: 992px)': {
-          width: '25px',
-          height: '25px',
+          width: '45px',
+          height: '45px',
           margin: '15px',
         },
 
@@ -397,8 +410,15 @@ const styles = {
       flexDirection: 'row',
       justifyContent: 'space-between',
       height: '100%',
-      marginTop: '10%',
+      marginTop: '160px',
       alignItems: 'center',
+      flexWrap: 'wrap',
+
+      '@media only screen and (max-width: 992px)': {
+        marginTop: '120px',
+        paddingBottom: '40px',
+        justifyContent: 'space-evenly',
+      },
 
       contact: {
         fontSize: 2,
@@ -427,8 +447,10 @@ const styles = {
         display: 'inline-flex',
         alignItems: 'center',
 
+
         '@media only screen and (max-width: 992px)': {
-          display: 'none',
+          width: '2rem',
+          height: '2rem',
         },
       },
     },
