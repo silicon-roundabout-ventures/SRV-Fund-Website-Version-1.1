@@ -267,6 +267,7 @@ const styles = {
 
       '@media only screen and (max-width: 720px)': {
         marginTop: '120px',
+        padding: '10px',
         paddingBottom: '40px',
         justifyContent: 'space-evenly',
       },
