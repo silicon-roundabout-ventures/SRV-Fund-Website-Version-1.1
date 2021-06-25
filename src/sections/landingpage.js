@@ -38,7 +38,7 @@ import { Link } from 'components/link';
 
 export const ParticleClass = styled.main`
   width: 100%;
-  z-index: 1;
+  z-index: 2;
 `
 
 const Banner = () => {
@@ -210,6 +210,16 @@ const Banner = () => {
                 <Image src={PartnerImage} alt="banner image" />
               </Box> */}
             </Box>
+            <Box sx={styles.banner.footer}>
+            <Box sx={styles.banner.footer.contact}>
+              <span sx={{fontSize: '1'}}><FaMailBulk/> hello@siliconroundabout.tech</span>
+              <span sx={{fontSize: '1'}}><FaLocationArrow/> London, UK</span>
+              <span sx={{fontSize: '1'}}><FaCopyright/> Silicon Roundabout Ventures @2021</span>
+            </Box>
+            <Link target={'_blank'} to={'https://github.com/silicon-roundabout-ventures/'}><FaGithub sx={styles.banner.footer.icons}/></Link>
+            <Link target={'_blank'} to={'https://twitter.com/SiliconLondon'}><FaTwitter sx={styles.banner.footer.icons}/></Link>
+            <Link target={'_blank'} to={'https://www.linkedin.com/company/siliconroundabout/'}><FaLinkedinIn sx={styles.banner.footer.icons}/></Link>
+        </Box>
           </Box>
           {/* <Box sx={styles.banner.col}>
             <Box sx={styles.banner.imageBox}>
@@ -220,16 +230,6 @@ const Banner = () => {
             </Box>
           </Box> */}
         </Flex>
-        <Box sx={styles.banner.footer}>
-            <Box sx={styles.banner.footer.contact}>
-              <span sx={{fontSize: '1'}}><FaMailBulk/> hello@siliconroundabout.tech</span>
-              <span sx={{fontSize: '1'}}><FaLocationArrow/> London, UK</span>
-              <span sx={{fontSize: '1'}}><FaCopyright/> Silicon Roundabout Ventures @2021</span>
-            </Box>
-            <Link target={'_blank'} to={'https://github.com/silicon-roundabout-ventures/'}><FaGithub sx={styles.banner.footer.icons}/></Link>
-            <Link target={'_blank'} to={'https://twitter.com/SiliconLondon'}><FaTwitter sx={styles.banner.footer.icons}/></Link>
-            <Link target={'_blank'} to={'https://www.linkedin.com/company/siliconroundabout/'}><FaLinkedinIn sx={styles.banner.footer.icons}/></Link>
-        </Box>
       </Container>
     </Box>
   );
@@ -255,8 +255,9 @@ const styles = {
       flexDirection: 'row',
       justifyContent: 'space-between',
       height: '100%',
-      marginTop: '10%',
+      marginTop: '15%',
       alignItems: 'center',
+      zIndex: 10,
 
       contact: {
         fontSize: 2,
