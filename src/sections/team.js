@@ -80,13 +80,13 @@ const Banner = () => {
                         marginTop: '0px',
                       },
                     }}>
-                  We are a team of engineers, product designers, and investors, uniquely positioned to help founders build technologically outstanding businesses with global ambitions.
+                  We are Europe’s 1st Community Driven Pre-Seed/Seed VC backing Advanced Technology Startups. We invest in and help scale high-tech startups from the UK/Europe at Pre-Seed/Seed and follow-on rounds when we see unicorn potential.
                   <br/>
                   
                   <ul>
-                  <FaTerminal/>&nbsp;	&nbsp;	We only invest in what we understand, *wink* *wink* we actually understand technology <br/>
-                  <FaEarlybirds/>&nbsp;	&nbsp;	We invest at Pre-Seed &amp; Seed Stage, preferably Leading/Co-leading the round <br />
-                  <FaPoundSign/>&nbsp;	&nbsp;	 Our ticket size ranges from £100k to £500k for New Investments
+                  <FaTerminal/>&nbsp;	&nbsp;	We only invest in what we understand, *wink* *wink* we actually understand technology. So go ahead surprise us with your Advance Tech!<br/>
+                  <FaEarlybirds/>&nbsp;	&nbsp;	We invest at Pre-Seed &amp; Seed Stage, preferably leading/co-leading the round <br />
+                  <FaPoundSign/>&nbsp;	&nbsp;	 Our ticket size ranges from £100k to £500k for new investments
                   </ul>
               </Text>
               <Text sx={{
