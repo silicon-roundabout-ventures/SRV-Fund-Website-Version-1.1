@@ -17,7 +17,7 @@ export default function Header({ className }) {
           <Flex as="nav" sx={styles.nav}>
             {menuItems.map(({ path, label }, i) => (
               <Link
-                class="active"
+                activeClass="active"
                 sx={styles.nav.navLink}
                 to={path}
                 spy={true}
