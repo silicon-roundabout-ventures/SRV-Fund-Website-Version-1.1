@@ -36,7 +36,7 @@ import BannerPattern from 'assets/banner-pattern.png';
 import BannerImage from 'assets/banner-image-1.png';
 import PartnerImage from 'assets/brands.svg';
 import Paul from 'assets/team/paul.png';
-import Franco from 'assets/team/Franco.png';
+import Franco from 'assets/team/franco.png';
 import Deep from 'assets/team/deep.png';
 import Ruhitha from 'assets/team/ruhitha.png';
 import Novica from 'assets/team/novica.png';
