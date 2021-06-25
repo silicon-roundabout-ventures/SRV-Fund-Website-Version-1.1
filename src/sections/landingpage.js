@@ -265,7 +265,7 @@ const styles = {
       alignItems: 'center',
       flexWrap: 'wrap',
 
-      '@media only screen and (max-width: 992px)': {
+      '@media only screen and (max-width: 820px)': {
         marginTop: '120px',
         paddingBottom: '40px',
         justifyContent: 'space-evenly',
