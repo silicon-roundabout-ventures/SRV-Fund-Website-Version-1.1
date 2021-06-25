@@ -185,8 +185,14 @@ const Banner = () => {
               <Box as="form" sx={styles.banner.form}>
                 <Link
                   path="/form"
-                  label="Apply Now"
+                  label="Startups Apply"
                   sx={styles.banner.form.link.button}
+                  variant="buttons.primary"
+                />
+                <Link
+                  path="/investors"
+                  label="For Investors"
+                  sx={styles.banner.form.link.button2}
                   variant="buttons.primary"
                 />
                 {/* <Box as="label" htmlFor="search" variant="styles.srOnly">
@@ -373,7 +379,7 @@ const styles = {
     form: {
       position: 'relative',
       width: '100%',
-      maxWidth: ['200px', null, null, '345px'],
+      maxWidth: ['150px', null, null, '345px'],
       boxShadow: '0px 10px 50px rgba(48, 98, 145, 0.08)',
       marginTop: ['15px', '40px'],
       height: ['50px', null, null, '50px', null, null, '50px'],
@@ -414,6 +420,23 @@ const styles = {
             color: '#000',
             backgroundColor: 'grey',
             borderRadius: '9px',
+          },
+        },
+        button2: {
+          paddingLeft: '25px',
+          paddingRight: '25px',
+          color: '#000',
+          backgroundColor: '#fff',
+          borderRadius: '9px',
+          marginTop: '20px',
+          '&:hover': {
+            color: '#000',
+            backgroundColor: 'grey',
+            borderRadius: '9px',
+          },
+
+          '@media only screen and (min-width: 992px)': {
+            display: 'none',
           },
         },
       },

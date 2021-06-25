@@ -47,9 +47,9 @@ const MobileDrawer = () => {
               <Link path={path} key={i} label={label} sx={styles.menu.link} />
             ))}
           </Box>
-          <Button to={"/investors"} variant="primary" sx={styles.button}>
+          {/* <Button to={"/investors"} variant="primary" sx={styles.button}>
               For Investors
-            </Button>
+            </Button> */}
 
           <Box sx={styles.menuFooter}>
             <Link to={'https://github.com/silicon-roundabout-ventures/'}><FaGithub sx={styles.menuFooter.icons}/></Link>
