@@ -26,6 +26,8 @@ import {
   FaChargingStation,
   FaEarlybirds,
   FaPoundSign,
+  FaMeetup,
+  FaHireAHelper,
 } from "react-icons/fa"
 
 import React from 'react';
@@ -80,13 +82,14 @@ const Banner = () => {
                         marginTop: '0px',
                       },
                     }}>
-                  We are Europe’s 1st Community Driven Pre-Seed/Seed VC backing Advanced Technology Startups. We invest in and help scale high-tech startups from the UK/Europe at Pre-Seed/Seed and follow-on rounds when we see unicorn potential.
+                We are a Community-Driven VC investment vehicle backing UK-based NEXT-GENERATION Tech Startups at pre-seed/seed. 
+                Our mission is to help investors capitalise on their Future Success and Mass Adoption. 
                   <br/>
                   
                   <ul>
-                  <FaTerminal/>&nbsp;	&nbsp;	We only invest in what we understand, *wink* *wink* we actually understand technology. So go ahead surprise us with your Advance Tech!<br/>
-                  <FaEarlybirds/>&nbsp;	&nbsp;	We invest at Pre-Seed &amp; Seed Stage, preferably leading/co-leading the round <br />
-                  <FaPoundSign/>&nbsp;	&nbsp;	 Our ticket size ranges from £100k to £500k for new investments
+                  <FaMeetup/>&nbsp;	&nbsp;We run the Largest Tech Meetup Community in Europe, giving us direct access to 5000+ startups<br/>
+                  <FaTerminal/>&nbsp;	&nbsp;We all have Technical Startup/Scaleup Backgrounds, helping us select and support founders <br />
+                  <FaHireAHelper/>&nbsp; &nbsp;We offer access to our Proprietary Ecosystem to help with specialist hiring and supply chain connections
                   </ul>
               </Text>
               <Text sx={{
@@ -111,6 +114,7 @@ const Banner = () => {
                       <Text as="p">General Partner</Text>
                       <Box sx={styles.banner.team.socials}>
                         <Link target={'_blank'} to={'https://www.linkedin.com/in/fperticarari/'}><FaLinkedin sx={styles.banner.team.icons}/></Link>
+                        <Link target={'_blank'} to={'hhttps://github.com/fpert041'}><FaGithub sx={styles.banner.team.icons}/></Link>
                       </Box>
                     </Box>
                   </Box>
@@ -128,7 +132,7 @@ const Banner = () => {
                     <Image src={Novica} alt="Novica M." />
                     <Text as="H3">Novica M.</Text>
                     <Box as="p" sx={styles.banner.team.title}>
-                      <Text as="p">Partner</Text>
+                      <Text as="p">COO</Text>
                       <Box sx={styles.banner.team.socials}>
                         <Link target={'_blank'} to={'https://www.linkedin.com/in/novica-mrdovic-vianello-4225214/'}><FaLinkedin sx={styles.banner.team.icons}/></Link>
                       </Box>
@@ -219,7 +223,7 @@ const Banner = () => {
               </Box>
               <Box as="span" sx={styles.banner.team.avatar}>
                 <Image src={VP} alt="Marc S." />
-                <Text as="h3">Marx S.</Text>
+                <Text as="h3">Marc S.</Text>
                 <Box as="p" sx={styles.banner.team.title}>
                   <Text as="p">Mentor @Techstars, Wayra <br/> Investment Director @Ship2B</Text>
                   <Box sx={styles.banner.team.socials}>
