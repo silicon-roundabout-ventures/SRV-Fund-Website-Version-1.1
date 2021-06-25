@@ -20,6 +20,7 @@ import {
   FaLocationArrow,
   FaMailBulk,
   FaCopyright,
+  FaCentercode,
 } from "react-icons/fa"
 
 import React from 'react';
@@ -396,7 +397,7 @@ const styles = {
     form: {
       position: 'relative',
       width: '100%',
-      maxWidth: ['150px', null, null, '345px'],
+      maxWidth: ['250px', null, null, '345px'],
       boxShadow: '0px 10px 50px rgba(48, 98, 145, 0.08)',
       marginTop: ['15px', '40px'],
       height: ['100%', null, null, '100%', null, null, '100%'],
@@ -430,9 +431,12 @@ const styles = {
         button: {
           paddingLeft: '25px',
           paddingRight: '25px',
+          alignItems: 'center',
           color: '#000',
+          width: '100%',
           backgroundColor: '#fff',
           borderRadius: '9px',
+          textAlign: 'center',
           '&:hover': {
             color: '#000',
             backgroundColor: 'grey',
@@ -442,7 +446,10 @@ const styles = {
         button2: {
           paddingLeft: '25px',
           paddingRight: '25px',
+          alignItems: 'center',
+          textAlign: 'center',
           color: '#000',
+          width: '100%',
           backgroundColor: '#fff',
           borderRadius: '9px',
           marginTop: '20px',
