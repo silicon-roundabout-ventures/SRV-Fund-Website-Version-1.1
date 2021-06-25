@@ -20,7 +20,7 @@ export default function Header({ className }) {
               <Link
                 activeClass="active"
                 sx={styles.nav.navLink}
-                to={path}
+                path={path}
                 spy={true}
                 smooth={true}
                 offset={-100}

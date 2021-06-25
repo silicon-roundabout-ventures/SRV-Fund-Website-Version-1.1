@@ -185,8 +185,9 @@ const Banner = () => {
               </Text>
               <Box as="form" sx={styles.banner.form}>
                 <Link
-                  path="#"
-                  label="Applications Opening Soon!"
+                  target= '_blank'
+                  path="https://forms.gle/a5fMMSitNDHFLej17"
+                  label="Apply Here!"
                   sx={styles.banner.form.link.button}
                   variant="buttons.primary"
                 />
