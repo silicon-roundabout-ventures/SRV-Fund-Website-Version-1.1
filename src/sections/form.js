@@ -127,8 +127,9 @@ const styles = {
       alignItems: 'center',
       flexWrap: 'wrap',
 
-      '@media only screen and (max-width: 992px)': {
+      '@media only screen and (max-width: 720px)': {
         marginTop: '120px',
+        padding: '10px',
         paddingBottom: '40px',
         justifyContent: 'space-evenly',
       },
@@ -167,7 +168,7 @@ const styles = {
         },
       },
     },
-    
+
     container: {
       maxWidth: ['100%', null, null, null, null, '1240px', '1440px'],
     },
