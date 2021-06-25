@@ -63,12 +63,12 @@ const Banner = () => {
           
            <Image sx={{width:'300px',height: '300px'}} src={blackhole}/>
            <Text as="h3">Launching Soon!</Text>
-           <Box as="form" id={"investor_interest"} sx={styles.banner.form} onSubmit={(e) => e.preventDefault()}>            
+           {/* <Box as="form" id={"investor_interest"} sx={styles.banner.form} onSubmit={(e) => e.preventDefault()}>            
                   <Label htmlFor="email">Notify me when we reach singularity!</Label>
                   <Input defaultValue="email address" required type="email" name="email" id="email" mb={3} />
 
                   <Button type="submit">Submit</Button>
-          </Box>
+          </Box> */}
          
         </Flex>
         <Box sx={styles.banner.footer}>
