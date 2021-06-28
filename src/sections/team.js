@@ -41,7 +41,6 @@ import Paul from 'assets/team/paul.png';
 import Franco from 'assets/team/franco.png';
 import Deep from 'assets/team/deep.png';
 import Ruhitha from 'assets/team/ruhitha.png';
-import Novica from 'assets/team/novica.png';
 import VP from 'assets/team/vp.png';
 
 import { Link } from 'components/link';
@@ -197,7 +196,7 @@ const Banner = () => {
                 <Box as="p" sx={styles.banner.team.title}>
                   <Text as="p">Founding Partner @Proxy.VC</Text>
                   <Box sx={styles.banner.team.socials}>
-                    <Link target={'_blank'} to={'https://www.linkedin.com/in/novica-mrdovic-vianello-4225214/'}><FaLinkedin sx={styles.banner.team.icons}/></Link>
+                    <Link target={'_blank'} to={'https://www.linkedin.com/in/aapobovellan/'}><FaLinkedin sx={styles.banner.team.icons}/></Link>
                   </Box>
                 </Box>
               </Box>

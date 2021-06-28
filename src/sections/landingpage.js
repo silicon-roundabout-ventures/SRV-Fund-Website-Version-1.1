@@ -19,8 +19,20 @@ import {
   FaTwitter,
   FaLocationArrow,
   FaMailBulk,
+  FaLinkedin,
+  FaMailchimp,
   FaCopyright,
-  FaCentercode,
+  FaTerminal,
+  FaPlaystation,
+  FaNetworkWired,
+  FaLightbulb,
+  FaRegLightbulb,
+  FaAtom,
+  FaPoundSign,
+  FaGgCircle,
+  FaFolderMinus,
+  FaUserNurse,
+  FaRobot
 } from "react-icons/fa"
 
 import React from 'react';
@@ -29,11 +41,16 @@ import React from 'react';
 import Particles from 'react-particles-js';
 import styled from 'styled-components'
 
-import BannerBG from 'assets/banner-bg-1-1.png';
-import BannerTextLine from 'assets/banner-text-line.png';
-import BannerPattern from 'assets/banner-pattern.png';
-import BannerImage from 'assets/banner-image-1.png';
-import PartnerImage from 'assets/brands.svg';
+import Axiom from 'assets/startups/axiom.png';
+import Ori from 'assets/startups/ori.png';
+import EcoSync from 'assets/startups/ecosync.png';
+
+import Unicorn from 'assets/next_gen/bnw/unicorn.png';
+import Critical from 'assets/next_gen/bnw/critical.png';
+import Defensible from 'assets/next_gen/bnw/defensible.png';
+import Innovative from 'assets/next_gen/bnw/innovative.png';
+import Trending from 'assets/next_gen/bnw/trending.png';
+
 import { Link } from 'components/link';
 
 
@@ -184,19 +201,19 @@ const Banner = () => {
                 &#125;
               </Text>
               <Box as="form" sx={styles.banner.form}>
-                <Link
+                {/* <Link
                   target= '_blank'
                   path="https://forms.gle/a5fMMSitNDHFLej17"
                   label="Apply Here!"
                   sx={styles.banner.form.link.button}
                   variant="buttons.primary"
-                />
-                <Link
+                /> */}
+                {/* <Link
                   path="/investors"
                   label="For Investors"
                   sx={styles.banner.form.link.button2}
                   variant="buttons.primary"
-                />
+                /> */}
                 {/* <Box as="label" htmlFor="search" variant="styles.srOnly">
                   Search
                 </Box>
@@ -218,16 +235,6 @@ const Banner = () => {
                 <Image src={PartnerImage} alt="banner image" />
               </Box> */}
             </Box>
-            <Box sx={styles.banner.footer}>
-              <Box sx={styles.banner.footer.contact}>
-                <span sx={{fontSize: '1',}}><FaMailBulk/> hello@siliconroundabout.tech</span>
-                <span sx={{fontSize: '1',}}><FaLocationArrow/> London, UK</span>
-              </Box>
-              <Link target={'_blank'} to={'https://github.com/silicon-roundabout-ventures/'}><FaGithub sx={styles.banner.footer.icons}/></Link>
-              <Link target={'_blank'} to={'https://twitter.com/SiliconLondon'}><FaTwitter sx={styles.banner.footer.icons}/></Link>
-              <Link target={'_blank'} to={'https://www.linkedin.com/company/siliconroundabout/'}><FaLinkedinIn sx={styles.banner.footer.icons}/></Link>
-              <span sx={{fontSize: '1'}}><FaCopyright/> Silicon Roundabout Ventures @2021</span>
-          </Box>
           </Box>
           {/* <Box sx={styles.banner.col}>
             <Box sx={styles.banner.imageBox}>
@@ -237,7 +244,94 @@ const Banner = () => {
               </Box>
             </Box>
           </Box> */}
+        <Flex sx={styles.banner.row}>
+          <Text sx={{
+                    fontSize: '26px',
+                    fontWeight: 'bold',
+                    lineHeight: 2.0,
+                    marginTop: '40px',
+                    color: '#000',
+                    backgroundColor: '#fff',
+                    borderRadius: '12px',
+                    textAlign: 'center',
+
+                    '@media only screen and (max-width: 992px)': {
+                      fontSize: '22px',
+                      marginTop: '40px',
+                    },
+                  }}>
+                Definition: "Next Generation Technologies";
+              </Text>
+      
+
+            <Box sx={styles.banner.startups}>
+              
+              <Box as="span" sx={styles.banner.startups.avatar}>
+                <Image src={Innovative} alt="Innovative" />
+                <Text as="H3">Innovative</Text>
+                <Box sx={styles.banner.startups.title}>
+                  <Text as="p">They leverage significant technological development vs. the status quo</Text>
+                  {/* <Box sx={styles.banner.startups.socials}>
+                    <Link target={'_blank'} to={'https://ori.co/'}><FaNetworkWired sx={styles.banner.startups.icons}/></Link>
+                  </Box> */}
+                </Box>
+              </Box>
+              <Box as="span" sx={styles.banner.startups.avatar}>
+                <Image src={Critical} alt="Critical" />
+                <Text as="H3">Critical</Text>
+                <Box as="p" sx={styles.banner.startups.title}>
+                  <Text as="p">They solve (or bring to light) essential user needs</Text>
+                  {/* <Box sx={styles.banner.startups.socials}>
+                    <Link target={'_blank'} to={'https://ecosync.energy/'}><FaRegLightbulb sx={styles.banner.startups.icons}/></Link>
+                  </Box> */}
+                </Box>
+              </Box>
+              <Box as="span" sx={styles.banner.startups.avatar}>
+                <Image src={Defensible} alt="Defensible" />
+                <Text as="H3">Defensible</Text>
+                <Box as="p" sx={styles.banner.startups.title}>
+                  <Text as="p">They offer their makers an IP moat against challengers</Text>
+                  {/* <Box sx={styles.banner.startups.socials}>
+                    <Link target={'_blank'} to={'https://axiom.ai/'}><FaRobot sx={styles.banner.startups.icons}/></Link>
+                  </Box> */}
+                </Box>
+              </Box>
+              <Box as="span" sx={styles.banner.startups.avatar}>
+                <Image src={Trending} alt="Trending" />
+                <Text as="H3">Trend-Setting</Text>
+                <Box as="p" sx={styles.banner.startups.title}>
+                  <Text as="p">Disrupt the way an industry operates (1B+ potential revenue in 10+ yrs)</Text>
+                  {/* <Box sx={styles.banner.startups.socials}>
+                    <Link target={'_blank'} to={'https://axiom.ai/'}><FaRobot sx={styles.banner.startups.icons}/></Link>
+                  </Box> */}
+                </Box>
+              </Box>
+              <Box as="span" sx={styles.banner.startups.avatar}>
+                <Image src={Unicorn} alt="Unicorn" />
+                <Text as="H3">Unicorn-Material</Text>
+                <Box as="p" sx={styles.banner.startups.title}>
+                  <Text as="p">Potential to make their creators scale 30-100X via M&amp;A or listing exit in 5-8 years</Text>
+                  {/* <Box sx={styles.banner.startups.socials}>
+                    <Link target={'_blank'} to={'https://axiom.ai/'}><FaRobot sx={styles.banner.startups.icons}/></Link>
+                  </Box> */}
+                </Box>
+              </Box>
+              </Box>
         </Flex>
+
+          <Box sx={styles.banner.footer}>
+              <Box sx={styles.banner.footer.contact}>
+                <span sx={{fontSize: '1',}}><FaMailBulk/> hello@siliconroundabout.tech</span>
+                <span sx={{fontSize: '1',}}><FaLocationArrow/> London, UK</span>
+              </Box>
+              <Link target={'_blank'} to={'https://github.com/silicon-roundabout-ventures/'}><FaGithub sx={styles.banner.footer.icons}/></Link>
+              <Link target={'_blank'} to={'https://twitter.com/SiliconLondon'}><FaTwitter sx={styles.banner.footer.icons}/></Link>
+              <Link target={'_blank'} to={'https://www.linkedin.com/company/siliconroundabout/'}><FaLinkedinIn sx={styles.banner.footer.icons}/></Link>
+              <span sx={{fontSize: '1'}}><FaCopyright/> Silicon Roundabout Ventures @2021</span>
+          </Box>
+        </Flex>
+          
+              
       </Container>
     </Box>
   );
@@ -268,7 +362,7 @@ const styles = {
       flexWrap: 'wrap',
 
       '@media only screen and (max-width: 720px)': {
-        marginTop: '120px',
+        marginTop: '160px',
         padding: '10px',
         paddingBottom: '40px',
         justifyContent: 'space-evenly',
@@ -309,6 +403,109 @@ const styles = {
       },
     },
 
+    startups: {
+      display: 'flex',
+      flexDirection: 'row',
+      justifyContent: 'space-around',
+      marginTop: '80px',
+      alignItems: 'center',
+      flexWrap: 'wrap',
+      justifyContent: 'center',
+      rowGap: '20px',
+      columnGap: '40px',
+
+      '@media only screen and (max-width: 992px)': {
+        rowGap: '160px',
+        columnGap: '40px',
+        marginTop: '40px',
+      },
+
+      h3:{
+        color: 'white',
+        fontSize: '4',
+
+        '@media only screen and (max-width: 992px)': {
+          fontSize: '16px',
+          maxWidth: 'max-content',
+          width: '200px',
+        },
+      },
+      title:{
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        textAlign: 'center',
+
+        p: {
+          color: 'white',
+          fontSize: '16px',
+        },
+
+        '@media only screen and (max-width: 992px)': {
+          fontSize: '10px',
+          maxWidth: 'max-content',
+          width: '150px',
+
+          p: {
+            color: 'white',
+            fontSize: '12px',
+          },
+        },
+      },
+
+      // icons: {
+      //   color:'white',
+      //   marginLeft: '5px',
+      //   marginRight: '5px',
+      // },
+
+      socials: {
+        display: 'flex',
+        flexDirection: 'row',
+      },
+
+      contact: {
+        fontSize: 2,
+        color: '#fff',
+        flex: '0 0 84%',
+        display: 'flex',
+        flexDirection: 'column',
+        flexWrap: 'nowrap',
+        
+        '@media only screen and (max-width: 992px)': {
+              display: 'none',
+        },
+
+        text: {
+          fontSize: 2,
+          color: '#fff',
+          flex: '0 0 84%',
+        },
+      },
+
+      avatar: {
+        height: '80px',
+        width: '80px',
+        alignItems: 'center',
+        flex: '0 0 30.333333333%',
+        display:'flex',
+        flexDirection: 'column',
+        marginBottom: '60px',
+        rowGap: '10px',
+
+        '@media only screen and (max-width: 992px)': {
+          width: '45px',
+          height: '45px',
+          margin: '15px',
+        },
+
+        img: {
+          margin: ['0px', null, null, null, null, '0'],
+          height: '100%',
+        },
+      },
+    },
+
 
     container: {
       maxWidth: ['100%', null, null, null, null, '1240px', '1440px'],
@@ -316,9 +513,11 @@ const styles = {
     row: {
       flexWrap: 'wrap',
       display: 'flex',
-      marginLeft: '-15px',
-      marginRight: '-15px',
+      // marginLeft: '-15px',
+      // marginRight: '-15px',
       flexDirection: 'column',
+      zIndex: '100',
+      // paddingLeft: '40px',
     },
     col: {
       pl: '40px',
@@ -342,6 +541,12 @@ const styles = {
       },
       green: {
         color: '#9dff65',
+      },
+      blue: {
+        color: '#5AC4FF',
+      },
+      yellow: {
+        color: '#FFFF8D',
       },
       h3: {
         lineHeight: 1.18,
