@@ -32,7 +32,16 @@ import {
   FaGgCircle,
   FaFolderMinus,
   FaUserNurse,
-  FaRobot
+  FaRobot,
+  FaArrowLeft,
+  FaArrowCircleLeft,
+  FaArrowAltCircleLeft,
+  FaArrowsAlt,
+  FaArrowsAltH,
+  FaArrowsAltV,
+  FaCentercode,
+  FaLifeRing,
+  FaLongArrowAltLeft,
 } from "react-icons/fa"
 
 import React from 'react';
@@ -185,29 +194,30 @@ const Banner = () => {
           <Box sx={styles.banner.col}>
             <Box sx={styles.banner.content}>  
               <Text sx={{
-                    fontSize: 6,
+                    fontSize: '30px',
                     fontWeight: 'bold',
-                    lineHeight: 2.0,
+                    lineHeight: 1.7,
                     marginTop: '80px',
                     color: '#fff',
                     '@media only screen and (max-width: 992px)': {
-                      fontSize: 4,
+                      fontSize: '22px',
                       marginTop: '80px',
                     },
                   }}>
                 Connecting (<styles sx={styles.banner.content.orange}>Capital</styles>) &#123; <br></br>
                 <styles sx={styles.banner.content.pink}>with</styles><br></br>
                 Next-Generation.<styles sx={styles.banner.content.green}>Technologies</styles><br></br>
-                &#125;
+                 &#125;{/*<br></br><br></br>
+                <Link sx={{display: 'flex', flexDirection: 'row'}} to='https://forms.gle/a5fMMSitNDHFLej17'><styles sx={styles.banner.content.blue}>return</styles>&nbsp;(<styles sx={styles.banner.content.orange}>Application </styles>) &nbsp;<FaLongArrowAltLeft sx={{fontSize: '30px'}}/><styles sx={{fontSize: '14px',marginTop: '3px', '@media only screen and (max-width: 992px)': {fontSize: '10px',marginLeft: '2px',},}}>Click Here! </styles></Link> */}
               </Text>
               <Box as="form" sx={styles.banner.form}>
-                {/* <Link
+                <Link
                   target= '_blank'
                   path="https://forms.gle/a5fMMSitNDHFLej17"
                   label="Apply Here!"
                   sx={styles.banner.form.link.button}
                   variant="buttons.primary"
-                /> */}
+                />
                 {/* <Link
                   path="/investors"
                   label="For Investors"
@@ -246,13 +256,11 @@ const Banner = () => {
           </Box> */}
         <Flex sx={styles.banner.row}>
           <Text sx={{
-                    fontSize: '26px',
+                    fontSize: '24px',
                     fontWeight: 'bold',
                     lineHeight: 2.0,
                     marginTop: '40px',
-                    color: '#000',
-                    backgroundColor: '#fff',
-                    borderRadius: '12px',
+                    color: '#fff',
                     textAlign: 'center',
 
                     '@media only screen and (max-width: 992px)': {
@@ -260,7 +268,7 @@ const Banner = () => {
                       marginTop: '40px',
                     },
                   }}>
-                Definition: "Next Generation Technologies";
+                We invest in startup in their very early stage and support them as they build technologies that are:
               </Text>
       
 

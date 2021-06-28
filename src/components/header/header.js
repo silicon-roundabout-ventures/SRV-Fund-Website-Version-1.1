@@ -34,10 +34,10 @@ export default function Header({ className }) {
           </Flex>
 
           <Link
-            path="https://forms.gle/a5fMMSitNDHFLej17"
+            path="/investors"
             ml={2}
             target= "_blank"
-            label="Apply Here"
+            label="For Investors"
             sx={styles.headerBtn}
             variant="buttons.primary"
           />
