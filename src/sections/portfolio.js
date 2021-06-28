@@ -92,7 +92,7 @@ const Banner = () => {
                 <Image src={Ori} alt="Ori" />
                 <Text as="H3">ORI Industries</Text>
                 <Box sx={styles.banner.startups.title}>
-                  <Text as="p">Seed</Text>
+                  
                   <Box sx={styles.banner.startups.socials}>
                     <Link target={'_blank'} to={'https://ori.co/'}><FaNetworkWired sx={styles.banner.startups.icons}/></Link>
                   </Box>
@@ -102,7 +102,7 @@ const Banner = () => {
                 <Image src={EcoSync} alt="ecosync" />
                 <Text as="H3">EcoSync</Text>
                 <Box as="p" sx={styles.banner.startups.title}>
-                  <Text as="p">Pre-Seed</Text>
+                  
                   <Box sx={styles.banner.startups.socials}>
                     <Link target={'_blank'} to={'https://ecosync.energy/'}><FaRegLightbulb sx={styles.banner.startups.icons}/></Link>
                   </Box>
@@ -112,7 +112,7 @@ const Banner = () => {
                 <Image src={Axiom} alt="axiom" />
                 <Text as="H3">axiom.ai</Text>
                 <Box as="p" sx={styles.banner.startups.title}>
-                  <Text as="p">Pre-Seed</Text>
+                 
                   <Box sx={styles.banner.startups.socials}>
                     <Link target={'_blank'} to={'https://axiom.ai/'}><FaRobot sx={styles.banner.startups.icons}/></Link>
                   </Box>
