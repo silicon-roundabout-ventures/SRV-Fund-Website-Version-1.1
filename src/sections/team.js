@@ -196,7 +196,7 @@ const Banner = () => {
                 <Box as="p" sx={styles.banner.team.title}>
                   <Text as="p">Founding Partner @Proxy.VC</Text>
                   <Box sx={styles.banner.team.socials}>
-                    <Link target={'_blank'} to={'https://www.linkedin.com/in/novica-mrdovic-vianello-4225214/'}><FaLinkedin sx={styles.banner.team.icons}/></Link>
+                    <Link target={'_blank'} to={'https://www.linkedin.com/in/aapobovellan/'}><FaLinkedin sx={styles.banner.team.icons}/></Link>
                   </Box>
                 </Box>
               </Box>
@@ -216,7 +216,7 @@ const Banner = () => {
                 <Box as="p" sx={styles.banner.team.title}>
                   <Text as="p">Mentor @Techstars, Wayra <br/> Investment Director @Ship2B</Text>
                   <Box sx={styles.banner.team.socials}>
-                    <Link target={'_blank'} to={'https://www.linkedin.com/in/felixhovsepian/'}><FaLinkedin sx={styles.banner.team.icons}/></Link>
+                    <Link target={'_blank'} to={'https://www.linkedin.com/in/marcsabas/'}><FaLinkedin sx={styles.banner.team.icons}/></Link>
                   </Box>
                 </Box>
               </Box>
