@@ -129,16 +129,6 @@ const Banner = () => {
                     </Box>
                   </Box>
                   <Box as="span" sx={styles.banner.team.avatar}>
-                    <Image src={Novica} alt="Novica M." />
-                    <Text as="H3">Novica M.</Text>
-                    <Box as="p" sx={styles.banner.team.title}>
-                      <Text as="p">COO</Text>
-                      <Box sx={styles.banner.team.socials}>
-                        <Link target={'_blank'} to={'https://www.linkedin.com/in/novica-mrdovic-vianello-4225214/'}><FaLinkedin sx={styles.banner.team.icons}/></Link>
-                      </Box>
-                    </Box>
-                  </Box>
-                  <Box as="span" sx={styles.banner.team.avatar}>
                     <Image src={Deep} alt="Lord Deep" />
                     <Text as="h3">Deep G.</Text>
                     <Box as="p" sx={styles.banner.team.title}>
