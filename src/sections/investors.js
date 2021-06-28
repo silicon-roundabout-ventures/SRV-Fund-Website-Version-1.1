@@ -34,7 +34,8 @@ import {
   FaGgCircle,
   FaFolderMinus,
   FaUserNurse,
-  FaRobot
+  FaRobot,
+  FaRegistered
 } from "react-icons/fa"
 
 import React from 'react';
@@ -61,14 +62,35 @@ const Banner = () => {
       <Container sx={styles.banner.container}>
         <Flex sx={styles.banner.row}>
           
-           <Image sx={{width:'300px',height: '300px'}} src={blackhole}/>
-           <Text as="h3">Launching Soon!</Text>
-           {/* <Box as="form" id={"investor_interest"} sx={styles.banner.form} onSubmit={(e) => e.preventDefault()}>            
-                  <Label htmlFor="email">Notify me when we reach singularity!</Label>
-                  <Input defaultValue="email address" required type="email" name="email" id="email" mb={3} />
+           {/* <Image sx={{width:'150px',height: '150px'}} src={blackhole}/> */}
+           <Text sx={{
+                    fontSize: '32px',
+                    fontWeight: 'bold',
+                    lineHeight: 2.0,
+                    marginTop: '120px',
+                    color: '#fff',
+                    textAlign: 'center',
+                    paddingLeft: '120px',
+                    paddingRight: '120px',
+                    // textDecoration: 'underline',
 
-                  <Button type="submit">Submit</Button>
-          </Box> */}
+                    '@media only screen and (max-width: 992px)': {
+                      fontSize: '18px',
+                      marginTop: '140px',
+                      paddingLeft: '40px',
+                      paddingRight: '40px',
+
+                    },
+                  }}>
+                If you are interested in investing in <styles sx={styles.banner.content.orange}>Next Generation Technologies</styles>, register your interest as an LP below:
+              </Text>
+          <Link
+              target= '_blank'
+              path="https://forms.gle/2XBcKaPEwQEsunQ16"
+              label="Apply Here!"
+              sx={styles.banner.form.link.button}
+              variant="buttons.primary"
+            />
          
         </Flex>
         <Box sx={styles.banner.footer}>
@@ -108,7 +130,7 @@ const styles = {
       flexWrap: 'wrap',
 
       '@media only screen and (max-width: 720px)': {
-        marginTop: '120px',
+        marginTop: '160px',
         padding: '10px',
         paddingBottom: '40px',
         justifyContent: 'space-evenly',
@@ -230,6 +252,7 @@ const styles = {
           color: '#000',
           backgroundColor: '#fff',
           borderRadius: '9px',
+          marginTop: '40px',
           '&:hover': {
             color: '#000',
             backgroundColor: 'grey',
