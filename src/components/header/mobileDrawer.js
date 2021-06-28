@@ -47,8 +47,8 @@ const MobileDrawer = () => {
               <Link path={path} key={i} label={label} sx={styles.menu.link} />
             ))}
           </Box>
-          <Button to={'/investors'} variant="primary" sx={styles.button}>
-              For Investors
+          <Button target="_blank" to={'https://forms.gle/a5fMMSitNDHFLej17'} variant="primary" sx={styles.button}>
+              Apply Here
             </Button>
 
           <Box sx={styles.menuFooter}>

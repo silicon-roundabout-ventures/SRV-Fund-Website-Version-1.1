@@ -256,7 +256,7 @@ const Banner = () => {
                     textAlign: 'center',
 
                     '@media only screen and (max-width: 992px)': {
-                      fontSize: '22px',
+                      fontSize: '18px',
                       marginTop: '40px',
                     },
                   }}>
@@ -362,7 +362,7 @@ const styles = {
       flexWrap: 'wrap',
 
       '@media only screen and (max-width: 720px)': {
-        marginTop: '160px',
+        marginTop: '70%',
         padding: '10px',
         paddingBottom: '40px',
         justifyContent: 'space-evenly',
