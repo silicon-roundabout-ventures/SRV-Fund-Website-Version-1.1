@@ -77,13 +77,13 @@ const Banner = () => {
                     }
                   },
                   "color": {
-                    "value": "#fff"
+                    "value": "#000"
                   },
                   "shape": {
                     "type": "circle",
                     "stroke": {
                       "width": 3.5,
-                      "color": "#f7f7f7",
+                      "color": "#a7a7a7",
                     },
                     "polygon": {
                       "nb_sides": 9
@@ -112,7 +112,7 @@ const Banner = () => {
                   "line_linked": {
                     "enable": true,
                     "distance": 130,
-                    "color": "#a7a7a74a",
+                    "color": "#a7a7a7",
                     "opacity": 0.4,
                     "width": 1,
                   },
