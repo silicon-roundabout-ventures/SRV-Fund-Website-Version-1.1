@@ -192,7 +192,7 @@ const Banner = () => {
           />
         </ParticleClass>
           <Box sx={styles.banner.col}>
-            <Box sx={styles.banner.content}>  
+            <Box sx={styles.banner.content}>
               <Text sx={{
                     fontSize: '30px',
                     fontWeight: 'bold',
@@ -268,12 +268,12 @@ const Banner = () => {
                       marginTop: '40px',
                     },
                   }}>
-                We invest in startup in their very early stage and support them as they build technologies that are:
+                We invest in startups in their very early stage and support them as they build technologies that are:
               </Text>
-      
+
 
             <Box sx={styles.banner.startups}>
-              
+
               <Box as="span" sx={styles.banner.startups.avatar}>
                 <Image src={Innovative} alt="Innovative" />
                 <Text as="H3">Innovative</Text>
@@ -338,8 +338,8 @@ const Banner = () => {
               <span sx={{fontSize: '1'}}><FaCopyright/> Silicon Roundabout Ventures @2021</span>
           </Box>
         </Flex>
-          
-              
+
+
       </Container>
     </Box>
   );
@@ -383,7 +383,7 @@ const styles = {
         display: 'flex',
         flexDirection: 'column',
         flexWrap: 'nowrap',
-        
+
         '@media only screen and (max-width: 992px)': {
               display: 'none',
         },
@@ -479,7 +479,7 @@ const styles = {
         display: 'flex',
         flexDirection: 'column',
         flexWrap: 'nowrap',
-        
+
         '@media only screen and (max-width: 992px)': {
               display: 'none',
         },
@@ -638,7 +638,7 @@ const styles = {
         top: '50%',
         right: '25px',
         transform: 'translateY(-50%)',
-        fontSize: ['16px', '22px'], 
+        fontSize: ['16px', '22px'],
         display: 'flex',
         alignItems: 'center',
 
