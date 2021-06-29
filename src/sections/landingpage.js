@@ -213,7 +213,7 @@ const Banner = () => {
               <Box as="form" sx={styles.banner.form}>
                 <Link
                   target= '_blank'
-                  path="https://forms.gle/a5fMMSitNDHFLej17"
+                  path="https://airtable.com/shrWqbcCtbPaXXfQ3"
                   label="Apply Here!"
                   sx={styles.banner.form.link.button}
                   variant="buttons.primary"
