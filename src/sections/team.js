@@ -41,6 +41,7 @@ import Paul from 'assets/team/paul.png';
 import Franco from 'assets/team/franco.png';
 import Deep from 'assets/team/deep.png';
 import Ruhitha from 'assets/team/ruhitha.png';
+import Novica from 'assets/team/novica.png';
 import VP from 'assets/team/vp.png';
 
 import { Link } from 'components/link';
@@ -68,7 +69,7 @@ const Banner = () => {
                         marginTop: '40px',
                       },
                     }}>
-                    &lt;/Who we are&gt;	
+                    &lt;/Who we are&gt;
               </Text>
               <Text sx={{
                       fontSize: '20px',
@@ -81,10 +82,10 @@ const Banner = () => {
                         marginTop: '0px',
                       },
                     }}>
-                We are a Community-Driven VC investment vehicle backing UK-based NEXT-GENERATION Tech Startups at pre-seed/seed. 
-                Our mission is to help investors capitalise on their Future Success and Mass Adoption. 
+                We are a Community-Driven VC investment vehicle backing UK-based NEXT-GENERATION Tech Startups at pre-seed/seed.
+                Our mission is to help investors capitalise on their Future Success and Mass Adoption.
                   <br/>
-                  
+
                   <ul>
                   <FaMeetup/>&nbsp;	&nbsp;We run the Largest Tech Meetup Community in Europe, giving us direct access to 5000+ startups<br/>
                   <FaTerminal/>&nbsp;	&nbsp;We all have Technical Startup/Scaleup Backgrounds, helping us select and support founders <br />
@@ -105,12 +106,12 @@ const Banner = () => {
                   Team_
                 </Text>
                 <Box sx={styles.banner.team}>
-                  
+
                   <Box as="span" sx={styles.banner.team.avatar}>
                     <Image src={Franco} alt="Francesco P." />
-                    <Text as="H3">Francesco P.</Text>
+                    <Text as="H3">Francesco Perticarari</Text>
                     <Box sx={styles.banner.team.title}>
-                      <Text as="p">General Partner</Text>
+                      <Text as="p">Managing Partner</Text>
                       <Box sx={styles.banner.team.socials}>
                         <Link target={'_blank'} to={'https://www.linkedin.com/in/fperticarari/'}><FaLinkedin sx={styles.banner.team.icons}/></Link>
                         <Link target={'_blank'} to={'hhttps://github.com/fpert041'}><FaGithub sx={styles.banner.team.icons}/></Link>
@@ -119,7 +120,7 @@ const Banner = () => {
                   </Box>
                   <Box as="span" sx={styles.banner.team.avatar}>
                     <Image src={Paul} alt="Paul D." />
-                    <Text as="H3">Paul D.</Text>
+                    <Text as="H3">Paul Dinulescu</Text>
                     <Box as="p" sx={styles.banner.team.title}>
                       <Text as="p">General Partner</Text>
                       <Box sx={styles.banner.team.socials}>
@@ -129,9 +130,9 @@ const Banner = () => {
                   </Box>
                   <Box as="span" sx={styles.banner.team.avatar}>
                     <Image src={Deep} alt="Lord Deep" />
-                    <Text as="h3">Deep G.</Text>
+                    <Text as="h3">Deep Godara</Text>
                     <Box as="p" sx={styles.banner.team.title}>
-                      <Text as="p">Portfolio Analyst</Text>
+                      <Text as="p">Analyst</Text>
                       <Box sx={styles.banner.team.socials}>
                         <Link target={'_blank'} to={'https://www.linkedin.com/in/deepgodara/'}><FaLinkedin sx={styles.banner.team.icons}/></Link>
                         <Link target={'_blank'} to={'https://twitter.com/deeepgodara'}><FaTwitter sx={styles.banner.team.icons}/></Link>
@@ -141,7 +142,7 @@ const Banner = () => {
                   </Box>
                   <Box as="span" sx={styles.banner.team.avatar}>
                     <Image src={Ruhitha} alt="Ruhitha R." />
-                    <Text as="H3">Ruhitha R.</Text>
+                    <Text as="H3">Ruhitha Reddy</Text>
                     <Box as="p" sx={styles.banner.team.title}>
                       <Text as="p">Community Manager</Text>
                       <Box sx={styles.banner.team.socials}>
@@ -152,8 +153,8 @@ const Banner = () => {
                   </Box>
             </Box>
             </Flex>
-            
-  
+
+
         <Flex sx={styles.banner.row}>
             <Text sx={{
                           fontSize: '32px',
@@ -169,10 +170,10 @@ const Banner = () => {
                         Venture_Partners
                     </Text>
             <Box sx={styles.banner.team}>
-              
+
               <Box as="span" sx={styles.banner.team.avatar}>
                 <Image src={VP} alt="Filippo B." />
-                <Text as="H3">Filippo B.</Text>
+                <Text as="H3">Filippo Bonsanti</Text>
                 <Box sx={styles.banner.team.title}>
                   <Text as="p">CMO @Indeed</Text>
                   <Box sx={styles.banner.team.socials}>
@@ -182,7 +183,7 @@ const Banner = () => {
               </Box>
               <Box as="span" sx={styles.banner.team.avatar}>
                 <Image src={VP} alt="Massimo C." />
-                <Text as="H3">Massimo C.</Text>
+                <Text as="H3">Massimo Carnelos</Text>
                 <Box as="p" sx={styles.banner.team.title}>
                   <Text as="p">Head of Economic @Italian Embassy</Text>
                   <Box sx={styles.banner.team.socials}>
@@ -192,17 +193,17 @@ const Banner = () => {
               </Box>
               <Box as="span" sx={styles.banner.team.avatar}>
                 <Image src={VP} alt="Aapo B." />
-                <Text as="H3">Aapo B.</Text>
+                <Text as="H3">Aapo Bovellan</Text>
                 <Box as="p" sx={styles.banner.team.title}>
                   <Text as="p">Founding Partner @Proxy.VC</Text>
                   <Box sx={styles.banner.team.socials}>
-                    <Link target={'_blank'} to={'https://www.linkedin.com/in/aapobovellan/'}><FaLinkedin sx={styles.banner.team.icons}/></Link>
+                    <Link target={'_blank'} to={'https://www.linkedin.com/in/aapobovellan'}><FaLinkedin sx={styles.banner.team.icons}/></Link>
                   </Box>
                 </Box>
               </Box>
               <Box as="span" sx={styles.banner.team.avatar}>
                 <Image src={VP} alt="Felix H." />
-                <Text as="h3">Felix H.</Text>
+                <Text as="h3">Felix Hovsepian</Text>
                 <Box as="p" sx={styles.banner.team.title}>
                   <Text as="p">Former Professor &#38; CTO</Text>
                   <Box sx={styles.banner.team.socials}>
@@ -212,11 +213,11 @@ const Banner = () => {
               </Box>
               <Box as="span" sx={styles.banner.team.avatar}>
                 <Image src={VP} alt="Marc S." />
-                <Text as="h3">Marc S.</Text>
+                <Text as="h3">Marc Sabas</Text>
                 <Box as="p" sx={styles.banner.team.title}>
                   <Text as="p">Mentor @Techstars, Wayra <br/> Investment Director @Ship2B</Text>
                   <Box sx={styles.banner.team.socials}>
-                    <Link target={'_blank'} to={'https://www.linkedin.com/in/marcsabas/'}><FaLinkedin sx={styles.banner.team.icons}/></Link>
+                    <Link target={'_blank'} to={'https://www.linkedin.com/in/felixhovsepian/'}><FaLinkedin sx={styles.banner.team.icons}/></Link>
                   </Box>
                 </Box>
               </Box>
@@ -232,7 +233,7 @@ const Banner = () => {
               <span sx={{fontSize: '1'}}><FaCopyright/> Silicon Roundabout Ventures @2021</span>
           </Box>
         </Flex>
-        
+
       </Container>
     </Box>
   );
@@ -313,7 +314,7 @@ const styles = {
         display: 'flex',
         flexDirection: 'column',
         flexWrap: 'nowrap',
-        
+
         '@media only screen and (max-width: 992px)': {
               display: 'none',
         },
@@ -369,7 +370,7 @@ const styles = {
         display: 'flex',
         flexDirection: 'column',
         flexWrap: 'nowrap',
-        
+
         '@media only screen and (max-width: 992px)': {
               display: 'none',
         },
@@ -511,7 +512,7 @@ const styles = {
         top: '50%',
         right: '25px',
         transform: 'translateY(-50%)',
-        fontSize: ['16px', '22px'], 
+        fontSize: ['16px', '22px'],
         display: 'flex',
         alignItems: 'center',
 
