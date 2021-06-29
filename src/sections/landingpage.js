@@ -204,7 +204,7 @@ const Banner = () => {
                       marginTop: '80px',
                     },
                   }}>
-                Connecting (<styles sx={styles.banner.content.orange}>Capital</styles>) &#123; <br></br>
+                Connecting (<styles sx={styles.banner.content.yellow}>Capital</styles>) &#123; <br></br>
                 <styles sx={styles.banner.content.pink}>with</styles><br></br>
                 Next-Generation.<styles sx={styles.banner.content.green}>Technologies</styles><br></br>
                  &#125;{/*<br></br><br></br>
@@ -554,7 +554,7 @@ const styles = {
         color: '#5AC4FF',
       },
       yellow: {
-        color: '#FFFF8D',
+        color: '#edbc3e',
       },
       h3: {
         lineHeight: 1.18,

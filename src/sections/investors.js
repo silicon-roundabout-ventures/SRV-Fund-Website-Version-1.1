@@ -44,7 +44,7 @@ import styled from 'styled-components'
 
 import BannerPattern from 'assets/banner-pattern.png';
 import BannerImage from 'assets/banner-image-1.png';
-import blackhole from 'assets/blackhole.gif';
+// import srvgif from 'assets/srv.gif';
 
 
 
@@ -62,7 +62,7 @@ const Banner = () => {
       <Container sx={styles.banner.container}>
         <Flex sx={styles.banner.row}>
           
-           {/* <Image sx={{width:'150px',height: '150px'}} src={blackhole}/> */}
+           {/* <Image sx={{width:'350px',height: '250px'}} src={srvgif}/> */}
            <Text sx={{
                     fontSize: '32px',
                     fontWeight: 'bold',
@@ -82,7 +82,7 @@ const Banner = () => {
 
                     },
                   }}>
-                If you are interested in investing in <styles sx={styles.banner.content.orange}>Next Generation Technologies</styles>, register your interest as an LP below:
+                If you are interested in investing in <styles sx={styles.banner.content.yellow}>Next Generation Technologies</styles>, register your interest as an LP below:
               </Text>
           <Link
               target= '_blank'
@@ -192,8 +192,8 @@ const styles = {
     },
     content: {
       paddingRight: [0, 0, 0, 0, '40px', 0, 0],
-      orange: {
-        color: '#fb966e',
+      yellow: {
+        color: '#edbc3e',
       },
      
       p: {
