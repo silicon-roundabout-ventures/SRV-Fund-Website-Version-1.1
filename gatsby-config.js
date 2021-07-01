@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Silicon Roundabout Ventures`,
+    description: `We are a Community-Driven VC investment vehicle backing UK-based NEXT-GENERATION Tech Startups at pre-seed/seed. Our mission is to help investors capitalise on their Future Success and Mass Adoption.`,
+    author: `@siliconoroundabout.ventures`,
   },
   plugins: [
     `gatsby-plugin-theme-ui`,
