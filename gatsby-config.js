@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Silicon Roundabout Ventures`,
-    description: `We are a Community-Driven VC investment vehicle backing UK-based NEXT-GENERATION Tech Startups at pre-seed/seed. Our mission is to help investors capitalise on their Future Success and Mass Adoption.`,
+    title: 'Silicon Roundabout Ventures',
+    description: 'Community-Driven VC investming in Next-Generation Technology Startups at pre-seed and seed.',
     author: `@siliconoroundabout.ventures`,
   },
   plugins: [
