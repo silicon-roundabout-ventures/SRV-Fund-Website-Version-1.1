@@ -82,7 +82,7 @@ const Banner = () => {
                         marginTop: '0px',
                       },
                     }}>
-                We are a Community-Driven VC investment vehicle backing UK-based NEXT-GENERATION Tech Startups at pre-seed/seed.
+                We are a Community-Driven VC investment vehicle backing NEXT-GENERATION Tech Startups at pre-seed/seed.
                 Our mission is to help investors capitalise on their Future Success and Mass Adoption.
                   <br/>
 
