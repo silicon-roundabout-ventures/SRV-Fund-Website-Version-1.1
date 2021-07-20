@@ -250,6 +250,7 @@ const styles = {
           paddingLeft: '25px',
           paddingRight: '25px',
           color: '#000',
+          fontSize: '20px !important',
           backgroundColor: '#fff',
           borderRadius: '9px',
           marginTop: '40px',

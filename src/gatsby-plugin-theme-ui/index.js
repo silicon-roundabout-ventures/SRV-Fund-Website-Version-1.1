@@ -28,11 +28,10 @@ export default {
     },
   },
   fonts: {
-    body: 'DM Sans',
+    body: 'Menlo, monospace',
     // body:
     //   'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif',
-    heading: 'DM Sans',
-    // heading: 'Bree Serif',
+    heading: 'Menlo, monospace',
     monospace: 'Menlo, monospace',
   },
   fontSizes: [12, 14, 16, 20, 24, 28, 32, 36, 48, 64, 72],

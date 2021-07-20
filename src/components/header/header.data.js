@@ -5,7 +5,7 @@ export default [
   },
   {
     path: '/team',
-    label: 'Who we are',
+    label: 'Team',
   },
   {
     path: '/portfolio',

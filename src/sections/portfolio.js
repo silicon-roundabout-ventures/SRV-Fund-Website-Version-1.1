@@ -82,7 +82,7 @@ const Banner = () => {
                       marginTop: '40px',
                     },
                   }}>
-                Portfolio_Startups ()
+                Portfolio_Startups()
               </Text>
       
 
@@ -119,20 +119,20 @@ const Banner = () => {
                 </Box>
               </Box>
               </Box>
-          </Flex>
-      <Flex sx={styles.banner.row}>
+        </Flex>
+        <Flex sx={styles.banner.row}>
               <Text sx={{
                     fontSize: '32px',
                     fontWeight: 'bold',
                     lineHeight: 2.0,
-                    marginTop: '40px',
+                    marginTop: '0px',
                     color: '#fff',
                     '@media only screen and (max-width: 992px)': {
                       fontSize: '22px',
                       marginTop: '120px',
                     },
                   }}>
-                Community_Startups ()
+                Community_Startups()
               </Text>
 
             <Box sx={styles.banner.community}>
@@ -222,6 +222,7 @@ const styles = {
       justifyContent: 'center',
       rowGap: '40px',
       columnGap: '20px',
+      marginTop: '0px',
 
       '@media only screen and (max-width: 992px)': {
         rowGap: '80px',
@@ -231,7 +232,7 @@ const styles = {
 
       h3:{
         color: 'white',
-        fontSize: '4',
+        fontSize: '20px',
 
         '@media only screen and (max-width: 992px)': {
           fontSize: '16px',
@@ -305,6 +306,10 @@ const styles = {
           margin: ['0px', null, null, null, null, '0'],
           height: '100%',
         },
+
+        h1: {
+          fontSize: '32px',
+        },
       },
     },
 
@@ -312,7 +317,7 @@ const styles = {
       display: 'flex',
       flexDirection: 'row',
       justifyContent: 'space-around',
-      marginTop: '40px',
+      marginTop: '80px',
       alignItems: 'center',
       flexWrap: 'wrap',
       justifyContent: 'center',
@@ -329,7 +334,7 @@ const styles = {
 
       h3:{
         color: 'white',
-        fontSize: '4',
+        fontSize: '20px',
 
         '@media only screen and (max-width: 992px)': {
           fontSize: '16px',
@@ -488,6 +493,12 @@ const styles = {
       },
       green: {
         color: '#9dff65',
+      },
+      red: {
+        color: '#D94738',
+      },
+      yellow: {
+        color: '#edbc3e',
       },
       h3: {
         lineHeight: 1.18,

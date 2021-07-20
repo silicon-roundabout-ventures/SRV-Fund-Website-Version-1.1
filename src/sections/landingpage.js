@@ -54,11 +54,11 @@ import Axiom from 'assets/startups/axiom.png';
 import Ori from 'assets/startups/ori.png';
 import EcoSync from 'assets/startups/ecosync.png';
 
-import Unicorn from 'assets/next_gen/bnw/unicorn.png';
-import Critical from 'assets/next_gen/bnw/critical.png';
-import Defensible from 'assets/next_gen/bnw/defensible.png';
-import Innovative from 'assets/next_gen/bnw/innovative.png';
-import Trending from 'assets/next_gen/bnw/trending.png';
+// import Unicorn from 'assets/next_gen/bnw/unicorn.png';
+// import Critical from 'assets/next_gen/bnw/critical.png';
+// import Defensible from 'assets/next_gen/bnw/defensible.png';
+// import Innovative from 'assets/next_gen/bnw/innovative.png';
+// import Trending from 'assets/next_gen/bnw/trending.png';
 
 import { Link } from 'components/link';
 
@@ -194,14 +194,12 @@ const Banner = () => {
           <Box sx={styles.banner.col}>
             <Box sx={styles.banner.content}>
               <Text sx={{
-                    fontSize: '30px',
+                    fontSize: '32px',
                     fontWeight: 'bold',
                     lineHeight: 1.7,
-                    marginTop: '80px',
                     color: '#fff',
                     '@media only screen and (max-width: 992px)': {
-                      fontSize: '22px',
-                      marginTop: '80px',
+                      fontSize: '20px',
                     },
                   }}>
                 Connecting (<styles sx={styles.banner.content.yellow}>Capital</styles>) &#123; <br></br>
@@ -254,29 +252,61 @@ const Banner = () => {
               </Box>
             </Box>
           </Box> */}
-        <Flex sx={styles.banner.row}>
-          <Text sx={{
-                    fontSize: '24px',
-                    fontWeight: 'bold',
-                    lineHeight: 2.0,
-                    marginTop: '40px',
-                    color: '#fff',
-                    textAlign: 'center',
-
-                    '@media only screen and (max-width: 992px)': {
-                      fontSize: '18px',
+        <Flex sx={styles.banner.row.row2}>
+              <Text sx={{
+                      fontSize: '32px',
+                      fontWeight: 'bold',
+                      lineHeight: 2.0,
+                      marginTop: '80px',
+                      color: '#fff',
+                      '@media only screen and (max-width: 992px)': {
+                        fontSize: '20px',
+                        marginTop: '40px',
+                      },
+                    }}>
+                    &lt;/Who we are&gt;
+              </Text>
+              <Text sx={{
+                      fontSize: '20px',
+                      fontWeight: 'regular',
+                      lineHeight: 2.0,
                       marginTop: '40px',
-                    },
-                  }}>
-                We invest in startups in their very early stage and support them as they build technologies that are:
+                      color: '#fff',
+                      '@media only screen and (max-width: 992px)': {
+                        fontSize: '12px',
+                        marginTop: '20px',
+                      },
+                    }}>
+                We are a Community-Driven VC investment vehicle backing <styles sx={styles.banner.content.yellow}>NEXT-GENERATION</styles> Tech Startups at pre-seed/seed.
+                Our mission is to help investors capitalise on their Future Success and Mass Adoption.
+                  <br/>
+
+                  <ul>
+                  <li>We run the Largest Tech Meetup Community in Europe, giving us direct access to 5000+ startups</li>
+                  <li>We all have Technical Startup/Scaleup Backgrounds, helping us select and support founders</li>
+                  <li>We offer access to our Proprietary Ecosystem to help with specialist hiring and supply chain connections</li>
+                  </ul>
+              </Text>
+              <Text sx={{
+                      fontSize: '32px',
+                      fontWeight: 'bold',
+                      lineHeight: 2.0,
+                      marginTop: '80px',
+                      color: '#fff',
+                      '@media only screen and (max-width: 992px)': {
+                        fontSize: '20px',
+                        marginTop: '40px',
+                      },
+                    }}>
+                    &lt;/What we look for&gt;
               </Text>
 
 
             <Box sx={styles.banner.startups}>
 
               <Box as="span" sx={styles.banner.startups.avatar}>
-                <Image src={Innovative} alt="Innovative" />
-                <Text as="H3">Innovative</Text>
+                {/* <Image src={Innovative} alt="Innovative" /> */}
+                <Text as="H3">&#91; <styles sx={styles.banner.content.red}>Innovative</styles> &#93;</Text>
                 <Box sx={styles.banner.startups.title}>
                   <Text as="p">They leverage significant technological development vs. the status quo</Text>
                   {/* <Box sx={styles.banner.startups.socials}>
@@ -285,8 +315,8 @@ const Banner = () => {
                 </Box>
               </Box>
               <Box as="span" sx={styles.banner.startups.avatar}>
-                <Image src={Critical} alt="Critical" />
-                <Text as="H3">Critical</Text>
+                {/* <Image src={Critical} alt="Critical" /> */}
+                <Text as="H3">&#123; <styles sx={styles.banner.content.red}>Critical</styles> &#125;</Text>
                 <Box as="p" sx={styles.banner.startups.title}>
                   <Text as="p">They solve (or bring to light) essential user needs</Text>
                   {/* <Box sx={styles.banner.startups.socials}>
@@ -295,8 +325,8 @@ const Banner = () => {
                 </Box>
               </Box>
               <Box as="span" sx={styles.banner.startups.avatar}>
-                <Image src={Defensible} alt="Defensible" />
-                <Text as="H3">Defensible</Text>
+                {/* <Image src={Defensible} alt="Defensible" /> */}
+                <Text as="H3">&#183; <styles sx={styles.banner.content.red}>Defensible</styles> &#183;</Text>
                 <Box as="p" sx={styles.banner.startups.title}>
                   <Text as="p">They offer their makers an IP moat against challengers</Text>
                   {/* <Box sx={styles.banner.startups.socials}>
@@ -305,8 +335,8 @@ const Banner = () => {
                 </Box>
               </Box>
               <Box as="span" sx={styles.banner.startups.avatar}>
-                <Image src={Trending} alt="Trending" />
-                <Text as="H3">Trend-Setting</Text>
+                {/* <Image src={Trending} alt="Trending" /> */}
+                <Text as="H3">&#47; <styles sx={styles.banner.content.red}>Trend-Setting</styles> &#47;</Text>
                 <Box as="p" sx={styles.banner.startups.title}>
                   <Text as="p">Disrupt the way an industry operates (1B+ potential revenue in 10+ yrs)</Text>
                   {/* <Box sx={styles.banner.startups.socials}>
@@ -315,8 +345,8 @@ const Banner = () => {
                 </Box>
               </Box>
               <Box as="span" sx={styles.banner.startups.avatar}>
-                <Image src={Unicorn} alt="Unicorn" />
-                <Text as="H3">Unicorn-Material</Text>
+                {/* <Image src={Unicorn} alt="Unicorn" /> */}
+                <Text as="H3">&#60;<styles sx={styles.banner.content.red}> Unicorn </styles>&#62;</Text>
                 <Box as="p" sx={styles.banner.startups.title}>
                   <Text as="p">Potential to make their creators scale 30-100X via M&amp;A or listing exit in 5-8 years</Text>
                   {/* <Box sx={styles.banner.startups.socials}>
@@ -335,7 +365,7 @@ const Banner = () => {
               <Link target={'_blank'} to={'https://github.com/silicon-roundabout-ventures/'}><FaGithub sx={styles.banner.footer.icons}/></Link>
               <Link target={'_blank'} to={'https://twitter.com/SiliconLondon'}><FaTwitter sx={styles.banner.footer.icons}/></Link>
               <Link target={'_blank'} to={'https://www.linkedin.com/company/siliconroundabout/'}><FaLinkedinIn sx={styles.banner.footer.icons}/></Link>
-              <span sx={{fontSize: '1'}}><FaCopyright/> Silicon Roundabout Ventures @2021</span>
+              <span sx={{fontSize: '12px'}}><FaCopyright/> Silicon Roundabout Ventures @2021</span>
           </Box>
         </Flex>
 
@@ -365,12 +395,13 @@ const styles = {
       flexDirection: 'row',
       justifyContent: 'space-between',
       height: '100%',
-      marginTop: '160px',
+      marginTop: '120px',
       alignItems: 'center',
       flexWrap: 'wrap',
 
       '@media only screen and (max-width: 720px)': {
-        marginTop: '70%',
+        marginTop: '0px',
+        marginRight: '20px',
         padding: '10px',
         paddingBottom: '40px',
         justifyContent: 'space-evenly',
@@ -415,7 +446,7 @@ const styles = {
       display: 'flex',
       flexDirection: 'row',
       justifyContent: 'space-around',
-      marginTop: '80px',
+      marginTop: '40px',
       alignItems: 'center',
       flexWrap: 'wrap',
       justifyContent: 'center',
@@ -423,19 +454,26 @@ const styles = {
       columnGap: '40px',
 
       '@media only screen and (max-width: 992px)': {
-        rowGap: '160px',
+        rowGap: '0px',
         columnGap: '40px',
         marginTop: '40px',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'space-around',
+        marginTop: '40px',
+        alignItems: 'center',
+        flexWrap: 'wrap',
+        justifyContent: 'center',
       },
 
       h3:{
         color: 'white',
-        fontSize: '4',
+        fontSize: '32px',
 
         '@media only screen and (max-width: 992px)': {
-          fontSize: '16px',
+          fontSize: '20px',
           maxWidth: 'max-content',
-          width: '200px',
+          width: '250px',
         },
       },
       title:{
@@ -498,8 +536,8 @@ const styles = {
         flex: '0 0 30.333333333%',
         display:'flex',
         flexDirection: 'column',
-        marginBottom: '60px',
-        rowGap: '10px',
+        marginBottom: '40px',
+        rowGap: '20px',
 
         '@media only screen and (max-width: 992px)': {
           width: '45px',
@@ -525,17 +563,44 @@ const styles = {
       // marginRight: '-15px',
       flexDirection: 'column',
       zIndex: '100',
-      // paddingLeft: '40px',
+      paddingLeft: '20px',
+
+      row2: {
+          flexWrap: 'wrap',
+          display: 'flex',
+          // marginLeft: '-15px',
+          // marginRight: '-15px',
+          flexDirection: 'column',
+          zIndex: '100',
+          paddingLeft: '40px',
+          paddingRight: '40px',
+          background: '#0a0a0a',
+          borderRadius: '20px',
+          paddingBottom: '80px',
+
+          '@media only screen and (max-width: 720px)': {
+            pl: '20px',
+            pr: '20px',
+            pb: '20px',
+            mb: '40px',
+            mr: '20px',
+          },
+      },
     },
     col: {
-      pl: '40px',
+      pl: '0px',
       pr: '0px',
+      mt: '120px',
+      mb: '80px',
       flex: ['1 1 100%', null, '0 0 50%'],
       zIndex: '100',
 
-      '@media only screen and (max-width: 992px)': {
-        pl: '15px',
-        pr: '15px',
+      '@media only screen and (max-width: 720px)': {
+        pl: '0px',
+        pr: '0px',
+        mt: '120px',
+        mb: '40px',
+        mr: '20px',
       },
 
     },
@@ -556,8 +621,11 @@ const styles = {
       yellow: {
         color: '#edbc3e',
       },
+      red: {
+        color: '#D94738',
+      },
       h3: {
-        lineHeight: 1.18,
+        lineHeight: 2,
         color: 'black',
         fontWeight: 'bold',
         position: 'relative',
@@ -638,7 +706,7 @@ const styles = {
         top: '50%',
         right: '25px',
         transform: 'translateY(-50%)',
-        fontSize: ['16px', '22px'],
+        fontSize: ['16px', '20px'],
         display: 'flex',
         alignItems: 'center',
 
@@ -648,6 +716,7 @@ const styles = {
           alignItems: 'center',
           color: '#000',
           width: '100%',
+          fontSize: '20px !important',
           backgroundColor: '#fff',
           borderRadius: '9px',
           textAlign: 'center',
@@ -655,6 +724,10 @@ const styles = {
             color: '#000',
             backgroundColor: 'grey',
             borderRadius: '9px',
+          },
+          '@media only screen and (max-width: 720px)': {
+            fontSize: '16px !important',
+            width: '70%',
           },
         },
         button2: {
