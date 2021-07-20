@@ -278,7 +278,7 @@ const Banner = () => {
                       },
                     }}>
                 We are a Community-Driven VC investment vehicle backing <styles sx={styles.banner.content.yellow}>NEXT-GENERATION</styles> Tech Startups at pre-seed/seed.
-                Our mission is to help investors capitalise on their Future Success and Mass Adoption.
+                Our mission is to back resilient founders with not just capital but also provide support with corporate connections, industry experts and VC introductions, paving a way for the future unicorn!
                   <br/>
 
                   <ul>
@@ -298,7 +298,7 @@ const Banner = () => {
                         marginTop: '80px',
                       },
                     }}>
-                    &lt;/What we look for&gt;
+                    &lt;/We invest in startups that are&gt;
               </Text>
 
 
@@ -346,7 +346,7 @@ const Banner = () => {
               </Box>
               <Box as="span" sx={styles.banner.startups.avatar}>
                 {/* <Image src={Unicorn} alt="Unicorn" /> */}
-                <Text as="H3">&#60;<styles sx={styles.banner.content.red}> Unicorn </styles>&#62;</Text>
+                <Text as="H3">&#60;<styles sx={styles.banner.content.red}> Unicorn-Material </styles>&#62;</Text>
                 <Box as="p" sx={styles.banner.startups.title}>
                   <Text as="p">Potential to make their creators scale 30-100X via M&amp;A or listing exit in 5-8 years</Text>
                   {/* <Box sx={styles.banner.startups.socials}>
@@ -467,12 +467,13 @@ const styles = {
 
       h3:{
         color: 'white',
-        fontSize: '32px',
+        fontSize: '26px',
+        
 
         '@media only screen and (max-width: 992px)': {
           fontSize: '20px',
           maxWidth: 'max-content',
-          width: '250px',
+          width: '300px',
         },
       },
       title:{

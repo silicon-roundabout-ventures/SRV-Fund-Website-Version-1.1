@@ -184,6 +184,14 @@ const Banner = () => {
                 <Text as="h3">Oxbotica </Text>
                
               </Box>
+              <Box as="span" sx={styles.banner.community.avatar}>
+                {/* <Image src={Oxbotica} alt="Oxbotica" /> */}
+                <Text as="h3" sx={{
+                  fontSize: '32px !important',
+                  '@media only screen and (max-width: 992px)': { fontSize: '20px !important'},
+                  }}> + 5000 more</Text>
+               
+              </Box>
             </Box>
         </Flex>
 
@@ -417,7 +425,7 @@ const styles = {
       flexDirection: 'row',
       justifyContent: 'space-between',
       height: '100%',
-      marginTop: '160px',
+      marginTop: '40px',
       alignItems: 'center',
       flexWrap: 'wrap',
 
