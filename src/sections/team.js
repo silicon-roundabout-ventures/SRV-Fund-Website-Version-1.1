@@ -78,7 +78,7 @@ const Banner = () => {
 
                   <Box as="span" sx={styles.banner.team.avatar}>
                     <Image src={Franco} alt="Francesco P." />
-                    <Text as="H2">Francesco Perticarari</Text>
+                    <Text as="H3">Francesco Perticarari</Text>
                     <Box sx={styles.banner.team.title}>
                       <Text as="p">Managing Partner</Text>
                       <Box sx={styles.banner.team.socials}>
@@ -89,7 +89,7 @@ const Banner = () => {
                   </Box>
                   <Box as="span" sx={styles.banner.team.avatar}>
                     <Image src={Paul} alt="Paul D." />
-                    <Text as="H2">Paul Dinulescu</Text>
+                    <Text as="H3">Paul Dinulescu</Text>
                     <Box as="p" sx={styles.banner.team.title}>
                       <Text as="p">General Partner</Text>
                       <Box sx={styles.banner.team.socials}>
@@ -99,7 +99,7 @@ const Banner = () => {
                   </Box>
                   <Box as="span" sx={styles.banner.team.avatar}>
                     <Image src={Deep} alt="Lord Deep" />
-                    <Text as="H2">Deep Godara</Text>
+                    <Text as="H3">Deep Godara</Text>
                     <Box as="p" sx={styles.banner.team.title}>
                       <Text as="p">Analyst</Text>
                       <Box sx={styles.banner.team.socials}>
@@ -112,7 +112,7 @@ const Banner = () => {
                   </Box>
                   <Box as="span" sx={styles.banner.team.avatar}>
                     <Image src={Ruhitha} alt="Ruhitha R." />
-                    <Text as="H2">Ruhitha Reddy</Text>
+                    <Text as="H3">Ruhitha Reddy</Text>
                     <Box as="p" sx={styles.banner.team.title}>
                       <Text as="p">Community Manager</Text>
                       <Box sx={styles.banner.team.socials}>
@@ -143,7 +143,7 @@ const Banner = () => {
 
               <Box as="span" sx={styles.banner.team.avatar}>
                 <Image src={Filippo} alt="Filippo B." />
-                <Text as="H2">Filippo Bonsanti</Text>
+                <Text as="H3">Filippo Bonsanti</Text>
                 <Box sx={styles.banner.team.title}>
                   <Text as="p">CMO @Indeed</Text>
                   <Box sx={styles.banner.team.socials}>
@@ -153,7 +153,7 @@ const Banner = () => {
               </Box>
               {/* <Box as="span" sx={styles.banner.team.avatar}>
                 <Image src={VP} alt="Massimo C." />
-                <Text as="H2">Massimo Carnelos</Text>
+                <Text as="H3">Massimo Carnelos</Text>
                 <Box as="p" sx={styles.banner.team.title}>
                   <Text as="p">Head of Economic @Italian Embassy</Text>
                   <Box sx={styles.banner.team.socials}>
@@ -163,7 +163,7 @@ const Banner = () => {
               </Box> */}
               <Box as="span" sx={styles.banner.team.avatar}>
                 <Image src={Aapo} alt="Aapo B." />
-                <Text as="H2">Aapo Bovellan</Text>
+                <Text as="H3">Aapo Bovellan</Text>
                 <Box as="p" sx={styles.banner.team.title}>
                   <Text as="p">Founding Partner @Proxy.VC</Text>
                   <Box sx={styles.banner.team.socials}>
@@ -173,7 +173,7 @@ const Banner = () => {
               </Box>
               <Box as="span" sx={styles.banner.team.avatar}>
                 <Image src={Felix} alt="Felix H." />
-                <Text as="H2">Felix Hovsepian</Text>
+                <Text as="H3">Felix Hovsepian</Text>
                 <Box as="p" sx={styles.banner.team.title}>
                   <Text as="p">Former Professor &#38; CTO</Text>
                   <Box sx={styles.banner.team.socials}>
@@ -183,7 +183,7 @@ const Banner = () => {
               </Box>
               <Box as="span" sx={styles.banner.team.avatar}>
                 <Image src={Marc} alt="Marc S." />
-                <Text as="H2">Marc Sabas</Text>
+                <Text as="H3">Marc Sabas</Text>
                 <Box as="p" sx={styles.banner.team.title}>
                   <Text as="p">Mentor @Techstars, Wayra <br/> Investment Director @Ship2B</Text>
                   <Box sx={styles.banner.team.socials}>
@@ -200,7 +200,7 @@ const Banner = () => {
               <Link target={'_blank'} to={'https://github.com/silicon-roundabout-ventures/'}><FaGithub sx={styles.banner.footer.icons}/></Link>
               <Link target={'_blank'} to={'https://twitter.com/SiliconLondon'}><FaTwitter sx={styles.banner.footer.icons}/></Link>
               <Link target={'_blank'} to={'https://www.linkedin.com/company/siliconroundabout/'}><FaLinkedinIn sx={styles.banner.footer.icons}/></Link>
-              <span sx={{fontSize: '1'}}><FaCopyright/> Silicon Roundabout Ventures @2021</span>
+              <span sx={{fontSize: '12px'}}><FaCopyright/> Silicon Roundabout Ventures @2021</span>
           </Box>
         </Flex>
 
@@ -229,7 +229,7 @@ const styles = {
       alignItems: 'center',
       flexWrap: 'wrap',
       justifyContent: 'center',
-      rowGap: '40px',
+      rowGap: '80px',
       columnGap: '20px',
 
       '@media only screen and (max-width: 992px)': {
@@ -240,14 +240,17 @@ const styles = {
 
       h3:{
         color: 'white',
-        fontSize: '32px',
+        fontSize: '20px',
+        mt:'10px',
 
         '@media only screen and (max-width: 992px)': {
-          fontSize: '16px',
+          fontSize: '12px',
           maxWidth: 'max-content',
           width: '200px',
+          mt:'10px',
         },
       },
+
       title:{
         display: 'flex',
         flexDirection: 'column',

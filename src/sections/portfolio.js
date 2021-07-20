@@ -327,7 +327,7 @@ const styles = {
       '@media only screen and (max-width: 992px)': {
         rowGap: '80px',
         columnGap: '40px',
-        marginTop: '20px',
+        marginTop: '40px',
       },
 
 
@@ -469,12 +469,12 @@ const styles = {
       flexWrap: 'wrap',
       display: 'flex',
       marginLeft: '25px',
-      marginRight: '-15px',
+      marginRight: '0px',
       flexDirection: 'column',
 
       '@media only screen and (max-width: 992px)': {
         marginLeft: '0px',
-        marginRight: '-15px',
+        marginRight: '0px',
       },
     },
     col: {
