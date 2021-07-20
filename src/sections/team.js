@@ -70,6 +70,7 @@ const Banner = () => {
                       '@media only screen and (max-width: 992px)': {
                         fontSize: '22px',
                         marginTop: '40px',
+                        ml: '20px',
                       },
                     }}>
                   Team_
@@ -135,6 +136,7 @@ const Banner = () => {
                           '@media only screen and (max-width: 992px)': {
                             fontSize: '22px',
                             marginTop: '40px',
+                            ml: '20px',
                           },
                           }}>
                         Venture_Partners

@@ -80,6 +80,7 @@ const Banner = () => {
                     '@media only screen and (max-width: 992px)': {
                       fontSize: '22px',
                       marginTop: '40px',
+                      ml: '20px',
                     },
                   }}>
                 Portfolio_Startups()
@@ -130,6 +131,7 @@ const Banner = () => {
                     '@media only screen and (max-width: 992px)': {
                       fontSize: '22px',
                       marginTop: '120px',
+                      ml: '20px',
                     },
                   }}>
                 Community_Startups()
@@ -193,7 +195,7 @@ const Banner = () => {
               <Link target={'_blank'} to={'https://github.com/silicon-roundabout-ventures/'}><FaGithub sx={styles.banner.footer.icons}/></Link>
               <Link target={'_blank'} to={'https://twitter.com/SiliconLondon'}><FaTwitter sx={styles.banner.footer.icons}/></Link>
               <Link target={'_blank'} to={'https://www.linkedin.com/company/siliconroundabout/'}><FaLinkedinIn sx={styles.banner.footer.icons}/></Link>
-              <span sx={{fontSize: '1'}}><FaCopyright/> Silicon Roundabout Ventures @2021</span>
+              <span sx={{fontSize: '12px'}}><FaCopyright/> Silicon Roundabout Ventures @2021</span>
           </Box>
       </Container>
     </Box>
@@ -420,7 +422,7 @@ const styles = {
       flexWrap: 'wrap',
 
       '@media only screen and (max-width: 720px)': {
-        marginTop: '120px',
+        marginTop: '80px',
         padding: '10px',
         paddingBottom: '40px',
         justifyContent: 'space-evenly',
