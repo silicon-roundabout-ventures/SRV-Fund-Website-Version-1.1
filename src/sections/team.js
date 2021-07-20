@@ -69,7 +69,7 @@ const Banner = () => {
                       color: '#fff',
                       '@media only screen and (max-width: 992px)': {
                         fontSize: '22px',
-                        marginTop: '20px',
+                        marginTop: '40px',
                       },
                     }}>
                   Team_
@@ -134,18 +134,19 @@ const Banner = () => {
                           color: '#fff',
                           '@media only screen and (max-width: 992px)': {
                             fontSize: '22px',
-                            marginTop: '80px',
+                            marginTop: '40px',
                           },
                           }}>
                         Venture_Partners
                     </Text>
-            <Box sx={styles.banner.team}>
+            <Box sx={styles.banner.vp}>
 
               <Box as="span" sx={styles.banner.team.avatar}>
                 <Image src={Filippo} alt="Filippo B." />
                 <Text as="H3">Filippo Bonsanti</Text>
                 <Box sx={styles.banner.team.title}>
-                  <Text as="p">CMO @Indeed</Text>
+                  <Text as="p">VP of Marketing</Text>
+                  <Text as="p">(Indeed, Omio, Ebay) </Text>
                   <Box sx={styles.banner.team.socials}>
                     <Link target={'_blank'} to={'https://www.linkedin.com/in/filippobonsanti/'}><FaLinkedin sx={styles.banner.team.icons}/></Link>
                   </Box>
@@ -155,7 +156,8 @@ const Banner = () => {
                 <Image src={Massimo} alt="Massimo C." />
                 <Text as="H3">Massimo Carnelos</Text>
                 <Box as="p" sx={styles.banner.team.title}>
-                  <Text as="p">Head of Economic @Italian Embassy</Text>
+                  <Text as="p">20+ yrs of Global Gvt. relations </Text>
+                  <Text as="p">Policy, Finance, &amp; Tech Promotion</Text>
                   <Box sx={styles.banner.team.socials}>
                     <Link target={'_blank'} to={'https://www.linkedin.com/in/massimo-carnelos-077606b2/'}><FaLinkedin sx={styles.banner.team.icons}/></Link>
                   </Box>
@@ -165,7 +167,8 @@ const Banner = () => {
                 <Image src={Aapo} alt="Aapo B." />
                 <Text as="H3">Aapo Bovellan</Text>
                 <Box as="p" sx={styles.banner.team.title}>
-                  <Text as="p">Founding Partner @Proxy.VC</Text>
+                  <Text as="p">Branding Expert</Text>
+                  <Text as="p">(GP at Proxy VC)</Text>
                   <Box sx={styles.banner.team.socials}>
                     <Link target={'_blank'} to={'https://www.linkedin.com/in/aapobovellan'}><FaLinkedin sx={styles.banner.team.icons}/></Link>
                   </Box>
@@ -175,7 +178,8 @@ const Banner = () => {
                 <Image src={Felix} alt="Felix H." />
                 <Text as="H3">Felix Hovsepian</Text>
                 <Box as="p" sx={styles.banner.team.title}>
-                  <Text as="p">Former Professor &#38; CTO</Text>
+                  <Text as="p">Ex. Professor &amp; CTO</Text>
+                  <Text as="p">Expert in Complex Algorithms, ML</Text>
                   <Box sx={styles.banner.team.socials}>
                     <Link target={'_blank'} to={'https://www.linkedin.com/in/felixhovsepian/'}><FaLinkedin sx={styles.banner.team.icons}/></Link>
                   </Box>
@@ -233,9 +237,14 @@ const styles = {
       columnGap: '20px',
 
       '@media only screen and (max-width: 992px)': {
-        marginTop: '10px',
-        rowGap: '60px',
-        columnGap: '60px',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'space-around',
+        marginTop: '40px',
+        alignItems: 'center',
+        flexWrap: 'wrap',
+        justifyContent: 'center',
+        rowGap: '0px',
       },
 
       h3:{
@@ -244,9 +253,9 @@ const styles = {
         mt:'10px',
 
         '@media only screen and (max-width: 992px)': {
-          fontSize: '12px',
+          fontSize: '16px',
           maxWidth: 'max-content',
-          width: '200px',
+          width: '300px',
           mt:'10px',
         },
       },
@@ -261,9 +270,9 @@ const styles = {
           fontSize: '16px',
 
           '@media only screen and (max-width: 992px)': {
-            fontSize: '10px',
+            fontSize: '12px',
             maxWidth: 'max-content',
-            width: '200px',
+            width: '300px',
           },
         },
       },
@@ -309,8 +318,111 @@ const styles = {
         marginBottom: '60px',
 
         '@media only screen and (max-width: 992px)': {
-          width: '80px',
-          height: '80px',
+          
+        },
+
+        img: {
+          margin: ['0px', null, null, null, null, '0'],
+          height: '100%',
+          borderRadius: '100%',
+        },
+      },
+    },
+
+    vp: {
+      display: 'flex',
+      flexDirection: 'row',
+      justifyContent: 'space-around',
+      marginTop: '40px',
+      alignItems: 'center',
+      flexWrap: 'wrap',
+      justifyContent: 'center',
+      rowGap: '160px',
+      columnGap: '20px',
+
+      '@media only screen and (max-width: 992px)': {
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'space-around',
+        marginTop: '40px',
+        alignItems: 'center',
+        flexWrap: 'wrap',
+        justifyContent: 'center',
+        rowGap: '0px',
+      },
+
+      h3:{
+        color: 'white',
+        fontSize: '20px',
+        mt:'10px',
+
+        '@media only screen and (max-width: 992px)': {
+          fontSize: '16px',
+          maxWidth: 'max-content',
+          width: '300px',
+          mt:'10px',
+        },
+      },
+
+      title:{
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+
+        p: {
+          color: 'white',
+          fontSize: '16px',
+
+          '@media only screen and (max-width: 992px)': {
+            fontSize: '12px',
+            maxWidth: 'max-content',
+            width: '300px',
+          },
+        },
+      },
+
+      icons: {
+        color:'white',
+        marginLeft: '5px',
+        marginRight: '5px',
+      },
+
+      socials: {
+        display: 'flex',
+        flexDirection: 'row',
+
+      },
+
+      contact: {
+        fontSize: 2,
+        color: '#fff',
+        flex: '0 0 84%',
+        display: 'flex',
+        flexDirection: 'column',
+        flexWrap: 'nowrap',
+
+        '@media only screen and (max-width: 992px)': {
+              display: 'none',
+        },
+
+        text: {
+          fontSize: 2,
+          color: '#fff',
+          flex: '0 0 84%',
+        },
+      },
+
+      avatar: {
+        height: '130px',
+        width: '130px',
+        alignItems: 'center',
+        flex: '0 0 30.333333333%',
+        display:'flex',
+        flexDirection: 'column',
+        marginBottom: '60px',
+
+        '@media only screen and (max-width: 992px)': {
+
         },
 
         img: {
@@ -331,7 +443,7 @@ const styles = {
       flexWrap: 'wrap',
 
       '@media only screen and (max-width: 720px)': {
-        marginTop: '120px',
+        marginTop: '0px',
         padding: '10px',
         paddingBottom: '40px',
         justifyContent: 'space-evenly',
