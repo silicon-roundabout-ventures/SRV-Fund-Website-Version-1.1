@@ -41,7 +41,7 @@ import Paul from 'assets/team/paul.jpeg';
 import Franco from 'assets/team/franco.jpeg';
 import Deep from 'assets/team/deep.jpeg';
 import Ruhitha from 'assets/team/ruhitha.jpeg';
-import VP from 'assets/team/vp.png';
+import Massimo from 'assets/team/massimo.jpeg';
 import Filippo from 'assets/team/filippo.jpeg';
 import Aapo from 'assets/team/aapo.jpeg';
 import Marc from 'assets/team/marc.jpeg';
@@ -151,8 +151,8 @@ const Banner = () => {
                   </Box>
                 </Box>
               </Box>
-              {/* <Box as="span" sx={styles.banner.team.avatar}>
-                <Image src={VP} alt="Massimo C." />
+              <Box as="span" sx={styles.banner.team.avatar}>
+                <Image src={Massimo} alt="Massimo C." />
                 <Text as="H3">Massimo Carnelos</Text>
                 <Box as="p" sx={styles.banner.team.title}>
                   <Text as="p">Head of Economic @Italian Embassy</Text>
@@ -160,7 +160,7 @@ const Banner = () => {
                     <Link target={'_blank'} to={'https://www.linkedin.com/in/massimo-carnelos-077606b2/'}><FaLinkedin sx={styles.banner.team.icons}/></Link>
                   </Box>
                 </Box>
-              </Box> */}
+              </Box>
               <Box as="span" sx={styles.banner.team.avatar}>
                 <Image src={Aapo} alt="Aapo B." />
                 <Text as="H3">Aapo Bovellan</Text>
