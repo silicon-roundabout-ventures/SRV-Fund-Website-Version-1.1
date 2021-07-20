@@ -295,7 +295,7 @@ const Banner = () => {
                       color: '#fff',
                       '@media only screen and (max-width: 992px)': {
                         fontSize: '20px',
-                        marginTop: '40px',
+                        marginTop: '80px',
                       },
                     }}>
                     &lt;/What we look for&gt;
@@ -454,13 +454,12 @@ const styles = {
       columnGap: '40px',
 
       '@media only screen and (max-width: 992px)': {
-        rowGap: '0px',
-        columnGap: '40px',
-        marginTop: '40px',
+        rowGap: '20px',
+        columnGap: '0px',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'space-around',
-        marginTop: '40px',
+        marginTop: '20px',
         alignItems: 'center',
         flexWrap: 'wrap',
         justifyContent: 'center',
