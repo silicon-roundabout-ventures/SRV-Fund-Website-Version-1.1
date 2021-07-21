@@ -278,7 +278,7 @@ const Banner = () => {
                       },
                     }}>
                 We are a Community-Driven VC investment vehicle backing <styles sx={styles.banner.content.yellow}>NEXT-GENERATION</styles> Tech Startups at pre-seed/seed.
-                Our mission is to back resilient founders with not just capital but also provide support with corporate connections, industry experts and VC introductions, paving a way for the future unicorn!
+                Our mission is to help their founders with investment capital and hands-on support on as they scale towards Future Success and Mass Adoption!
                   <br/>
 
                   <ul>
@@ -298,7 +298,7 @@ const Banner = () => {
                         marginTop: '80px',
                       },
                     }}>
-                    &lt;/We invest in startups that are&gt;
+                    &lt;/We invest in startups whose technology is&gt;
               </Text>
 
 
@@ -468,7 +468,7 @@ const styles = {
       h3:{
         color: 'white',
         fontSize: '26px',
-        
+
 
         '@media only screen and (max-width: 992px)': {
           fontSize: '20px',
