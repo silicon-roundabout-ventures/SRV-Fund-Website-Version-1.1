@@ -277,8 +277,8 @@ const Banner = () => {
                         marginTop: '20px',
                       },
                     }}>
-                We are a Community-Driven VC investment vehicle backing <styles sx={styles.banner.content.yellow}>NEXT-GENERATION</styles> Tech Startups at pre-seed/seed.
-                Our mission is to help their founders with investment capital and hands-on support on as they scale towards Future Success and Mass Adoption!
+                <p>We are a Community-Driven VC investment vehicle backing <styles sx={styles.banner.content.yellow}>NEXT-GENERATION</styles> Tech Startups at pre-seed/seed.</p>
+                <p>Our mission is to help their founders with investment capital and hands-on support on as they scale towards Future Success and Mass Adoption!</p>
                   <br/>
 
                   <ul>
