@@ -5,7 +5,7 @@ export default [
   },
   {
     path: '/team',
-    label: 'Team',
+    label: 'Who we are',
   },
   {
     path: '/portfolio',
@@ -15,17 +15,10 @@ export default [
     path: 'https://siliconroundabout.tech/',
     label: 'Community',
   },
-<<<<<<< Updated upstream
-=======
   // {
   //   path: '/docuseries',
   //   label: 'How to Start UP',
   // },
->>>>>>> Stashed changes
-  {
-    path: '/docuseries',
-    label: 'How to Start UP',
-  },
   {
     path: 'https://siliconroundabout.tech/the-silicon-roundabout-blog/',
     label: 'Blog',
