@@ -243,7 +243,7 @@ export default {
     h3: {
       margin: 0,
       fontSize: ['24px', null, null, '36px'],
-      color: 'black',
+      color: 'white',
       fontWeight: 'bold',
       lineHeight: 1.53,
       whiteSpace: 'pre-line',
