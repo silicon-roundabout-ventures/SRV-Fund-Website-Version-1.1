@@ -16,6 +16,10 @@ export default [
     label: 'Community',
   },
   {
+    path: '/docuseries',
+    label: 'How to Start UP',
+  },
+  {
     path: 'https://siliconroundabout.tech/the-silicon-roundabout-blog/',
     label: 'Blog',
   },
