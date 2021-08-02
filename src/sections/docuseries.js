@@ -21,7 +21,7 @@ import Particles from 'react-particles-js';
 import styled from 'styled-components'
 
 
-import Mailchimp from 'components/mailchimp';
+// import Mailchimp from 'components/mailchimp';
 
 import { Link } from 'components/link';
 
@@ -173,14 +173,16 @@ const Banner = () => {
                     fontWeight: '100',
                     lineHeight: 2,
                     color: '#fff',
+                    width: '1080px',
                     // display: 'flex',
                     // flexDirection: 'column',
                     // alignItems: 'center',
                     '@media only screen and (max-width: 992px)': {
                       fontSize: '10px',
+                      width: 'auto',
                     },
                   }}>
-                A 20 Episodes docuseries featuring real-life stories and actionable insights from entrepreneurs, executives, <br></br> and investors who have built billion dollar startups or helped founders get there.
+                A 20 Episodes docuseries featuring real-life stories and actionable insights from entrepreneurs, executives, and investors who have built billion dollar startups or helped founders get there.
                 </Text>
                   <Text sx={{
                       fontSize: '18px',
