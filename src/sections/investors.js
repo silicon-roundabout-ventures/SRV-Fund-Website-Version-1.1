@@ -4,15 +4,8 @@ import {
   Box,
   Flex,
   Container,
-  Image,
-  Heading,
   Text,
-  Input,
-  Button,
-  Paragraph,
   jsx,
-  Spinner,
-  Label,
 } from 'theme-ui';
 
 import {
@@ -21,29 +14,12 @@ import {
   FaTwitter,
   FaLocationArrow,
   FaMailBulk,
-  FaLinkedin,
-  FaMailchimp,
   FaCopyright,
-  FaTerminal,
-  FaPlaystation,
-  FaNetworkWired,
-  FaLightbulb,
-  FaRegLightbulb,
-  FaAtom,
-  FaPoundSign,
-  FaGgCircle,
-  FaFolderMinus,
-  FaUserNurse,
-  FaRobot,
-  FaRegistered
 } from "react-icons/fa"
 
-import React from 'react';
 
 import styled from 'styled-components'
 
-import BannerPattern from 'assets/banner-pattern.png';
-import BannerImage from 'assets/banner-image-1.png';
 // import srvgif from 'assets/srv.gif';
 
 

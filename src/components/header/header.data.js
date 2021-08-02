@@ -1,8 +1,8 @@
 export default [
-  {
-    path: '/',
-    label: 'Home',
-  },
+  // {
+  //   path: '/',
+  //   label: 'Home',
+  // },
   {
     path: '/team',
     label: 'Who we are',
@@ -15,12 +15,12 @@ export default [
     path: 'https://siliconroundabout.tech/',
     label: 'Community',
   },
-  // {
-  //   path: '/docuseries',
-  //   label: 'How to Start UP',
-  // },
   {
-    path: 'https://siliconroundabout.tech/the-silicon-roundabout-blog/',
-    label: 'Blog',
+    path: '/engineer-startup',
+    label: 'Engineer A Startup',
   },
+  // {
+  //   path: 'https://siliconroundabout.tech/the-silicon-roundabout-blog/',
+  //   label: 'Blog',
+  // },
 ];

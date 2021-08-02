@@ -5,11 +5,7 @@ import {
   Flex,
   Container,
   Image,
-  Heading,
   Text,
-  Input,
-  Button,
-  Paragraph,
   jsx,
 } from 'theme-ui';
 
@@ -19,29 +15,13 @@ import {
   FaTwitter,
   FaLocationArrow,
   FaMailBulk,
-  FaLinkedin,
-  FaMailchimp,
   FaCopyright,
-  FaTerminal,
-  FaPlaystation,
   FaNetworkWired,
-  FaLightbulb,
   FaRegLightbulb,
-  FaAtom,
-  FaPoundSign,
-  FaGgCircle,
-  FaFolderMinus,
-  FaUserNurse,
   FaRobot
 } from "react-icons/fa"
 
-import React from 'react';
-
 import styled from 'styled-components'
-
-import BannerPattern from 'assets/banner-pattern.png';
-import BannerImage from 'assets/banner-image-1.png';
-import PartnerImage from 'assets/brands.svg';
 
 import Proximie from 'assets/startups/community/proximie.png';
 import Argeo from 'assets/startups/community/argeo.png';
@@ -225,7 +205,6 @@ const styles = {
     startups: {
       display: 'flex',
       flexDirection: 'row',
-      justifyContent: 'space-around',
       // marginTop: '40px',
       alignItems: 'center',
       flexWrap: 'wrap',
@@ -326,7 +305,6 @@ const styles = {
     community: {
       display: 'flex',
       flexDirection: 'row',
-      justifyContent: 'space-around',
       marginTop: '80px',
       alignItems: 'center',
       flexWrap: 'wrap',

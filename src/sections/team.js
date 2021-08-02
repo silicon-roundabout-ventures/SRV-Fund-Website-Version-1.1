@@ -5,11 +5,7 @@ import {
   Flex,
   Container,
   Image,
-  Heading,
   Text,
-  Input,
-  Button,
-  Paragraph,
   jsx,
 } from 'theme-ui';
 
@@ -23,20 +19,10 @@ import {
   FaMailchimp,
   FaCopyright,
   FaTerminal,
-  FaChargingStation,
-  FaEarlybirds,
-  FaPoundSign,
-  FaMeetup,
-  FaHireAHelper,
 } from "react-icons/fa"
-
-import React from 'react';
 
 import styled from 'styled-components'
 
-import BannerPattern from 'assets/banner-pattern.png';
-import BannerImage from 'assets/banner-image-1.png';
-import PartnerImage from 'assets/brands.svg';
 import Paul from 'assets/team/paul.jpeg';
 import Franco from 'assets/team/franco.jpeg';
 import Deep from 'assets/team/deep.jpeg';
@@ -106,7 +92,7 @@ const Banner = () => {
                       <Box sx={styles.banner.team.socials}>
                         <Link target={'_blank'} to={'https://www.linkedin.com/in/deepgodara/'}><FaLinkedin sx={styles.banner.team.icons}/></Link>
                         <Link target={'_blank'} to={'https://twitter.com/deeepgodara'}><FaTwitter sx={styles.banner.team.icons}/></Link>
-                        <a target={'_blank'} href='mailto:deep@siliconroundabout.tech'><FaTerminal sx={styles.banner.team.icons}/></a>
+                        <a aria-label="email" target={'_blank'} rel="noopener noreferrer" href='mailto:deep@siliconroundabout.tech'><FaTerminal sx={styles.banner.team.icons}/></a>
                         <Link target={'_blank'} to={'https://github.com/deepgodara'}><FaGithub sx={styles.banner.team.icons}/></Link>
                       </Box>
                     </Box>
@@ -118,7 +104,7 @@ const Banner = () => {
                       <Text as="p">Community Manager</Text>
                       <Box sx={styles.banner.team.socials}>
                         <Link target={'_blank'} to={'https://www.linkedin.com/in/ruhitha-reddy-7239b2162/'}><FaLinkedin sx={styles.banner.team.icons}/></Link>
-                        <a href='mailto:ruhitha@siliconroundabout.tech'><FaMailchimp sx={styles.banner.team.icons}/></a>
+                        <a aria-label="email" target={'_blank'} rel="noopener noreferrer" href='mailto:ruhitha@siliconroundabout.tech'><FaMailchimp sx={styles.banner.team.icons}/></a>
                       </Box>
                     </Box>
                   </Box>
@@ -230,7 +216,6 @@ const styles = {
     team: {
       display: 'flex',
       flexDirection: 'row',
-      justifyContent: 'space-around',
       marginTop: '40px',
       alignItems: 'center',
       flexWrap: 'wrap',
@@ -241,7 +226,6 @@ const styles = {
       '@media only screen and (max-width: 992px)': {
         display: 'flex',
         flexDirection: 'column',
-        justifyContent: 'space-around',
         marginTop: '40px',
         alignItems: 'center',
         flexWrap: 'wrap',
@@ -334,7 +318,6 @@ const styles = {
     vp: {
       display: 'flex',
       flexDirection: 'row',
-      justifyContent: 'space-around',
       marginTop: '40px',
       alignItems: 'center',
       flexWrap: 'wrap',
@@ -345,7 +328,6 @@ const styles = {
       '@media only screen and (max-width: 992px)': {
         display: 'flex',
         flexDirection: 'column',
-        justifyContent: 'space-around',
         marginTop: '40px',
         alignItems: 'center',
         flexWrap: 'wrap',

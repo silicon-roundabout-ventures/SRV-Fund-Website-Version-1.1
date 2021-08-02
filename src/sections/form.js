@@ -33,7 +33,7 @@ import React, { Component } from 'react';
 
 // import VideoBtn from 'components/video-btn';
 import Particles from 'react-particles-js';
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 import BannerBG from 'assets/banner-bg-1-1.png';
 import BannerTextLine from 'assets/banner-text-line.png';

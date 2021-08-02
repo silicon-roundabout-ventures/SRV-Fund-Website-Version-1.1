@@ -4,12 +4,7 @@ import {
   Box,
   Flex,
   Container,
-  Image,
-  Heading,
   Text,
-  Input,
-  Button,
-  Paragraph,
   jsx,
 } from 'theme-ui';
 
@@ -19,46 +14,11 @@ import {
   FaTwitter,
   FaLocationArrow,
   FaMailBulk,
-  FaLinkedin,
-  FaMailchimp,
   FaCopyright,
-  FaTerminal,
-  FaPlaystation,
-  FaNetworkWired,
-  FaLightbulb,
-  FaRegLightbulb,
-  FaAtom,
-  FaPoundSign,
-  FaGgCircle,
-  FaFolderMinus,
-  FaUserNurse,
-  FaRobot,
-  FaArrowLeft,
-  FaArrowCircleLeft,
-  FaArrowAltCircleLeft,
-  FaArrowsAlt,
-  FaArrowsAltH,
-  FaArrowsAltV,
-  FaCentercode,
-  FaLifeRing,
-  FaLongArrowAltLeft,
 } from "react-icons/fa"
 
-import React from 'react';
-
-// import VideoBtn from 'components/video-btn';
 import Particles from 'react-particles-js';
 import styled from 'styled-components'
-
-import Axiom from 'assets/startups/axiom.png';
-import Ori from 'assets/startups/ori.png';
-import EcoSync from 'assets/startups/ecosync.png';
-
-// import Unicorn from 'assets/next_gen/bnw/unicorn.png';
-// import Critical from 'assets/next_gen/bnw/critical.png';
-// import Defensible from 'assets/next_gen/bnw/defensible.png';
-// import Innovative from 'assets/next_gen/bnw/innovative.png';
-// import Trending from 'assets/next_gen/bnw/trending.png';
 
 import { Link } from 'components/link';
 
@@ -205,8 +165,7 @@ const Banner = () => {
                 Connecting (<styles sx={styles.banner.content.yellow}>Capital</styles>) &#123; <br></br>
                 <styles sx={styles.banner.content.pink}>with</styles><br></br>
                 Next-Generation.<styles sx={styles.banner.content.green}>Technologies</styles><br></br>
-                 &#125;{/*<br></br><br></br>
-                <Link sx={{display: 'flex', flexDirection: 'row'}} to='https://forms.gle/a5fMMSitNDHFLej17'><styles sx={styles.banner.content.blue}>return</styles>&nbsp;(<styles sx={styles.banner.content.orange}>Application </styles>) &nbsp;<FaLongArrowAltLeft sx={{fontSize: '30px'}}/><styles sx={{fontSize: '14px',marginTop: '3px', '@media only screen and (max-width: 992px)': {fontSize: '10px',marginLeft: '2px',},}}>Click Here! </styles></Link> */}
+                 &#125;
               </Text>
               <Box as="form" sx={styles.banner.form}>
                 <Link
@@ -216,42 +175,10 @@ const Banner = () => {
                   sx={styles.banner.form.link.button}
                   variant="buttons.primary"
                 />
-                {/* <Link
-                  path="/investors"
-                  label="For Investors"
-                  sx={styles.banner.form.link.button2}
-                  variant="buttons.primary"
-                /> */}
-                {/* <Box as="label" htmlFor="search" variant="styles.srOnly">
-                  Search
-                </Box>
-                <Input
-                  name="search"
-                  id="search"
-                  placeholder="Search Course Name"
-                  sx={styles.banner.form.input}
-                />
-                <Button
-                  type="submit"
-                  aria-label="search btn"
-                  sx={(styles.banner.form.button, { color: '#fff' })}
-                >
-                </Button> */}
-              </Box>
-              {/* <Box sx={styles.banner.partner}>
-                <span>Sponsored by:</span>
-                <Image src={PartnerImage} alt="banner image" />
-              </Box> */}
+               </Box>
             </Box>
           </Box>
-          {/* <Box sx={styles.banner.col}>
-            <Box sx={styles.banner.imageBox}>
-              <Box sx={styles.banner.imageInner}>
-                <Image src={BannerImage} alt="banner image" />
-                <VideoBtn path="L9jU-IIN0ng" />
-              </Box>
-            </Box>
-          </Box> */}
+        
         <Flex sx={styles.banner.row.row2}>
               <Text sx={{
                       fontSize: '32px',
@@ -305,56 +232,36 @@ const Banner = () => {
             <Box sx={styles.banner.startups}>
 
               <Box as="span" sx={styles.banner.startups.avatar}>
-                {/* <Image src={Innovative} alt="Innovative" /> */}
                 <Text as="H3">&#91; <styles sx={styles.banner.content.red}>Innovative</styles> &#93;</Text>
                 <Box sx={styles.banner.startups.title}>
                   <Text as="p">They leverage significant technological development vs. the status quo</Text>
-                  {/* <Box sx={styles.banner.startups.socials}>
-                    <Link target={'_blank'} to={'https://ori.co/'}><FaNetworkWired sx={styles.banner.startups.icons}/></Link>
-                  </Box> */}
                 </Box>
               </Box>
               <Box as="span" sx={styles.banner.startups.avatar}>
-                {/* <Image src={Critical} alt="Critical" /> */}
                 <Text as="H3">&#123; <styles sx={styles.banner.content.red}>Critical</styles> &#125;</Text>
                 <Box as="p" sx={styles.banner.startups.title}>
                   <Text as="p">They solve (or bring to light) essential user needs</Text>
-                  {/* <Box sx={styles.banner.startups.socials}>
-                    <Link target={'_blank'} to={'https://ecosync.energy/'}><FaRegLightbulb sx={styles.banner.startups.icons}/></Link>
-                  </Box> */}
                 </Box>
               </Box>
               <Box as="span" sx={styles.banner.startups.avatar}>
-                {/* <Image src={Defensible} alt="Defensible" /> */}
                 <Text as="H3">&#183; <styles sx={styles.banner.content.red}>Defensible</styles> &#183;</Text>
                 <Box as="p" sx={styles.banner.startups.title}>
                   <Text as="p">They offer their makers an IP moat against challengers</Text>
-                  {/* <Box sx={styles.banner.startups.socials}>
-                    <Link target={'_blank'} to={'https://axiom.ai/'}><FaRobot sx={styles.banner.startups.icons}/></Link>
-                  </Box> */}
                 </Box>
               </Box>
               <Box as="span" sx={styles.banner.startups.avatar}>
-                {/* <Image src={Trending} alt="Trending" /> */}
                 <Text as="H3">&#47; <styles sx={styles.banner.content.red}>Trend-Setting</styles> &#47;</Text>
                 <Box as="p" sx={styles.banner.startups.title}>
                   <Text as="p">Disrupt the way an industry operates (1B+ potential revenue in 10+ yrs)</Text>
-                  {/* <Box sx={styles.banner.startups.socials}>
-                    <Link target={'_blank'} to={'https://axiom.ai/'}><FaRobot sx={styles.banner.startups.icons}/></Link>
-                  </Box> */}
                 </Box>
               </Box>
               <Box as="span" sx={styles.banner.startups.avatar}>
-                {/* <Image src={Unicorn} alt="Unicorn" /> */}
                 <Text as="H3">&#60;<styles sx={styles.banner.content.red}> Unicorn-Material </styles>&#62;</Text>
                 <Box as="p" sx={styles.banner.startups.title}>
                   <Text as="p">Potential to make their creators scale 30-100X via M&amp;A or listing exit in 5-8 years</Text>
-                  {/* <Box sx={styles.banner.startups.socials}>
-                    <Link target={'_blank'} to={'https://axiom.ai/'}><FaRobot sx={styles.banner.startups.icons}/></Link>
-                  </Box> */}
                 </Box>
               </Box>
-              </Box>
+            </Box>
         </Flex>
 
           <Box sx={styles.banner.footer}>
@@ -445,7 +352,6 @@ const styles = {
     startups: {
       display: 'flex',
       flexDirection: 'row',
-      justifyContent: 'space-around',
       marginTop: '40px',
       alignItems: 'center',
       flexWrap: 'wrap',
@@ -458,7 +364,6 @@ const styles = {
         columnGap: '0px',
         display: 'flex',
         flexDirection: 'column',
-        justifyContent: 'space-around',
         marginTop: '20px',
         alignItems: 'center',
         flexWrap: 'wrap',
@@ -574,7 +479,7 @@ const styles = {
           zIndex: '100',
           paddingLeft: '40px',
           paddingRight: '40px',
-          background: '#0a0a0a',
+          backgroundColor: '#0f0f0f',
           borderRadius: '20px',
           paddingBottom: '80px',
 

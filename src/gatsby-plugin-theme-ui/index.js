@@ -277,7 +277,7 @@ export default {
   },
   forms: {
     label: {
-      fontSize: 3,
+      fontSize: ['14px', '20px'],
       fontWeight: 'regular',
     },
     input: {
