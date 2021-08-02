@@ -29,12 +29,12 @@ module.exports = {
       },
     },
     
-    {
-      resolve: 'gatsby-source-mailchimp',
-      options: {
-        endpoint: process.env.MAILCHIMP_ENDPOINT,
-      },
-    },
+    // {
+    //   resolve: 'gatsby-source-mailchimp',
+    //   options: {
+    //     endpoint: process.env.MAILCHIMP_ENDPOINT,
+    //   },
+    // },
     
     // {
     //   resolve: `gatsby-plugin-google-analytics`,
