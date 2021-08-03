@@ -305,6 +305,7 @@ const styles = {
       marginTop: '120px',
       alignItems: 'center',
       flexWrap: 'wrap',
+      zIndex: 100,
 
       '@media only screen and (max-width: 720px)': {
         marginTop: '0px',
