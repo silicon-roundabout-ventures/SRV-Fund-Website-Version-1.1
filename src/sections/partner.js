@@ -30,6 +30,7 @@ const Partner = () => {
               href= "https://wholesaleinvestor.com.au/"
               variant= "buttons.primary"
               label="wholesale-label"
+              rel="noreferrer"
               alt= "wholesale_investor in partnership with Silicon Roundabout Community"
               sx={{
                 cursor: 'pointer',
@@ -43,6 +44,7 @@ const Partner = () => {
               target= '_blank'
               href= "https://airtable.com/shrWqbcCtbPaXXfQ3"
               variant= "buttons.primary"
+              rel="noreferrer"
               sx={{
                 cursor: 'pointer',
               }}
@@ -55,6 +57,7 @@ const Partner = () => {
               target= '_blank'
               href= "https://airtable.com/shrWqbcCtbPaXXfQ3"
               variant= "buttons.primary"
+              rel="noreferrer"
               sx={{
                 cursor: 'pointer',
               }}
