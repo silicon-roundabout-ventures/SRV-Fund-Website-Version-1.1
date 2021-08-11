@@ -35,11 +35,6 @@ import React, { Component } from 'react';
 import Particles from 'react-particles-js';
 import styled from 'styled-components';
 
-import BannerBG from 'assets/banner-bg-1-1.png';
-import BannerTextLine from 'assets/banner-text-line.png';
-import BannerPattern from 'assets/banner-pattern.png';
-import BannerImage from 'assets/banner-image-1.png';
-import PartnerImage from 'assets/brands.svg';
 import { Link } from 'components/link';
 
 
