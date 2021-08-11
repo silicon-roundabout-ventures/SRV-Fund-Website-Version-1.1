@@ -6,6 +6,7 @@ import Wholesale from 'assets/wholesale.png';
 import FD from 'assets/FD.png';
 import EGSA from 'assets/EGSA.png';
 
+
 const Partner = () => {
   return (
     <Box as="section" sx={styles.workflow}>
