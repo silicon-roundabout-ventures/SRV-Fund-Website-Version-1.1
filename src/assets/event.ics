@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:jquery.icalendar
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1628611808038@developer.microsoft.com
+DTSTAMP:20210810T161008Z
+TITLE:Powerful Devs Conference
+DTSTART:20210914T150000Z
+DTEND:20210914T183000Z
+DESCRIPTION:Link to Livestream: https://docs.microsoft.com/en-us/learn/tv/?WT.mc_id=powerfuldevs-33631-jemorg\n\nEvent Description: Not every application that a professional developer builds should be code first. The Powerful Devs Conference will showcase how developers can embrace fusion development teams and leverage the Power Platform to build applications faster and with far less effort. Connect with industry-recognized ProDev influencers, Microsoft Cloud Advocates, trusted and diverse community leaders, and members of the Power Platform Team. Streaming LIVE on Learn TV!
+LOCATION:Global
+SUMMARY;LANGUAGE=en-us:Powerful Devs Conference
+END:VEVENT
+END:VCALENDAR

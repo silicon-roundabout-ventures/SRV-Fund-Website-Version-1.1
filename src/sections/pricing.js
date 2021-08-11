@@ -1,148 +1,12 @@
 import React, { useState } from 'react';
-import { Box, Grid, Container } from 'theme-ui';
+import { Box, Grid, Container, Image } from 'theme-ui';
 import { IoIosCheckmarkCircle, IoIosCloseCircle } from 'react-icons/io';
 import BlockTitle from 'components/block-title';
-import PriceCard from '../components/price-card';
+// import PriceCard from '../components/price-card';
+import Circle1 from 'assets/circle1.png';
+import Circle2 from 'assets/circle2.png';
+import Circle3 from 'assets/circle3.png';
 
-const pricingMonthlyData = [
-  {
-    name: 'Free Plan',
-    description: 'For Small teams or office',
-    buttonText: 'Start free trail',
-    points: [
-      {
-        icon: <IoIosCheckmarkCircle />,
-        text: 'Ultimate access to all course, exercises and assessments',
-        isAvailable: true,
-      },
-      {
-        icon: <IoIosCheckmarkCircle />,
-        text: 'Free acess for all kind of exercise corrections with downloads.',
-        isAvailable: true,
-      },
-      {
-        icon: <IoIosCheckmarkCircle />,
-        text: 'Total assessment corrections with free download access system',
-        isAvailable: true,
-      },
-      {
-        icon: <IoIosCloseCircle />,
-        text: 'Unlimited download of courses on the mobile app contents',
-        isAvailable: false,
-      },
-      {
-        icon: <IoIosCloseCircle />,
-        text: 'Download and print courses and exercises in PDF',
-        isAvailable: false,
-      },
-    ],
-  },
-  {
-    header: 'Recommended',
-    name: 'Premium',
-    description: 'For startup enterprise',
-    priceWithUnit: '$49.99/',
-    pricePeriod: 'mo',
-    buttonText: 'Subscribe Now',
-    points: [
-      {
-        icon: <IoIosCheckmarkCircle />,
-        text: 'Ultimate access to all course, exercises and assessments',
-        isAvailable: true,
-      },
-      {
-        icon: <IoIosCheckmarkCircle />,
-        text: 'Free acess for all kind of exercise corrections with downloads.',
-        isAvailable: true,
-      },
-      {
-        icon: <IoIosCheckmarkCircle />,
-        text: 'Total assessment corrections with free download access system',
-        isAvailable: true,
-      },
-      {
-        icon: <IoIosCheckmarkCircle />,
-        text: 'Unlimited download of courses on the mobile app contents',
-        isAvailable: true,
-      },
-      {
-        icon: <IoIosCheckmarkCircle />,
-        text: 'Download and print courses and exercises in PDF',
-        isAvailable: true,
-      },
-    ],
-  },
-];
-
-const pricingYearlyData = [
-  {
-    name: 'Free Plan',
-    description: 'For Small teams or office',
-    buttonText: 'Start free trail',
-    points: [
-      {
-        icon: <IoIosCheckmarkCircle />,
-        text: 'Ultimate access to all course, exercises and assessments',
-        isAvailable: true,
-      },
-      {
-        icon: <IoIosCheckmarkCircle />,
-        text: 'Free acess for all kind of exercise corrections with downloads.',
-        isAvailable: true,
-      },
-      {
-        icon: <IoIosCheckmarkCircle />,
-        text: 'Total assessment corrections with free download access system',
-        isAvailable: true,
-      },
-      {
-        icon: <IoIosCloseCircle />,
-        text: 'Unlimited download of courses on the mobile app contents',
-        isAvailable: false,
-      },
-      {
-        icon: <IoIosCloseCircle />,
-        text: 'Download and print courses and exercises in PDF',
-        isAvailable: false,
-      },
-    ],
-  },
-  {
-    header: 'Recommended',
-    name: 'Premium',
-    description: 'For startup enterprise',
-    priceWithUnit: '$99.99/',
-    pricePeriod: 'yr',
-    buttonText: 'Subscribe Now',
-    points: [
-      {
-        icon: <IoIosCheckmarkCircle />,
-        text: 'Ultimate access to all course, exercises and assessments',
-        isAvailable: true,
-      },
-      {
-        icon: <IoIosCheckmarkCircle />,
-        text: 'Free acess for all kind of exercise corrections with downloads.',
-        isAvailable: true,
-      },
-      {
-        icon: <IoIosCheckmarkCircle />,
-        text: 'Total assessment corrections with free download access system',
-        isAvailable: true,
-      },
-      {
-        icon: <IoIosCheckmarkCircle />,
-        text: 'Unlimited download of courses on the mobile app contents',
-        isAvailable: true,
-      },
-      {
-        icon: <IoIosCheckmarkCircle />,
-        text: 'Download and print courses and exercises in PDF',
-        isAvailable: true,
-      },
-    ],
-  },
-];
 
 const Pricing = () => {
   const [plan, setPlan] = useState(false);
@@ -151,22 +15,11 @@ const Pricing = () => {
       <Container>
         <BlockTitle
           sx={styles.pricing.blockTitle}
-          tagline="Pricing Plan"
-          heading="Choose your pricing policy"
+          // tagline="Pricing Plan"
+          heading="Our Community Platform"
         />
         <Box sx={styles.pricing.btnWrap}>
           <Box as="ul" sx={styles.pricing.btnUl}>
-            <Box
-              as="li"
-              className={` ${plan === false ? 'active' : ''}`}
-              variant="buttons.primary"
-              sx={styles.pricing.btn}
-              onClick={() => {
-                setPlan(false);
-              }}
-            >
-              Monthly Plan
-            </Box>
             <Box
               as="li"
               className={` ${plan === true ? 'active' : ''}`}
@@ -176,22 +29,34 @@ const Pricing = () => {
                 setPlan(true);
               }}
             >
-              Annual Plan
+              Organise Discussions
             </Box>
+            <Box
+              as="li"
+              className={` ${plan === false ? 'active' : ''}`}
+              variant="buttons.primary"
+              sx={styles.pricing.btn}
+              onClick={() => {
+                setPlan(false);
+              }}
+            >
+              Empower Interest Groups
+            </Box>
+          
           </Box>
         </Box>
 
         <Grid sx={styles.pricing.wrapper}>
           {plan === true
-            ? pricingYearlyData.map((price, index) => (
-                <PriceCard key={index} data={price} />
-              ))
+            ? 
+            <Image src={Circle1} sx={styles.pricing.circle} alt="Intro1" />
             : null}
+
           {plan === false
-            ? pricingMonthlyData.map((price, index) => (
-                <PriceCard key={index} data={price} />
-              ))
+            ? 
+            <Image src={Circle3} alt="Logo" />
             : null}
+        
         </Grid>
       </Container>
     </Box>
@@ -202,6 +67,7 @@ export default Pricing;
 
 const styles = {
   pricing: {
+    backgroundColor: '#0f0f0f',
     paddingTop: 100,
     paddingBottom: 150,
     '@media(max-width:991px)': {
@@ -236,8 +102,8 @@ const styles = {
       margin: 0,
       listStyle: 'none',
       backgroundColor: '#F7F8FB',
-      padding: '6px',
-      borderRadius: '5px',
+      padding: '12px',
+      borderRadius: '12px',
       display: 'inline-block',
     },
     btn: {
@@ -261,12 +127,12 @@ const styles = {
       },
     },
     wrapper: {
-      display: 'grid',
-      gridGap: '30px',
-      gridTemplateColumns: ['1fr', null, null, '1fr 1fr'],
       marginLeft: 'auto',
       marginRight: 'auto',
       width: ['100%', null, null, null, '990px'],
     },
+    circle: {
+      width: '1000px !important',
+    }
   },
 };

@@ -1,56 +1,58 @@
-import { Heading, Box, Text, Container, Grid } from 'theme-ui';
+import { Heading, Box, Text, Container, Grid, Flex, Image } from 'theme-ui';
 import BlockTitle from 'components/block-title';
 import React from 'react';
 
 import ArrowOdd from 'assets/arrow-odd.png';
 import ArrowEven from 'assets/arrow-even.png';
+import Intro1 from 'assets/intro-1.png';
+import Intro2 from 'assets/intro-2.png';
 
-const workflowData = [
-  {
-    title: 'Set disbursement Instructions',
-    text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
-  },
-  {
-    title: 'Assembly retrieves funds from your account',
-    text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
-  },
-  {
-    title: 'Assembly initiates disbursement',
-    text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
-  },
-  {
-    title: 'Customer receives funds payment',
-    text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
-  },
-];
 
 const WorkFlow = () => {
   return (
     <Box as="section" sx={styles.workflow}>
-      <Container>
-        <BlockTitle
-          sx={styles.workflow.blockTitle}
-          tagline="Whats the function"
-          heading="Let’s see how it works"
-        />
-
-        <Grid gap="50px 54px" columns={4} sx={styles.workflow.grid}>
-          {workflowData.map((item, index) => (
-            <Box sx={styles.workflow.card} key={index}>
-              <Box sx={styles.workflow.iconBox}>{`0${index + 1}`}</Box>
-              <Box sx={styles.workflow.wrapper}>
-                <Heading sx={styles.workflow.wrapper.title}>
-                  {item.title}
-                </Heading>
-                <Text sx={styles.workflow.wrapper.subTitle}>{item.text}</Text>
-              </Box>
-            </Box>
-          ))}
-        </Grid>
+      <Container sx={{padding: '0px !important', margin: '0px !important', maxWidth: '100%', textAlign: 'center !important'}}>
+        <Flex sx={styles.workflow.row}>
+          <Box sx={{position: 'relative !important', marginLeft: '33.33333333%', flex: '0 0 auto', width: '33.3333333%'}}>
+            <Image src={Intro1} sx={styles.workflow.intro1} alt="Intro1" />
+            <Image src={Intro2} sx={styles.workflow.intro2} alt="Intro2" />
+            <Text as='H2' sx={{
+                        fontSize: '32px',
+                        fontWeight: 'bold',
+                        lineHeight: 2,
+                        color: '#fff',
+                        '@media only screen and (max-width: 720px)': {
+                          fontSize: '20px',
+                        },
+                      }}>
+                    Connect.Grow.Innovate
+            </Text>
+            <Text as= 'p' sx={{
+                        fontSize: '18px',
+                        fontWeight: 'regular',
+                        lineHeight: 2,
+                        color: '#fff',
+                        marginTop: '20px',
+                        '@media only screen and (max-width: 720px)': {
+                          fontSize: '14px',
+                        },
+                      }}>
+                    Connect with people who have similar interests and are equally passionate about learning, sharing and creating fun new experiences.
+            </Text>
+            <Text as= 'p' sx={{
+                        fontSize: '18px',
+                        fontWeight: 'regular',
+                        lineHeight: 2,
+                        color: '#fff',
+                        marginTop: '10px',
+                        '@media only screen and (max-width: 720px)': {
+                          fontSize: '14px',
+                        },
+                      }}>
+                    Get advice and feedback from founders who have been there, done that, bought the t-shirt and everything in between.
+            </Text>
+          </Box>
+        </Flex>
       </Container>
     </Box>
   );
@@ -60,7 +62,7 @@ export default WorkFlow;
 
 const styles = {
   workflow: {
-    background: 'linear-gradient(180deg, #EBF9FF 0%, #F6F6FF 100%)',
+    backgroundColor: '#0f0f0f',
     position: 'relative',
     pt: '100px',
     pb: '100px',
@@ -75,53 +77,25 @@ const styles = {
       marginBottom: [30, null, 55],
       textAlign: 'center',
     },
-    grid: {
-      pt: 55,
-      '@media screen and (max-width: 1366px)': {
-        pt: 0,
-      },
-      '@media screen and (max-width: 1200px)': {
-        gridGap: '50px 30px',
-      },
-      '@media screen and (max-width: 992px)': {
-        gridTemplateColumns: 'repeat(2,1fr)',
-        gridGap: '50px 50px',
-      },
-      '@media screen and (max-width: 480px)': {
-        gridTemplateColumns: 'repeat(1,1fr)',
-        gridGap: '35px 0',
-      },
-    },
-    card: {
+
+    row: {
+      flexWrap: 'wrap',
       display: 'flex',
-      flexDirection: 'column',
-      position: 'relative',
-      '&::before': {
-        position: 'absolute',
-        content: '""',
-        top: 0,
-        left: 75,
-        backgroundRepeat: `no-repeat`,
-        backgroundPosition: 'center center',
-        width: 215,
-        height: 60,
-        '@media screen and (max-width: 1366px)': {
-          left: 75,
-        },
-        '@media screen and (max-width:1200px)': {
-          display: 'none',
-        },
-      },
-      '&:nth-of-type(2n-1)::before': {
-        backgroundImage: `url(${ArrowOdd})`,
-      },
-      '&:nth-of-type(2n)::before': {
-        backgroundImage: `url(${ArrowEven})`,
-        top: 17,
-      },
-      '&:last-child::before': {
-        display: 'none',
-      },
+    },
+
+    intro1: {
+      position: 'absolute',
+      top: '0',
+      left: '0',
+      transform: 'translateX(-120%)',
+      width: '500px',
+    },
+    intro2: {
+      position: 'absolute',
+      top: '0',
+      left: '0',
+      transform: 'translateX(120%)',
+      width: '500px',
     },
 
     iconBox: {

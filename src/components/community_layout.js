@@ -5,7 +5,7 @@ import Sticky from 'react-stickynode';
 import { useStickyState } from '../contexts/app/app.provider';
 import { Waypoint } from 'react-waypoint';
 import { useStickyDispatch } from '../contexts/app/app.provider';
-import Header from './header/header';
+import Header from './header/header2';
 import Footer from './footer/footer';
 export default function Layout({ children }) {
   const isSticky = useStickyState('isSticky');
@@ -33,7 +33,7 @@ export default function Layout({ children }) {
       </Sticky>
       <Waypoint
         onEnter={removeSticky}
-        onLeave={setSticky}
+        // onLeave={setSticky}
         onPositionChange={onWaypointPositionChange}
       />
 

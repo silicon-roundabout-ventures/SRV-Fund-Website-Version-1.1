@@ -3,7 +3,7 @@ import { Button, Box, Text } from 'theme-ui';
 import { Scrollbars } from 'react-custom-scrollbars';
 import Drawer from 'components/drawer';
 import { DrawerContext } from 'contexts/drawer/drawer.context';
-import { IoMdClose, IoMdMenu } from 'react-icons/io';
+import { IoMdClose, IoMdHome, IoMdMenu } from 'react-icons/io';
 import { Link } from 'components/link';
 import menuItems from './header.data';
 import Logo from 'components/logo';
@@ -49,7 +49,7 @@ const MobileDrawer = () => {
           </Box>
           <Button target="_blank" to={'/investors'} variant="primary" sx={styles.button}>
               For Investors
-            </Button>
+          </Button>
 
           <Box sx={styles.menuFooter}>
             <Link to={'https://github.com/silicon-roundabout-ventures/'}><FaGithub sx={styles.menuFooter.icons}/></Link>
@@ -73,10 +73,6 @@ const styles = {
     flexShrink: '0',
     width: '26px',
     color: '#fff',
-
-    '@media screen and (min-width: 992px)': {
-      display: 'none',
-    },
   },
 
   drawer: {

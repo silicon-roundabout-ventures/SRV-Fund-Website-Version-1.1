@@ -4,7 +4,7 @@ import { Link } from 'components/link';
 import Logo from 'components/logo';
 
 import { DrawerProvider } from 'contexts/drawer/drawer.provider';
-import MobileDrawer from './mobileDrawer';
+import MobileDrawer2 from './mobileDrawer2';
 import menuItems from './header.data';
 
 export default function Header({ className }) {
@@ -12,9 +12,9 @@ export default function Header({ className }) {
     <DrawerProvider>
       <header sx={styles.header} className={className}>
         <Container sx={styles.container}>
-          <Logo />
+          {/* <Logo /> */}
 
-          <Flex as="nav" sx={styles.nav}>
+          {/* <Flex as="nav" sx={styles.nav}>
             {menuItems.map(({ path, label }, i) => (
               <Link
                 target='_blank'
@@ -30,18 +30,18 @@ export default function Header({ className }) {
                 {label}
               </Link>
             ))}
-          </Flex>
+          </Flex> */}
 
           <Link
-            path="/investors"
+            path="/"
             ml={2}
             target= "_blank"
-            label="For Investors"
+            label="Ventures()"
             sx={styles.headerBtn}
             variant="buttons.primary"
           />
 
-          <MobileDrawer />
+          <MobileDrawer2 />
         </Container>
       </header>
     </DrawerProvider>
@@ -59,28 +59,35 @@ const styles = {
   header: {
     color: 'text_white',
     fontWeight: 'normal',
-    py: '25px',
+    pt: '40px',
+    pb: '25px',
     width: '100%',
     position: 'fixed',
     top: 0,
     left: 0,
-    backgroundColor: '#000000ad',
+    backgroundColor: '#00000000',
     transition: 'all 0.4s ease',
     '&.sticky': {
-      backgroundColor: '#000',
+      backgroundColor: '#00000000',
       color: 'text',
       py: '15px',
+      // boxShadow: '0 1px 2px rgba(0, 0, 0, 0.06)',
     },
   },
   container: {
     display: 'flex',
     alignItems: 'center',
     maxWidth: '1430px',
+    justifyContent: 'flex-end',
+    columnGap: '40px',
     '@media(max-width:1440px)': {
       maxWidth: '1230px',
+      justifyContent: 'flex-end',
+      columnGap: '40px',
     },
     '@media screen and (max-width: 991px)': {
-      justifyContent: 'space-between',
+      justifyContent: 'flex-end',
+      columnGap: '40px',
     },
   },
   nav: {

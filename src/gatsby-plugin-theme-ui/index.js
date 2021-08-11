@@ -212,7 +212,7 @@ export default {
       fontSize: ['14px', null, null, '16px'],
       letterSpacing: '-0.16px',
       padding: '10px 19px',
-      borderRadius: '5px',
+      borderRadius: '9px',
       textDecoration: 'none',
       '&:hover': {
         bg: 'primary',
