@@ -5,6 +5,17 @@ module.exports = {
     author: `@siliconoroundabout.ventures`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: [
+          "G-QC1W412S43", // Google Analytics / GA
+        ],
+        pluginConfig: {
+          head: true,
+        },
+      },
+    },
     `gatsby-plugin-theme-ui`,
     `gatsby-plugin-react-helmet`,
     {
