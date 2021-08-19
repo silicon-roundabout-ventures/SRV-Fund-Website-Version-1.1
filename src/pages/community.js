@@ -11,7 +11,7 @@ import Community from 'sections/community';
 import WorkFlow from 'sections/workflow';
 import Pricing from 'sections/pricing';
 import Partner from 'sections/partner';
-// import CtaThree from 'sections/cta-three';
+import Testimonial from 'sections/testimonial';
 // import FavoriteCourse from 'sections/favorite-course';
 
 import 'rc-drawer/assets/index.css';
@@ -25,7 +25,7 @@ export default function IndexPage() {
         <Community_Layout>
           <SEO
             description="Community-driven VC scouting and investing in Next-Generation technology startups from the UK and Europe"
-            title="Silicon Roundabout Ventures"
+            title="Community Page"
           />
           <Community />
           <Partner />
@@ -33,8 +33,8 @@ export default function IndexPage() {
           <PopularCourse /> */}
           <WorkFlow />
           <Pricing />
-          {/* <CtaTwo />
-          <FAQ />
+          <Testimonial />
+          {/* <FAQ />
           <CtaOne />
           <Modal /> */}
         </Community_Layout>

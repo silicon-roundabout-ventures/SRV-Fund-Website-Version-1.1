@@ -13,7 +13,7 @@ const WorkFlow = () => {
     <Box as="section" sx={styles.workflow}>
       <Container sx={{padding: '0px !important', margin: '0px !important', maxWidth: '100%', textAlign: 'center !important'}}>
         <Flex sx={styles.workflow.row}>
-          <Box sx={{position: 'relative !important', marginLeft: '33.33333333%', flex: '0 0 auto', width: '33.3333333%'}}>
+          <Box sx={{position: 'relative !important', marginLeft: '33.33333333%', flex: '0 0 auto', width: '33.3333333%',}}>
             <Image src={Intro1} sx={styles.workflow.intro1} alt="Intro1" />
             <Image src={Intro2} sx={styles.workflow.intro2} alt="Intro2" />
             <Text as='H2' sx={{
@@ -65,7 +65,7 @@ const styles = {
     backgroundColor: '#0f0f0f',
     position: 'relative',
     pt: '100px',
-    pb: '100px',
+    pb: '20px',
     '@media screen and (max-width: 1366px)': {
       pb: '100px',
     },
@@ -81,6 +81,8 @@ const styles = {
     row: {
       flexWrap: 'wrap',
       display: 'flex',
+      overflow: 'hidden',
+      paddingBottom: '80px'
     },
 
     intro1: {

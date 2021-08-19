@@ -25,7 +25,7 @@ export default function IndexPage() {
         <Layout>
           <SEO
             description="Founders don't worry we understand your Tech!"
-            title="Silicon Roundabout Ventures Team"
+            title="Team"
           />
           <Team />
         </Layout>

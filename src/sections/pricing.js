@@ -69,7 +69,7 @@ const styles = {
   pricing: {
     backgroundColor: '#0f0f0f',
     paddingTop: 100,
-    paddingBottom: 150,
+    paddingBottom: 100,
     '@media(max-width:991px)': {
       paddingTop: 60,
       paddingBottom: 60,

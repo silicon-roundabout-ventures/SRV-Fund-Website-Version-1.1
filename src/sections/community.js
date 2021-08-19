@@ -9,18 +9,18 @@ import {
   Image,
 } from 'theme-ui';
 
-import {
-  FaGithub,
-  FaLinkedinIn,
-  FaTwitter,
-  FaLocationArrow,
-  FaMailBulk,
-  FaCopyright,
-} from "react-icons/fa"
+// import {
+//   FaGithub,
+//   FaLinkedinIn,
+//   FaTwitter,
+//   FaLocationArrow,
+//   FaMailBulk,
+//   FaCopyright,
+// } from "react-icons/fa"
 
 import styled from 'styled-components'
 import Logo from 'assets/SR_logo.png'
-import Zego from 'assets/zego.png'
+// import Zego from 'assets/zego.png'
 
 import Particles from 'react-particles-js';
 
@@ -200,7 +200,7 @@ const Banner = () => {
                       fontSize: '12px',
                     },
                   }}>
-                <styles sx={{fontSize: '28px'}}>&#129309;</styles> Stuart Kelly, Co-founder @Zego and other <styles sx={{color: '#edbc3e'}}>14,000+</styles> members.
+                <styles sx={{fontSize: '28px'}}>&#129309;</styles><styles sx={styles.banner.yellow}> 14,000+</styles> members, <styles sx={styles.banner.red}>5,000+</styles> startup founders, <styles sx={styles.banner.green}>4,000+</styles> engineers, <br></br>  and <styles sx={styles.banner.blue}>50+</styles> community partners
               </Text>
             </Box>
           </Box>
@@ -229,6 +229,25 @@ const styles = {
 
     logo: {
       width: '500px',
+    },
+
+    orange: {
+      color: '#fb966e',
+    },
+    pink: {
+      color: '#FF7EF5',
+    },
+    green: {
+      color: '#9dff65',
+    },
+    blue: {
+      color: '#5AC4FF',
+    },
+    yellow: {
+      color: '#edbc3e',
+    },
+    red: {
+      color: '#D94738',
     },
 
     footer: {

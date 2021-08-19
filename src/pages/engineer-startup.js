@@ -15,7 +15,7 @@ export default function IndexPage() {
         <Layout>
           <SEO
             description="Community-driven VC scouting and investing in Next-Generation technology startups from the UK and Europe"
-            title="Silicon Roundabout Ventures"
+            title="Engineer A Startup"
           />
           <DocuSeries />
         </Layout>

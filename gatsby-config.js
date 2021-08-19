@@ -5,6 +5,13 @@ module.exports = {
     author: `@siliconoroundabout.ventures`,
   },
   plugins: [
+    // {
+    //   resolve: "gatsby-plugin-google-tagmanager",
+    //   options: {
+    //     id: "GTM-PHR8C7F",
+    //     includeInDevelopment: false,
+    //   },
+    // },
     {
       resolve: `gatsby-plugin-google-gtag`,
       options: {

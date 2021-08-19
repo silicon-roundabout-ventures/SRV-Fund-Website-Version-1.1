@@ -3,7 +3,7 @@ import React from 'react';
 // import { OutboundLink } from "gatsby-plugin-google-gtag"
 
 import Wholesale from 'assets/wholesale.png';
-// import FD from 'assets/FD.png';
+import FD from 'assets/FD.png';
 import EGSA from 'assets/EGSA.png';
 
 
@@ -11,7 +11,7 @@ const Partner = () => {
   return (
     <Box as="section" sx={styles.workflow}>
       <Container sx={{textAlign: 'center !important'}}>
-        <Box sx={{display: 'flex', flexDirection: 'column', flexWrap: 'wrap', rowGap: '40px'}}>
+        <Box sx={{display: 'flex', flexDirection: 'column', flexWrap: 'wrap'}}>
           <Text as='H2' sx={{
                           fontSize: '32px',
                           fontWeight: 'bold',
@@ -39,7 +39,7 @@ const Partner = () => {
               <Image src={Wholesale} sx={styles.workflow.box.img} alt="wholesale investor" />
             </a>
           </Box>
-          {/* <Box as="span" sx={styles.workflow.box}>
+          <Box as="span" sx={styles.workflow.box}>
             <a
               target= '_blank'
               href= "https://airtable.com/shrWqbcCtbPaXXfQ3"
@@ -51,7 +51,7 @@ const Partner = () => {
               >
                 <Image src={FD} sx={styles.workflow.box.img} alt="Frazier and Deeter" />
             </a>
-          </Box> */}
+          </Box>
           <Box as="span" sx={styles.workflow.box}>
           <a
               target= '_blank'
@@ -97,6 +97,7 @@ const styles = {
       flexDirection: 'row',
       flexWrap: 'wrap',
       alignItems: 'center',
+      mt:'40px',
     },
 
     box: {
