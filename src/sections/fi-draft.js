@@ -19,7 +19,7 @@ import {
 // } from "react-icons/fa"
 
 import styled from 'styled-components'
-import Logo from 'assets/sr_logo2.png'
+import Logo from 'assets/srv_dark_logo.png'
 import FI from 'assets/fi.png'
 
 
@@ -215,9 +215,9 @@ const styles = {
     backgroundRepeat: 'round',
 
     logo: {
-      width: '500px',
+      width: '250px',
       '@media only screen and (max-width: 720px)': {
-        width: '300px',
+        width: '175px',
       },
     },
     FI: {
@@ -457,7 +457,7 @@ const styles = {
       '@media only screen and (max-width: 720px)': {
         pl: '0px',
         pr: '0px',
-        mt: '200px',
+        mt: '120px',
         mb: '40px',
         mr: '20px',
       },

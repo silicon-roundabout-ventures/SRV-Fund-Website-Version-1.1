@@ -12,18 +12,18 @@ export default function Header({ className }) {
   return (
     <DrawerProvider>
       <header sx={styles.header} className={className}>
-        {/* <Flex sx={{
+        <Flex sx={{
           display:'flex',
           justifyContent: 'center',
-          color: 'black',
-          backgroundColor: '#fafafa',
+          color: '#fafafa',
+          backgroundColor: '#d94838',
           mb: '25px',
           fontWeight: 'bold',
           py:'5px',
           fontSize: '14px',
         }}>
-          &#128227; &#127881; Silicon Roundabout presents a 4-month startup program in partnership with Founders Institute &#127881; &#128227;&nbsp;<a href="/founders">click here to know more</a>
-        </Flex> */}
+          &#128227; &#127881; Silicon Roundabout Ventures presents a 4-month startup program in partnership with Founders Institute &#127881; &#128227;&nbsp;<a href="/founders">click here to know more</a>
+        </Flex>
         <Container sx={styles.container}>
           <Logo />
 
@@ -93,7 +93,7 @@ const styles = {
   header: {
     color: 'text_white',
     fontWeight: 'normal',
-    py: '20px',
+    pb: '20px',
     width: '100%',
     position: 'fixed',
     top: 0,
@@ -103,7 +103,7 @@ const styles = {
     '&.sticky': {
       backgroundColor: '#000',
       color: 'text',
-      py: '15px',
+      pb: '15px',
     },
   },
   container: {
