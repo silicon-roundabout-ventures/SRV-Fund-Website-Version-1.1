@@ -21,6 +21,9 @@ export default function Header({ className }) {
           fontWeight: 'bold',
           py:'5px',
           fontSize: '14px',
+          '@media only screen and (max-width: 1200px)': {
+            display: 'none',
+          },
         }}>
           <styles sx={{fontSize: '20px',}}>&#128227; &#127881;</styles>&nbsp; Silicon Roundabout Ventures presents a 4-month startup program in partnership with Founders Institute&nbsp; <styles sx={{fontSize: '20px',}}>&#128227; &#127881;</styles>&nbsp;<a href="/founders">click here to know more</a>
         </Flex>
@@ -104,6 +107,9 @@ const styles = {
       backgroundColor: '#000',
       color: 'text',
       pb: '15px',
+    },
+    '@media only screen and (max-width: 1200px)': {
+      pt: '20px',
     },
   },
   container: {
