@@ -168,7 +168,7 @@ const Banner = () => {
                       fontSize: '22px',
                     },
                   }}>
-                Presents a 4-month startup programme <br></br>
+                Presents a 4-month intense startup programme for <u>Deep-Tech</u> founders<br></br>
                 <Image sx={styles.banner.FI} src={FI} alt="Founders Institute Logo" />
               </Text>
               <Link

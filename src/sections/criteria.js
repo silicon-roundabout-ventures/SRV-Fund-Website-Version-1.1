@@ -12,8 +12,8 @@ const workflowData = [
     title: 'Eligibility Criteria',
     text:
       <span> 
-        <span role="img" aria-label="emoji" >&#9989; Early-stage startup (Pre-seed/ Seed)</span><br></br>
-        <span role="img" aria-label="emoji" >&#9989; Have an MVP or Proof of concept</span><br></br>
+        <span role="img" aria-label="emoji" >&#9989; Early-stage deep-tech startup (Pre-seed/ Seed)</span><br></br>
+        <span role="img" aria-label="emoji" >&#9989; Atleast have an MVP or POC</span><br></br>
         <span role="img" aria-label="emoji" >&#9989; A technically qualified core team member</span><br></br>
         <span role="img" aria-label="emoji" >&#9989; Targeting a MultiBillion $ international market opportunity</span>
       </span>,
@@ -23,7 +23,7 @@ const workflowData = [
     text:
       <span>
         <span role="img" aria-label="emoji">&#128196; Fill the application form</span><br></br>
-        <span role="img" aria-label="emoji">&#128128; Deadline: 9th September, 2021 @11 AM</span><br></br>
+        <span role="img" aria-label="emoji">&#128128; <b>Deadline:</b> 9th September, 2021 @11 AM</span><br></br>
         <Link
                 target= '_blank'
                 path="https://forms.gle/kAoC7MzBviCgf7xx5"
@@ -52,8 +52,8 @@ const workflowData = [
     title: 'Interview',
     text:
     <span >
-    <span  role="img" aria-label="emoji" >&#127908; Once qualified and accepted we will invite you for an interview meeting with our GPs</span><br></br>
-    <span role="img" aria-label="emoji" >&#128507; Based on interview we pick Top 3 startups for London Fall Programme  </span>
+    <span  role="img" aria-label="emoji" >&#127908; Eligible startups will then go through a hard &amp; rigorous selection process.</span><br></br>
+    <span role="img" aria-label="emoji" >&#128507; Only <b>3 startups</b> will be selected to be part of this cohort commencing on <b>3rd October, 2021</b></span>
     </span>
   },
 //   {
@@ -85,7 +85,7 @@ const WorkFlow = () => {
                             fontSize: '22px',
                           },
                         }}>
-                      &#127942; Who can apply?
+                      &#127942; Who should apply?
             </Text>
             <Text as='p' sx={{
                           fontSize: '20px',
@@ -96,7 +96,7 @@ const WorkFlow = () => {
                             fontSize: '16px',
                           },
                         }}>
-                      All applications are human-reviewed and are assessed based individually.
+                      ONLY <u>Deep-Tech</u> founders who are looking to escalate their startups growth by working hard, pivoting when needed and adapting, over the course of 4 months.
             </Text>
         </Flex>
         <Grid gap="50px 54px" columns={3} sx={styles.workflow.grid}>
@@ -112,6 +112,20 @@ const WorkFlow = () => {
             </Box>
           ))}
         </Grid>
+        <Flex sx={{textAlign: 'center !important', display: 'flex', flexDirection: 'column'}}>
+            <Text as='p' sx={{
+                          fontSize: '20px',
+                          fontWeight: 'bold',
+                          lineHeight: 2,
+                          color: '#000',
+                          mt:'40px',
+                          '@media only screen and (max-width: 720px)': {
+                            fontSize: '16px',
+                          },
+                        }}>
+            PS: The programme is limited to only 3 startups; and these startups will be mentored and supported by both Silicon Roundabout Ventures &amp; Founders Institute.
+            </Text>
+        </Flex>
       </Container>
     </Box>
   );
@@ -139,7 +153,8 @@ const styles = {
       textAlign: 'center',
     },
     grid: {
-      pt: 55,
+      pt: 80,
+      pb: 40,
       '@media screen and (max-width: 1366px)': {
         pt: 40,
       },
@@ -221,8 +236,8 @@ const styles = {
         fontFamily: 'futura !important',
         color: 'black',
         lineHeight: 1.55,
-        fontWeight: 500,
-        mb: '15px',
+        fontWeight: 700,
+        mb: '25px',
         '@media screen and (max-width: 1200px)': {
           fontSize: 20,
           lineHeight: 1.4,
@@ -235,8 +250,8 @@ const styles = {
       },
 
       subTitle: {
-        fontSize: '15px',
-        fontWeight: 400,
+        fontSize: '18px',
+        fontWeight: 500,
         lineHeight: '1.73',
         color: '#343D48',
         '@media screen and (max-width: 480px)': {

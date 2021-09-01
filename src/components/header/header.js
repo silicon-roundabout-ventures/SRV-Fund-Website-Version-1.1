@@ -22,7 +22,7 @@ export default function Header({ className }) {
           py:'5px',
           fontSize: '14px',
         }}>
-          &#128227; &#127881; Silicon Roundabout Ventures presents a 4-month startup program in partnership with Founders Institute &#127881; &#128227;&nbsp;<a href="/founders">click here to know more</a>
+          <styles sx={{fontSize: '20px',}}>&#128227; &#127881;</styles>&nbsp; Silicon Roundabout Ventures presents a 4-month startup program in partnership with Founders Institute&nbsp; <styles sx={{fontSize: '20px',}}>&#128227; &#127881;</styles>&nbsp;<a href="/founders">click here to know more</a>
         </Flex>
         <Container sx={styles.container}>
           <Logo />

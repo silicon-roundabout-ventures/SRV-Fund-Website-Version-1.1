@@ -25,9 +25,9 @@ export default function IndexPage() {
             title="4-month Startup Programme"
           />
           <Founders />
+          <Criteria />
           <FoundersPartner />
           <FoundersAlumni />
-          <Criteria />
           <FoundersTestimonial />
         </Community_Layout>
     </StickyProvider>
