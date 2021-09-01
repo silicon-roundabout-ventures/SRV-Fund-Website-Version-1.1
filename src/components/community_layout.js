@@ -6,7 +6,8 @@ import { useStickyState } from '../contexts/app/app.provider';
 import { Waypoint } from 'react-waypoint';
 import { useStickyDispatch } from '../contexts/app/app.provider';
 import Header from './header/header2';
-import Footer from './footer/footer';
+import Footer2 from './footer/footer2';
+
 export default function Layout({ children }) {
   const isSticky = useStickyState('isSticky');
   const dispatch = useStickyDispatch();
@@ -44,7 +45,7 @@ export default function Layout({ children }) {
       >
         {children}
       </main>
-      {/* <Footer /> */}
+      <Footer2 />
     </React.Fragment>
   );
 }

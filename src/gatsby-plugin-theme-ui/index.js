@@ -14,7 +14,7 @@ export default {
     black: '#000',
     secondary: '#30c', // secondary color - can be used for hover states
     muted: '#7B8188', // muted color
-    accent: '#609', // a contrast color for emphasizing UI
+    accent: '#609', // a contrast color for emphasizing UI`
 
     // highlight	a background color for highlighting text
     modes: {

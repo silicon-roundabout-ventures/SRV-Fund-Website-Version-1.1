@@ -15,7 +15,7 @@ const Testimonial = () => {
                           fontSize: '32px',
                           fontWeight: 'bold',
                           lineHeight: 2,
-                          color: '#fff',
+                          color: '#000',
                           '@media only screen and (max-width: 720px)': {
                             fontSize: '20px',
                           },
@@ -26,7 +26,7 @@ const Testimonial = () => {
                           fontSize: '20px',
                           fontWeight: 'bold',
                           lineHeight: 2,
-                          color: '#fff',
+                          color: '#000',
                           '@media only screen and (max-width: 720px)': {
                             fontSize: '16px',
                           },
@@ -261,7 +261,8 @@ export default Testimonial;
 
 const styles = {
   workflow: {
-    backgroundColor: '#0f0f0f',
+    fontFamily: 'futura !important',
+    backgroundColor: '#fafafa',
     position: 'relative',
     pt: '100px',
     pb: '100px',
@@ -287,12 +288,12 @@ const styles = {
     box: {
       // width: '100%',
       px: '20px',
-      minWidth: '500px',
+      minWidth: '400px',
 
       testimonial: {
         marginBottom: '20px',
         textAlign: 'left !important',
-        backgroundColor: '#fff',
+        backgroundColor: '#efefef',
         borderRadius: '9px',
         padding: '30px',
       },

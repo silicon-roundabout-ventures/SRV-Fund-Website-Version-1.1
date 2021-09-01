@@ -10,7 +10,7 @@ const accordionData = [
     contents: (
       <div>
         An FAQ is a list of frequently asked questions (FAQs) and answers on a
-        particular topic (also known as Questions and Answers [Q&A] or
+        particular topic (also known as Questions and Answers [Q&amp;A] or
         Frequently Asked Questions). The format is often used in articles,
         websites, email lists, and online forums where common questions tend to
         recur, for example through posts or queries by new users related to
@@ -25,7 +25,7 @@ const accordionData = [
     contents: (
       <div>
         An FAQ is a list of frequently asked questions (FAQs) and answers on a
-        particular topic (also known as Questions and Answers [Q&A] or
+        particular topic (also known as Questions and Answers [Q&amp;A] or
         Frequently Asked Questions). The format is often used in articles,
         websites, email lists, and online forums where common questions tend to
         recur, for example through posts or queries by new users related to
@@ -40,7 +40,7 @@ const accordionData = [
     contents: (
       <div>
         An FAQ is a list of frequently asked questions (FAQs) and answers on a
-        particular topic (also known as Questions and Answers [Q&A] or
+        particular topic (also known as Questions and Answers [Q&amp;A] or
         Frequently Asked Questions). The format is often used in articles,
         websites, email lists, and online forums where common questions tend to
         recur, for example through posts or queries by new users related to
@@ -55,7 +55,7 @@ const accordionData = [
     contents: (
       <div>
         An FAQ is a list of frequently asked questions (FAQs) and answers on a
-        particular topic (also known as Questions and Answers [Q&A] or
+        particular topic (also known as Questions and Answers [Q&amp;A] or
         Frequently Asked Questions). The format is often used in articles,
         websites, email lists, and online forums where common questions tend to
         recur, for example through posts or queries by new users related to

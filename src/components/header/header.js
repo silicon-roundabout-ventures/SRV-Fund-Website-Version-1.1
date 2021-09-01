@@ -6,11 +6,24 @@ import Logo from 'components/logo';
 import { DrawerProvider } from 'contexts/drawer/drawer.provider';
 import MobileDrawer from './mobileDrawer';
 import menuItems from './header.data';
+import Helmet from 'react-helmet';
 
 export default function Header({ className }) {
   return (
     <DrawerProvider>
       <header sx={styles.header} className={className}>
+        {/* <Flex sx={{
+          display:'flex',
+          justifyContent: 'center',
+          color: 'black',
+          backgroundColor: '#fafafa',
+          mb: '25px',
+          fontWeight: 'bold',
+          py:'5px',
+          fontSize: '14px',
+        }}>
+          &#128227; &#127881; Silicon Roundabout presents a 4-month startup program in partnership with Founders Institute &#127881; &#128227;&nbsp;<a href="/founders">click here to know more</a>
+        </Flex> */}
         <Container sx={styles.container}>
           <Logo />
 
@@ -42,6 +55,27 @@ export default function Header({ className }) {
           />
 
           <MobileDrawer />
+          <Helmet>
+              <script>{`
+                  (function (w,d,s,o,f,js,fjs) {
+                      w['circleWidget']=o;w[o] = w[o] || function () { (w[o].q = w[o].q || []).push(arguments) };
+                      js = d.createElement(s), fjs = d.getElementsByTagName(s)[0];
+                      js.id = o; js.src = f; js.async = 1; fjs.parentNode.insertBefore(js, fjs);
+                  }(window, document, 'script', 'mw', 'https://silicon-roundabout-community.circle.so/external/widget.js'));
+
+                  mw('init', {
+                    community_public_uid: 'acc8b6e6',
+                    brand_color: '#D94738',
+                  });
+
+                  // Optional: pass in a default space slug and/or post slug
+                  mw('setDefaults', {
+                    space_slug: 'start-here',
+                  //  post_slug: ''
+                  });
+                `}
+              </script>
+            </Helmet>
         </Container>
       </header>
     </DrawerProvider>
@@ -59,7 +93,7 @@ const styles = {
   header: {
     color: 'text_white',
     fontWeight: 'normal',
-    py: '25px',
+    py: '20px',
     width: '100%',
     position: 'fixed',
     top: 0,

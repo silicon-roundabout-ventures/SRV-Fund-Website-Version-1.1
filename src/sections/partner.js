@@ -3,7 +3,7 @@ import React from 'react';
 // import { OutboundLink } from "gatsby-plugin-google-gtag"
 
 import Wholesale from 'assets/wholesale.png';
-import FD from 'assets/FD.png';
+import Frazier from 'assets/frazier.png';
 import EGSA from 'assets/EGSA.png';
 
 
@@ -16,7 +16,7 @@ const Partner = () => {
                           fontSize: '32px',
                           fontWeight: 'bold',
                           lineHeight: 2,
-                          color: '#fff',
+                          color: '#000',
                           '@media only screen and (max-width: 720px)': {
                             fontSize: '20px',
                           },
@@ -49,7 +49,7 @@ const Partner = () => {
                 cursor: 'pointer',
               }}
               >
-                <Image src={FD} sx={styles.workflow.box.img} alt="Frazier and Deeter" />
+                <Image src={Frazier} sx={styles.workflow.box.img} alt="Frazier and Deeter" />
             </a>
           </Box>
           <Box as="span" sx={styles.workflow.box}>
@@ -76,7 +76,8 @@ export default Partner;
 
 const styles = {
   workflow: {
-    backgroundColor: '#0f0f0f',
+    fontFamily: 'futura !important',
+    backgroundColor: '#fafafa',
     position: 'relative',
     pt: '100px',
     pb: '100px',
@@ -105,10 +106,10 @@ const styles = {
       flex: '1 1 33.333333333%',
 
       img: {
-        width: '250px',
+        width: '300px',
         backgroundColor: '#ffffff',
-        borderRadius: '9px',
-        padding: '20px',
+        borderRadius: '32px',
+        padding: '40px',
       },
     },
 

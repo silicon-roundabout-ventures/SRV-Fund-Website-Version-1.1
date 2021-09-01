@@ -4,8 +4,8 @@ import { Link } from 'components/link';
 import Logo from 'components/logo';
 
 import { DrawerProvider } from 'contexts/drawer/drawer.provider';
-import MobileDrawer2 from './mobileDrawer2';
 import menuItems from './header.data';
+import Helmet from 'react-helmet';
 
 export default function Header({ className }) {
   return (
@@ -36,12 +36,32 @@ export default function Header({ className }) {
             path="/"
             ml={2}
             target= "_blank"
-            label="Ventures()"
+            label="Ventures( )"
             sx={styles.headerBtn}
             variant="buttons.primary"
           />
 
-          <MobileDrawer2 />
+          <Helmet>
+              <script>{`
+                  (function (w,d,s,o,f,js,fjs) {
+                      w['circleWidget']=o;w[o] = w[o] || function () { (w[o].q = w[o].q || []).push(arguments) };
+                      js = d.createElement(s), fjs = d.getElementsByTagName(s)[0];
+                      js.id = o; js.src = f; js.async = 1; fjs.parentNode.insertBefore(js, fjs);
+                  }(window, document, 'script', 'mw', 'https://silicon-roundabout-community.circle.so/external/widget.js'));
+
+                  mw('init', {
+                    community_public_uid: 'acc8b6e6',
+                    brand_color: '#D94738',
+                  });
+
+                  // Optional: pass in a default space slug and/or post slug
+                  mw('setDefaults', {
+                    space_slug: 'start-here',
+                  //  post_slug: ''
+                  });
+                `}
+              </script>
+            </Helmet>
         </Container>
       </header>
     </DrawerProvider>
@@ -52,12 +72,19 @@ const styles = {
   headerBtn: {
     fontSize: '16px',
     fontWeight: 700,
-    backgroundColor: '#fff',
+    backgroundColor: '#000',
+    color: '#fff !important',
     borderRadius: '9px !important',
-    display: ['none', null, null, null, 'inline-block'],
+    display: ['inline-block', null, null, null, 'inline-block'],
+    '&:hover': {
+      color: '#fff',
+      backgroundColor: '#D94738',
+      borderRadius: '9px',
+    },
   },
   header: {
-    color: 'text_white',
+    fontFamily: 'futura !important',
+    color: 'text',
     fontWeight: 'normal',
     pt: '40px',
     pb: '25px',
@@ -65,11 +92,11 @@ const styles = {
     position: 'fixed',
     top: 0,
     left: 0,
-    backgroundColor: '#00000000',
+    backgroundColor: '#ffffff00',
     transition: 'all 0.4s ease',
     '&.sticky': {
-      backgroundColor: '#00000000',
-      color: 'text',
+      backgroundColor: '#ffffff00',
+      color: '#ffffff',
       py: '15px',
       // boxShadow: '0 1px 2px rgba(0, 0, 0, 0.06)',
     },
@@ -80,6 +107,7 @@ const styles = {
     maxWidth: '1430px',
     justifyContent: 'flex-end',
     columnGap: '40px',
+    marginRight:'20px !important',
     '@media(max-width:1440px)': {
       maxWidth: '1230px',
       justifyContent: 'flex-end',

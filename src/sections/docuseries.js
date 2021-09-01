@@ -35,124 +35,124 @@ const Banner = () => {
     <Box as="section" id="banner" sx={styles.banner}>
       <Container sx={styles.banner.container}>
         <Flex sx={styles.banner.row}>
-        <ParticleClass>
-        <Particles id="particles-js"
-            params={
-              {
-                "particles": {
-                  "number": {
-                    "value": 120,
-                    "density": {
-                      "enable": true,
-                      "value_area": 691.3181133058181
-                    }
-                  },
-                  "color": {
-                    "value": "#000"
-                  },
-                  "shape": {
-                    "type": "circle",
-                    "stroke": {
-                      "width": 2.5,
-                      "color": "#ffffff",
-                    },
-                    "polygon": {
-                      "nb_sides": 9
-                    },
-                  },
-                  "opacity": {
-                    "value": 0.5,
-                    "random": true,
-                    "anim": {
-                      "enable": false,
-                      "speed": 1,
-                      "opacity_min": 0.1,
-                      "sync": false
-                    }
-                  },
-                  "size": {
-                    "value": 0,
-                    "random": true,
-                    "anim": {
-                      "enable": false,
-                      "speed": 40,
-                      "size_min": 0.1,
-                      "sync": false
-                    }
-                  },
-                  "line_linked": {
-                    "enable": false,
-                    "distance": 130,
-                    "color": "#a7a7a7",
-                    "opacity": 0.4,
-                    "width": 1,
-                  },
-                  "move": {
-                    "enable": true,
-                    "speed": 0.9,
-                    "direction": "none",
-                    "random": false,
-                    "straight": false,
-                    "out_mode": "out",
-                    "bounce": false,
-                    "attract": {
-                      "enable": false,
-                      "rotateX": 600,
-                      "rotateY": 1200
-                    }
-                  }
-                },
-                "interactivity": {
-                  "detect_on": "canvas",
-                  "events": {
-                    "onhover": {
-                      "enable": false,
-                      "mode": "repulse",
-                    },
-                    "onclick": {
-                      "enable": false,
-                      "mode": "push"
-                    },
-                    "resize": false
-                  },
-                  "modes": {
-                    "grab": {
-                      "distance": 400,
+          <ParticleClass>
+            <Particles id="particles-js"
+                params={
+                  {
+                    "particles": {
+                      "number": {
+                        "value": 120,
+                        "density": {
+                          "enable": true,
+                          "value_area": 691.3181133058181
+                        }
+                      },
+                      "color": {
+                        "value": "#000"
+                      },
+                      "shape": {
+                        "type": "circle",
+                        "stroke": {
+                          "width": 2.5,
+                          "color": "#ffffff",
+                        },
+                        "polygon": {
+                          "nb_sides": 9
+                        },
+                      },
+                      "opacity": {
+                        "value": 0.5,
+                        "random": true,
+                        "anim": {
+                          "enable": false,
+                          "speed": 1,
+                          "opacity_min": 0.1,
+                          "sync": false
+                        }
+                      },
+                      "size": {
+                        "value": 0,
+                        "random": true,
+                        "anim": {
+                          "enable": false,
+                          "speed": 40,
+                          "size_min": 0.1,
+                          "sync": false
+                        }
+                      },
                       "line_linked": {
-                        "opacity": 1
+                        "enable": false,
+                        "distance": 130,
+                        "color": "#a7a7a7",
+                        "opacity": 0.4,
+                        "width": 1,
+                      },
+                      "move": {
+                        "enable": true,
+                        "speed": 0.9,
+                        "direction": "none",
+                        "random": false,
+                        "straight": false,
+                        "out_mode": "out",
+                        "bounce": false,
+                        "attract": {
+                          "enable": false,
+                          "rotateX": 600,
+                          "rotateY": 1200
+                        }
                       }
                     },
-                    "bubble": {
-                      "distance": 400,
-                      "size": 40,
-                      "duration": 2,
-                      "opacity": 8,
-                      "speed": 3
+                    "interactivity": {
+                      "detect_on": "canvas",
+                      "events": {
+                        "onhover": {
+                          "enable": false,
+                          "mode": "repulse",
+                        },
+                        "onclick": {
+                          "enable": false,
+                          "mode": "push"
+                        },
+                        "resize": false
+                      },
+                      "modes": {
+                        "grab": {
+                          "distance": 400,
+                          "line_linked": {
+                            "opacity": 1
+                          }
+                        },
+                        "bubble": {
+                          "distance": 400,
+                          "size": 40,
+                          "duration": 2,
+                          "opacity": 8,
+                          "speed": 3
+                        },
+                        "repulse": {
+                          "distance": 150,
+                          "duration": 0.4
+                        },
+                        "push": {
+                          "particles_nb": 4
+                        },
+                        "remove": {
+                          "particles_nb": 2
+                        }
+                      }
                     },
-                    "repulse": {
-                      "distance": 150,
-                      "duration": 0.4
-                    },
-                    "push": {
-                      "particles_nb": 4
-                    },
-                    "remove": {
-                      "particles_nb": 2
-                    }
+                    "retina_detect": true
                   }
-                },
-                "retina_detect": true
-              }
-            }
-            style={{
-              "position": "absolute",
-              "top": "0",
-              "left": "0",
-              "right": "0",
-              "bottom": "0",
-            }}
-          />
-        </ParticleClass>
+                }
+                style={{
+                  "position": "absolute",
+                  "top": "0",
+                  "left": "0",
+                  "right": "0",
+                  "bottom": "0",
+                }}
+              />
+            </ParticleClass>
           <Box sx={styles.banner.textcol}>
           <Box sx={styles.banner.content}>
               <Text sx={{
@@ -185,25 +185,24 @@ const Banner = () => {
                 A 20 Episodes docuseries featuring real-life stories and actionable insights from entrepreneurs, executives, and investors who have built billion dollar startups or helped founders get there.
                 </Text>
                   <Text sx={{
-                      fontSize: '18px',
-                      fontWeight: '100',
+                      fontSize: '24px',
+                      fontWeight: '700',
                       lineHeight: 1.7,
-                      display: 'none',
+                      mt: '20px',
                       '@media only screen and (max-width: 992px)': {
-                        fontSize: '10px',
-                        display: 'none',
+                        fontSize: '16px',
                       },
                     }}>
-                  Register your interest below to get 2-week early access to the episodes.
+                  To get 2-week early access &#128071;
                   </Text>
                 <Box as="form" sx={styles.banner.form}>
                   <Link
-                    path={"https://airtable.com/shrIqwcK5JpishUan"}
+                    path={"https://twitter.com/SiliconLondon"}
                     target= '_blank'
                     spy={true}
                     smooth={true}
                     duration={800}
-                    label="Get 2-Week Early Access!"
+                    label="Follow us on &#128038; Twitter!"
                     sx={styles.banner.form.link.button}
                     variant="buttons.primary"
                   />
@@ -213,7 +212,7 @@ const Banner = () => {
        
           </Box>
 
-        <Flex sx={styles.banner.row.row2}>
+          <Flex sx={styles.banner.row.row2}>
               <Text sx={{
                       fontSize: '32px',
                       fontWeight: 'bold',
@@ -315,19 +314,19 @@ const Banner = () => {
                       </Box> 
                     </Box>
                     <Link
-                          path={"https://airtable.com/shrIqwcK5JpishUan"}
+                          path={"https://twitter.com/SiliconLondon"}
                           target= '_blank'
                           spy={true}
                           smooth={true}
                           duration={800}
-                          label="Get 2-Week Early Access!"
+                          label="Follow us on &#128038; Twitter!"
                           sx={styles.banner.form.link.button}
                           variant="buttons.primary"
                         />
                   </Box>
                 </Box>
               </Box> 
-        </Flex>
+          </Flex>
         
         </Flex>
         

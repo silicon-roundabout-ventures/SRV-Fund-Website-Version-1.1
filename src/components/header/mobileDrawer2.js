@@ -28,11 +28,11 @@ const MobileDrawer = () => {
   return (
     <Drawer
       width="320px"
-      drawerHandler={
-        <Box sx={styles.handler}>
-          <IoMdMenu size="22px" />
-        </Box>
-      }
+      // drawerHandler={
+      //   <Box sx={styles.handler}>
+      //     <IoMdMenu size="22px" />
+      //   </Box>
+      // }
       open={state.isOpen}
       toggleHandler={toggleHandler}
       // closeButton={<IoMdClose size="24px" color="#fff" />}
@@ -92,6 +92,7 @@ const styles = {
   },
 
   content: {
+    fontFamily: 'futura !important',
     width: '100%',
     height: '100%',
     display: 'flex',

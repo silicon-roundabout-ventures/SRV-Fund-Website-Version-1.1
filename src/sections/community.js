@@ -19,7 +19,7 @@ import {
 // } from "react-icons/fa"
 
 import styled from 'styled-components'
-import Logo from 'assets/SR_logo.png'
+import Logo from 'assets/sr_logo2.png'
 // import Zego from 'assets/zego.png'
 
 import Particles from 'react-particles-js';
@@ -42,14 +42,14 @@ const Banner = () => {
               {
                 "particles": {
                   "number": {
-                    "value": 15,
+                    "value": 20,
                     "density": {
                       "enable": true,
                       "value_area": 800
                     }
                   },
                   "color": {
-                    "value": ["#edbc3e","#ffffff",]
+                    "value": ["#EEB23D","#243141","#DC4F45"]
                   },
                   "shape": {
                     "type": "line",
@@ -173,9 +173,9 @@ const Banner = () => {
                     fontSize: '52px',
                     fontWeight: 'bolder',
                     lineHeight: 1.7,
-                    color: '#fff',
+                    color: '#000',
                     '@media only screen and (max-width: 992px)': {
-                      fontSize: '12px',
+                      fontSize: '22px',
                     },
                   }}>
                 Join the Largest <br></br>Tech Community in the Europe
@@ -183,7 +183,7 @@ const Banner = () => {
               
                 <Link
                   target= '_blank'
-                  path="https://airtable.com/shrWqbcCtbPaXXfQ3"
+                  path="https://airtable.com/shrntrE9mhFDc0aA9"
                   label="Join!"
                   sx={styles.banner.form.link.button}
                   variant="buttons.primary"
@@ -192,15 +192,15 @@ const Banner = () => {
                 {/* <Box as="form" sx={styles.banner.form}>
                </Box> */}
                <Text sx={{
-                    fontSize: '16px',
+                    fontSize: '14px',
                     fontWeight: 'light',
                     lineHeight: 2,
-                    color: '#fff',
+                    color: '#8a94a6',
                     '@media only screen and (max-width: 992px)': {
                       fontSize: '12px',
                     },
                   }}>
-                <styles sx={{fontSize: '28px'}}>&#129309;</styles><styles sx={styles.banner.yellow}> 14,000+</styles> members, <styles sx={styles.banner.red}>5,000+</styles> startup founders, <styles sx={styles.banner.green}>4,000+</styles> engineers, <br></br>  and <styles sx={styles.banner.blue}>50+</styles> community partners
+                <styles sx={{fontSize: '28px'}}>&#129309;</styles> 14,000+ members, 5,000+ startup founders, 4,000+ engineers, and 50+ community partners
               </Text>
             </Box>
           </Box>
@@ -216,10 +216,12 @@ export default Banner;
 
 const styles = {
   banner: {
-    backgroundColor: '#0f0f0f',
+    fontColor: '#000000 !important',
+    fontFamily: 'futura !important',
+    backgroundColor: '#fafafa',
     height: '100vh',
     overflowX: 'hidden',
-    paddingTop: ['100px', '120px'],
+    paddingTop: ['40px', '0px'],
     paddingBottom: ['0px', null, '40px'],
     // backgroundImage: [
     //   `url(${BannerBG})`,
@@ -229,6 +231,9 @@ const styles = {
 
     logo: {
       width: '500px',
+      '@media only screen and (max-width: 720px)': {
+        width: '300px',
+      },
     },
 
     orange: {
@@ -242,6 +247,9 @@ const styles = {
     },
     blue: {
       color: '#5AC4FF',
+    },
+    purple: {
+      color: '#775AFF',
     },
     yellow: {
       color: '#edbc3e',
@@ -450,7 +458,7 @@ const styles = {
     col: {
       pl: '0px',
       pr: '0px',
-      mt: '120px',
+      mt: '160px',
       mb: '80px',
       flex: ['1 1 100%', null, '0 0 50%'],
       zIndex: '100',
@@ -467,7 +475,7 @@ const styles = {
     content: {
       textAlign: 'center',
       paddingRight: [0, 0, 0, 0, '40px', 0, 0],
-      background: '#0f0f0f',
+      backgroundColor: '#fafafa',
       orange: {
         color: '#fb966e',
       },
@@ -579,15 +587,15 @@ const styles = {
           marginTop: '20px',
           marginBottom: '0px',
           alignItems: 'center',
-          color: '#000',
+          color: '#fff',
           width: '200px',
           fontSize: '20px !important',
-          backgroundColor: '#fff',
+          backgroundColor: '#000',
           borderRadius: '9px',
           textAlign: 'center',
           '&:hover': {
-            color: '#000',
-            backgroundColor: 'grey',
+            color: '#fff',
+            backgroundColor: '#D94738',
             borderRadius: '9px',
           },
           '@media only screen and (max-width: 720px)': {

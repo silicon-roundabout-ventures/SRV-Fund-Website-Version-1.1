@@ -8,8 +8,8 @@ import Community from 'sections/community';
 // import CtaOne from 'sections/cta-one';
 // import FAQ from 'sections/faq';
 // import CtaTwo from 'sections/cta-two';
-import WorkFlow from 'sections/workflow';
-import Pricing from 'sections/pricing';
+import Workflow from 'sections/workflow';
+import Platform from 'sections/platform';
 import Partner from 'sections/partner';
 import Testimonial from 'sections/testimonial';
 // import FavoriteCourse from 'sections/favorite-course';
@@ -31,8 +31,8 @@ export default function IndexPage() {
           <Partner />
           {/* <CtaThree />
           <PopularCourse /> */}
-          <WorkFlow />
-          <Pricing />
+          <Workflow />
+          <Platform />
           <Testimonial />
           {/* <FAQ />
           <CtaOne />

@@ -20,7 +20,7 @@ const WorkFlow = () => {
                         fontSize: '32px',
                         fontWeight: 'bold',
                         lineHeight: 2,
-                        color: '#fff',
+                        color: '#000',
                         '@media only screen and (max-width: 720px)': {
                           fontSize: '20px',
                         },
@@ -31,7 +31,7 @@ const WorkFlow = () => {
                         fontSize: '18px',
                         fontWeight: 'regular',
                         lineHeight: 2,
-                        color: '#fff',
+                        color: '#000',
                         marginTop: '20px',
                         '@media only screen and (max-width: 720px)': {
                           fontSize: '14px',
@@ -43,7 +43,7 @@ const WorkFlow = () => {
                         fontSize: '18px',
                         fontWeight: 'regular',
                         lineHeight: 2,
-                        color: '#fff',
+                        color: '#000',
                         marginTop: '10px',
                         '@media only screen and (max-width: 720px)': {
                           fontSize: '14px',
@@ -62,7 +62,8 @@ export default WorkFlow;
 
 const styles = {
   workflow: {
-    backgroundColor: '#0f0f0f',
+    fontFamily: 'futura !important',
+    backgroundColor: '#fafafa',
     position: 'relative',
     pt: '100px',
     pb: '20px',

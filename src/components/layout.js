@@ -7,6 +7,7 @@ import { Waypoint } from 'react-waypoint';
 import { useStickyDispatch } from '../contexts/app/app.provider';
 import Header from './header/header';
 import Footer from './footer/footer';
+
 export default function Layout({ children }) {
   const isSticky = useStickyState('isSticky');
   const dispatch = useStickyDispatch();
@@ -28,12 +29,13 @@ export default function Layout({ children }) {
 
   return (
     <React.Fragment>
-      <Sticky enabled={isSticky} innerZ={991}>
+      {/* <Sticky enabled={isSticky} innerZ={991}>
         <Header className={`${isSticky ? 'sticky' : 'unSticky'}`} />
-      </Sticky>
+      </Sticky> */}
+      <Header sx={{zIndex: '999',}}/>
       <Waypoint
-        onEnter={removeSticky}
-        onLeave={setSticky}
+        onEnter={setSticky}
+        onLeave={removeSticky}
         onPositionChange={onWaypointPositionChange}
       />
 
