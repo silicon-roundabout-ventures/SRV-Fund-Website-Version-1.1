@@ -11,7 +11,7 @@ const Partner = () => {
   return (
     <Box as="section" sx={styles.workflow}>
       <Container sx={{textAlign: 'center !important'}}>
-        <Box sx={{display: 'flex', flexDirection: 'column', flexWrap: 'wrap'}}>
+      <Box sx={{display: 'flex', flexDirection: 'column', flexWrap: 'wrap', mb:'80px',}}>
           <Text as='H2' sx={{
                           fontSize: '32px',
                           fontWeight: 'bold',
@@ -21,7 +21,7 @@ const Partner = () => {
                             fontSize: '22px',
                           },
                         }}>
-              This programme has already helped over... 
+            Silicon Roundabout has created a supportive ecosystem for...
             </Text>
         <Flex sx={styles.workflow.row}>
           <Box as="span" sx={styles.workflow.box}>
@@ -43,7 +43,7 @@ const Partner = () => {
                       '@media only screen and (max-width: 992px)': {
                         fontSize: '22px',
                       },
-                    }}>Startups</Text>
+                    }}>Startup Founders &#128293; </Text>
               </Text>
           </Box>
           <Box as="span" sx={styles.workflow.box}>
@@ -56,7 +56,7 @@ const Partner = () => {
                       fontSize: '22px',
                     },
                   }}>
-                $1+ Billion<br></br>
+                3 <br></br>
                   <Text sx={{
                       fontSize: '22px',
                       fontWeight: 'bolder',
@@ -65,7 +65,87 @@ const Partner = () => {
                       '@media only screen and (max-width: 992px)': {
                         fontSize: '22px',
                       },
-                    }}>Funding by Alumni</Text>
+                    }}>Unicorn's &#128640;</Text>
+              </Text>
+          </Box><Box as="span" sx={styles.workflow.box}>
+              <Text sx={{
+                    fontSize: '42px',
+                    fontWeight: 'bolder',
+                    lineHeight: 1.7,
+                    color: '#000',
+                    '@media only screen and (max-width: 992px)': {
+                      fontSize: '22px',
+                    },
+                  }}>
+                4,000+ <br></br>
+                  <Text sx={{
+                      fontSize: '22px',
+                      fontWeight: 'bolder',
+                      lineHeight: 1.7,
+                      color: '#8a94a6',
+                      '@media only screen and (max-width: 992px)': {
+                        fontSize: '22px',
+                      },
+                    }}>Tech Developers &#128187;</Text>
+              </Text>
+          </Box>
+        </Flex>
+        </Box>
+        <Box sx={{display: 'flex', flexDirection: 'column', flexWrap: 'wrap'}}>
+          <Text as='H2' sx={{
+                          fontSize: '32px',
+                          fontWeight: 'bold',
+                          lineHeight: 2,
+                          color: '#000',
+                          '@media only screen and (max-width: 720px)': {
+                            fontSize: '22px',
+                          },
+                        }}>
+              Founder Institute has already helped over... 
+            </Text>
+        <Flex sx={styles.workflow.row}>
+          <Box as="span" sx={styles.workflow.box}>
+              <Text sx={{
+                    fontSize: '42px',
+                    fontWeight: 'bolder',
+                    lineHeight: 1.7,
+                    color: '#000',
+                    '@media only screen and (max-width: 992px)': {
+                      fontSize: '22px',
+                    },
+                  }}>
+                5,000+ <br></br>
+                  <Text sx={{
+                      fontSize: '22px',
+                      fontWeight: 'bolder',
+                      lineHeight: 1.7,
+                      color: '#8a94a6',
+                      '@media only screen and (max-width: 992px)': {
+                        fontSize: '22px',
+                      },
+                    }}>Startups &#127906;</Text>
+              </Text>
+          </Box>
+          <Box as="span" sx={styles.workflow.box}>
+              <Text sx={{
+                    fontSize: '42px',
+                    fontWeight: 'bolder',
+                    lineHeight: 1.7,
+                    color: '#000',
+                    '@media only screen and (max-width: 992px)': {
+                      fontSize: '22px',
+                    },
+                  }}>
+                $1+ Billion <br></br>
+                  <Text sx={{
+                      fontSize: '22px',
+                      fontWeight: 'bolder',
+                      lineHeight: 1.7,
+                      color: '#8a94a6',
+                      '@media only screen and (max-width: 992px)': {
+                        fontSize: '22px',
+                      },
+                    }}>Funding by Alumni &#127891;</Text>
               </Text>
           </Box><Box as="span" sx={styles.workflow.box}>
               <Text sx={{
@@ -86,7 +166,7 @@ const Partner = () => {
                       '@media only screen and (max-width: 992px)': {
                         fontSize: '22px',
                       },
-                    }}>Network of mentors &amp; investors</Text>
+                    }}>Mentors &amp; investors network &#128181;</Text>
               </Text>
           </Box>
         </Flex>

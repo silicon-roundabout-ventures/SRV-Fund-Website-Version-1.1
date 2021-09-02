@@ -32,15 +32,6 @@ export default function Header({ className }) {
             ))}
           </Flex> */}
 
-          <Link
-            path="/"
-            ml={2}
-            target= "_blank"
-            label="Ventures( )"
-            sx={styles.headerBtn}
-            variant="buttons.primary"
-          />
-
           <Helmet>
               <script>{`
                   (function (w,d,s,o,f,js,fjs) {

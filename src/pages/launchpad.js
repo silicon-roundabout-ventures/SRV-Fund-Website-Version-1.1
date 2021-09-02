@@ -9,7 +9,7 @@ import FoundersAlumni from 'sections/founders-alumni';
 import Criteria from 'sections/criteria';
 import FoundersPartner from 'sections/founders-partner';
 import FoundersTestimonial from 'sections/founders-testimonial';
-
+import BackToVentures from 'sections/back_to_ventures';
 
 import 'rc-drawer/assets/index.css';
 import 'react-modal-video/css/modal-video.min.css';
@@ -29,6 +29,7 @@ export default function IndexPage() {
           <FoundersPartner />
           <FoundersAlumni />
           <FoundersTestimonial />
+          <BackToVentures/>
         </Community_Layout>
     </StickyProvider>
   );

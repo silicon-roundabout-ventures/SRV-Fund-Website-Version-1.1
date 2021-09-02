@@ -16,7 +16,7 @@ const FoundersAlumni = () => {
                   width: '80%',
                   marginLeft: '10%',
                 },
-        }}>
+                }}>
             <Image src={Intro1} sx={styles.workflow.intro1} alt="Intro1" />
             <Image src={Intro2} sx={styles.workflow.intro2} alt="Intro2" />
             <Text as='H2' sx={{
@@ -24,7 +24,7 @@ const FoundersAlumni = () => {
                         fontWeight: 'bold',
                         lineHeight: 2,
                         color: '#000',
-                        '@media only screen and (max-width: 720px)': {
+                        '@media only screen and (max-width: 1080px)': {
                           fontSize: '22px',
                         },
                       }}>
@@ -36,7 +36,7 @@ const FoundersAlumni = () => {
                         lineHeight: 2,
                         color: '#000',
                         marginTop: '20px',
-                        '@media only screen and (max-width: 720px)': {
+                        '@media only screen and (max-width: 1080px)': {
                           fontSize: '16px',
                         },
                       }}>
@@ -48,7 +48,7 @@ const FoundersAlumni = () => {
                         lineHeight: 2,
                         color: '#000',
                         marginTop: '10px',
-                        '@media only screen and (max-width: 720px)': {
+                        '@media only screen and (max-width: 1080px)': {
                           fontSize: '16px',
                         },
                       }}>

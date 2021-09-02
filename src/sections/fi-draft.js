@@ -19,7 +19,7 @@ import {
 // } from "react-icons/fa"
 
 import styled from 'styled-components'
-import Logo from 'assets/srv_dark_logo.png'
+import Logo from 'assets/sr_launchpad.png'
 import FI from 'assets/fi.png'
 
 
@@ -168,7 +168,7 @@ const Banner = () => {
                       fontSize: '22px',
                     },
                   }}>
-                Presents a 4-month intense startup programme for <u>Deep-Tech</u> founders<br></br>
+               London's first 4-month bootcamp for <br></br> <u>Deep-Tech</u> founders<br></br>
                 <Image sx={styles.banner.FI} src={FI} alt="Founders Institute Logo" />
               </Text>
               <Link
@@ -221,7 +221,8 @@ const styles = {
       },
     },
     FI: {
-      width: '350px',
+      width: '650px',
+      pt: '20px',
       '@media only screen and (max-width: 720px)': {
         width: '275px',
       },

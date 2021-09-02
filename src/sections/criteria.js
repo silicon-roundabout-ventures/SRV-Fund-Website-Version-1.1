@@ -96,7 +96,7 @@ const WorkFlow = () => {
                             fontSize: '16px',
                           },
                         }}>
-                      ONLY <u>Deep-Tech</u> founders who are looking to escalate their startups growth by working hard, pivoting when needed and adapting, over the course of 4 months.
+                      ONLY <u>Deep-Tech</u> founders who are looking to scale-up their startups growth by working hard, taking advantage of the resource &amp; network provided through this course, and looking to raise funding by the end of this highly curated Launchpad &#128640; programme.
             </Text>
         </Flex>
         <Grid gap="50px 54px" columns={3} sx={styles.workflow.grid}>
