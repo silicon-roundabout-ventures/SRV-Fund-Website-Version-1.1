@@ -25,7 +25,7 @@ export default function Header({ className }) {
             display: 'none',
           },
         }}>
-          <styles sx={{fontSize: '20px',}}>&#128227; &#127881;</styles>&nbsp; Silicon Roundabout Ventures presents a 4-month startup program in partnership with Founders Institute&nbsp; <styles sx={{fontSize: '20px',}}>&#128227; &#127881;</styles>&nbsp;<a href="/founders">click here to know more</a>
+          <styles sx={{fontSize: '20px',}}>&#128227; &#127881;</styles>&nbsp; Silicon Roundabout Ventures presents London's 1st DeepTech Bootcamp in partnership with Founders Institute&nbsp; <styles sx={{fontSize: '20px',}}>&#128227; &#127881;</styles>&nbsp;<a href="/launchpad">click here to know more</a>
         </Flex>
         <Container sx={styles.container}>
           <Logo />
