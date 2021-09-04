@@ -123,7 +123,7 @@ const WorkFlow = () => {
                             fontSize: '16px',
                           },
                         }}>
-            PS: The programme is limited to only 3 startups; and these startups will be mentored and supported by both Silicon Roundabout Ventures &amp; Founders Institute.
+            The programme is limited to only 3 startups; and these startups will be mentored and supported by both Silicon Roundabout Ventures &amp; Founders Institute.
             </Text>
         </Flex>
       </Container>

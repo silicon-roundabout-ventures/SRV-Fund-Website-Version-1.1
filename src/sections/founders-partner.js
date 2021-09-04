@@ -65,7 +65,7 @@ const Partner = () => {
                       '@media only screen and (max-width: 992px)': {
                         fontSize: '22px',
                       },
-                    }}>Unicorn's &#128640;</Text>
+                    }}>Unicorn &#128640;</Text>
               </Text>
           </Box><Box as="span" sx={styles.workflow.box}>
               <Text sx={{
