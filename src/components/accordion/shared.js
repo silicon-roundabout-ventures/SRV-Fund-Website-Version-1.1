@@ -30,7 +30,7 @@ export const AccordionButton = ({ children, ...rest }) => (
         top: '50%',
         left: '0px',
         transform: 'translateY(-50%)',
-        backgroundColor: '#3FDBB1',
+        backgroundColor: '#EEB23D',
         width: '20px',
         height: '20px',
         display: 'flex',

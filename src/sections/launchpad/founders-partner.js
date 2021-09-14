@@ -31,7 +31,6 @@ const Partner = () => {
             }}
           >
             In 2019 we mentored 6 teams who ended up rasing over £3m! <br></br>
-            <i>Startups such as:</i>
           </Text>
           <Flex sx={styles.workflow.row}>
             <Box as="span" sx={styles.workflow.box}>

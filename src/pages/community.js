@@ -12,6 +12,8 @@ import Workflow from 'sections/workflow';
 import Platform from 'sections/platform';
 import Partner from 'sections/partner';
 import Testimonial from 'sections/testimonial';
+import Header2 from "components/header/header2";
+
 // import FavoriteCourse from 'sections/favorite-course';
 
 import 'rc-drawer/assets/index.css';
@@ -27,6 +29,7 @@ export default function IndexPage() {
             description="Community-driven VC scouting and investing in Next-Generation technology startups from the UK and Europe"
             title="Community Page"
           />
+          <Header2 />
           <Community />
           <Partner />
           {/* <CtaThree />

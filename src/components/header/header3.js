@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx, Container, Flex } from 'theme-ui';
 import { Link } from 'components/link';
-import Logo from 'components/logo';
+import Logo from 'components/launchpad-logo';
 
 import { DrawerProvider } from 'contexts/drawer/drawer.provider';
 import menuItems from './header.data';
@@ -12,7 +12,7 @@ export default function Header({ className }) {
     <DrawerProvider>
       <header sx={styles.header} className={className}>
         <Container sx={styles.container}>
-          {/* <Logo /> */}
+          <Logo />
 
           {/* <Flex as="nav" sx={styles.nav}>
             {menuItems.map(({ path, label }, i) => (
@@ -33,9 +33,9 @@ export default function Header({ className }) {
           </Flex> */}
 
           <Link
-            path="/launchpad-faq"
+            path="/launchpad"
             ml={2}
-            label="FAQs"
+            label="Launchpad 🚀"
             sx={styles.headerBtn}
             variant="buttons.primary"
           />
@@ -108,9 +108,10 @@ const styles = {
     justifyContent: 'flex-end',
     columnGap: '40px',
     marginRight:'20px !important',
+
     '@media(max-width:1440px)': {
-      maxWidth: '1230px',
-      justifyContent: 'flex-end',
+      maxWidth: '1380px',
+      justifyContent: 'space-between',
       columnGap: '40px',
     },
     '@media screen and (max-width: 991px)': {

@@ -262,7 +262,7 @@ const styles = {
       },
     },
     courseBtn: {
-      backgroundColor: '#3FDBB1',
+      backgroundColor: '#EEB23D',
       borderRadius: '6px',
       fontSize: '15px',
       color: '#fff',
