@@ -2,7 +2,7 @@ import React from 'react';
 import { StickyProvider } from 'contexts/app/app.provider';
 import SEO from 'components/seo';
 import Layout from 'components/layout';
-import DocuSeries from 'sections/docuseries';
+import DocuSeries from 'sections/docuseries/docuseries';
 
 import 'rc-drawer/assets/index.css';
 import 'react-modal-video/css/modal-video.min.css';

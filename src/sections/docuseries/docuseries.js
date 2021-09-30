@@ -18,7 +18,8 @@ import {
 } from "react-icons/fa"
 
 import Particles from 'react-particles-js';
-import styled from 'styled-components'
+import styled from 'styled-components';
+import StartupsFeatured from "sections/docuseries/startups_featured";
 
 
 // import Mailchimp from 'components/mailchimp';
@@ -184,6 +185,8 @@ const Banner = () => {
                   }}>
                 A 20 Episodes docuseries featuring real-life stories and actionable insights from entrepreneurs, executives, and investors who have built billion dollar startups or helped founders get there.
                 </Text>
+                <StartupsFeatured />
+
                   <Text sx={{
                       fontSize: '24px',
                       fontWeight: '700',
@@ -211,7 +214,6 @@ const Banner = () => {
             </Box>     
        
           </Box>
-
           <Flex sx={styles.banner.row.row2}>
               <Text sx={{
                       fontSize: '32px',
@@ -661,10 +663,10 @@ const styles = {
         },
       },
       p: {
-        lineHeight: 2.33,
-        color: '#02073E',
-        marginTop: ['10px', null, null, '35px'],
-        fontSize: ['15px', '18px'],
+        lineHeight: 2,
+        color: '#ffffff',
+        marginTop: ['5px', null, null, '5px'],
+        fontSize: ['16px', '22px'],
         pr: ['15px', 0],
         br: {
           display: ['none', null, null, null, null, 'block'],
