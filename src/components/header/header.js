@@ -12,7 +12,7 @@ export default function Header({ className }) {
   return (
     <DrawerProvider>
       <header sx={styles.header} className={className}>
-        <Flex sx={{
+        {/* <Flex sx={{
           display:'flex',
           justifyContent: 'center',
           color: '#fafafa',
@@ -26,7 +26,7 @@ export default function Header({ className }) {
           },
         }}>
           <styles sx={{fontSize: '20px',}}>&#128227; &#127881;</styles>&nbsp; Silicon Roundabout Ventures presents London's 1st DeepTech Bootcamp in partnership with Founders Institute&nbsp; <styles sx={{fontSize: '20px',}}>&#128227; &#127881;</styles>&nbsp;<a href="/launchpad">click here to know more</a>
-        </Flex>
+        </Flex> */}
         <Container sx={styles.container}>
           <Logo />
 
@@ -96,7 +96,7 @@ const styles = {
   header: {
     color: 'text_white',
     fontWeight: 'normal',
-    pb: '20px',
+    py: '20px',
     width: '100%',
     position: 'fixed',
     top: 0,
