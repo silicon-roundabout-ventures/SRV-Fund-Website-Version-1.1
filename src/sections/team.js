@@ -9,10 +9,10 @@ import {
   FaLocationArrow,
   FaMailBulk,
   FaLinkedin,
-  FaMailchimp,
   FaCopyright,
-  FaTerminal,
+  FaBlog,
 } from "react-icons/fa";
+import { HiMail } from "react-icons/hi";
 
 import styled from "styled-components";
 
@@ -57,11 +57,17 @@ const Banner = () => {
           </Text>
           <Box sx={styles.banner.team}>
             <Box as="span" sx={styles.banner.team.avatar}>
-              <Image src={Franco} alt="Francesco P." />
+              <Image src={Franco} alt="Francesco Perticarari" />
               <Text as="H3">Francesco Perticarari</Text>
               <Box sx={styles.banner.team.title}>
                 <Text as="p">Managing Partner</Text>
                 <Box sx={styles.banner.team.socials}>
+                  <Link
+                    target={"_blank"}
+                    to={"https://blog.francescoperticarari.com"}
+                  >
+                    <FaBlog sx={styles.banner.team.icons} />
+                  </Link>
                   <Link
                     target={"_blank"}
                     to={"https://www.linkedin.com/in/fperticarari/"}
@@ -113,7 +119,7 @@ const Banner = () => {
                     rel="noopener noreferrer"
                     href="mailto:deep@siliconroundabout.tech"
                   >
-                    <FaTerminal sx={styles.banner.team.icons} />
+                    <HiMail sx={styles.banner.team.icons} />
                   </a>
                   <Link target={"_blank"} to={"https://github.com/deepgodara"}>
                     <FaGithub sx={styles.banner.team.icons} />
@@ -139,7 +145,7 @@ const Banner = () => {
                     rel="noopener noreferrer"
                     href="mailto:ruhitha@siliconroundabout.tech"
                   >
-                    <FaMailchimp sx={styles.banner.team.icons} />
+                    <HiMail sx={styles.banner.team.icons} />
                   </a>
                 </Box>
               </Box>
