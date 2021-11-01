@@ -25,8 +25,8 @@ import Huma from "assets/startups/community/huma.png";
 import Oxbotica from "assets/startups/community/oxbotica.png";
 import Enian from "assets/startups/community/enian.png";
 import Causalens from "assets/startups/community/causalens.png";
-import Aptap from "assets/startups/community/white-aptap.png";
 
+import Aptap from "assets/startups/white-aptap.png";
 import Axiom from "assets/startups/axiom.png";
 import Ori from "assets/startups/ori.png";
 import EcoSync from "assets/startups/ecosync.png";
