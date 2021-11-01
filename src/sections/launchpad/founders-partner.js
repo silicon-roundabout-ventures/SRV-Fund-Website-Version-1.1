@@ -45,7 +45,11 @@ const Partner = () => {
                   },
                 }}
               >
-                <a href="https://www.circagene.com/" target="_blank">
+                <a
+                  href="https://www.circagene.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   CircaGene
                 </a>
                 <br></br>
@@ -76,7 +80,7 @@ const Partner = () => {
                   },
                 }}
               >
-                <a href="https://zobi.ai/" target="_blank">
+                <a href="https://zobi.ai/" target="_blank" rel="noreferrer">
                   Zobi
                 </a>
                 <br></br>
@@ -107,7 +111,11 @@ const Partner = () => {
                   },
                 }}
               >
-                <a href="https://www.getsubly.com/" target="_blank">
+                <a
+                  href="https://www.getsubly.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   Subly
                 </a>
                 <br></br>
