@@ -208,11 +208,11 @@ const Banner = () => {
               }}
             >
               <p>
-                We are a Community-Driven VC investment vehicle backing{" "}
+                We are a Community-Driven VC firm backing{" "}
                 <styles sx={styles.banner.content.yellow}>
-                  NEXT-GENERATION
+                  NEXT-GENERATION Computer and Physical Science Startups
                 </styles>{" "}
-                Tech Startups at pre-seed/seed.
+                at pre-seed/seed.
               </p>
               <p>
                 Our mission is to help their founders with investment capital
@@ -220,7 +220,35 @@ const Banner = () => {
                 Mass Adoption!
               </p>
               <br />
-
+            </Text>
+            <Text
+              sx={{
+                fontSize: "32px",
+                fontWeight: "bold",
+                lineHeight: 2.0,
+                marginTop: "80px",
+                color: "#fff",
+                "@media only screen and (max-width: 992px)": {
+                  fontSize: "20px",
+                  marginTop: "40px",
+                },
+              }}
+            >
+            &lt;/What makes us unique&gt;
+            </Text>
+            <Text
+              sx={{
+                fontSize: "20px",
+                fontWeight: "regular",
+                lineHeight: 2.0,
+                marginTop: "40px",
+                color: "#fff",
+                "@media only screen and (max-width: 992px)": {
+                  fontSize: "12px",
+                  marginTop: "20px",
+                },
+              }}
+            >
               <ul>
                 <li>
                   We run the Largest Tech Meetup Community in Europe, giving us
