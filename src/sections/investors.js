@@ -11,7 +11,7 @@ import {
   FaCopyright,
 } from "react-icons/fa";
 
-//import styled from "styled-components";
+import styled from "styled-components";
 
 // import srvgif from 'assets/srv.gif';
 
