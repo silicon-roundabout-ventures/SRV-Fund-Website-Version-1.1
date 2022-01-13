@@ -144,15 +144,31 @@ const Banner = () => {
             />
           </ParticleClass>
           <Box sx={styles.banner.col}>
+            <Text
+              sx={{
+                fontSize: "40px",
+                fontWeight: "bold",
+                lineHeight: 2.0,
+                marginTop: "80px",
+                marginBottom: "20px",
+                color: "#fff",
+                "@media only screen and (max-width: 992px)": {
+                  fontSize: "24px",
+                  marginTop: "20px",
+                },
+              }}
+            >
+              Silicon Roundabout Ventures
+            </Text>
             <Box sx={styles.banner.content}>
               <Text
                 sx={{
-                  fontSize: "32px",
-                  fontWeight: "bold",
+                  fontSize: "26px",
+                  fontWeight: "regular",
                   lineHeight: 1.7,
                   color: "#fff",
                   "@media only screen and (max-width: 992px)": {
-                    fontSize: "20px",
+                    fontSize: "16px",
                   },
                 }}
               >
@@ -164,13 +180,19 @@ const Banner = () => {
                 Next-Generation.
                 <styles sx={styles.banner.content.green}>Technologies</styles>
                 <br></br>
+                <styles sx={styles.banner.content.pink}>in </styles>Computer &
+                Physical
+                <br></br>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <styles sx={styles.banner.content.yellow}>Science</styles>
+                <br></br>
                 &#125;
               </Text>
               <Box as="form" sx={styles.banner.form}>
                 <Link
                   target="_blank"
                   path="https://airtable.com/shrWqbcCtbPaXXfQ3"
-                  label="Apply Here!"
+                  label="Apply for Funding"
                   sx={styles.banner.form.link.button}
                   variant="buttons.primary"
                 />
@@ -212,12 +234,50 @@ const Banner = () => {
                 <styles sx={styles.banner.content.yellow}>
                   NEXT-GENERATION Computer and Physical Science Startups
                 </styles>{" "}
-                at pre-seed/seed.
+                at pre-seed and seed.
+              </p>
+            </Text>
+            <Text
+              sx={{
+                fontSize: "32px",
+                fontWeight: "bold",
+                lineHeight: 2.0,
+                marginTop: "80px",
+                color: "#fff",
+                "@media only screen and (max-width: 992px)": {
+                  fontSize: "20px",
+                  marginTop: "40px",
+                },
+              }}
+            >
+              &lt;/Our Mission&gt;
+            </Text>
+            <Text
+              sx={{
+                fontSize: "20px",
+                fontWeight: "regular",
+                lineHeight: 2.0,
+                marginTop: "40px",
+                color: "#fff",
+                "@media only screen and (max-width: 992px)": {
+                  fontSize: "12px",
+                  marginTop: "20px",
+                },
+              }}
+            >
+              <p>
+                ⚙️ We are building a new kind of financial institution at the
+                intersection of Venture, Science and Community.
               </p>
               <p>
-                Our mission is to help their founders with investment capital
-                and hands-on support as they scale towards Future Success and
-                Mass Adoption!
+                💪 Our mission is to help founders of computer and physical
+                science based companies with investment capital and hands-on
+                support as they scale up towards mass adoption!
+              </p>
+              <p>
+                🚀 If you are a visionary entrepreneur based in the UK or
+                looking to expand internationally from Europe, get in touch and
+                apply for funding! We'd like to see if we can help you.
               </p>
               <br />
             </Text>
@@ -234,7 +294,7 @@ const Banner = () => {
                 },
               }}
             >
-            &lt;/What makes us unique&gt;
+              &lt;/What makes us unique&gt;
             </Text>
             <Text
               sx={{
@@ -251,17 +311,22 @@ const Banner = () => {
             >
               <ul>
                 <li>
-                  We run the Largest Tech Meetup Community in Europe, giving us
-                  direct access to 5000+ startups
+                  We run a 15k member strong Tech Meetup Community, Silicon
+                  Roundabout, which gives us direct access to 5000+ startups and
+                  has already helped grow 2 billion-dollar companies
                 </li>
+                <br />
                 <li>
-                  We all have Technical Startup/Scaleup Backgrounds, helping us
-                  select and support founders
+                  We all have Technical Backgrounds, helping us select and
+                  support founders
                 </li>
+                <br />
                 <li>
-                  We offer access to our Proprietary Ecosystem to help with
-                  specialist hiring and supply chain connections
+                  We offer our portfolio companies access to our Proprietary
+                  Ecosystem to help with specialist hiring and industry
+                  connections
                 </li>
+                <br />
               </ul>
             </Text>
             <Text

@@ -1,43 +1,43 @@
-import React from 'react';
-import { StickyProvider } from 'contexts/app/app.provider';
+import React from "react";
+import { StickyProvider } from "contexts/app/app.provider";
 // import { VideoProvider } from 'contexts/video/video.provider';
-import SEO from 'components/seo';
-import Layout from 'components/layout';
+import SEO from "components/seo";
+import Layout from "components/layout";
 // import Modal from 'components/modal';
-import Landingpage from 'sections/landingpage';
+import Landingpage from "sections/home/landingpage";
 // import CtaOne from 'sections/cta-one';
 // import FAQ from 'sections/faq';
 // import CtaTwo from 'sections/cta-two';
-import WorkFlow from 'sections/workflow';
+import WorkFlow from "sections/workflow";
 // import Pricing from 'sections/pricing';
 // import PopularCourse from 'sections/popular-course';
 // import CtaThree from 'sections/cta-three';
 // import FavoriteCourse from 'sections/favorite-course';
 
-import 'rc-drawer/assets/index.css';
-import 'react-modal-video/css/modal-video.min.css';
-import 'swiper/swiper-bundle.min.css';
-import 'typeface-dm-sans';
+import "rc-drawer/assets/index.css";
+import "react-modal-video/css/modal-video.min.css";
+import "swiper/swiper-bundle.min.css";
+import "typeface-dm-sans";
 
 export default function IndexPage() {
   return (
     <StickyProvider>
-        <Layout>
-          <SEO
-            description="Community-driven VC scouting and investing in Next-Generation technology startups from the UK and Europe"
-            title="Silicon Roundabout Ventures"
-          />
-          <Landingpage />
-          {/* <FavoriteCourse />
+      <Layout>
+        <SEO
+          description="Community-driven VC scouting and investing in Next-Generation technology startups from the UK and Europe"
+          title="Silicon Roundabout Ventures"
+        />
+        <Landingpage />
+        {/* <FavoriteCourse />
           <CtaThree />
           <PopularCourse /> */}
-          {/* <WorkFlow /> */}
-          {/* <Pricing />
+        {/* <WorkFlow /> */}
+        {/* <Pricing />
           <CtaTwo />
           <FAQ />
           <CtaOne />
           <Modal /> */}
-        </Layout>
+      </Layout>
     </StickyProvider>
   );
 }
