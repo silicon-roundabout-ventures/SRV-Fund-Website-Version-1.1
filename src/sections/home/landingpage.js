@@ -266,18 +266,27 @@ const Banner = () => {
               }}
             >
               <p>
-                ⚙️ We are building a new kind of financial institution at the
+                <span role="img" aria-label="information">
+                  ⚙️
+                </span>{" "}
+                We are building a new kind of financial institution at the
                 intersection of Venture, Science and Community.
               </p>
               <p>
-                💪 Our mission is to help founders of computer and physical
-                science based companies with investment capital and hands-on
-                support as they scale up towards mass adoption!
+                <span role="img" aria-label="information">
+                  💪
+                </span>{" "}
+                Our mission is to help founders of computer and physical science
+                based companies with investment capital and hands-on support as
+                they scale up towards mass adoption!
               </p>
               <p>
-                🚀 If you are a visionary entrepreneur based in the UK or
-                looking to expand internationally from Europe, get in touch and
-                apply for funding! We'd like to see if we can help you.
+                <span role="img" aria-label="information">
+                  🚀
+                </span>{" "}
+                If you are a visionary entrepreneur based in the UK or looking
+                to expand internationally from Europe, get in touch and apply
+                for funding! We'd like to see if we can help you.
               </p>
               <br />
             </Text>

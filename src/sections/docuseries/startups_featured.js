@@ -1,7 +1,7 @@
 import { Box, Text, Container, Flex, Image } from "theme-ui";
 import React from "react";
 
-import { OutboundLink } from "gatsby-plugin-google-gtag";
+//import { OutboundLink } from "gatsby-plugin-google-gtag";
 import Zego from "assets/zego.png";
 import Proximie from "assets/proximie.png";
 import Blur from "assets/blur.png";
@@ -36,7 +36,10 @@ const FoundersTestimonial = () => {
                 },
               }}
             >
-              &#128561; Featuring!
+              <span role="img" aria-label="information">
+                &#128561;
+              </span>{" "}
+              Featuring!
             </Text>
             {/* <Text as='p' sx={{
                           fontSize: '20px',

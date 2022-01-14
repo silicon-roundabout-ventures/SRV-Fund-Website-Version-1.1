@@ -42,7 +42,10 @@ const FoundersTestimonial = () => {
                 },
               }}
             >
-              &#127891; Hear from the alumni themselves!
+              <span role="img" aria-label="information">
+                &#127891;
+              </span>{" "}
+              Hear from the alumni themselves!
             </Text>
             <Text
               as="p"

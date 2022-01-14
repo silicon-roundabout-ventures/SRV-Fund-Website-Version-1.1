@@ -1,28 +1,30 @@
 /** @jsx jsx */
-import { jsx } from 'theme-ui';
-import React, { useCallback } from 'react';
-import Sticky from 'react-stickynode';
-import { useStickyState } from '../contexts/app/app.provider';
-import { Waypoint } from 'react-waypoint';
-import { useStickyDispatch } from '../contexts/app/app.provider';
-import Header from './header/header2';
-import Footer2 from './footer/footer2';
+import { jsx } from "theme-ui";
+import React, { useCallback } from "react";
+//import Sticky from 'react-stickynode';
+import { useStickyState } from "../contexts/app/app.provider";
+import { Waypoint } from "react-waypoint";
+import { useStickyDispatch } from "../contexts/app/app.provider";
+//import Header from './header/header2';
+import Footer2 from "./footer/footer2";
 
 export default function Layout({ children }) {
-  const isSticky = useStickyState('isSticky');
+  //const isSticky = useStickyState('isSticky');
   const dispatch = useStickyDispatch();
-  const setSticky = useCallback(() => dispatch({ type: 'SET_STICKY' }), [
-    dispatch,
-  ]);
-  const removeSticky = useCallback(() => dispatch({ type: 'REMOVE_STICKY' }), [
-    dispatch,
-  ]);
+  const setSticky = useCallback(
+    () => dispatch({ type: "SET_STICKY" }),
+    [dispatch]
+  );
+  const removeSticky = useCallback(
+    () => dispatch({ type: "REMOVE_STICKY" }),
+    [dispatch]
+  );
 
   const onWaypointPositionChange = ({ currentPosition }) => {
-    if (currentPosition === 'above') {
+    if (currentPosition === "above") {
       setSticky();
     }
-    if (currentPosition === 'below') {
+    if (currentPosition === "below") {
       removeSticky();
     }
   };
@@ -40,7 +42,7 @@ export default function Layout({ children }) {
 
       <main
         sx={{
-          variant: 'layout.main',
+          variant: "layout.main",
         }}
       >
         {children}

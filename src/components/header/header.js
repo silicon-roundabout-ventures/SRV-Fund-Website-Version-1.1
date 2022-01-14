@@ -1,12 +1,12 @@
 /** @jsx jsx */
-import { jsx, Container, Flex } from 'theme-ui';
-import { Link } from 'components/link';
-import Logo from 'components/logo';
+import { jsx, Container, Flex } from "theme-ui";
+import { Link } from "components/link";
+import Logo from "components/logo";
 
-import { DrawerProvider } from 'contexts/drawer/drawer.provider';
-import MobileDrawer from './mobileDrawer';
-import menuItems from './header.data';
-import Helmet from 'react-helmet';
+import { DrawerProvider } from "contexts/drawer/drawer.provider";
+import MobileDrawer from "./mobileDrawer";
+import menuItems from "./header.data";
+//import Helmet from 'react-helmet';
 
 export default function Header({ className }) {
   return (
@@ -33,7 +33,7 @@ export default function Header({ className }) {
           <Flex as="nav" sx={styles.nav}>
             {menuItems.map(({ path, label }, i) => (
               <Link
-                target='_blank'
+                target="_blank"
                 activeClass="active"
                 sx={styles.nav.navLink}
                 path={path}
@@ -51,14 +51,15 @@ export default function Header({ className }) {
           <Link
             path="/investors"
             ml={2}
-            target= "_blank"
+            target="_blank"
             label="For Investors"
             sx={styles.headerBtn}
             variant="buttons.primary"
           />
 
           <MobileDrawer />
-          <Helmet>
+          {/*
+            <Helmet>
               <script>{`
                   (function (w,d,s,o,f,js,fjs) {
                       w['circleWidget']=o;w[o] = w[o] || function () { (w[o].q = w[o].q || []).push(arguments) };
@@ -79,6 +80,7 @@ export default function Header({ className }) {
                 `}
               </script>
             </Helmet>
+            */}
         </Container>
       </header>
     </DrawerProvider>
@@ -87,63 +89,62 @@ export default function Header({ className }) {
 
 const styles = {
   headerBtn: {
-    fontSize: '16px',
+    fontSize: "16px",
     fontWeight: 700,
-    backgroundColor: '#fff',
-    borderRadius: '9px !important',
-    display: ['none', null, null, null, 'inline-block'],
+    backgroundColor: "#fff",
+    borderRadius: "9px !important",
+    display: ["none", null, null, null, "inline-block"],
   },
   header: {
-    color: 'text_white',
-    fontWeight: 'normal',
-    py: '20px',
-    width: '100%',
-    position: 'fixed',
+    color: "text_white",
+    fontWeight: "normal",
+    py: "20px",
+    width: "100%",
+    position: "fixed",
     top: 0,
     left: 0,
-    backgroundColor: '#000000ad',
-    transition: 'all 0.4s ease',
-    '&.sticky': {
-      backgroundColor: '#000',
-      color: 'text',
-      pb: '15px',
+    backgroundColor: "#000000ad",
+    transition: "all 0.4s ease",
+    "&.sticky": {
+      backgroundColor: "#000",
+      color: "text",
+      pb: "15px",
     },
-    '@media only screen and (max-width: 1200px)': {
-      pt: '20px',
+    "@media only screen and (max-width: 1200px)": {
+      pt: "20px",
     },
   },
   container: {
-    display: 'flex',
-    alignItems: 'center',
-    maxWidth: '1430px',
-    '@media(max-width:1440px)': {
-      maxWidth: '1230px',
+    display: "flex",
+    alignItems: "center",
+    maxWidth: "1430px",
+    "@media(max-width:1440px)": {
+      maxWidth: "1230px",
     },
-    '@media screen and (max-width: 991px)': {
-      justifyContent: 'space-between',
+    "@media screen and (max-width: 991px)": {
+      justifyContent: "space-between",
     },
   },
   nav: {
-    marginLeft: 'auto',
-    '@media screen and (max-width: 991px)': {
-      display: 'none',
+    marginLeft: "auto",
+    "@media screen and (max-width: 991px)": {
+      display: "none",
     },
     navLink: {
-      fontSize: '16px',
-      color: '#fff',
-      fontWeight: '400',
-      cursor: 'pointer',
-      lineHeight: '1.2',
-      mr: '48px',
-      transition: '500ms',
-      padding: '12px',
-      
-      '&:hover, &:active': {
-        color: '#000',
-        bg: '#fff',
-        padding: '12px',
-        borderRadius: '9px',
+      fontSize: "16px",
+      color: "#fff",
+      fontWeight: "400",
+      cursor: "pointer",
+      lineHeight: "1.2",
+      mr: "48px",
+      transition: "500ms",
+      padding: "12px",
 
+      "&:hover, &:active": {
+        color: "#000",
+        bg: "#fff",
+        padding: "12px",
+        borderRadius: "9px",
       },
     },
   },

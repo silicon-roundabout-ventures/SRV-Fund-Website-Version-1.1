@@ -48,7 +48,11 @@ const Testimonial = () => {
                 },
               }}
             >
-              We &#128155; our members
+              We
+              <span role="img" aria-label="information">
+                &#128155;
+              </span>{" "}
+              our members
             </Text>
           </Flex>
           <Flex sx={styles.workflow.column}>

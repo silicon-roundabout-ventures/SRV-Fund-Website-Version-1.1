@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
-import { Button, Box, Text } from "theme-ui";
+import { Box, Text } from "theme-ui";
 import { Scrollbars } from "react-custom-scrollbars";
 import Drawer from "components/drawer";
 import { DrawerContext } from "contexts/drawer/drawer.context";
-import { IoMdClose, IoMdMenu } from "react-icons/io";
+import { /*IoMdClose,*/ IoMdMenu } from "react-icons/io";
 import { Link } from "components/link";
 import menuItems from "./header.data";
 import Logo from "components/logo";
@@ -126,7 +126,6 @@ const styles = {
   menuFooter: {
     width: "100%",
     display: "flex",
-    flexDirection: "column",
     alignItems: "center",
     mt: "auto",
     color: "#fff",

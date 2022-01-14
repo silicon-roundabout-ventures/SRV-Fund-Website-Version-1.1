@@ -1,11 +1,11 @@
 /** @jsx jsx */
-import { jsx, Container, Flex } from 'theme-ui';
-import { Link } from 'components/link';
-import Logo from 'components/logo';
+import { jsx, Container, Flex } from "theme-ui";
+import { Link } from "components/link";
+import Logo from "components/logo";
 
-import { DrawerProvider } from 'contexts/drawer/drawer.provider';
-import menuItems from './header.data';
-import Helmet from 'react-helmet';
+import { DrawerProvider } from "contexts/drawer/drawer.provider";
+import menuItems from "./header.data";
+import Helmet from "react-helmet";
 
 export default function Header({ className }) {
   return (
@@ -39,7 +39,7 @@ export default function Header({ className }) {
             sx={styles.headerBtn}
             variant="buttons.primary"
           />
-
+          {/*
           <Helmet>
               <script>{`
                   (function (w,d,s,o,f,js,fjs) {
@@ -61,6 +61,7 @@ export default function Header({ className }) {
                 `}
               </script>
             </Helmet>
+            */}
         </Container>
       </header>
     </DrawerProvider>
@@ -69,76 +70,75 @@ export default function Header({ className }) {
 
 const styles = {
   headerBtn: {
-    fontSize: '16px',
+    fontSize: "16px",
     fontWeight: 700,
-    backgroundColor: '#000',
-    color: '#fff !important',
-    borderRadius: '9px !important',
-    display: ['inline-block', null, null, null, 'inline-block'],
-    '&:hover': {
-      color: '#fff',
-      backgroundColor: '#D94738',
-      borderRadius: '9px',
+    backgroundColor: "#000",
+    color: "#fff !important",
+    borderRadius: "9px !important",
+    display: ["inline-block", null, null, null, "inline-block"],
+    "&:hover": {
+      color: "#fff",
+      backgroundColor: "#D94738",
+      borderRadius: "9px",
     },
   },
   header: {
-    zIndex: '999',
-    fontFamily: 'futura !important',
-    color: 'text',
-    fontWeight: 'normal',
-    pt: '40px',
-    pb: '25px',
-    width: '100%',
-    position: 'fixed',
+    zIndex: "999",
+    fontFamily: "futura !important",
+    color: "text",
+    fontWeight: "normal",
+    pt: "40px",
+    pb: "25px",
+    width: "100%",
+    position: "fixed",
     top: 0,
     left: 0,
-    backgroundColor: '#ffffff00',
-    transition: 'all 0.4s ease',
-    '&.sticky': {
-      backgroundColor: '#ffffff00',
-      color: '#ffffff',
-      py: '15px',
+    backgroundColor: "#ffffff00",
+    transition: "all 0.4s ease",
+    "&.sticky": {
+      backgroundColor: "#ffffff00",
+      color: "#ffffff",
+      py: "15px",
       // boxShadow: '0 1px 2px rgba(0, 0, 0, 0.06)',
     },
   },
   container: {
-    display: 'flex',
-    alignItems: 'center',
-    maxWidth: '1430px',
-    justifyContent: 'flex-end',
-    columnGap: '40px',
-    marginRight:'20px !important',
-    '@media(max-width:1440px)': {
-      maxWidth: '1230px',
-      justifyContent: 'flex-end',
-      columnGap: '40px',
+    display: "flex",
+    alignItems: "center",
+    maxWidth: "1430px",
+    justifyContent: "flex-end",
+    columnGap: "40px",
+    marginRight: "20px !important",
+    "@media(max-width:1440px)": {
+      maxWidth: "1230px",
+      justifyContent: "flex-end",
+      columnGap: "40px",
     },
-    '@media screen and (max-width: 991px)': {
-      justifyContent: 'flex-end',
-      columnGap: '40px',
+    "@media screen and (max-width: 991px)": {
+      justifyContent: "flex-end",
+      columnGap: "40px",
     },
   },
   nav: {
-    marginLeft: 'auto',
-    '@media screen and (max-width: 991px)': {
-      display: 'none',
+    marginLeft: "auto",
+    "@media screen and (max-width: 991px)": {
+      display: "none",
     },
     navLink: {
-      fontSize: '16px',
-      color: '#fff',
-      fontWeight: '400',
-      cursor: 'pointer',
-      lineHeight: '1.2',
-      mr: '48px',
-      transition: '500ms',
-      padding: '12px',
-      
-      '&:hover, &:active': {
-        color: '#000',
-        bg: '#fff',
-        padding: '12px',
-        borderRadius: '9px',
+      fontSize: "16px",
+      color: "#fff",
+      fontWeight: "400",
+      cursor: "pointer",
+      lineHeight: "1.2",
+      mr: "48px",
+      transition: "500ms",
+      padding: "12px",
 
+      "&:hover, &:active": {
+        color: "#000",
+        bg: "#fff",
+        padding: "12px",
+        borderRadius: "9px",
       },
     },
   },

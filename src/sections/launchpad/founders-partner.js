@@ -183,7 +183,10 @@ const Partner = () => {
                     },
                   }}
                 >
-                  Startup Founders &#128293;{" "}
+                  Startup Founders{" "}
+                  <span role="img" aria-label="information">
+                    &#128293;
+                  </span>{" "}
                 </Text>
               </Text>
             </Box>
@@ -211,7 +214,10 @@ const Partner = () => {
                     },
                   }}
                 >
-                  Unicorns &#128640;
+                  Unicorns{" "}
+                  <span role="img" aria-label="information">
+                    &#128640;
+                  </span>
                 </Text>
               </Text>
             </Box>
@@ -239,7 +245,10 @@ const Partner = () => {
                     },
                   }}
                 >
-                  Tech Developers &#128187;
+                  Tech Developers{" "}
+                  <span role="img" aria-label="information">
+                    &#128187;
+                  </span>
                 </Text>
               </Text>
             </Box>
@@ -287,7 +296,10 @@ const Partner = () => {
                     },
                   }}
                 >
-                  Startups &#127906;
+                  Startups{" "}
+                  <span role="img" aria-label="information">
+                    &#127906;
+                  </span>
                 </Text>
               </Text>
             </Box>
@@ -315,7 +327,10 @@ const Partner = () => {
                     },
                   }}
                 >
-                  Funding by Alumni &#127891;
+                  Funding by Alumni{" "}
+                  <span role="img" aria-label="information">
+                    &#127891;
+                  </span>
                 </Text>
               </Text>
             </Box>
@@ -343,7 +358,10 @@ const Partner = () => {
                     },
                   }}
                 >
-                  Mentors &amp; investors network &#128181;
+                  Mentors &amp; investors network{" "}
+                  <span role="img" aria-label="information">
+                    &#128181;
+                  </span>
                 </Text>
               </Text>
             </Box>
