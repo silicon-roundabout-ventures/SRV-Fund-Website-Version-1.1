@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { Button, Box, Text } from "theme-ui";
+import { Box, Text } from "theme-ui";
 import { Scrollbars } from "react-custom-scrollbars";
 import Drawer from "components/drawer";
 import { DrawerContext } from "contexts/drawer/drawer.context";
