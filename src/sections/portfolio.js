@@ -12,6 +12,11 @@ import {
   FaNetworkWired,
   FaRegLightbulb,
   FaRobot,
+  FaPhone,
+  FaMoneyBill,
+  FaMoneyBillWave,
+  FaPiggyBank,
+  FaFingerprint,
 } from "react-icons/fa";
 
 import styled from "styled-components";
@@ -100,7 +105,7 @@ const Banner = () => {
               <Box as="p" sx={styles.banner.startups.title}>
                 <Box sx={styles.banner.startups.socials}>
                   <Link target={"_blank"} to={"https://aptap.co.uk/"}>
-                    <FaRobot sx={styles.banner.startups.icons} />
+                    <FaFingerprint sx={styles.banner.startups.icons} />
                   </Link>
                 </Box>
               </Box>
