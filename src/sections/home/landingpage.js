@@ -175,16 +175,16 @@ const Banner = () => {
                 Connecting (
                 <styles sx={styles.banner.content.yellow}>Capital</styles>)
                 &#123; <br></br>
-                <styles sx={styles.banner.content.pink}>with</styles>
+                &nbsp; <styles sx={styles.banner.content.pink}>with</styles>
                 <br></br>
-                Next-Generation.
-                <styles sx={styles.banner.content.green}>Technologies</styles>
+                &nbsp;&nbsp;&nbsp; Next-Generation.
+                <styles sx={styles.banner.content.yellow}>Technologies</styles>
                 <br></br>
-                <styles sx={styles.banner.content.pink}>in </styles>Computer &
+                &nbsp; <styles sx={styles.banner.content.pink}>in </styles>Computer &
                 Physical
                 <br></br>
                 &nbsp;&nbsp;&nbsp;&nbsp;
-                <styles sx={styles.banner.content.yellow}>Science</styles>
+                &nbsp; <styles sx={styles.banner.content.yellow}>Science</styles>
                 <br></br>
                 &#125;
               </Text>
@@ -232,7 +232,7 @@ const Banner = () => {
               <p>
                 We are a Community-Driven VC firm backing{" "}
                 <styles sx={styles.banner.content.yellow}>
-                  NEXT-GENERATION Computer and Physical Science Startups
+                  Next-Generation Computer and Physical Science Startups
                 </styles>{" "}
                 at pre-seed and seed.
               </p>
@@ -699,8 +699,14 @@ const styles = {
       yellow: {
         color: "#edbc3e",
       },
+      yellow2: {
+        color: '#ffdb15',
+      },
       red: {
         color: "#D94738",
+      },
+      cyan: {
+        color: '#6af3f8',
       },
       h3: {
         lineHeight: 2,
