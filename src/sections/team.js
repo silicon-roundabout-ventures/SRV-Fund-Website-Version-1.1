@@ -21,9 +21,10 @@ import Franco from "assets/team/franco.jpeg";
 import Deep from "assets/team/deep.jpeg";
 import Ruhitha from "assets/team/ruhitha.jpeg";
 import Massimo from "assets/team/massimo.jpeg";
-import Filippo from "assets/team/filippo.jpeg";
-import Aapo from "assets/team/aapo.jpeg";
-import Marc from "assets/team/marc.jpeg";
+// import Filippo from "assets/team/filippo.jpeg";
+// import Aapo from "assets/team/aapo.jpeg";
+// import Marc from "assets/team/marc.jpeg";
+import Olivia from "assets/team/olivia.jpeg";
 import Maria from "assets/team/maria.jpeg";
 
 import { Link } from "components/link";
@@ -74,6 +75,12 @@ const Banner = () => {
                   >
                     <FaLinkedin sx={styles.banner.team.icons} />
                   </Link>
+                  <Link
+                    target={"_blank"}
+                    to={"https://twitter.com/francesco_srv"}
+                  >
+                    <FaTwitter sx={styles.banner.team.icons} />
+                  </Link>
                   <Link target={"_blank"} to={"https://github.com/fpert041"}>
                     <FaGithub sx={styles.banner.team.icons} />
                   </Link>
@@ -84,7 +91,7 @@ const Banner = () => {
               <Image src={Paul} alt="Paul D." />
               <Text as="H3">Paul Dinulescu</Text>
               <Box as="p" sx={styles.banner.team.title}>
-                <Text as="p">General Partner</Text>
+                <Text as="p">Partner</Text>
                 <Box sx={styles.banner.team.socials}>
                   <Link
                     target={"_blank"}
@@ -172,15 +179,33 @@ const Banner = () => {
           </Text>
           <Box sx={styles.banner.vp}>
             <Box as="span" sx={styles.banner.team.avatar}>
-              <Image src={Filippo} alt="Filippo B." />
-              <Text as="H3">Filippo Bonsanti</Text>
-              <Box sx={styles.banner.team.title}>
-                <Text as="p">VP of Marketing</Text>
-                <Text as="p">(Indeed, Omio, Ebay) </Text>
+              <Image src={Olivia} alt="Olivia N" />
+              <Text as="H3">Olivia Nicoletti, PhD</Text>
+              <Box as="p" sx={styles.banner.team.title}>
+                <Text as="p">Nanophysicist and Tech Spinout Expert</Text>
+                <Text as="p">Ex Cambridge Enterprise</Text>
                 <Box sx={styles.banner.team.socials}>
                   <Link
                     target={"_blank"}
-                    to={"https://www.linkedin.com/in/filippobonsanti/"}
+                    to={
+                      "https://www.linkedin.com/in/olivia-nicoletti-phd-6307724/"
+                    }
+                  >
+                    <FaLinkedin sx={styles.banner.team.icons} />
+                  </Link>
+                </Box>
+              </Box>
+            </Box>
+            <Box as="span" sx={styles.banner.team.avatar}>
+              <Image src={Maria} alt="Maria GV" />
+              <Text as="H3">Maria Grazia Vigliotti, PhD</Text>
+              <Box as="p" sx={styles.banner.team.title}>
+                <Text as="p">AI, Blockchain & Cybersecurity Expert</Text>
+                <Text as="p">Angel investor & Entrepreneur</Text>
+                <Box sx={styles.banner.team.socials}>
+                  <Link
+                    target={"_blank"}
+                    to={"https://www.linkedin.com/in/mgvigliotti/"}
                   >
                     <FaLinkedin sx={styles.banner.team.icons} />
                   </Link>
@@ -199,55 +224,6 @@ const Banner = () => {
                     to={
                       "https://www.linkedin.com/in/massimo-carnelos-077606b2/"
                     }
-                  >
-                    <FaLinkedin sx={styles.banner.team.icons} />
-                  </Link>
-                </Box>
-              </Box>
-            </Box>
-            <Box as="span" sx={styles.banner.team.avatar}>
-              <Image src={Aapo} alt="Aapo B." />
-              <Text as="H3">Aapo Bovellan</Text>
-              <Box as="p" sx={styles.banner.team.title}>
-                <Text as="p">Branding Expert</Text>
-                <Text as="p">(GP at Proxy VC)</Text>
-                <Box sx={styles.banner.team.socials}>
-                  <Link
-                    target={"_blank"}
-                    to={"https://www.linkedin.com/in/aapobovellan"}
-                  >
-                    <FaLinkedin sx={styles.banner.team.icons} />
-                  </Link>
-                </Box>
-              </Box>
-            </Box>
-            <Box as="span" sx={styles.banner.team.avatar}>
-              <Image src={Maria} alt="Maria GV" />
-              <Text as="H3">Maria Grazia Vigliotti</Text>
-              <Box as="p" sx={styles.banner.team.title}>
-                <Text as="p">ML & Cybersecurity Expert</Text>
-                <Text as="p">Angel investor & Entrepreneur</Text>
-                <Box sx={styles.banner.team.socials}>
-                  <Link
-                    target={"_blank"}
-                    to={"https://www.linkedin.com/in/mgvigliotti/"}
-                  >
-                    <FaLinkedin sx={styles.banner.team.icons} />
-                  </Link>
-                </Box>
-              </Box>
-            </Box>
-            <Box as="span" sx={styles.banner.team.avatar}>
-              <Image src={Marc} alt="Marc S." />
-              <Text as="H3">Marc Sabas</Text>
-              <Box as="p" sx={styles.banner.team.title}>
-                <Text as="p">
-                  Mentor @Techstars, Wayra <br /> Investment Director @Ship2B
-                </Text>
-                <Box sx={styles.banner.team.socials}>
-                  <Link
-                    target={"_blank"}
-                    to={"https://www.linkedin.com/in/mgvigliotti/"}
                   >
                     <FaLinkedin sx={styles.banner.team.icons} />
                   </Link>
@@ -288,6 +264,56 @@ const Banner = () => {
     </Box>
   );
 };
+
+// <Box as="span" sx={styles.banner.team.avatar}>
+//     <Image src={Filippo} alt="Filippo B." />
+//     <Text as="H3">Filippo Bonsanti</Text>
+//     <Box sx={styles.banner.team.title}>
+//       <Text as="p">VP of Marketing</Text>
+//       <Text as="p">(Indeed, Omio, Ebay) </Text>
+//       <Box sx={styles.banner.team.socials}>
+//         <Link
+//           target={"_blank"}
+//           to={"https://www.linkedin.com/in/filippobonsanti/"}
+//         >
+//           <FaLinkedin sx={styles.banner.team.icons} />
+//         </Link>
+//       </Box>
+//     </Box>
+// </Box>
+// <Box as="span" sx={styles.banner.team.avatar}>
+//   <Image src={Aapo} alt="Aapo B." />
+//   <Text as="H3">Aapo Bovellan</Text>
+//   <Box as="p" sx={styles.banner.team.title}>
+//     <Text as="p">Branding Expert</Text>
+//     <Text as="p">(GP at Proxy VC)</Text>
+//     <Box sx={styles.banner.team.socials}>
+//       <Link
+//         target={"_blank"}
+//         to={"https://www.linkedin.com/in/aapobovellan"}
+//       >
+//         <FaLinkedin sx={styles.banner.team.icons} />
+//       </Link>
+//     </Box>
+//   </Box>
+// </Box>
+// <Box as="span" sx={styles.banner.team.avatar}>
+//   <Image src={Marc} alt="Marc S." />
+//   <Text as="H3">Marc Sabas</Text>
+//   <Box as="p" sx={styles.banner.team.title}>
+//     <Text as="p">
+//       Mentor @Techstars, Wayra <br /> Investment Director @Ship2B
+//     </Text>
+//     <Box sx={styles.banner.team.socials}>
+//       <Link
+//         target={"_blank"}
+//         to={"https://www.linkedin.com/in/mgvigliotti/"}
+//       >
+//         <FaLinkedin sx={styles.banner.team.icons} />
+//       </Link>
+//     </Box>
+//   </Box>
+// </Box>
 
 export default Banner;
 
@@ -403,11 +429,10 @@ const styles = {
     vp: {
       display: "flex",
       flexDirection: "row",
-      marginTop: "40px",
       alignItems: "center",
       flexWrap: "wrap",
       justifyContent: "center",
-      rowGap: "160px",
+      rowGap: "20px",
       columnGap: "20px",
 
       "@media only screen and (max-width: 992px)": {

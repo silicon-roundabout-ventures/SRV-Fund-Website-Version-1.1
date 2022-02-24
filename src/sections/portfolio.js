@@ -12,10 +12,6 @@ import {
   FaNetworkWired,
   FaRegLightbulb,
   FaRobot,
-  FaPhone,
-  FaMoneyBill,
-  FaMoneyBillWave,
-  FaPiggyBank,
   FaFingerprint,
 } from "react-icons/fa";
 

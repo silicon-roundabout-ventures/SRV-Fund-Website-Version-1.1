@@ -180,11 +180,11 @@ const Banner = () => {
                 &nbsp;&nbsp;&nbsp; Next-Generation.
                 <styles sx={styles.banner.content.yellow}>Technologies</styles>
                 <br></br>
-                &nbsp; <styles sx={styles.banner.content.pink}>in </styles>Computer &
-                Physical
+                &nbsp; <styles sx={styles.banner.content.pink}>in </styles>
+                Computer & Physical
                 <br></br>
-                &nbsp;&nbsp;&nbsp;&nbsp;
-                &nbsp; <styles sx={styles.banner.content.yellow}>Science</styles>
+                &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;{" "}
+                <styles sx={styles.banner.content.yellow}>Science</styles>
                 <br></br>
                 &#125;
               </Text>
@@ -232,9 +232,14 @@ const Banner = () => {
               <p>
                 We are a Community-Driven VC firm backing{" "}
                 <styles sx={styles.banner.content.yellow}>
-                  Next-Generation Computer and Physical Science Startups
+                  Deep Tech and Big Data
                 </styles>{" "}
-                at pre-seed and seed.
+                startups at{" "}
+                <styles sx={styles.banner.content.pink}>pre-seed</styles> and{" "}
+                <styles sx={styles.banner.content.pink}>seed</styles>,
+                leveraging our community of 15,000 founders and engineers and
+                our live pitching competitions that over the years featuered
+                winners now worth over £6 Billion
               </p>
             </Text>
             <Text
@@ -266,14 +271,26 @@ const Banner = () => {
               }}
             >
               <p>
-                <span role="img" aria-label="information">
+                <span
+                  role="img"
+                  aria-label="information"
+                  sx={styles.banner.content.yellow}
+                >
                   ⚙️
                 </span>{" "}
                 We are building a new kind of financial institution at the
-                intersection of Venture, Science and Community.
+                intersection of{" "}
+                <styles sx={styles.banner.content.pink}>
+                  Venture, Science and Community
+                </styles>
+                .
               </p>
               <p>
-                <span role="img" aria-label="information">
+                <span
+                  role="img"
+                  aria-label="information"
+                  sx={styles.banner.content.yellow}
+                >
                   💪
                 </span>{" "}
                 Our mission is to help founders of computer and physical science
@@ -281,7 +298,11 @@ const Banner = () => {
                 they scale up towards mass adoption!
               </p>
               <p>
-                <span role="img" aria-label="information">
+                <span
+                  role="img"
+                  aria-label="information"
+                  sx={styles.banner.content.yellow}
+                >
                   🚀
                 </span>{" "}
                 If you are a visionary entrepreneur based in the UK or looking
@@ -320,20 +341,28 @@ const Banner = () => {
             >
               <ul>
                 <li>
-                  We run a 15k member strong Tech Meetup Community, Silicon
-                  Roundabout, which gives us direct access to 5000+ startups and
-                  has already helped grow 2 billion-dollar companies
+                  We run a 15k member strong tech meetup community,{" "}
+                  <styles sx={styles.banner.content.yellow}>
+                    Silicon Roundabout
+                  </styles>
+                  , which gives us direct access to 5000+ startups and has
+                  already helped grow 2 billion-dollar companies
                 </li>
                 <br />
                 <li>
-                  We all have Technical Backgrounds, helping us select and
-                  support founders
+                  We all have{" "}
+                  <styles sx={styles.banner.content.yellow}>
+                    technical backgrounds
+                  </styles>
+                  , helping us select and support founders
                 </li>
                 <br />
                 <li>
                   We offer our portfolio companies access to our Proprietary
-                  Ecosystem to help with specialist hiring and industry
-                  connections
+                  Ecosystem to help with{" "}
+                  <styles sx={styles.banner.content.yellow}>
+                    specialist hiring and industry connections
+                  </styles>
                 </li>
                 <br />
               </ul>
@@ -700,13 +729,13 @@ const styles = {
         color: "#edbc3e",
       },
       yellow2: {
-        color: '#ffdb15',
+        color: "#ffdb15",
       },
       red: {
         color: "#D94738",
       },
       cyan: {
-        color: '#6af3f8',
+        color: "#6af3f8",
       },
       h3: {
         lineHeight: 2,
