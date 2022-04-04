@@ -26,6 +26,7 @@ export default function IndexPage() {
         <SEO
           description="Community-driven VC scouting and investing in Next-Generation technology startups from the UK and Europe"
           title="Silicon Roundabout Ventures"
+          image="/srv_dark_logo.png"
         />
         <Landingpage />
         {/* <FavoriteCourse />
