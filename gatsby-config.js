@@ -1,8 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: 'Silicon Roundabout Ventures',
-    description: 'Community-Driven VC investming in Next-Generation Technology Startups at pre-seed and seed.',
-    author: `@siliconoroundabout.ventures`,
+    title: "Silicon Roundabout Ventures",
+    titleTemplate: "%s ─ We Back Next-Generation Technologies First",
+    description: "Community-driven VC investin in Deep Tech and Big Data seed startups in the UK and Europe",
+    author: "@siliconoroundabout.ventures",
+    url: "https://siliconroundabout.ventures", // No trailing slash allowed!
+    image: "/srv_dark_logo.png", // Path to the image placed in the 'static' folder, in the project's root directory.
+    twitterUsername: "@siliconLondon",
   },
   plugins: [
     // {
@@ -46,14 +50,14 @@ module.exports = {
         icon: `src/assets/srv_dash_favicon.png`, // This path is relative to the root of the site.
       },
     },
-    
+
     // {
     //   resolve: 'gatsby-source-mailchimp',
     //   options: {
     //     endpoint: process.env.MAILCHIMP_ENDPOINT,
     //   },
     // },
-    
+
     // {
     //   resolve: `gatsby-plugin-google-analytics`,
     //   options: {
