@@ -24,8 +24,8 @@ export default function IndexPage() {
     <StickyProvider>
         <Layout>
           <SEO
-            description="Investors don't worry we understand Tech!"
-            title="Investors Page"
+          description="Community-driven VC scouting and investing in Next-Generation technology startups from the UK and Europe"
+          title="Silicon Roundabout Ventures (LP Page)"
           />
           <Investors />
         </Layout>
