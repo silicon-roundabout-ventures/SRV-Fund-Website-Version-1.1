@@ -256,7 +256,7 @@ const Banner = () => {
               <FaLinkedinIn sx={styles.banner.footer.icons} />
             </Link>
             <span sx={{ fontSize: "12px" }}>
-              <FaCopyright /> Silicon Roundabout Ventures @2021
+              <FaCopyright /> Silicon Roundabout Ventures @2022
             </span>
           </Box>
         </Flex>

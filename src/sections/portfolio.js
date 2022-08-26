@@ -13,6 +13,7 @@ import {
   FaRegLightbulb,
   FaRobot,
   FaFingerprint,
+  FaBatteryFull,
 } from "react-icons/fa";
 
 import styled from "styled-components";
@@ -23,7 +24,7 @@ import CQ from "assets/startups/community/cq.png";
 import Monzo from "assets/startups/community/monzo.png";
 import Zego from "assets/startups/community/zego.png";
 import Huma from "assets/startups/community/huma.png";
-import Oxbotica from "assets/startups/community/oxbotica.png";
+import Gardin from "assets/startups/community/gardin.png";
 import Enian from "assets/startups/community/enian.png";
 import Causalens from "assets/startups/community/causalens.png";
 
@@ -31,6 +32,8 @@ import Aptap from "assets/startups/white-aptap.png";
 import Axiom from "assets/startups/axiom.png";
 import Ori from "assets/startups/ori.png";
 import EcoSync from "assets/startups/ecosync.png";
+import Anaphite from "assets/startups/anaphite.png";
+
 
 import { Link } from "components/link";
 
@@ -106,6 +109,17 @@ const Banner = () => {
                 </Box>
               </Box>
             </Box>
+            <Box as="span" sx={styles.banner.startups.avatar}>
+              <Image src={Anaphite} alt="Anaphite" />
+              <Text as="H3">Anaphite</Text>
+              <Box as="p" sx={styles.banner.startups.title}>
+                <Box sx={styles.banner.startups.socials}>
+                  <Link target={"_blank"} to={"https://sifted.eu/articles/anaphite-battery-tech-graphene-lithium-ion/"}>
+                    <FaBatteryFull sx={styles.banner.startups.icons} />
+                  </Link>
+                </Box>
+              </Box>
+            </Box>
           </Box>
         </Flex>
         <Flex sx={styles.banner.row}>
@@ -114,7 +128,7 @@ const Banner = () => {
               fontSize: "32px",
               fontWeight: "bold",
               lineHeight: 2.0,
-              marginTop: "0px",
+              marginTop: "80px",
               color: "#fff",
               "@media only screen and (max-width: 992px)": {
                 fontSize: "22px",
@@ -160,8 +174,8 @@ const Banner = () => {
               <Text as="h3">Enian </Text>
             </Box>
             <Box as="span" sx={styles.banner.community.avatar}>
-              <Image src={Oxbotica} alt="Oxbotica" />
-              <Text as="h3">Oxbotica </Text>
+              <Image src={Gardin} alt="Gardin" />
+              <Text as="h3">Gardin </Text>
             </Box>
             <Box as="span" sx={styles.banner.community.avatar}>
               {/* <Image src={Oxbotica} alt="Oxbotica" /> */}
@@ -206,7 +220,7 @@ const Banner = () => {
             <FaLinkedinIn sx={styles.banner.footer.icons} />
           </Link>
           <span sx={{ fontSize: "12px" }}>
-            <FaCopyright /> Silicon Roundabout Ventures @2021
+            <FaCopyright /> Silicon Roundabout Ventures @2022
           </span>
         </Box>
       </Container>
@@ -229,13 +243,12 @@ const styles = {
     startups: {
       display: "flex",
       flexDirection: "row",
-      // marginTop: '40px',
       alignItems: "center",
       flexWrap: "wrap",
       justifyContent: "center",
       rowGap: "40px",
       columnGap: "20px",
-      marginTop: "0px",
+      marginTop: "80px",
 
       "@media only screen and (max-width: 992px)": {
         rowGap: "80px",

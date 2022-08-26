@@ -149,7 +149,7 @@ const Banner = () => {
                 fontSize: "40px",
                 fontWeight: "bold",
                 lineHeight: 2.0,
-                marginTop: "80px",
+                marginTop: "40px",
                 marginBottom: "20px",
                 color: "#fff",
                 "@media only screen and (max-width: 992px)": {
@@ -238,7 +238,7 @@ const Banner = () => {
                 <styles sx={styles.banner.content.pink}>pre-seed</styles> and{" "}
                 <styles sx={styles.banner.content.pink}>seed</styles>,
                 leveraging our community of 15,000 founders and engineers and
-                our live pitching competitions that over the years featuered
+                our live pitching competitions that over the years featured
                 winners now worth over £6 Billion
               </p>
             </Text>
@@ -293,9 +293,12 @@ const Banner = () => {
                 >
                   💪
                 </span>{" "}
-                Our mission is to help founders of computer and physical science
+                {/* Our mission is to help founders of computer and physical science
                 based companies with investment capital and hands-on support as
-                they scale up towards mass adoption!
+                they scale up towards mass adoption! */}
+                Our mission is to help technical founding teams with investment capital and hands-on support,
+                that are building <styles sx={styles.banner.content.pink}>computer</styles> or <styles sx={styles.banner.content.pink}>physical sciences</styles> 
+                -based solutions to solve large-scale global problems!
               </p>
               <p>
                 <span
@@ -430,7 +433,7 @@ const Banner = () => {
                 <Box as="p" sx={styles.banner.startups.title}>
                   <Text as="p">
                     Disrupt the way an industry operates (1B+ potential revenue
-                    in 10+ yrs)
+                    in 10+ years)
                   </Text>
                 </Box>
               </Box>
@@ -478,7 +481,7 @@ const Banner = () => {
               <FaLinkedinIn sx={styles.banner.footer.icons} />
             </Link>
             <span sx={{ fontSize: "12px" }}>
-              <FaCopyright /> Silicon Roundabout Ventures @2021
+              <FaCopyright /> Silicon Roundabout Ventures @2022
             </span>
           </Box>
         </Flex>
