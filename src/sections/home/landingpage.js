@@ -1,6 +1,6 @@
 /** @jsx jsx */
 
-import { Box, Flex, Container, Text, jsx } from "theme-ui";
+import { Box, Flex, Container, Text, Image, jsx } from "theme-ui";
 
 import {
   FaGithub,
@@ -15,6 +15,10 @@ import Particles from "react-particles-js";
 import styled from "styled-components";
 
 import { Link } from "components/link";
+
+import Comm1 from "assets/community/community-meetup-square.jpg";
+import Comm2 from "assets/community/community-womanpitch-square.jpg";
+import Comm3 from "assets/community/community-franpitch-square.jpg";
 
 export const ParticleClass = styled.main`
   width: 100%;
@@ -239,9 +243,24 @@ const Banner = () => {
                 <styles sx={styles.banner.content.pink}>seed</styles>,
                 leveraging our community of 15,000 founders and engineers and
                 our live pitching competitions that over the years featured
-                winners now worth over £6 Billion
+                winners now worth over £6 Billion.
               </p>
             </Text>
+
+            <Container sx={styles.banner.container}>
+              <Box sx={styles.banner.community}>
+                <Box as="span" sx={styles.banner.community.pic}>
+                  <Image src={Comm1} alt="Silicon Roundabout Meetup" />
+                </Box>
+                <Box as="span" sx={styles.banner.community.pic}>
+                  <Image src={Comm2} alt="Silicon Roundabout Meetup" />
+                </Box>
+                <Box as="span" sx={styles.banner.community.pic}>
+                  <Image src={Comm3} alt="Silicon Roundabout Meetup" />
+                </Box>
+              </Box>
+            </Container>
+
             <Text
               sx={{
                 fontSize: "32px",
@@ -283,7 +302,8 @@ const Banner = () => {
                 <styles sx={styles.banner.content.pink}>
                   Venture, Science and Community
                 </styles>
-                .
+                . We provide investment capital, community connections and
+                hands-on support to seed founders.
               </p>
               <p>
                 <span
@@ -296,9 +316,13 @@ const Banner = () => {
                 {/* Our mission is to help founders of computer and physical science
                 based companies with investment capital and hands-on support as
                 they scale up towards mass adoption! */}
-                Our mission is to help technical founding teams with investment capital and hands-on support,
-                that are building <styles sx={styles.banner.content.pink}>computer</styles> or <styles sx={styles.banner.content.pink}>physical sciences</styles> 
-                -based solutions to solve large-scale global problems!
+                Our mission is to help technical founding teams building
+                solutions based on{" "}
+                <styles sx={styles.banner.content.pink}>computer</styles> or{" "}
+                <styles sx={styles.banner.content.pink}>
+                  physical sciences
+                </styles>{" "}
+                that are solving large-scale global problems.
               </p>
               <p>
                 <span
@@ -308,9 +332,26 @@ const Banner = () => {
                 >
                   🚀
                 </span>{" "}
-                If you are a visionary entrepreneur based in the UK or looking
-                to expand internationally from Europe, get in touch and apply
-                for funding! We'd like to see if we can help you.
+                If you are a{" "}
+                <styles sx={styles.banner.content.yellow}>
+                  deep tech or big data
+                </styles>{" "}
+                entrepreneur based in the UK or Europe, get in touch and{" "}
+                <a
+                  style={{ color: "#fff" }}
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://airtable.com/shrWqbcCtbPaXXfQ3"
+                >
+                  apply for funding
+                </a>
+                . We'd like to see if we can help you. Equally, if you would
+                like to join us as an investor, please visit our{" "}
+                <Link sx={{ textDecoration: "underline" }} to="/investors/">
+                  Investors
+                </Link>{" "}
+                page to request more info on becoming a Limited Partner in our
+                Seed fund.
               </p>
               <br />
             </Text>
@@ -504,6 +545,106 @@ const styles = {
     // ],
     backgroundPosition: "left top",
     backgroundRepeat: "no-repeat",
+
+    community: {
+      display: "flex",
+      flexDirection: "row",
+      marginTop: "40px",
+      alignItems: "center",
+      flexWrap: "wrap",
+      justifyContent: "center",
+      rowGap: "80px",
+      columnGap: "20px",
+
+      "@media only screen and (max-width: 992px)": {
+        display: "flex",
+        flexDirection: "column",
+        marginTop: "40px",
+        alignItems: "center",
+        flexWrap: "wrap",
+        justifyContent: "center",
+        rowGap: "0px",
+      },
+
+      pic: {
+        height: "230px",
+        width: "130px",
+        alignItems: "center",
+        flex: "0 0 30.333333333%",
+        display: "flex",
+        flexDirection: "column",
+        marginBottom: "60px",
+
+        "@media only screen and (max-width: 992px)": {},
+
+        img: {
+          margin: ["0px", null, null, null, null, "0"],
+          height: "100%",
+          borderRadius: "100%",
+          border: "1px solid white",
+        },
+      },
+
+      h3: {
+        color: "white",
+        fontSize: "20px",
+        mt: "10px",
+
+        "@media only screen and (max-width: 992px)": {
+          fontSize: "16px",
+          maxWidth: "max-content",
+          width: "300px",
+          mt: "10px",
+        },
+      },
+
+      title: {
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+
+        p: {
+          color: "white",
+          fontSize: "16px",
+
+          "@media only screen and (max-width: 992px)": {
+            fontSize: "12px",
+            maxWidth: "max-content",
+            width: "300px",
+          },
+        },
+      },
+
+      icons: {
+        color: "white",
+        marginLeft: "5px",
+        marginRight: "5px",
+      },
+
+      socials: {
+        display: "flex",
+        flexDirection: "row",
+      },
+
+      contact: {
+        fontSize: 2,
+        color: "#fff",
+        flex: "0 0 84%",
+        display: "flex",
+        flexDirection: "column",
+        flexWrap: "nowrap",
+
+        "@media only screen and (max-width: 992px)": {
+          display: "none",
+        },
+
+        text: {
+          fontSize: 2,
+          color: "#fff",
+          flex: "0 0 84%",
+        },
+      },
+    },
 
     footer: {
       display: "flex",
