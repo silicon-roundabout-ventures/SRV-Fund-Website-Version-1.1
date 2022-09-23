@@ -57,7 +57,7 @@ const Banner = () => {
           <Link
             target="_blank"
             path="https://forms.gle/NcDPJMSRMEdPdzG7A"
-            label="Apply Here!"
+            label="Apply Here"
             sx={styles.banner.form.link.button}
             variant="buttons.primary"
           />

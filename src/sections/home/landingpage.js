@@ -218,7 +218,7 @@ const Banner = () => {
                 },
               }}
             >
-              &lt;/Who we are&gt;
+              &lt;Who we are/&gt;
             </Text>
             <Text
               sx={{
@@ -274,7 +274,7 @@ const Banner = () => {
                 },
               }}
             >
-              &lt;/Our Mission&gt;
+              &lt;Our Mission/&gt;
             </Text>
             <Text
               sx={{
@@ -305,6 +305,7 @@ const Banner = () => {
                 . We provide investment capital, community connections and
                 hands-on support to seed founders.
               </p>
+              <br />
               <p>
                 <span
                   role="img"
@@ -324,6 +325,7 @@ const Banner = () => {
                 </styles>{" "}
                 that are solving large-scale global problems.
               </p>
+              <br />
               <p>
                 <span
                   role="img"
@@ -354,6 +356,7 @@ const Banner = () => {
                 Seed fund.
               </p>
               <br />
+              <br />
             </Text>
             <Text
               sx={{
@@ -368,7 +371,7 @@ const Banner = () => {
                 },
               }}
             >
-              &lt;/What makes us unique&gt;
+              &lt;What makes us unique/&gt;
             </Text>
             <Text
               sx={{
@@ -424,7 +427,7 @@ const Banner = () => {
                 },
               }}
             >
-              &lt;/We invest in startups whose technology is&gt;
+              &lt;We invest in startups whose technology is/&gt;
             </Text>
 
             <Box sx={styles.banner.startups}>

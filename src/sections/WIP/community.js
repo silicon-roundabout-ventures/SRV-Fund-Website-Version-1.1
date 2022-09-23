@@ -1,21 +1,21 @@
 /** @jsx jsx */
 
-import { Box, Flex, Container, Text, jsx } from "theme-ui";
+import { Box, Flex, Container, Text, jsx, Image } from "theme-ui";
 
-import {
-  FaGithub,
-  FaLinkedinIn,
-  FaTwitter,
-  FaLocationArrow,
-  FaMailBulk,
-  FaCopyright,
-} from "react-icons/fa";
+// import {
+//   FaGithub,
+//   FaLinkedinIn,
+//   FaTwitter,
+//   FaLocationArrow,
+//   FaMailBulk,
+//   FaCopyright,
+// } from "react-icons/fa"
+
+import styled from "styled-components";
+import Logo from "assets/sr_logo2.png";
+// import Zego from 'assets/zego.png'
 
 import Particles from "react-particles-js";
-import styled from "styled-components";
-import StartupsFeatured from "sections/docuseries/startups_featured";
-
-// import Mailchimp from 'components/mailchimp';
 
 import { Link } from "components/link";
 
@@ -35,28 +35,28 @@ const Banner = () => {
               params={{
                 particles: {
                   number: {
-                    value: 120,
+                    value: 20,
                     density: {
                       enable: true,
-                      value_area: 691.3181133058181,
+                      value_area: 800,
                     },
                   },
                   color: {
-                    value: "#000",
+                    value: ["#EEB23D", "#243141", "#DC4F45"],
                   },
                   shape: {
-                    type: "circle",
+                    type: "line",
                     stroke: {
-                      width: 2.5,
-                      color: "#ffffff",
+                      width: 100,
+                      color: "",
                     },
                     polygon: {
                       nb_sides: 9,
                     },
                   },
                   opacity: {
-                    value: 0.5,
-                    random: true,
+                    value: 2,
+                    random: false,
                     anim: {
                       enable: false,
                       speed: 1,
@@ -65,7 +65,7 @@ const Banner = () => {
                     },
                   },
                   size: {
-                    value: 0,
+                    value: 3,
                     random: true,
                     anim: {
                       enable: false,
@@ -83,10 +83,10 @@ const Banner = () => {
                   },
                   move: {
                     enable: true,
-                    speed: 0.9,
-                    direction: "none",
+                    speed: 5,
+                    direction: "top",
                     random: false,
-                    straight: false,
+                    straight: true,
                     out_mode: "out",
                     bounce: false,
                     attract: {
@@ -146,282 +146,69 @@ const Banner = () => {
               }}
             />
           </ParticleClass>
-          <Box sx={styles.banner.textcol}>
+
+          <Box sx={styles.banner.col}>
             <Box sx={styles.banner.content}>
+              <Image
+                sx={styles.banner.logo}
+                src={Logo}
+                alt="Silicon Roundabout Community Logo"
+              />
+              {/* <Text sx={{
+                    fontSize: '32px',
+                    fontWeight: 'bold',
+                    lineHeight: 2,
+                    color: '#fff',
+                    '@media only screen and (max-width: 992px)': {
+                      fontSize: '20px',
+                    },
+                  }}>
+                Connect.Grow.Innovate
+              </Text> */}
               <Text
                 sx={{
-                  fontSize: "64px",
-                  fontWeight: "bold",
+                  fontSize: "52px",
+                  fontWeight: "bolder",
                   lineHeight: 1.7,
-                  color: "#fff",
-                  display: "flex",
-                  flexDirection: "column",
-                  alignItems: "center",
+                  color: "#000",
                   "@media only screen and (max-width: 992px)": {
-                    fontSize: "32px",
+                    fontSize: "22px",
                   },
                 }}
               >
-                <Box>
-                  <styles sx={styles.banner.content.yellow}>Engineer</styles> A
-                  Startup
-                </Box>
-                <Text
-                  sx={{
-                    fontSize: "18px",
-                    fontWeight: "100",
-                    lineHeight: 2,
-                    color: "#fff",
-                    width: "1080px",
-                    // display: 'flex',
-                    // flexDirection: 'column',
-                    // alignItems: 'center',
-                    "@media only screen and (max-width: 992px)": {
-                      fontSize: "10px",
-                      width: "auto",
-                    },
-                  }}
-                >
-                  A 20 Episodes docuseries featuring real-life stories and
-                  actionable insights from entrepreneurs, executives, and
-                  investors who have built billion dollar startups or helped
-                  founders get there.
-                </Text>
-                <StartupsFeatured />
+                Join the Largest <br></br>Tech Community in the Europe
+              </Text>
 
-                <Text
-                  sx={{
-                    fontSize: "24px",
-                    fontWeight: "700",
-                    lineHeight: 1.7,
-                    mt: "20px",
-                    "@media only screen and (max-width: 992px)": {
-                      fontSize: "16px",
-                    },
-                  }}
-                >
-                  To get 2-week early access{" "}
-                  <span role="img" aria-label="information">
-                    &#128071;
-                  </span>
-                </Text>
-                <Box as="form" sx={styles.banner.form}>
-                  <Link
-                    path={"https://twitter.com/SiliconLondon"}
-                    target="_blank"
-                    spy={true}
-                    smooth={true}
-                    duration={800}
-                    label="Follow us on &#128038; Twitter!"
-                    sx={styles.banner.form.link.button}
-                    variant="buttons.primary"
-                  />
-                </Box>
+              <Link
+                target="_blank"
+                path="https://airtable.com/shrntrE9mhFDc0aA9"
+                label="Join!"
+                sx={styles.banner.form.link.button}
+                variant="buttons.primary"
+              />
+
+              {/* <Box as="form" sx={styles.banner.form}>
+               </Box> */}
+              <Text
+                sx={{
+                  fontSize: "14px",
+                  fontWeight: "light",
+                  lineHeight: 2,
+                  color: "#8a94a6",
+                  "@media only screen and (max-width: 992px)": {
+                    fontSize: "12px",
+                  },
+                }}
+              >
+                <styles sx={{ fontSize: "28px" }}>&#129309;</styles> 14,000+
+                members, 5,000+ startup founders, 4,000+ engineers, and 50+
+                community partners
               </Text>
             </Box>
           </Box>
-          <Flex sx={styles.banner.row.row2}>
-            <Text
-              sx={{
-                fontSize: "32px",
-                fontWeight: "bold",
-                lineHeight: 2.0,
-                marginTop: "80px",
-                color: "#fff",
-                "@media only screen and (max-width: 992px)": {
-                  fontSize: "20px",
-                  marginTop: "40px",
-                },
-              }}
-            >
-              &lt;About_DocuSeries/&gt;
-            </Text>
-            <Text
-              sx={{
-                fontSize: "20px",
-                fontWeight: "regular",
-                lineHeight: 2.0,
-                marginTop: "40px",
-                color: "#fff",
-                "@media only screen and (max-width: 992px)": {
-                  fontSize: "12px",
-                  marginTop: "20px",
-                },
-              }}
-            >
-              <p>
-                {" "}
-                <styles sx={styles.banner.content.yellow}>Engineer</styles> A
-                Startup is an interview format docuseries focusing on the
-                trials, tribulations and all the struggles that come with
-                starting your own business. From getting{" "}
-                <styles sx={styles.banner.content.pink}>funding</styles>,{" "}
-                <styles sx={styles.banner.content.red}>hiring</styles> great
-                people,{" "}
-                <styles sx={styles.banner.content.green}>growing</styles> your
-                business as well as raising funds for growth is what this
-                docuseries is all about.
-              </p>
-              <p>
-                The show will be a '
-                <styles sx={styles.banner.content.blue}>fly on the wall</styles>
-                ’ documentary style look at startup founders, executives and
-                investors who made it through all of the struggles to bring an
-                idea to reality in order to share their stories from start to
-                finish.
-              </p>
-              <p>
-                Our hope is that this series will inspire others that there is
-                no such thing as failure.
-              </p>
-              <p></p>
-            </Text>
-            <Box sx={styles.banner.register}>
-              {/* <Box sx={styles.banner.register.col}>
-                  <Text sx={{
-                          fontSize: '32px',
-                          fontWeight: 'bold',
-                          lineHeight: 2.0,
-                          marginTop: '40px',
-                          color: '#fff',
-                          '@media only screen and (max-width: 992px)': {
-                            fontSize: '20px',
-                            marginTop: '40px',
-                          },
-                        }}>
-                        &lt;/Register_Interest&gt;
-                  </Text>
-                  <Mailchimp/>
-                </Box> */}
-              <Box sx={styles.banner.register.col2}>
-                <Text
-                  sx={{
-                    fontSize: "32px",
-                    fontWeight: "bold",
-                    lineHeight: 2.0,
-                    marginTop: "40px",
-                    color: "#fff",
-                    // display: 'none',
-                    "@media only screen and (max-width: 992px)": {
-                      fontSize: "20px",
-                      marginTop: "40px",
-                      display: "block",
-                    },
-                  }}
-                >
-                  &lt;Why_Register/&gt;
-                </Text>
-                <Box
-                  sx={{
-                    display: "flex",
-                    flexDirection: "column",
-                    alignItems: "center",
-                    flexWrap: "wrap",
-                    justifyContent: "center",
-                    mt: "40px",
-                    "@media only screen and (max-width: 992px)": {
-                      marginTop: "0px",
-                    },
-                  }}
-                >
-                  <Box sx={styles.banner.startups}>
-                    <Box as="span" sx={styles.banner.startups.avatar}>
-                      <Text as="H3">
-                        &#91;{" "}
-                        <styles sx={styles.banner.content.red}>Premium</styles>{" "}
-                        &#93;
-                      </Text>
-                      <Box sx={styles.banner.startups.title}>
-                        <Text as="p">
-                          Get access to the premium rich content of the episodes
-                        </Text>
-                      </Box>
-                    </Box>
-                    <Box as="span" sx={styles.banner.startups.avatar}>
-                      <Text as="H3">
-                        &#123;{" "}
-                        <styles sx={styles.banner.content.red}>
-                          Early Access
-                        </styles>{" "}
-                        &#125;
-                      </Text>
-                      <Box as="p" sx={styles.banner.startups.title}>
-                        <Text as="p">
-                          Get 2-week early access to the episodes
-                        </Text>
-                      </Box>
-                    </Box>
-                    <Box as="span" sx={styles.banner.startups.avatar}>
-                      <Text as="H3">
-                        &#47;{" "}
-                        <styles sx={styles.banner.content.red}>
-                          Community
-                        </styles>{" "}
-                        &#47;
-                      </Text>
-                      <Box as="p" sx={styles.banner.startups.title}>
-                        <Text as="p">
-                          Exclusive invite to the community platform
-                        </Text>
-                      </Box>
-                    </Box>
-                    <Box as="span" sx={styles.banner.startups.avatar}>
-                      <Text as="H3">
-                        &#183;{" "}
-                        <styles sx={styles.banner.content.red}>Pitch</styles>{" "}
-                        &#183;
-                      </Text>
-                      <Box as="p" sx={styles.banner.startups.title}>
-                        <Text as="p">
-                          Opportunity to present at one of our monthly events
-                        </Text>
-                      </Box>
-                    </Box>
-                  </Box>
-                  <Link
-                    path={"https://twitter.com/SiliconLondon"}
-                    target="_blank"
-                    spy={true}
-                    smooth={true}
-                    duration={800}
-                    label="Follow us on &#128038; Twitter!"
-                    sx={styles.banner.form.link.button}
-                    variant="buttons.primary"
-                  />
-                </Box>
-              </Box>
-            </Box>
-          </Flex>
+          {/* <Image src={Zego} alt="Silicon Roundabout Community Logo" />
+            <Image src={Zego} alt="Silicon Roundabout Community Logo" /> */}
         </Flex>
-
-        <Box sx={styles.banner.footer}>
-          <Box sx={styles.banner.footer.contact}>
-            <span sx={{ fontSize: "1" }}>
-              <FaMailBulk /> hello@siliconroundabout.tech
-            </span>
-            <span sx={{ fontSize: "1" }}>
-              <FaLocationArrow /> London, UK
-            </span>
-          </Box>
-          <Link
-            target={"_blank"}
-            to={"https://github.com/silicon-roundabout-ventures/"}
-          >
-            <FaGithub sx={styles.banner.footer.icons} />
-          </Link>
-          <Link target={"_blank"} to={"https://twitter.com/SiliconLondon"}>
-            <FaTwitter sx={styles.banner.footer.icons} />
-          </Link>
-          <Link
-            target={"_blank"}
-            to={"https://www.linkedin.com/company/siliconroundabout/"}
-          >
-            <FaLinkedinIn sx={styles.banner.footer.icons} />
-          </Link>
-          <span sx={{ fontSize: "12px" }}>
-            <FaCopyright /> Silicon Roundabout Ventures @2022
-          </span>
-        </Box>
       </Container>
     </Box>
   );
@@ -431,45 +218,46 @@ export default Banner;
 
 const styles = {
   banner: {
+    fontColor: "#000000 !important",
+    fontFamily: "futura !important",
+    backgroundColor: "#fafafa",
     height: "100vh",
     overflowX: "hidden",
-    paddingTop: ["100px", "120px"],
+    paddingTop: ["40px", "0px"],
     paddingBottom: ["0px", null, "40px"],
     // backgroundImage: [
-    //   'linear-gradient(-180deg, #E0F5FA 0%, #FFFDE6 100%)',
     //   `url(${BannerBG})`,
     // ],
     backgroundPosition: "left top",
-    backgroundRepeat: "no-repeat",
+    backgroundRepeat: "round",
 
-    register: {
-      display: "flex",
-      flexDirection: "row",
-      flexWrap: "wrap",
-      width: "100%",
-      mt: "40px",
-
+    logo: {
+      width: "500px",
       "@media only screen and (max-width: 720px)": {
-        flexDirection: "column",
+        width: "300px",
       },
+    },
 
-      col: {
-        display: "flex",
-        flexDirection: "column",
-        flexBasis: "100%",
-        flex: "1",
-      },
-
-      col2: {
-        display: "flex",
-        flexDirection: "column",
-        flexBasis: "100%",
-        flex: "1",
-        alignItems: "flex-start",
-        "@media only screen and (max-width: 720px)": {
-          alignItems: "center",
-        },
-      },
+    orange: {
+      color: "#fb966e",
+    },
+    pink: {
+      color: "#FF7EF5",
+    },
+    green: {
+      color: "#9dff65",
+    },
+    blue: {
+      color: "#5AC4FF",
+    },
+    purple: {
+      color: "#775AFF",
+    },
+    yellow: {
+      color: "#edbc3e",
+    },
+    red: {
+      color: "#D94738",
     },
 
     footer: {
@@ -480,10 +268,11 @@ const styles = {
       marginTop: "120px",
       alignItems: "center",
       flexWrap: "wrap",
+      zIndex: 100,
 
       "@media only screen and (max-width: 720px)": {
         marginTop: "0px",
-        marginRight: "0px",
+        marginRight: "20px",
         padding: "10px",
         paddingBottom: "40px",
         justifyContent: "space-evenly",
@@ -512,7 +301,7 @@ const styles = {
         color: "#fff",
         width: "3rem",
         height: "3rem",
-        backgroundColor: "#000",
+        backgroundColor: "#0f0f0f !important",
         display: "inline-flex",
         alignItems: "center",
 
@@ -540,6 +329,7 @@ const styles = {
         flexDirection: "column",
         marginTop: "20px",
         alignItems: "center",
+        flexWrap: "wrap",
         justifyContent: "center",
       },
 
@@ -607,9 +397,10 @@ const styles = {
       },
 
       avatar: {
-        width: "100%",
+        height: "80px",
+        width: "80px",
         alignItems: "center",
-        flex: "0 0 30.333333333%;",
+        flex: "0 0 30.333333333%",
         display: "flex",
         flexDirection: "column",
         marginBottom: "40px",
@@ -657,7 +448,7 @@ const styles = {
         "@media only screen and (max-width: 720px)": {
           pl: "20px",
           pr: "20px",
-          pb: "40px",
+          pb: "20px",
           mb: "40px",
           mr: "20px",
         },
@@ -666,7 +457,7 @@ const styles = {
     col: {
       pl: "0px",
       pr: "0px",
-      mt: "120px",
+      mt: "160px",
       mb: "80px",
       flex: ["1 1 100%", null, "0 0 50%"],
       zIndex: "100",
@@ -679,26 +470,10 @@ const styles = {
         mr: "20px",
       },
     },
-
-    textcol: {
-      pl: "0px",
-      pr: "0px",
-      mt: "120px",
-      mb: "80px",
-      flex: ["1 1 100%", null, "0 0 50%"],
-      zIndex: "100",
-
-      "@media only screen and (max-width: 720px)": {
-        pl: "0px",
-        pr: "0px",
-        mt: "80px",
-        mb: "0px",
-        mr: "20px",
-      },
-    },
-
     content: {
+      textAlign: "center",
       paddingRight: [0, 0, 0, 0, "40px", 0, 0],
+      backgroundColor: "#fafafa",
       orange: {
         color: "#fb966e",
       },
@@ -740,10 +515,10 @@ const styles = {
         },
       },
       p: {
-        lineHeight: 2,
-        color: "#ffffff",
-        marginTop: ["5px", null, null, "5px"],
-        fontSize: ["16px", "22px"],
+        lineHeight: 2.33,
+        color: "#02073E",
+        marginTop: ["10px", null, null, "35px"],
+        fontSize: ["15px", "18px"],
         pr: ["15px", 0],
         br: {
           display: ["none", null, null, null, null, "block"],
@@ -772,11 +547,12 @@ const styles = {
     form: {
       position: "relative",
       width: "100%",
-      maxWidth: ["350px", null, null, "350px"],
+      maxWidth: ["250px", null, null, "250px"],
       boxShadow: "0px 10px 50px rgba(48, 98, 145, 0.08)",
-      marginTop: ["0px", "0px"],
+      marginTop: ["15px", "40px"],
       height: ["100%", null, null, "100%", null, null, "100%"],
-      marginBottom: ["40px", "40px", null, null, "40px"],
+      marginBottom: ["10px", null, null, null, null],
+      alignItems: "center",
 
       // input: {
       //   backgroundColor: '#fff',
@@ -806,23 +582,23 @@ const styles = {
         button: {
           paddingLeft: "25px",
           paddingRight: "25px",
+          marginTop: "20px",
+          marginBottom: "0px",
           alignItems: "center",
-          color: "#000",
-          width: "350px",
+          color: "#fff",
+          width: "200px",
           fontSize: "20px !important",
-          backgroundColor: "#fff",
-          borderRadius: "10px",
+          backgroundColor: "#000",
+          borderRadius: "9px",
           textAlign: "center",
-          mt: "40px",
           "&:hover": {
-            color: "#000",
-            backgroundColor: "grey",
-            borderRadius: "10px",
+            color: "#fff",
+            backgroundColor: "#D94738",
+            borderRadius: "9px",
           },
           "@media only screen and (max-width: 720px)": {
-            fontSize: "14px !important",
-            width: "100%",
-            mt: "40px",
+            fontSize: "16px !important",
+            width: "70%",
           },
         },
         button2: {
@@ -833,12 +609,12 @@ const styles = {
           color: "#000",
           width: "100%",
           backgroundColor: "#fff",
-          borderRadius: "10px",
+          borderRadius: "9px",
           marginTop: "20px",
           "&:hover": {
             color: "#000",
             backgroundColor: "grey",
-            borderRadius: "10px",
+            borderRadius: "9px",
           },
 
           "@media only screen and (min-width: 992px)": {
@@ -889,6 +665,7 @@ const styles = {
         content: '""',
         width: "302px",
         height: "347px",
+        // backgroundImage: `url(${BannerPattern})`,
         backgroundPosition: "center",
         top: "-30px",
         right: "-73px",

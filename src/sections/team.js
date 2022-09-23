@@ -54,7 +54,7 @@ const Banner = () => {
               },
             }}
           >
-            Team_
+            &lt;Team/&gt;
           </Text>
           <Box sx={styles.banner.team}>
             <Box as="span" sx={styles.banner.team.avatar}>
@@ -175,7 +175,7 @@ const Banner = () => {
               },
             }}
           >
-            Venture_Partners
+            &lt;Venture_Partners/&gt;
           </Text>
           <Box sx={styles.banner.vp}>
             <Box as="span" sx={styles.banner.team.avatar}>
