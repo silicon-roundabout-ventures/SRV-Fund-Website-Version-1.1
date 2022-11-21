@@ -16,7 +16,7 @@ import { HiMail } from "react-icons/hi";
 
 import styled from "styled-components";
 
-import Paul from "assets/team/paul.jpeg";
+//import Paul from "assets/team/paul.jpeg";
 import Franco from "assets/team/franco.jpeg";
 import Deep from "assets/team/deep.jpeg";
 import Ruhitha from "assets/team/ruhitha.jpeg";
@@ -88,25 +88,10 @@ const Banner = () => {
               </Box>
             </Box>
             <Box as="span" sx={styles.banner.team.avatar}>
-              <Image src={Paul} alt="Paul D." />
-              <Text as="H3">Paul Dinulescu</Text>
-              <Box as="p" sx={styles.banner.team.title}>
-                <Text as="p">Partner</Text>
-                <Box sx={styles.banner.team.socials}>
-                  <Link
-                    target={"_blank"}
-                    to={"https://www.linkedin.com/in/pauldinulescu/"}
-                  >
-                    <FaLinkedin sx={styles.banner.team.icons} />
-                  </Link>
-                </Box>
-              </Box>
-            </Box>
-            <Box as="span" sx={styles.banner.team.avatar}>
               <Image src={Deep} alt="Lord Deep" />
               <Text as="H3">Deep Godara</Text>
               <Box as="p" sx={styles.banner.team.title}>
-                <Text as="p">Analyst</Text>
+                <Text as="p">Venture Scout</Text>
                 <Box sx={styles.banner.team.socials}>
                   <Link
                     target={"_blank"}
