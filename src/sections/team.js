@@ -16,14 +16,9 @@ import { HiMail } from "react-icons/hi";
 
 import styled from "styled-components";
 
-//import Paul from "assets/team/paul.jpeg";
 import Franco from "assets/team/franco.jpeg";
 import Deep from "assets/team/deep.jpeg";
 import Ruhitha from "assets/team/ruhitha.jpeg";
-import Massimo from "assets/team/massimo.jpeg";
-// import Filippo from "assets/team/filippo.jpeg";
-// import Aapo from "assets/team/aapo.jpeg";
-// import Marc from "assets/team/marc.jpeg";
 import Olivia from "assets/team/olivia.jpeg";
 import Maria from "assets/team/maria.jpeg";
 
@@ -196,25 +191,7 @@ const Banner = () => {
                   </Link>
                 </Box>
               </Box>
-            </Box>
-            <Box as="span" sx={styles.banner.team.avatar}>
-              <Image src={Massimo} alt="Massimo C." />
-              <Text as="H3">Massimo Carnelos</Text>
-              <Box as="p" sx={styles.banner.team.title}>
-                <Text as="p">20+ yrs of Global Gvt. relations </Text>
-                <Text as="p">Policy, Finance, &amp; Tech Promotion</Text>
-                <Box sx={styles.banner.team.socials}>
-                  <Link
-                    target={"_blank"}
-                    to={
-                      "https://www.linkedin.com/in/massimo-carnelos-077606b2/"
-                    }
-                  >
-                    <FaLinkedin sx={styles.banner.team.icons} />
-                  </Link>
-                </Box>
-              </Box>
-            </Box>
+            </Box>   
           </Box>
           <Box sx={styles.banner.footer}>
             <Box sx={styles.banner.footer.contact}>
