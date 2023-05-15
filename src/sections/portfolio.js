@@ -38,7 +38,7 @@ import Ori from "assets/startups/ori.png";
 import EcoSync from "assets/startups/ecosync.png";
 import Anaphite from "assets/startups/anaphite.png";
 import Archangel from "assets/startups/archangel-whitenobg.png";
-import Greenjets from "assets/startups/greenjets.jpeg";
+import Greenjets from "assets/startups/greenjets-white.png";
 import Stealth from "assets/stealth-bomber.png";
 import Vypercore from "assets/startups/vypercore-white.png";
 
@@ -73,51 +73,7 @@ const Banner = () => {
           </Text>
 
           <Box sx={styles.banner.startups}>
-            <Box as="span" sx={styles.banner.startups.avatar}>
-              <Image src={Ori} alt="Ori" />
-              <Text as="H3">ORI Industries</Text>
-              <Box sx={styles.banner.startups.title}>
-                <Box sx={styles.banner.startups.socials}>
-                  <Link target={"_blank"} to={"https://ori.co/"}>
-                    <FaNetworkWired sx={styles.banner.startups.icons} />
-                  </Link>
-                </Box>
-              </Box>
-            </Box>
-            <Box as="span" sx={styles.banner.startups.avatar}>
-              <Image src={EcoSync} alt="ecosync" />
-              <Text as="H3">EcoSync</Text>
-              <Box as="p" sx={styles.banner.startups.title}>
-                <Box sx={styles.banner.startups.socials}>
-                  <Link target={"_blank"} to={"https://ecosync.energy/"}>
-                    <FaRegLightbulb sx={styles.banner.startups.icons} />
-                  </Link>
-                </Box>
-              </Box>
-            </Box>
-            <Box as="span" sx={styles.banner.startups.avatar}>
-              <Image src={Axiom} alt="axiom" />
-              <Text as="H3">axiom.ai</Text>
-              <Box as="p" sx={styles.banner.startups.title}>
-                <Box sx={styles.banner.startups.socials}>
-                  <Link target={"_blank"} to={"https://axiom.ai/"}>
-                    <FaRobot sx={styles.banner.startups.icons} />
-                  </Link>
-                </Box>
-              </Box>
-            </Box>
-            <Box as="span" sx={styles.banner.startups.avatar}>
-              <Image src={Aptap} alt="aptap" />
-              <Text as="H3">Aptap</Text>
-              <Box as="p" sx={styles.banner.startups.title}>
-                <Box sx={styles.banner.startups.socials}>
-                  <Link target={"_blank"} to={"https://aptap.co.uk/"}>
-                    <FaFingerprint sx={styles.banner.startups.icons} />
-                  </Link>
-                </Box>
-              </Box>
-            </Box>
-            <Box as="span" sx={styles.banner.startups.avatar}>
+          <Box as="span" sx={styles.banner.startups.avatar}>
               <Image src={Anaphite} alt="Anaphite" />
               <Text as="H3">Anaphite</Text>
               <Box as="p" sx={styles.banner.startups.title}>
@@ -168,6 +124,50 @@ const Banner = () => {
                 <Box sx={styles.banner.startups.socials}>
                   <Link target={"_blank"} to={"https://www.eetimes.com/processor-startup-innovates-memory-allocation-management"}>
                     <FaMicrochip sx={styles.banner.startups.icons} />
+                  </Link>
+                </Box>
+              </Box>
+            </Box>
+            <Box as="span" sx={styles.banner.startups.avatar}>
+              <Image src={Ori} alt="Ori" />
+              <Text as="H3">ORI Industries</Text>
+              <Box sx={styles.banner.startups.title}>
+                <Box sx={styles.banner.startups.socials}>
+                  <Link target={"_blank"} to={"https://ori.co/"}>
+                    <FaNetworkWired sx={styles.banner.startups.icons} />
+                  </Link>
+                </Box>
+              </Box>
+            </Box>
+            <Box as="span" sx={styles.banner.startups.avatar}>
+              <Image src={EcoSync} alt="ecosync" />
+              <Text as="H3">EcoSync</Text>
+              <Box as="p" sx={styles.banner.startups.title}>
+                <Box sx={styles.banner.startups.socials}>
+                  <Link target={"_blank"} to={"https://ecosync.energy/"}>
+                    <FaRegLightbulb sx={styles.banner.startups.icons} />
+                  </Link>
+                </Box>
+              </Box>
+            </Box>
+            <Box as="span" sx={styles.banner.startups.avatar}>
+              <Image src={Axiom} alt="axiom" />
+              <Text as="H3">axiom.ai</Text>
+              <Box as="p" sx={styles.banner.startups.title}>
+                <Box sx={styles.banner.startups.socials}>
+                  <Link target={"_blank"} to={"https://axiom.ai/"}>
+                    <FaRobot sx={styles.banner.startups.icons} />
+                  </Link>
+                </Box>
+              </Box>
+            </Box>
+            <Box as="span" sx={styles.banner.startups.avatar}>
+              <Image src={Aptap} alt="aptap" />
+              <Text as="H3">Aptap</Text>
+              <Box as="p" sx={styles.banner.startups.title}>
+                <Box sx={styles.banner.startups.socials}>
+                  <Link target={"_blank"} to={"https://aptap.co.uk/"}>
+                    <FaFingerprint sx={styles.banner.startups.icons} />
                   </Link>
                 </Box>
               </Box>
