@@ -23,7 +23,7 @@ import Logo from 'assets/sr_launchpad.png'
 import FI from 'assets/fi.png'
 
 
-import Particles from 'react-particles-js';
+import Particles from 'react-particles';
 
 import { Link } from 'components/link';
 

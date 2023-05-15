@@ -32,7 +32,7 @@ import {
 // import React, { Component } from 'react';
 
 // import VideoBtn from 'components/video-btn';
-// import Particles from 'react-particles-js';
+// import Particles from 'react-particles';
 import styled from "styled-components";
 
 import { Link } from "components/link";

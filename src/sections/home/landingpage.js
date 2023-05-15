@@ -11,7 +11,7 @@ import {
   FaCopyright,
 } from "react-icons/fa";
 
-import Particles from "react-particles-js";
+import Particles from "react-particles";
 import styled from "styled-components";
 
 import { Link } from "components/link";

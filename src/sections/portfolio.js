@@ -14,6 +14,10 @@ import {
   FaRobot,
   FaFingerprint,
   FaBatteryFull,
+  FaMicrochip,
+  FaSatellite,
+  FaPlane,
+  FaAtom
 } from "react-icons/fa";
 
 import styled from "styled-components";
@@ -33,6 +37,10 @@ import Axiom from "assets/startups/axiom.png";
 import Ori from "assets/startups/ori.png";
 import EcoSync from "assets/startups/ecosync.png";
 import Anaphite from "assets/startups/anaphite.png";
+import Archangel from "assets/startups/archangel-whitenobg.png";
+import Greenjets from "assets/startups/greenjets.jpeg";
+import Stealth from "assets/stealth-bomber.png";
+import Vypercore from "assets/startups/vypercore-white.png";
 
 
 import { Link } from "components/link";
@@ -116,6 +124,50 @@ const Banner = () => {
                 <Box sx={styles.banner.startups.socials}>
                   <Link target={"_blank"} to={"https://sifted.eu/articles/anaphite-battery-tech-graphene-lithium-ion/"}>
                     <FaBatteryFull sx={styles.banner.startups.icons} />
+                  </Link>
+                </Box>
+              </Box>
+            </Box>
+            <Box as="span" sx={styles.banner.startups.avatar}>
+              <Image src={Archangel} alt="Archangel Lightworks" />
+              <Text as="H3">Archangel Lightworks</Text>
+              <Box as="p" sx={styles.banner.startups.title}>
+                <Box sx={styles.banner.startups.socials}>
+                  <Link target={"_blank"} to={"https://sifted.eu/articles/spacetech-archangel-lightworks-raises-4m-news/"}>
+                    <FaSatellite sx={styles.banner.startups.icons} />
+                  </Link>
+                </Box>
+              </Box>
+            </Box>
+            <Box as="span" sx={styles.banner.startups.avatar}>
+              <Image src={Greenjets} alt="Greenjets" />
+              <Text as="H3">Greenjets</Text>
+              <Box as="p" sx={styles.banner.startups.title}>
+                <Box sx={styles.banner.startups.socials}>
+                  <Link target={"_blank"} to={"https://www.greenjets.co.uk/#News"}>
+                    <FaPlane sx={styles.banner.startups.icons} />
+                  </Link>
+                </Box>
+              </Box>
+            </Box>
+            <Box as="span" sx={styles.banner.startups.avatar}>
+              <Image src={Stealth} alt="Stealth" />
+              <Text as="H3">Stealth</Text>
+              <Box as="p" sx={styles.banner.startups.title}>
+                <Box sx={styles.banner.startups.socials}>
+                  <Link target={"_blank"} to={""}>
+                    <FaAtom sx={styles.banner.startups.icons} />
+                  </Link>
+                </Box>
+              </Box>
+            </Box>
+            <Box as="span" sx={styles.banner.startups.avatar}>
+              <Image src={Vypercore} alt="VyperCore" />
+              <Text as="H3">VyperCore</Text>
+              <Box as="p" sx={styles.banner.startups.title}>
+                <Box sx={styles.banner.startups.socials}>
+                  <Link target={"_blank"} to={"https://www.eetimes.com/processor-startup-innovates-memory-allocation-management"}>
+                    <FaMicrochip sx={styles.banner.startups.icons} />
                   </Link>
                 </Box>
               </Box>
