@@ -1,0 +1,35 @@
+/* src/components/blog-post-preview.css */
+.blog-post-preview {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+  
+  .blog-post-preview__image {
+    flex-basis: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .blog-post-preview__content {
+    flex-grow: 1;
+    padding: 20px;
+  }
+  
+  .blog-post-preview__title {
+    margin-bottom: 10px;
+  }
+  
+  .blog-post-preview__brief {
+    margin-bottom: 10px;
+  }
+  
+  .blog-post-preview__read-more {
+    color: #1a73e8;
+    text-decoration: none;
+  }
+  

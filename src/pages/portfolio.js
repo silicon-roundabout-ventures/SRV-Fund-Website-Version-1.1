@@ -1,7 +1,7 @@
 import React from 'react';
 import { StickyProvider } from 'contexts/app/app.provider';
 // import { VideoProvider } from 'contexts/video/video.provider';
-import SEO from 'components/seo';
+import Seo from 'components/seo';
 import Layout from 'components/layout';
 // import Modal from 'components/modal';
 import Portfolio from 'sections/portfolio';
@@ -23,7 +23,7 @@ export default function IndexPage() {
   return (
     <StickyProvider>
         <Layout>
-          <SEO
+          <Seo
             description="Founders don't worry we understand your Tech!"
             title="Portfolio Startups"
           />

@@ -1,4 +1,4 @@
-export default [
+const headerData = [
   // {
   //   path: '/',
   //   label: 'Home',
@@ -11,16 +11,22 @@ export default [
     path: '/portfolio',
     label: 'Portfolio',
   },
-  {
-    path: 'https://siliconroundabout.tech/',
-    label: 'Community',
-  },
-  {
-    path: '/engineer-startup',
-    label: 'Engineer A Startup',
-  },
+  // {
+  //   path: '/engineer-startup',
+  //   label: 'Engineer A Startup',
+  // },
+  // {
+  //   path: '/blog',
+  //   label: 'Building in the open',
+  // },
   // {
   //   path: 'https://siliconroundabout.tech/the-silicon-roundabout-blog/',
   //   label: 'Blog',
   // },
+  {
+    path: 'https://siliconroundabout.tech/',
+    label: 'Community',
+  }
 ];
+
+export default headerData;

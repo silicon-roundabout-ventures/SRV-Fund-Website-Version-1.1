@@ -1,10 +1,10 @@
 import React from "react";
 import { StickyProvider } from "contexts/app/app.provider";
 // import { VideoProvider } from 'contexts/video/video.provider';
-import SEO from "components/seo";
+import Seo from "components/seo";
 import Layout from "components/layout";
 // import Modal from 'components/modal';
-import Landingpage from "sections/home/landingpage";
+import LandingPage from "sections/home/landingpage";
 // import CtaOne from 'sections/cta-one';
 // import FAQ from 'sections/faq';
 // import CtaTwo from 'sections/cta-two';
@@ -19,16 +19,16 @@ import "react-modal-video/css/modal-video.min.css";
 import "swiper/swiper-bundle.min.css";
 import "typeface-dm-sans";
 
-export default function IndexPage() {
+function IndexPage() {
   return (
     <StickyProvider>
       <Layout>
-        <SEO
+        <Seo
           description="Community-driven VC scouting and investing in Next-Generation technology startups from the UK and Europe"
           title="Silicon Roundabout Ventures"
           image="/srv_dark_logo.png"
         />
-        <Landingpage />
+        <LandingPage />
         {/* <FavoriteCourse />
           <CtaThree />
           <PopularCourse /> */}
@@ -42,3 +42,5 @@ export default function IndexPage() {
     </StickyProvider>
   );
 }
+
+export default IndexPage;
