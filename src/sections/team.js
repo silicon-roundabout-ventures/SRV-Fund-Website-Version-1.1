@@ -12,15 +12,13 @@ import {
   FaCopyright,
   FaBlog,
 } from "react-icons/fa";
-import { HiMail } from "react-icons/hi";
 
 import styled from "styled-components";
 
 import Franco from "assets/team/franco.jpeg";
-import Deep from "assets/team/deep.jpeg";
-import Ruhitha from "assets/team/ruhitha.jpeg";
 import Olivia from "assets/team/olivia.jpeg";
 import Maria from "assets/team/maria.jpeg";
+import Ralph from "assets/team/ralph-pic.jpeg";
 
 import { Link } from "components/link";
 
@@ -56,7 +54,7 @@ const Banner = () => {
               <Image src={Franco} alt="Francesco Perticarari" />
               <Text as="H3">Francesco Perticarari</Text>
               <Box sx={styles.banner.team.title}>
-                <Text as="p">Managing Partner</Text>
+                <Text as="p">General Partner</Text>
                 <Box sx={styles.banner.team.socials}>
                   <Link
                     target={"_blank"}
@@ -82,80 +80,25 @@ const Banner = () => {
                 </Box>
               </Box>
             </Box>
-            <Box as="span" sx={styles.banner.team.avatar}>
-              <Image src={Deep} alt="Lord Deep" />
-              <Text as="H3">Deep Godara</Text>
-              <Box as="p" sx={styles.banner.team.title}>
-                <Text as="p">Venture Scout</Text>
-                <Box sx={styles.banner.team.socials}>
-                  <Link
-                    target={"_blank"}
-                    to={"https://www.linkedin.com/in/deepgodara/"}
-                  >
-                    <FaLinkedin sx={styles.banner.team.icons} />
-                  </Link>
-                  <Link
-                    target={"_blank"}
-                    to={"https://twitter.com/deeepgodara"}
-                  >
-                    <FaTwitter sx={styles.banner.team.icons} />
-                  </Link>
-                  <a
-                    aria-label="email"
-                    target={"_blank"}
-                    rel="noopener noreferrer"
-                    href="mailto:deep@siliconroundabout.tech"
-                  >
-                    <HiMail sx={styles.banner.team.icons} />
-                  </a>
-                  <Link target={"_blank"} to={"https://github.com/deepgodara"}>
-                    <FaGithub sx={styles.banner.team.icons} />
-                  </Link>
-                </Box>
-              </Box>
-            </Box>
-            <Box as="span" sx={styles.banner.team.avatar}>
-              <Image src={Ruhitha} alt="Ruhitha R." />
-              <Text as="H3">Ruhitha Reddy</Text>
-              <Box as="p" sx={styles.banner.team.title}>
-                <Text as="p">Community Manager</Text>
-                <Box sx={styles.banner.team.socials}>
-                  <Link
-                    target={"_blank"}
-                    to={"https://www.linkedin.com/in/ruhitha-reddy-7239b2162/"}
-                  >
-                    <FaLinkedin sx={styles.banner.team.icons} />
-                  </Link>
-                  <a
-                    aria-label="email"
-                    target={"_blank"}
-                    rel="noopener noreferrer"
-                    href="mailto:ruhitha@siliconroundabout.tech"
-                  >
-                    <HiMail sx={styles.banner.team.icons} />
-                  </a>
-                </Box>
-              </Box>
-            </Box>
           </Box>
         </Flex>
 
         <Flex sx={styles.banner.row}>
           <Text
             sx={{
-              fontSize: "32px",
+              fontSize: "24px",
               fontWeight: "bold",
               lineHeight: 2.0,
               marginTop: "80px",
               color: "#fff",
               "@media only screen and (max-width: 992px)": {
-                fontSize: "22px",
+                fontSize: "16px",
                 marginTop: "40px",
                 ml: "20px",
               },
             }}
           >
-            &lt;Venture_Partners/&gt;
+            Venture.Partners()
           </Text>
           <Box sx={styles.banner.vp}>
             <Box as="span" sx={styles.banner.team.avatar}>
@@ -177,6 +120,22 @@ const Banner = () => {
               </Box>
             </Box>
             <Box as="span" sx={styles.banner.team.avatar}>
+              <Image src={Ralph} alt="Ralph King" />
+              <Text as="H3">Ralph King</Text>
+              <Box as="p" sx={styles.banner.team.title}>
+                <Text as="p">Exited CTO & Tech Whiz</Text>
+                <Text as="p">Building our VC superpowers</Text>
+                <Box sx={styles.banner.team.socials}>
+                  <Link
+                    target={"_blank"}
+                    to={"https://www.linkedin.com/in/ralph-king/"}
+                  >
+                    <FaLinkedin sx={styles.banner.team.icons} />
+                  </Link>
+                </Box>
+              </Box>
+            </Box>
+            <Box as="span" sx={styles.banner.team.avatar}>
               <Image src={Maria} alt="Maria GV" />
               <Text as="H3">Maria Grazia Vigliotti, PhD</Text>
               <Box as="p" sx={styles.banner.team.title}>
@@ -191,7 +150,7 @@ const Banner = () => {
                   </Link>
                 </Box>
               </Box>
-            </Box>   
+            </Box>     
           </Box>
           <Box sx={styles.banner.footer}>
             <Box sx={styles.banner.footer.contact}>

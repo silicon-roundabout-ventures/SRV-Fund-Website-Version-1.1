@@ -15,10 +15,10 @@ const headerData = [
   //   path: '/engineer-startup',
   //   label: 'Engineer A Startup',
   // },
-  // {
-  //   path: '/blog',
-  //   label: 'Building in the open',
-  // },
+  {
+    path: '/blog',
+    label: 'Building in Public',
+  },
   // {
   //   path: 'https://siliconroundabout.tech/the-silicon-roundabout-blog/',
   //   label: 'Blog',
