@@ -427,32 +427,31 @@ const Banner = () => {
                 },
               }}
             >
-              &lt;We invest in startups whose technology is/&gt;
+              &lt;We write 1st cheques in startups building Next-Generation technologies:/&gt;
             </Text>
 
             <Box sx={styles.banner.startups}>
               <Box as="span" sx={styles.banner.startups.avatar}>
                 <Text as="H3">
                   &#91;{" "}
-                  <styles sx={styles.banner.content.red}>Innovative</styles>{" "}
+                  <styles sx={styles.banner.content.red}>Technical</styles>{" "}
                   &#93;
                 </Text>
                 <Box sx={styles.banner.startups.title}>
                   <Text as="p">
-                    They leverage significant technological development vs. the
-                    status quo
+                    Leveraging in-house science and engineering expertise to challenge the status-quo
                   </Text>
                 </Box>
               </Box>
               <Box as="span" sx={styles.banner.startups.avatar}>
                 <Text as="H3">
                   &#123;{" "}
-                  <styles sx={styles.banner.content.red}>Critical</styles>{" "}
+                  <styles sx={styles.banner.content.red}>Infrastructural</styles>{" "}
                   &#125;
                 </Text>
                 <Box as="p" sx={styles.banner.startups.title}>
                   <Text as="p">
-                    They solve (or bring to light) essential user needs
+                    They solve large scale global problems at a "picks and shovel" infrastructure level
                   </Text>
                 </Box>
               </Box>
@@ -464,7 +463,7 @@ const Banner = () => {
                 </Text>
                 <Box as="p" sx={styles.banner.startups.title}>
                   <Text as="p">
-                    They offer their makers an IP moat against challengers
+                    They build fundamental hardware or low level software tech with a strong IP moat against challengers
                   </Text>
                 </Box>
               </Box>
@@ -476,7 +475,7 @@ const Banner = () => {
                 </Text>
                 <Box as="p" sx={styles.banner.startups.title}>
                   <Text as="p">
-                    Disrupt the way an industry operates (1B+ potential revenue
+                    Disrupt internationally the way an industry operates (1B+ potential revenue
                     in 10+ years)
                   </Text>
                 </Box>
@@ -486,14 +485,13 @@ const Banner = () => {
                   &#60;
                   <styles sx={styles.banner.content.red}>
                     {" "}
-                    Unicorn-Material{" "}
+                    Global Impact{" "}
                   </styles>
                   &#62;
                 </Text>
                 <Box as="p" sx={styles.banner.startups.title}>
                   <Text as="p">
-                    Potential to make their creators scale 30-100X via M&amp;A
-                    or listing exit in 5-8 years
+                    Focused on solving key infrastructural challenges in key areas like Computing, Climate or Health, and Defence
                   </Text>
                 </Box>
               </Box>
