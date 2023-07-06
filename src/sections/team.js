@@ -117,7 +117,7 @@ const Banner = () => {
                     <FaLinkedin sx={styles.banner.team.icons} />
                   </Link>
                 </Box>
-              </Box>
+              </Box>add
             </Box>
             <Box as="span" sx={styles.banner.team.avatar}>
               <Image src={Ralph} alt="Ralph King" />

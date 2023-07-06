@@ -69,7 +69,6 @@ const BlogPreviews = () => {
             Building our VC firm in the open:
           </Text>
           <Link
-            target="_blank"
             path="https://blog.francescoperticarari.com/newsletter"
             label="New Articles Release Signup"
             sx={styles.banner.form.link.button}
@@ -112,7 +111,6 @@ const BlogPreviews = () => {
             Check out more articles:
           </Text>
           <Link
-            target="_blank"
             path="https://blog.francescoperticarari.com"
             label="@ TheEngineerVC.com"
             sx={styles.banner.form.link.button}

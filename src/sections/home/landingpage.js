@@ -427,7 +427,7 @@ const Banner = () => {
                 },
               }}
             >
-              &lt;We write 1st cheques in startups building Next-Generation technologies:/&gt;
+              &lt;We write 1st cheques in Next-Generation technology startups/&gt;
             </Text>
 
             <Box sx={styles.banner.startups}>
@@ -491,7 +491,7 @@ const Banner = () => {
                 </Text>
                 <Box as="p" sx={styles.banner.startups.title}>
                   <Text as="p">
-                    Focused on solving key infrastructural challenges in key areas like Computing, Climate or Health, and Defence
+                    Focused on solving key infrastructural challenges in areas like Computing, Climate or Health, and Defence
                   </Text>
                 </Box>
               </Box>
