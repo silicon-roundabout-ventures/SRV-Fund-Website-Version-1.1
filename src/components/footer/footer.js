@@ -1,7 +1,8 @@
 /** @jsx jsx */
-import { jsx, Heading, Box, Divider, Container } from 'theme-ui';
+import { jsx, Box, Divider, Container } from 'theme-ui';
 import { Link } from 'components/link';
-import menuItems from './footer.data';
+//import menuItems from './footer.data';
+//import { Autoplay } from 'swiper';
 import {
   FaGithub,
   FaLinkedinIn,
@@ -10,7 +11,6 @@ import {
   FaMailBulk,
   FaCopyright,
 } from "react-icons/fa"
-import { Autoplay } from 'swiper';
 
 export default function Footer() {
   return (
@@ -32,14 +32,32 @@ export default function Footer() {
           </Box>
         ))} */}
          <Box sx={styles.main.footer}>
-              <Box sx={styles.main.footer.contact}>
-                <span sx={{fontSize: '1',}}><FaMailBulk/> hello@siliconroundabout.tech</span>
-                <span sx={{fontSize: '1',}}><FaLocationArrow/> London, UK</span>
-              </Box>
-              <Link target={'_blank'} to={'https://github.com/silicon-roundabout-ventures/'}><FaGithub sx={styles.main.footer.icons}/></Link>
-              <Link target={'_blank'} to={'https://twitter.com/SiliconLondon'}><FaTwitter sx={styles.main.footer.icons}/></Link>
-              <Link target={'_blank'} to={'https://www.linkedin.com/company/siliconroundabout/'}><FaLinkedinIn sx={styles.main.footer.icons}/></Link>
-              <span sx={{fontSize: '12px'}}><FaCopyright/> Silicon Roundabout Ventures @2022</span>
+            <Box sx={styles.main.footer.contact}>
+              <span sx={{ fontSize: "1" }}>
+                <FaMailBulk /> hello@siliconroundabout.tech
+              </span>
+              <span sx={{ fontSize: "1" }}>
+                <FaLocationArrow /> London, UK
+              </span>
+            </Box>
+            <Link
+              target={"_blank"}
+              to={"https://github.com/silicon-roundabout-ventures/"}
+            >
+              <FaGithub sx={styles.main.footer.icons} />
+            </Link>
+            <Link target={"_blank"} to={"https://twitter.com/SiliconLondon"}>
+              <FaTwitter sx={styles.main.footer.icons} />
+            </Link>
+            <Link
+              target={"_blank"}
+              to={"https://www.linkedin.com/company/siliconroundabout/"}
+            >
+              <FaLinkedinIn sx={styles.main.footer.icons} />
+            </Link>
+            <span sx={{ fontSize: "12px" }}>
+              <FaCopyright /> Silicon Roundabout Ventures @2023
+            </span>
           </Box>
       </Container>
     </footer>
@@ -48,7 +66,6 @@ export default function Footer() {
 
 const styles = {
   main: {
-    fontFamily: 'futura !important',
     paddingBottom: '60px',
     '@media(max-width: 1024px)': {
       paddingBottom: '70px',
@@ -58,54 +75,53 @@ const styles = {
     },
 
     footer: {
-      display: 'flex',
-      flexDirection: 'row',
-      justifyContent: 'space-between',
-      height: '100%',
-      marginTop: '120px',
-      alignItems: 'center',
-      flexWrap: 'wrap',
+      display: "flex",
+      flexDirection: "row",
+      justifyContent: "space-between",
+      height: "100%",
+      marginTop: "60px",
+      alignItems: "center",
+      flexWrap: "wrap",
       zIndex: 100,
 
-      '@media only screen and (max-width: 720px)': {
-        marginTop: '0px',
-        marginRight: '20px',
-        padding: '10px',
-        paddingBottom: '40px',
-        justifyContent: 'space-evenly',
+      "@media only screen and (max-width: 720px)": {
+        marginTop: "20px",
+        marginRight: "20px",
+        padding: "10px",
+        paddingBottom: "40px",
+        justifyContent: "space-evenly",
       },
 
       contact: {
         fontSize: 2,
-        color: '#fff',
-        flex: '0 0 84%',
-        display: 'flex',
-        flexDirection: 'column',
-        flexWrap: 'nowrap',
+        color: "#fff",
+        flex: "0 0 84%",
+        display: "flex",
+        flexDirection: "column",
+        flexWrap: "nowrap",
 
-        '@media only screen and (max-width: 992px)': {
-              display: 'none',
+        "@media only screen and (max-width: 992px)": {
+          display: "none",
         },
 
         text: {
           fontSize: 2,
-          color: '#fff',
-          flex: '0 0 84%',
+          color: "#fff",
+          flex: "0 0 84%",
         },
       },
       icons: {
-        marginTop: '8%',
-        color: '#fff',
-        width: '3rem',
-        height: '3rem',
-        backgroundColor: '#000',
-        display: 'inline-flex',
-        alignItems: 'center',
+        marginTop: "8%",
+        color: "#fff",
+        width: "3rem",
+        height: "3rem",
+        backgroundColor: "#000",
+        display: "inline-flex",
+        alignItems: "center",
 
-
-        '@media only screen and (max-width: 992px)': {
-          width: '2rem',
-          height: '2rem',
+        "@media only screen and (max-width: 992px)": {
+          width: "2rem",
+          height: "2rem",
         },
       },
     },
@@ -116,9 +132,11 @@ const styles = {
       borderWidth: '1px',
       width: '100%',
       maxWidth: '900px',
-      marginBottom: '40px',
+      marginBottom: '10px',
+      marginTop: '120px',
       marginLeft: 'auto',
       marginRight: 'auto',
     },
   },
 };
+

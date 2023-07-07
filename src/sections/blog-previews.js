@@ -7,14 +7,7 @@ import { Box, Flex, Container, Text } from "theme-ui";
 // import srvgif from 'assets/srv.gif';
 import { Link } from "components/link";
 
-import {
-  FaGithub,
-  FaLinkedinIn,
-  FaTwitter,
-  FaLocationArrow,
-  FaMailBulk,
-  FaCopyright,
-} from "react-icons/fa";
+import Footer from '../components/footer/footer';
 
 
 const blogDomain = 'https://blog.francescoperticarari.com';
@@ -119,34 +112,7 @@ const BlogPreviews = () => {
         </Flex>
 
 
-        <Box sx={styles.banner.footer}>
-          <Box sx={styles.banner.footer.contact}>
-            <span sx={{ fontSize: "1" }}>
-              <FaMailBulk /> hello@siliconroundabout.tech
-            </span>
-            <span sx={{ fontSize: "1" }}>
-              <FaLocationArrow /> London, UK
-            </span>
-          </Box>
-          <Link
-            target={"_blank"}
-            to={"https://github.com/silicon-roundabout-ventures/"}
-          >
-            <FaGithub sx={styles.banner.footer.icons} />
-          </Link>
-          <Link target={"_blank"} to={"https://twitter.com/SiliconLondon"}>
-            <FaTwitter sx={styles.banner.footer.icons} />
-          </Link>
-          <Link
-            target={"_blank"}
-            to={"https://www.linkedin.com/company/siliconroundabout/"}
-          >
-            <FaLinkedinIn sx={styles.banner.footer.icons} />
-          </Link>
-          <span sx={{ fontSize: "1" }}>
-            <FaCopyright /> Silicon Roundabout Ventures @2022
-          </span>
-        </Box>
+        <Footer/>
       </Container>
     </Box>
   );
@@ -166,57 +132,6 @@ const styles = {
     paddingBottom: ["0px", null, "30px"],
     backgroundPosition: "left top",
     backgroundRepeat: "no-repeat",
-
-    footer: {
-      display: "flex",
-      flexDirection: "row",
-      justifyContent: "space-between",
-      height: "100%",
-      marginTop: "160px",
-      alignItems: "center",
-      flexWrap: "wrap",
-
-      "@media only screen and (max-width: 720px)": {
-        marginTop: "160px",
-        padding: "10px",
-        paddingBottom: "40px",
-        justifyContent: "space-evenly",
-      },
-
-      contact: {
-        fontSize: 2,
-        color: "#fff",
-        flex: "0 0 84%",
-        display: "flex",
-        flexDirection: "column",
-        flexWrap: "nowrap",
-
-        "@media only screen and (max-width: 992px)": {
-          display: "none",
-        },
-
-        text: {
-          fontSize: 2,
-          color: "#fff",
-          flex: "0 0 84%",
-        },
-      },
-      icons: {
-        marginTop: "8%",
-        color: "#fff",
-        width: "3rem",
-        height: "3rem",
-        backgroundColor: "#000",
-        display: "inline-flex",
-        alignItems: "center",
-
-        "@media only screen and (max-width: 992px)": {
-          width: "2rem",
-          height: "2rem",
-        },
-      },
-    },
-
 
     container: {
       maxWidth: ["100%", null, null, null, null, "1240px", "1440px"],

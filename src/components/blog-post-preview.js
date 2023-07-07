@@ -1,6 +1,6 @@
 // src/components/blog-post-preview.js
 import React from 'react';
-import './blog-post-preview.css';
+import '../styles/blog-post-preview.css';
 
 const BlogPostPreview = ({ title, brief, url, coverImage }) => {
   return (

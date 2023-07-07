@@ -39,7 +39,7 @@ export default function Footer2() {
               <Link target={'_blank'} to={'https://github.com/silicon-roundabout-ventures/'}><FaGithub sx={styles.main.footer.icons}/></Link>
               <Link target={'_blank'} to={'https://twitter.com/SiliconLondon'}><FaTwitter sx={styles.main.footer.icons}/></Link>
               <Link target={'_blank'} to={'https://www.linkedin.com/company/siliconroundabout/'}><FaLinkedinIn sx={styles.main.footer.icons}/></Link>
-              <span sx={{fontSize: '12px', color: '#000',}}><FaCopyright/> Silicon Roundabout Ventures @2022</span>
+              <span sx={{fontSize: '12px', color: '#000',}}><FaCopyright/> Silicon Roundabout Ventures @2023</span>
           </Box>
       </Container>
     </footer>

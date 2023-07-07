@@ -2,15 +2,6 @@
 
 import { Box, Flex, Container, Text, Image, jsx } from "theme-ui";
 
-import {
-  FaGithub,
-  FaLinkedinIn,
-  FaTwitter,
-  FaLocationArrow,
-  FaMailBulk,
-  FaCopyright,
-} from "react-icons/fa";
-
 import Particles from "react-particles";
 import styled from "styled-components";
 
@@ -19,6 +10,7 @@ import { Link } from "components/link";
 import Comm1 from "assets/community/community-meetup-square.jpg";
 import Comm2 from "assets/community/community-womanpitch-square.jpg";
 import Comm3 from "assets/community/community-franpitch-square.jpg";
+import Footer from "../../components/footer/footer";
 
 export const ParticleClass = styled.main`
   width: 100%;
@@ -30,7 +22,7 @@ const Banner = () => {
     <Box as="section" id="banner" sx={styles.banner}>
       <Container sx={styles.banner.container}>
         <Flex sx={styles.banner.row}>
-          <ParticleClass>
+        <ParticleClass>
             <Particles
               id="particles-js"
               params={{
@@ -147,6 +139,7 @@ const Banner = () => {
               }}
             />
           </ParticleClass>
+
           <Box sx={styles.banner.col}>
             <Text
               sx={{
@@ -498,34 +491,7 @@ const Banner = () => {
             </Box>
           </Flex>
 
-          <Box sx={styles.banner.footer}>
-            <Box sx={styles.banner.footer.contact}>
-              <span sx={{ fontSize: "1" }}>
-                <FaMailBulk /> hello@siliconroundabout.tech
-              </span>
-              <span sx={{ fontSize: "1" }}>
-                <FaLocationArrow /> London, UK
-              </span>
-            </Box>
-            <Link
-              target={"_blank"}
-              to={"https://github.com/silicon-roundabout-ventures/"}
-            >
-              <FaGithub sx={styles.banner.footer.icons} />
-            </Link>
-            <Link target={"_blank"} to={"https://twitter.com/SiliconLondon"}>
-              <FaTwitter sx={styles.banner.footer.icons} />
-            </Link>
-            <Link
-              target={"_blank"}
-              to={"https://www.linkedin.com/company/siliconroundabout/"}
-            >
-              <FaLinkedinIn sx={styles.banner.footer.icons} />
-            </Link>
-            <span sx={{ fontSize: "12px" }}>
-              <FaCopyright /> Silicon Roundabout Ventures @2022
-            </span>
-          </Box>
+          <Footer/>
         </Flex>
       </Container>
     </Box>
@@ -643,58 +609,6 @@ const styles = {
           fontSize: 2,
           color: "#fff",
           flex: "0 0 84%",
-        },
-      },
-    },
-
-    footer: {
-      display: "flex",
-      flexDirection: "row",
-      justifyContent: "space-between",
-      height: "100%",
-      marginTop: "120px",
-      alignItems: "center",
-      flexWrap: "wrap",
-      zIndex: 100,
-
-      "@media only screen and (max-width: 720px)": {
-        marginTop: "0px",
-        marginRight: "20px",
-        padding: "10px",
-        paddingBottom: "40px",
-        justifyContent: "space-evenly",
-      },
-
-      contact: {
-        fontSize: 2,
-        color: "#fff",
-        flex: "0 0 84%",
-        display: "flex",
-        flexDirection: "column",
-        flexWrap: "nowrap",
-
-        "@media only screen and (max-width: 992px)": {
-          display: "none",
-        },
-
-        text: {
-          fontSize: 2,
-          color: "#fff",
-          flex: "0 0 84%",
-        },
-      },
-      icons: {
-        marginTop: "8%",
-        color: "#fff",
-        width: "3rem",
-        height: "3rem",
-        backgroundColor: "#000",
-        display: "inline-flex",
-        alignItems: "center",
-
-        "@media only screen and (max-width: 992px)": {
-          width: "2rem",
-          height: "2rem",
         },
       },
     },

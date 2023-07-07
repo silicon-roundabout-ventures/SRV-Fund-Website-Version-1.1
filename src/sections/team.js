@@ -4,12 +4,8 @@ import { Box, Flex, Container, Image, Text, jsx } from "theme-ui";
 
 import {
   FaGithub,
-  FaLinkedinIn,
   FaTwitter,
-  FaLocationArrow,
-  FaMailBulk,
   FaLinkedin,
-  FaCopyright,
   FaBlog,
 } from "react-icons/fa";
 
@@ -21,6 +17,7 @@ import Maria from "assets/team/maria.jpeg";
 import Ralph from "assets/team/ralph-pic.jpeg";
 
 import { Link } from "components/link";
+import Footer from "../components/footer/footer";
 
 export const ParticleClass = styled.main`
   width: 100%;
@@ -152,89 +149,13 @@ const Banner = () => {
               </Box>
             </Box>     
           </Box>
-          <Box sx={styles.banner.footer}>
-            <Box sx={styles.banner.footer.contact}>
-              <span sx={{ fontSize: "1" }}>
-                <FaMailBulk /> hello@siliconroundabout.tech
-              </span>
-              <span sx={{ fontSize: "1" }}>
-                <FaLocationArrow /> London, UK
-              </span>
-            </Box>
-            <Link
-              target={"_blank"}
-              to={"https://github.com/silicon-roundabout-ventures/"}
-            >
-              <FaGithub sx={styles.banner.footer.icons} />
-            </Link>
-            <Link target={"_blank"} to={"https://twitter.com/SiliconLondon"}>
-              <FaTwitter sx={styles.banner.footer.icons} />
-            </Link>
-            <Link
-              target={"_blank"}
-              to={"https://www.linkedin.com/company/siliconroundabout/"}
-            >
-              <FaLinkedinIn sx={styles.banner.footer.icons} />
-            </Link>
-            <span sx={{ fontSize: "12px" }}>
-              <FaCopyright /> Silicon Roundabout Ventures @2022
-            </span>
-          </Box>
+          
+          <Footer/>
         </Flex>
       </Container>
     </Box>
   );
 };
-
-// <Box as="span" sx={styles.banner.team.avatar}>
-//     <Image src={Filippo} alt="Filippo B." />
-//     <Text as="H3">Filippo Bonsanti</Text>
-//     <Box sx={styles.banner.team.title}>
-//       <Text as="p">VP of Marketing</Text>
-//       <Text as="p">(Indeed, Omio, Ebay) </Text>
-//       <Box sx={styles.banner.team.socials}>
-//         <Link
-//           target={"_blank"}
-//           to={"https://www.linkedin.com/in/filippobonsanti/"}
-//         >
-//           <FaLinkedin sx={styles.banner.team.icons} />
-//         </Link>
-//       </Box>
-//     </Box>
-// </Box>
-// <Box as="span" sx={styles.banner.team.avatar}>
-//   <Image src={Aapo} alt="Aapo B." />
-//   <Text as="H3">Aapo Bovellan</Text>
-//   <Box as="p" sx={styles.banner.team.title}>
-//     <Text as="p">Branding Expert</Text>
-//     <Text as="p">(GP at Proxy VC)</Text>
-//     <Box sx={styles.banner.team.socials}>
-//       <Link
-//         target={"_blank"}
-//         to={"https://www.linkedin.com/in/aapobovellan"}
-//       >
-//         <FaLinkedin sx={styles.banner.team.icons} />
-//       </Link>
-//     </Box>
-//   </Box>
-// </Box>
-// <Box as="span" sx={styles.banner.team.avatar}>
-//   <Image src={Marc} alt="Marc S." />
-//   <Text as="H3">Marc Sabas</Text>
-//   <Box as="p" sx={styles.banner.team.title}>
-//     <Text as="p">
-//       Mentor @Techstars, Wayra <br /> Investment Director @Ship2B
-//     </Text>
-//     <Box sx={styles.banner.team.socials}>
-//       <Link
-//         target={"_blank"}
-//         to={"https://www.linkedin.com/in/mgvigliotti/"}
-//       >
-//         <FaLinkedin sx={styles.banner.team.icons} />
-//       </Link>
-//     </Box>
-//   </Box>
-// </Box>
 
 export default Banner;
 
@@ -441,56 +362,6 @@ const styles = {
           margin: ["0px", null, null, null, null, "0"],
           height: "100%",
           borderRadius: "100%",
-        },
-      },
-    },
-
-    footer: {
-      display: "flex",
-      flexDirection: "row",
-      justifyContent: "space-between",
-      height: "100%",
-      marginTop: "10%",
-      alignItems: "center",
-      flexWrap: "wrap",
-
-      "@media only screen and (max-width: 720px)": {
-        marginTop: "0px",
-        padding: "10px",
-        paddingBottom: "40px",
-        justifyContent: "space-evenly",
-      },
-
-      contact: {
-        fontSize: 2,
-        color: "#fff",
-        flex: "0 0 84%",
-        display: "flex",
-        flexDirection: "column",
-        flexWrap: "nowrap",
-
-        "@media only screen and (max-width: 992px)": {
-          display: "none",
-        },
-
-        text: {
-          fontSize: 2,
-          color: "#fff",
-          flex: "0 0 84%",
-        },
-      },
-      icons: {
-        marginTop: "8%",
-        color: "#fff",
-        width: "3rem",
-        height: "3rem",
-        backgroundColor: "#000",
-        display: "inline-flex",
-        alignItems: "center",
-
-        "@media only screen and (max-width: 992px)": {
-          width: "2rem",
-          height: "2rem",
         },
       },
     },

@@ -3,12 +3,6 @@
 import { Box, Flex, Container, Image, Text, jsx } from "theme-ui";
 
 import {
-  FaGithub,
-  FaLinkedinIn,
-  FaTwitter,
-  FaLocationArrow,
-  FaMailBulk,
-  FaCopyright,
   FaNetworkWired,
   FaRegLightbulb,
   FaRobot,
@@ -44,6 +38,7 @@ import Vypercore from "assets/startups/vypercore-white.png";
 
 
 import { Link } from "components/link";
+import Footer from "../components/footer/footer";
 
 export const ParticleClass = styled.main`
   width: 100%;
@@ -247,34 +242,7 @@ const Banner = () => {
           </Box>
         </Flex>
 
-        <Box sx={styles.banner.footer}>
-          <Box sx={styles.banner.footer.contact}>
-            <span sx={{ fontSize: "1" }}>
-              <FaMailBulk /> hello@siliconroundabout.tech
-            </span>
-            <span sx={{ fontSize: "1" }}>
-              <FaLocationArrow /> London, UK
-            </span>
-          </Box>
-          <Link
-            target={"_blank"}
-            to={"https://github.com/silicon-roundabout-ventures/"}
-          >
-            <FaGithub sx={styles.banner.footer.icons} />
-          </Link>
-          <Link target={"_blank"} to={"https://twitter.com/SiliconLondon"}>
-            <FaTwitter sx={styles.banner.footer.icons} />
-          </Link>
-          <Link
-            target={"_blank"}
-            to={"https://www.linkedin.com/company/siliconroundabout/"}
-          >
-            <FaLinkedinIn sx={styles.banner.footer.icons} />
-          </Link>
-          <span sx={{ fontSize: "12px" }}>
-            <FaCopyright /> Silicon Roundabout Ventures @2022
-          </span>
-        </Box>
+        <Footer/>
       </Container>
     </Box>
   );
@@ -480,56 +448,6 @@ const styles = {
         img: {
           margin: ["0px", null, null, null, null, "0"],
           height: "100%",
-        },
-      },
-    },
-
-    footer: {
-      display: "flex",
-      flexDirection: "row",
-      justifyContent: "space-between",
-      height: "100%",
-      marginTop: "40px",
-      alignItems: "center",
-      flexWrap: "wrap",
-
-      "@media only screen and (max-width: 720px)": {
-        marginTop: "80px",
-        padding: "10px",
-        paddingBottom: "40px",
-        justifyContent: "space-evenly",
-      },
-
-      contact: {
-        fontSize: 2,
-        color: "#fff",
-        flex: "0 0 84%",
-        display: "flex",
-        flexDirection: "column",
-        flexWrap: "nowrap",
-
-        "@media only screen and (max-width: 992px)": {
-          display: "none",
-        },
-
-        text: {
-          fontSize: 2,
-          color: "#fff",
-          flex: "0 0 84%",
-        },
-      },
-      icons: {
-        marginTop: "8%",
-        color: "#fff",
-        width: "3rem",
-        height: "3rem",
-        backgroundColor: "#000",
-        display: "inline-flex",
-        alignItems: "center",
-
-        "@media only screen and (max-width: 992px)": {
-          width: "2rem",
-          height: "2rem",
         },
       },
     },
