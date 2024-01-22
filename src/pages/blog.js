@@ -7,16 +7,18 @@ import Layout from "components/layout";
 import Helmet from 'react-helmet';
 
 const BlogPage = ({ data }) => {
-  window.SubstackFeedWidget = {
-    substackUrl: "siliconroundaboutcommunity.substack.com",
-    posts: 12,
-    layout: "right",
-    colors: {
-      primary: "#FFFFFF",
-      secondary: "#DBDBDB",
-      background: "#000000",
-    }
-  };
+  if (typeof window !== `undefined`) {
+    window.SubstackFeedWidget = {
+      substackUrl: "siliconroundaboutcommunity.substack.com",
+      posts: 8,
+      layout: "right",
+      colors: {
+        primary: "#FFFFFF",
+        secondary: "#DBDBDB",
+        background: "#000000",
+      }
+    };
+  }
   return (
     <StickyProvider>
       <Helmet>

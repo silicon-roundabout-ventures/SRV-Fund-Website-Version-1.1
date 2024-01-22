@@ -71,15 +71,6 @@ const BlogPreviews = () => {
 
           <Box sx={styles.banner.startups}>
             <h2>Posts</h2>
-            {/* {posts.map(post => (
-              <BlogPostPreview
-                key={post._id}
-                title={post.title}
-                brief={post.brief}
-                url={`${blogDomain}/${post.slug}`}
-                coverImage={post.coverImage}
-              />
-            ))} */}
             <div id="substack-feed-embed"></div>
           </Box>
           <Text
