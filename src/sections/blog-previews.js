@@ -13,25 +13,25 @@ import Footer from '../components/footer/footer';
 const blogDomain = 'https://blog.francescoperticarari.com';
 
 const BlogPreviews = () => {
-  const data = useStaticQuery(graphql`
-      query {
-        hashnode {
-          user(username: "fpert041") {
-            publication {
-              posts(page: 0) {
-                _id
-                title
-                brief
-                slug
-                coverImage
-              }
-            }
-          }
-        }
-      }
-    `);
+  // const data = useStaticQuery(graphql`
+  //     query {
+  //       hashnode {
+  //         user(username: "fpert041") {
+  //           publication {
+  //             posts(page: 0) {
+  //               _id
+  //               title
+  //               brief
+  //               slug
+  //               coverImage
+  //             }
+  //           }
+  //         }
+  //       }
+  //     }
+  //   `);
 
-  const posts = data.hashnode.user.publication.posts;
+  // const posts = data.hashnode.user.publication.posts;
 
   // Rest of component implementation
   return (
@@ -62,7 +62,7 @@ const BlogPreviews = () => {
             Building our VC firm in the open:
           </Text>
           <Link
-            path="https://blog.francescoperticarari.com/newsletter"
+            path="https://siliconroundaboutcommunity.substack.com/subscribe"
             label="New Articles Release Signup"
             sx={styles.banner.form.link.button}
             variant="buttons.primary"
@@ -71,7 +71,7 @@ const BlogPreviews = () => {
 
           <Box sx={styles.banner.startups}>
             <h2>Posts</h2>
-            {posts.map(post => (
+            {/* {posts.map(post => (
               <BlogPostPreview
                 key={post._id}
                 title={post.title}
@@ -79,7 +79,8 @@ const BlogPreviews = () => {
                 url={`${blogDomain}/${post.slug}`}
                 coverImage={post.coverImage}
               />
-            ))}
+            ))} */}
+            <div id="substack-feed-embed"></div>
           </Box>
           <Text
             sx={{
@@ -104,8 +105,8 @@ const BlogPreviews = () => {
             Check out more articles:
           </Text>
           <Link
-            path="https://blog.francescoperticarari.com"
-            label="@ TheEngineerVC.com"
+            path="https://siliconroundaboutcommunity.substack.com/"
+            label="Silicon Roundabout Ventures Community"
             sx={styles.banner.form.link.button}
             variant="buttons.primary"
           />
@@ -113,6 +114,7 @@ const BlogPreviews = () => {
 
 
         <Footer/>
+
       </Container>
     </Box>
   );
