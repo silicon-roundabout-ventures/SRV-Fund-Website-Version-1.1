@@ -9,7 +9,7 @@ import Helmet from 'react-helmet';
 const BlogPage = ({ data }) => {
   if (typeof window !== `undefined`) {
     window.SubstackFeedWidget = {
-      substackUrl: "siliconroundaboutcommunity.substack.com",
+      substackUrl: "blog.siliconroundabout.ventures",
       posts: 8,
       layout: "right",
       colors: {
