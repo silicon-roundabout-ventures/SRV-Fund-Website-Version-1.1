@@ -34,7 +34,7 @@ export default function Header({ className }) {
             {menuItems.map(({ path, label }, i) => (
               <Link
                 target="_blank"
-                activeClass="active"
+                activeClassName="active"
                 sx={styles.nav.navLink}
                 path={path}
                 spy={true}

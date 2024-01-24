@@ -9,31 +9,7 @@ import { Link } from "components/link";
 
 import Footer from '../components/footer/footer';
 
-
-const blogDomain = 'https://blog.francescoperticarari.com';
-
 const BlogPreviews = () => {
-  const data = useStaticQuery(graphql`
-      query {
-        hashnode {
-          user(username: "fpert041") {
-            publication {
-              posts(page: 0) {
-                _id
-                title
-                brief
-                slug
-                coverImage
-              }
-            }
-          }
-        }
-      }
-    `);
-
-  const posts = data.hashnode.user.publication.posts;
-
-  // Rest of component implementation
   return (
     <Box as="section" id="banner" sx={styles.banner}>
       <Container sx={styles.banner.container}>
@@ -62,7 +38,7 @@ const BlogPreviews = () => {
             Building our VC firm in the open:
           </Text>
           <Link
-            path="https://blog.francescoperticarari.com/newsletter"
+            path="https://blog.siliconroundabout.ventures/subscribe"
             label="New Articles Release Signup"
             sx={styles.banner.form.link.button}
             variant="buttons.primary"
@@ -71,15 +47,7 @@ const BlogPreviews = () => {
 
           <Box sx={styles.banner.startups}>
             <h2>Posts</h2>
-            {posts.map(post => (
-              <BlogPostPreview
-                key={post._id}
-                title={post.title}
-                brief={post.brief}
-                url={`${blogDomain}/${post.slug}`}
-                coverImage={post.coverImage}
-              />
-            ))}
+            <div id="substack-feed-embed"></div>
           </Box>
           <Text
             sx={{
@@ -104,8 +72,8 @@ const BlogPreviews = () => {
             Check out more articles:
           </Text>
           <Link
-            path="https://blog.francescoperticarari.com"
-            label="@ TheEngineerVC.com"
+            path="https://blog.siliconroundabout.ventures"
+            label="Silicon Roundabout Ventures Community"
             sx={styles.banner.form.link.button}
             variant="buttons.primary"
           />
@@ -113,6 +81,7 @@ const BlogPreviews = () => {
 
 
         <Footer/>
+
       </Container>
     </Box>
   );

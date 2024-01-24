@@ -50,18 +50,18 @@ module.exports = {
       },
     },
     // enable and config gatsby-source-graphql plugin
-    {
-      resolve: 'gatsby-source-graphql',
-      options: {
-        typeName: 'Hashnode',
-        fieldName: 'hashnode',
-        url: 'https://api.hashnode.com/',
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': 'Bearer Y3e80387f-284e-4f36-bbe5-d9d3adf64a80',
-        },
-      },
-    },
+    // {
+    //   resolve: 'gatsby-source-graphql',
+    //   options: {
+    //     typeName: 'Hashnode',
+    //     fieldName: 'hashnode',
+    //     url: 'https://api.hashnode.com/',
+    //     headers: {
+    //       'Content-Type': 'application/json',
+    //       'Authorization': 'Bearer Y3e80387f-284e-4f36-bbe5-d9d3adf64a80',
+    //     },
+    //   },
+    // },
 
     // {
     //   resolve: 'gatsby-source-mailchimp',
