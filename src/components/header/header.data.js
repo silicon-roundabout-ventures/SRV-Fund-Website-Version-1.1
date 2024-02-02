@@ -26,6 +26,7 @@ const headerData = [
   {
     path: 'https://siliconroundabout.tech/',
     label: 'Community',
+    target: '_blank'
   }
 ];
 

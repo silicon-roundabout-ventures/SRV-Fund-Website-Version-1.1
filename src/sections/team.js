@@ -48,7 +48,7 @@ const Banner = () => {
           </Text>
           <Box sx={styles.banner.team}>
             <Box as="span" sx={styles.banner.team.avatar}>
-              <Image src={Franco} alt="Francesco Perticarari" />
+            <Image src={Franco} alt="Francesco Perticarari" />
               <Text as="H3">Francesco Perticarari</Text>
               <Box sx={styles.banner.team.title}>
                 <Text as="p">General Partner</Text>
@@ -258,11 +258,15 @@ const styles = {
         flexDirection: "column",
         marginBottom: "60px",
 
-        "@media only screen and (max-width: 992px)": {},
+        '@media only screen and (max-width: 992px)': {
+          width: '80px',
+          height: '80px',
+        },
 
         img: {
           margin: ["0px", null, null, null, null, "0"],
           height: "100%",
+          flexShrink: 0,
           borderRadius: "100%",
         },
       },

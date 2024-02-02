@@ -1,7 +1,7 @@
 // src/sections/blog-previews.js
 import React from 'react';
-import BlogPostPreview from '../components/blog-post-preview';
-import { useStaticQuery, graphql } from 'gatsby';
+//import BlogPostPreview from '../components/blog-post-preview';
+//import { useStaticQuery, graphql } from 'gatsby';
 
 import { Box, Flex, Container, Text } from "theme-ui";
 // import srvgif from 'assets/srv.gif';
@@ -20,7 +20,7 @@ const BlogPreviews = () => {
               fontSize: "32px",
               fontWeight: "bold",
               lineHeight: 2.0,
-              marginTop: "120px",
+              marginTop: "80px",
               color: "#fff",
               textAlign: "center",
               paddingLeft: "120px",
@@ -29,13 +29,40 @@ const BlogPreviews = () => {
 
               "@media only screen and (max-width: 992px)": {
                 fontSize: "18px",
-                marginTop: "140px",
+                marginTop: "60px",
                 paddingLeft: "40px",
                 paddingRight: "40px",
               },
             }}
           >
-            Building our VC firm in the open:
+            Building our VC firm in Public:
+          </Text>
+          <Text
+            sx={{
+              fontSize: "16px",
+              fontWeight: "regular",
+              lineHeight: 2.0,
+              marginTop: "30px",
+              textAlign: "center",
+              color: "#fff",
+              "@media only screen and (max-width: 992px)": {
+                fontSize: "8px",
+                marginTop: "10px",
+              },
+            }}
+          >
+            <p>
+              Every month Silicon Roundabout Ventures GP, Francesco Perticarari, sends this public list the (almost identical) update sent to our LPs. Exclusive perks, information, and sensitive information may need to be redacted, but as much as possible is shared publicly. We also, occasionally, share research articles, data on the state of European Deeptech, and tools we used to build our VC firm.
+            </p>
+            <i><blockquote>
+              <span>“Francesco is blazing the trail, so that others can run along the path.”</span>
+              <br />
+              <span>─Dave Neumann, Molten Ventures FoF Team & Silicon Roundabout Ventures LP</span>
+            </blockquote></i>
+            <br/>
+            <p>
+              Get the next report in your inbox:
+            </p>
           </Text>
           <Link
             path="https://blog.siliconroundabout.ventures/subscribe"
@@ -43,8 +70,6 @@ const BlogPreviews = () => {
             sx={styles.banner.form.link.button}
             variant="buttons.primary"
           />
-
-
           <Box sx={styles.banner.startups}>
             <h2>Posts</h2>
             <div id="substack-feed-embed"></div>
@@ -80,7 +105,7 @@ const BlogPreviews = () => {
         </Flex>
 
 
-        <Footer/>
+        <Footer />
 
       </Container>
     </Box>
@@ -188,7 +213,8 @@ const styles = {
           fontSize: "20px !important",
           backgroundColor: "#fff",
           borderRadius: "9px",
-          marginTop: "40px",
+          marginTop: "10px",
+          marginBottom: "10px",
           "&:hover": {
             color: "#000",
             backgroundColor: "grey",

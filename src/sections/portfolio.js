@@ -646,6 +646,7 @@ const styles = {
         position: "relative",
         zIndex: 9,
         maxWidth: "100%",
+        flexShrink: 0,
       },
       ".videoBtn": {
         position: "absolute",

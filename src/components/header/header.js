@@ -31,9 +31,8 @@ export default function Header({ className }) {
           <Logo />
 
           <Flex as="nav" sx={styles.nav}>
-            {menuItems.map(({ path, label }, i) => (
+            {menuItems.map(({ path, label, target }, i) => (
               <Link
-                target="_blank"
                 activeClassName="active"
                 sx={styles.nav.navLink}
                 path={path}
@@ -42,6 +41,7 @@ export default function Header({ className }) {
                 offset={-100}
                 duration={500}
                 key={i}
+                target={target}
               >
                 {label}
               </Link>
@@ -51,7 +51,7 @@ export default function Header({ className }) {
           <Link
             path="/investors"
             ml={2}
-            target="_blank"
+            //target="_blank"
             label="For Investors"
             sx={styles.headerBtn}
             variant="buttons.primary"
