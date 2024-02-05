@@ -35,7 +35,7 @@ const Banner = () => {
                     },
                   },
                   color: {
-                    value: "#000",
+                    value: "#ffffff",
                   },
                   shape: {
                     type: "circle",
@@ -186,13 +186,15 @@ const Banner = () => {
                 &#125;
               </Text>
               <Box as="form" sx={styles.banner.form}>
-                <Link
+                <Box
+                  as="a"
                   target="_blank"
                   path="https://airtable.com/shrWqbcCtbPaXXfQ3"
-                  label="Apply for Funding"
                   sx={styles.banner.form.link.button}
                   variant="buttons.primary"
-                />
+                >
+                Apply for Funding
+                </Box>
               </Box>
             </Box>
           </Box>
@@ -425,7 +427,7 @@ const Banner = () => {
 
             <Box sx={styles.banner.startups}>
               <Box as="span" sx={styles.banner.startups.avatar}>
-                <Text as="H3">
+                <Text as="h3">
                   &#91;{" "}
                   <styles sx={styles.banner.content.red}>Technical</styles>{" "}
                   &#93;
@@ -437,36 +439,36 @@ const Banner = () => {
                 </Box>
               </Box>
               <Box as="span" sx={styles.banner.startups.avatar}>
-                <Text as="H3">
+                <Text as="h3">
                   &#123;{" "}
                   <styles sx={styles.banner.content.red}>Infrastructural</styles>{" "}
                   &#125;
                 </Text>
-                <Box as="p" sx={styles.banner.startups.title}>
+                <Box as="span" sx={styles.banner.startups.title}>
                   <Text as="p">
                     They solve large scale global problems at a "picks and shovel" infrastructure level
                   </Text>
                 </Box>
               </Box>
               <Box as="span" sx={styles.banner.startups.avatar}>
-                <Text as="H3">
+                <Text as="h3">
                   &#183;{" "}
                   <styles sx={styles.banner.content.red}>Defensible</styles>{" "}
                   &#183;
                 </Text>
-                <Box as="p" sx={styles.banner.startups.title}>
+                <Box as="span" sx={styles.banner.startups.title}>
                   <Text as="p">
                     They build fundamental hardware or low level software tech with a strong IP moat against challengers
                   </Text>
                 </Box>
               </Box>
               <Box as="span" sx={styles.banner.startups.avatar}>
-                <Text as="H3">
+                <Text as="h3">
                   &#47;{" "}
                   <styles sx={styles.banner.content.red}>Trend-Setting</styles>{" "}
                   &#47;
                 </Text>
-                <Box as="p" sx={styles.banner.startups.title}>
+                <Box as="span" sx={styles.banner.startups.title}>
                   <Text as="p">
                     Disrupt internationally the way an industry operates (1B+ potential revenue
                     in 10+ years)
@@ -474,7 +476,7 @@ const Banner = () => {
                 </Box>
               </Box>
               <Box as="span" sx={styles.banner.startups.avatar}>
-                <Text as="H3">
+                <Text as="h3">
                   &#60;
                   <styles sx={styles.banner.content.red}>
                     {" "}
@@ -482,7 +484,7 @@ const Banner = () => {
                   </styles>
                   &#62;
                 </Text>
-                <Box as="p" sx={styles.banner.startups.title}>
+                <Box as="span" sx={styles.banner.startups.title}>
                   <Text as="p">
                     Focused on solving key infrastructural challenges in areas like Computing, Climate or Health, and Defence
                   </Text>

@@ -3,10 +3,6 @@
 import { Box, Flex, Container, Image, Text, jsx } from "theme-ui";
 
 import {
-  FaNetworkWired,
-  FaRegLightbulb,
-  FaRobot,
-  FaFingerprint,
   FaBatteryFull,
   FaMicrochip,
   FaSatellite,
@@ -17,19 +13,12 @@ import {
 import styled from "styled-components";
 
 import Proximie from "assets/startups/community/proximie.png";
-import Argeo from "assets/startups/community/argeo.png";
 import CQ from "assets/startups/community/cq.png";
 import Monzo from "assets/startups/community/monzo.png";
 import Zego from "assets/startups/community/zego.png";
-import Huma from "assets/startups/community/huma.png";
 import Gardin from "assets/startups/community/gardin.png";
-import Enian from "assets/startups/community/enian.png";
 import Causalens from "assets/startups/community/causalens.png";
 
-import Aptap from "assets/startups/white-aptap.png";
-import Axiom from "assets/startups/axiom.png";
-import Ori from "assets/startups/ori.png";
-import EcoSync from "assets/startups/ecosync.png";
 import Anaphite from "assets/startups/anaphite.png";
 import Archangel from "assets/startups/archangel-whitenobg.png";
 import Greenjets from "assets/startups/greenjets-white.png";
@@ -66,6 +55,22 @@ const Banner = () => {
           >
             Portfolio_Startups()
           </Text>
+          <Text
+              sx={{
+                fontSize: "20px",
+                fontWeight: "regular",
+                lineHeight: 2.0,
+                marginTop: "40px",
+                color: "#fff",
+                "@media only screen and (max-width: 992px)": {
+                  fontSize: "12px",
+                  marginTop: "20px",
+                },
+              }}
+            >
+              <p>After a decade of community building, we launched Silicon Roundabout Ventures as a Deeptech Super-Angel VC in 2023. The fund is backed by top-tier VC Molten Ventures (LSE:GROW) and exited founders, engineers and execs: including ex googlers, amazonians and from 2 unicorns.</p>
+                <p>Our main focus within deeptech is on startups building infrastructure technologies in Computing, Impact in Climate or Health, and Defence.</p>
+            </Text>
 
           <Box sx={styles.banner.startups}>
           <Box as="span" sx={styles.banner.startups.avatar}>
@@ -103,7 +108,7 @@ const Banner = () => {
             </Box>
             <Box as="span" sx={styles.banner.startups.avatar}>
               <Image src={Stealth} alt="Stealth" />
-              <Text as="H3">Stealth</Text>
+              <Text as="H3">Stealth (Quantum / Photonics)</Text>
               <Box as="p" sx={styles.banner.startups.title}>
                 <Box sx={styles.banner.startups.socials}>
                   <Link target={"_blank"} to={""}>
@@ -122,51 +127,29 @@ const Banner = () => {
                   </Link>
                 </Box>
               </Box>
-            </Box>
+            </Box>  
             <Box as="span" sx={styles.banner.startups.avatar}>
-              <Image src={Ori} alt="Ori" />
-              <Text as="H3">ORI Industries</Text>
-              <Box sx={styles.banner.startups.title}>
-                <Box sx={styles.banner.startups.socials}>
-                  <Link target={"_blank"} to={"https://ori.co/"}>
-                    <FaNetworkWired sx={styles.banner.startups.icons} />
-                  </Link>
-                </Box>
-              </Box>
-            </Box>
-            <Box as="span" sx={styles.banner.startups.avatar}>
-              <Image src={EcoSync} alt="ecosync" />
-              <Text as="H3">EcoSync</Text>
+              <Image src={Stealth} alt="Stealth" />
+              <Text as="H3">Stealth (Climate Hardware)</Text>
               <Box as="p" sx={styles.banner.startups.title}>
                 <Box sx={styles.banner.startups.socials}>
-                  <Link target={"_blank"} to={"https://ecosync.energy/"}>
-                    <FaRegLightbulb sx={styles.banner.startups.icons} />
+                  <Link target={"_blank"} to={""}>
+                    <FaAtom sx={styles.banner.startups.icons} />
                   </Link>
                 </Box>
               </Box>
-            </Box>
+            </Box> 
             <Box as="span" sx={styles.banner.startups.avatar}>
-              <Image src={Axiom} alt="axiom" />
-              <Text as="H3">axiom.ai</Text>
+              <Image src={Stealth} alt="Stealth" />
+              <Text as="H3">Stealth (TechBio)</Text>
               <Box as="p" sx={styles.banner.startups.title}>
                 <Box sx={styles.banner.startups.socials}>
-                  <Link target={"_blank"} to={"https://axiom.ai/"}>
-                    <FaRobot sx={styles.banner.startups.icons} />
+                  <Link target={"_blank"} to={""}>
+                    <FaAtom sx={styles.banner.startups.icons} />
                   </Link>
                 </Box>
               </Box>
-            </Box>
-            <Box as="span" sx={styles.banner.startups.avatar}>
-              <Image src={Aptap} alt="aptap" />
-              <Text as="H3">Aptap</Text>
-              <Box as="p" sx={styles.banner.startups.title}>
-                <Box sx={styles.banner.startups.socials}>
-                  <Link target={"_blank"} to={"https://aptap.co.uk/"}>
-                    <FaFingerprint sx={styles.banner.startups.icons} />
-                  </Link>
-                </Box>
-              </Box>
-            </Box>
+            </Box>      
           </Box>
         </Flex>
         <Flex sx={styles.banner.row}>
@@ -186,39 +169,41 @@ const Banner = () => {
           >
             Community_Startups()
           </Text>
-
+          <Text
+              sx={{
+                fontSize: "20px",
+                fontWeight: "regular",
+                lineHeight: 2.0,
+                marginTop: "40px",
+                color: "#fff",
+                "@media only screen and (max-width: 992px)": {
+                  fontSize: "12px",
+                  marginTop: "20px",
+                },
+              }}
+            >
+              <p>Our firms is built on top and leverages our meetup community of 15,000 entrepreneurs and engineers, through which we previously attracted, selected and helped launch 33 Deep Tech and Big Data startups now valued at over £6 Billion.</p>
+            </Text>
           <Box sx={styles.banner.community}>
             <Box as="span" sx={styles.banner.community.avatar}>
               <Image src={Causalens} alt="CausaLens" />
-              <Text as="H3">CausaLens</Text>
+              <Text as="h3">CausaLens</Text>
             </Box>
             <Box as="span" sx={styles.banner.community.avatar}>
               <Image src={Monzo} alt="monzo" />
-              <Text as="H3">monzo</Text>
+              <Text as="h3">monzo</Text>
             </Box>
             <Box as="span" sx={styles.banner.community.avatar}>
               <Image src={Zego} alt="Zego" />
-              <Text as="H3">Zego</Text>
+              <Text as="h3">Zego</Text>
             </Box>
             <Box as="span" sx={styles.banner.community.avatar}>
               <Image src={Proximie} alt="Proximie" />
               <Text as="h3">Proximie </Text>
             </Box>
             <Box as="span" sx={styles.banner.community.avatar}>
-              <Image src={Argeo} alt="Argeo" />
-              <Text as="h3">Argeo </Text>
-            </Box>
-            <Box as="span" sx={styles.banner.community.avatar}>
               <Image src={CQ} alt="Crypto Quantique" />
               <Text as="h3">Crypto Quantique </Text>
-            </Box>
-            <Box as="span" sx={styles.banner.community.avatar}>
-              <Image src={Huma} alt="Huma" />
-              <Text as="h3">Huma </Text>
-            </Box>
-            <Box as="span" sx={styles.banner.community.avatar}>
-              <Image src={Enian} alt="Enian" />
-              <Text as="h3">Enian </Text>
             </Box>
             <Box as="span" sx={styles.banner.community.avatar}>
               <Image src={Gardin} alt="Gardin" />

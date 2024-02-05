@@ -1,4 +1,4 @@
-export default {
+const theme = {
   // example colors with dark mode
   breakpoints: ['376px', '576px', '768px', '992px', '1200px', '1441px'],
   colors: {
@@ -357,3 +357,5 @@ export default {
     },
   },
 };
+
+export default theme;
