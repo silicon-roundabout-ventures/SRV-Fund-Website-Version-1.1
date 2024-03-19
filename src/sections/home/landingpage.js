@@ -22,7 +22,7 @@ const Banner = () => {
     <Box as="section" id="banner" sx={styles.banner}>
       <Container sx={styles.banner.container}>
         <Flex sx={styles.banner.row}>
-        <ParticleClass>
+          <ParticleClass>
             <Particles
               id="particles-js"
               params={{
@@ -169,9 +169,7 @@ const Banner = () => {
                   },
                 }}
               >
-                Connecting (
-                <styles sx={styles.banner.content.yellow}>Capital</styles>)
-                &#123; <br></br>
+                Connecting (<styles sx={styles.banner.content.yellow}>Capital</styles>) &#123; <br></br>
                 &nbsp; <styles sx={styles.banner.content.pink}>with</styles>
                 <br></br>
                 &nbsp;&nbsp;&nbsp; Next-Generation.
@@ -180,8 +178,7 @@ const Banner = () => {
                 &nbsp; <styles sx={styles.banner.content.pink}>in </styles>
                 Computer & Physical
                 <br></br>
-                &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;{" "}
-                <styles sx={styles.banner.content.yellow}>Science</styles>
+                &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; <styles sx={styles.banner.content.yellow}>Science</styles>
                 <br></br>
                 &#125;
               </Text>
@@ -189,11 +186,11 @@ const Banner = () => {
                 <Box
                   as="a"
                   target="_blank"
-                  path="https://airtable.com/shrWqbcCtbPaXXfQ3"
+                  href="https://airtable.com/shrWqbcCtbPaXXfQ3"
                   sx={styles.banner.form.link.button}
                   variant="buttons.primary"
                 >
-                Apply for Funding
+                  Apply for Funding
                 </Box>
               </Box>
             </Box>
@@ -230,15 +227,11 @@ const Banner = () => {
             >
               <p>
                 We are a Community-Driven VC firm backing{" "}
-                <styles sx={styles.banner.content.yellow}>
-                  Deep Tech and Big Data
-                </styles>{" "}
-                startups at{" "}
+                <styles sx={styles.banner.content.yellow}>Deep Tech and Big Data</styles> startups at{" "}
                 <styles sx={styles.banner.content.pink}>pre-seed</styles> and{" "}
-                <styles sx={styles.banner.content.pink}>seed</styles>,
-                leveraging our community of 15,000 founders and engineers and
-                our live pitching competitions that over the years featured
-                winners now worth over £6 Billion.
+                <styles sx={styles.banner.content.pink}>seed</styles>, leveraging our community of 15,000 founders and
+                engineers and our live pitching competitions that over the years featured winners now worth over £6
+                Billion.
               </p>
             </Text>
 
@@ -285,55 +278,33 @@ const Banner = () => {
               }}
             >
               <p>
-                <span
-                  role="img"
-                  aria-label="information"
-                  sx={styles.banner.content.yellow}
-                >
+                <span role="img" aria-label="information" sx={styles.banner.content.yellow}>
                   ⚙️
                 </span>{" "}
-                We are building a new kind of financial institution at the
-                intersection of{" "}
-                <styles sx={styles.banner.content.pink}>
-                  Venture, Science and Community
-                </styles>
-                . We provide investment capital, community connections and
-                hands-on support to seed founders.
+                We are building a new kind of financial institution at the intersection of{" "}
+                <styles sx={styles.banner.content.pink}>Venture, Science and Community</styles>. We provide investment
+                capital, community connections and hands-on support to seed founders.
               </p>
               <br />
               <p>
-                <span
-                  role="img"
-                  aria-label="information"
-                  sx={styles.banner.content.yellow}
-                >
+                <span role="img" aria-label="information" sx={styles.banner.content.yellow}>
                   💪
                 </span>{" "}
                 {/* Our mission is to help founders of computer and physical science
                 based companies with investment capital and hands-on support as
                 they scale up towards mass adoption! */}
-                Our mission is to help technical founding teams building
-                solutions based on{" "}
+                Our mission is to help technical founding teams building solutions based on{" "}
                 <styles sx={styles.banner.content.pink}>computer</styles> or{" "}
-                <styles sx={styles.banner.content.pink}>
-                  physical sciences
-                </styles>{" "}
-                that are solving large-scale global problems.
+                <styles sx={styles.banner.content.pink}>physical sciences</styles> that are solving large-scale global
+                problems.
               </p>
               <br />
               <p>
-                <span
-                  role="img"
-                  aria-label="information"
-                  sx={styles.banner.content.yellow}
-                >
+                <span role="img" aria-label="information" sx={styles.banner.content.yellow}>
                   🚀
                 </span>{" "}
-                If you are a{" "}
-                <styles sx={styles.banner.content.yellow}>
-                  deep tech or big data
-                </styles>{" "}
-                entrepreneur based in the UK or Europe, get in touch and{" "}
+                If you are a <styles sx={styles.banner.content.yellow}>deep tech or big data</styles> entrepreneur based
+                in the UK or Europe, get in touch and{" "}
                 <a
                   style={{ color: "#fff" }}
                   target="_blank"
@@ -342,13 +313,12 @@ const Banner = () => {
                 >
                   apply for funding
                 </a>
-                . We'd like to see if we can help you. Equally, if you would
-                like to join us as an investor, please visit our{" "}
+                . We'd like to see if we can help you. Equally, if you would like to join us as an investor, please
+                visit our{" "}
                 <Link sx={{ textDecoration: "underline" }} to="/investors/">
                   Investors
                 </Link>{" "}
-                page to request more info on becoming a Limited Partner in our
-                Seed fund.
+                page to request more info on becoming a Limited Partner in our Seed fund.
               </p>
               <br />
               <br />
@@ -384,27 +354,18 @@ const Banner = () => {
               <ul>
                 <li>
                   We run a 15k member strong tech meetup community,{" "}
-                  <styles sx={styles.banner.content.yellow}>
-                    Silicon Roundabout
-                  </styles>
-                  , which gives us direct access to 5000+ startups and has
-                  already helped grow 2 billion-dollar companies
+                  <styles sx={styles.banner.content.yellow}>Silicon Roundabout</styles>, which gives us direct access to
+                  5000+ startups and has already helped grow 2 billion-dollar companies
                 </li>
                 <br />
                 <li>
-                  We all have{" "}
-                  <styles sx={styles.banner.content.yellow}>
-                    technical backgrounds
-                  </styles>
-                  , helping us select and support founders
+                  We all have <styles sx={styles.banner.content.yellow}>technical backgrounds</styles>, helping us
+                  select and support founders
                 </li>
                 <br />
                 <li>
-                  We offer our portfolio companies access to our Proprietary
-                  Ecosystem to help with{" "}
-                  <styles sx={styles.banner.content.yellow}>
-                    specialist hiring and industry connections
-                  </styles>
+                  We offer our portfolio companies access to our Proprietary Ecosystem to help with{" "}
+                  <styles sx={styles.banner.content.yellow}>specialist hiring and industry connections</styles>
                 </li>
                 <br />
               </ul>
@@ -428,21 +389,15 @@ const Banner = () => {
             <Box sx={styles.banner.startups}>
               <Box as="span" sx={styles.banner.startups.avatar}>
                 <Text as="h3">
-                  &#91;{" "}
-                  <styles sx={styles.banner.content.red}>Technical</styles>{" "}
-                  &#93;
+                  &#91; <styles sx={styles.banner.content.red}>Technical</styles> &#93;
                 </Text>
                 <Box sx={styles.banner.startups.title}>
-                  <Text as="p">
-                    Leveraging in-house science and engineering expertise to challenge the status-quo
-                  </Text>
+                  <Text as="p">Leveraging in-house science and engineering expertise to challenge the status-quo</Text>
                 </Box>
               </Box>
               <Box as="span" sx={styles.banner.startups.avatar}>
                 <Text as="h3">
-                  &#123;{" "}
-                  <styles sx={styles.banner.content.red}>Infrastructural</styles>{" "}
-                  &#125;
+                  &#123; <styles sx={styles.banner.content.red}>Infrastructural</styles> &#125;
                 </Text>
                 <Box as="span" sx={styles.banner.startups.title}>
                   <Text as="p">
@@ -452,9 +407,7 @@ const Banner = () => {
               </Box>
               <Box as="span" sx={styles.banner.startups.avatar}>
                 <Text as="h3">
-                  &#183;{" "}
-                  <styles sx={styles.banner.content.red}>Defensible</styles>{" "}
-                  &#183;
+                  &#183; <styles sx={styles.banner.content.red}>Defensible</styles> &#183;
                 </Text>
                 <Box as="span" sx={styles.banner.startups.title}>
                   <Text as="p">
@@ -464,36 +417,31 @@ const Banner = () => {
               </Box>
               <Box as="span" sx={styles.banner.startups.avatar}>
                 <Text as="h3">
-                  &#47;{" "}
-                  <styles sx={styles.banner.content.red}>Trend-Setting</styles>{" "}
-                  &#47;
+                  &#47; <styles sx={styles.banner.content.red}>Trend-Setting</styles> &#47;
                 </Text>
                 <Box as="span" sx={styles.banner.startups.title}>
                   <Text as="p">
-                    Disrupt internationally the way an industry operates (1B+ potential revenue
-                    in 10+ years)
+                    Disrupt internationally the way an industry operates (1B+ potential revenue in 10+ years)
                   </Text>
                 </Box>
               </Box>
               <Box as="span" sx={styles.banner.startups.avatar}>
                 <Text as="h3">
                   &#60;
-                  <styles sx={styles.banner.content.red}>
-                    {" "}
-                    Global Impact{" "}
-                  </styles>
+                  <styles sx={styles.banner.content.red}> Global Impact </styles>
                   &#62;
                 </Text>
                 <Box as="span" sx={styles.banner.startups.title}>
                   <Text as="p">
-                    Focused on solving key infrastructural challenges in areas like Computing, Climate or Health, and Defence
+                    Focused on solving key infrastructural challenges in areas like Computing, Climate or Health, and
+                    Defence
                   </Text>
                 </Box>
               </Box>
             </Box>
           </Flex>
 
-          <Footer/>
+          <Footer />
         </Flex>
       </Container>
     </Box>
