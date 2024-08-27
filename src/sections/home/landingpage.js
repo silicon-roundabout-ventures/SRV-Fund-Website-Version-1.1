@@ -338,7 +338,7 @@ const Banner = () => {
                   style={{ color: "#fff" }}
                   target="_blank"
                   rel="noreferrer"
-                  href="https://airtable.com/shrWqbcCtbPaXXfQ3"
+                  href="https://airtable.com/appVGtkUnFhZu4QDG/pageSXiQeh83Jd3Jq/form"
                 >
                   apply for funding
                 </a>
