@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import { Box, Container, Flex, Text, Image, Link } from 'theme-ui';
 import { useStaticQuery, graphql } from 'gatsby';
 import styled from 'styled-components';
-import { FaAtom /*, FaBatteryFull, FaSatellite, FaPlane, FaMicrochip*/} from 'react-icons/fa';
+import { FaAtom /*, FaBatteryFull, FaSatellite, FaPlane, FaMicrochip*/ } from 'react-icons/fa';
 import Footer from '../components/footer/footer';
 import Stealth from '../assets/stealth-bomber.png';
 import Causalens from '../assets/startups/community/causalens.png';
@@ -16,8 +16,8 @@ import Gardin from '../assets/startups/community/gardin.png';
 
 const Banner = () => {
   const [selectedCompany, setSelectedCompany] = useState(null);
-  
-  const { allAirtable } = useStaticQuery(graphql`
+
+  const { allAirtablePortfolio } = useStaticQuery(graphql`
     query PortfolioQuery {
       allAirtablePortfolio(
         filter: {
@@ -27,16 +27,18 @@ const Banner = () => {
           }
         }
       ) {
-        nodes {
-          data {
-            Deal_Name
-            Summary
-            domain__from_Company_
-            Status
-            Announced
-            Logo {
-              localFiles {
-                publicURL
+        edges {
+          node {
+            data {
+              Deal_Name
+              Summary
+              domain__from_Company_
+              Status
+              Announced
+              Logo {
+                localFiles {
+                  publicURL
+                }
               }
             }
           }
@@ -45,7 +47,7 @@ const Banner = () => {
     }
   `);
 
-  const portfolioItems = allAirtable?.nodes || [];
+  const portfolioItems = allAirtablePortfolio?.edges?.map(edge => edge.node) || [];
 
   const commonTextStyles = {
     color: "#fff",
@@ -67,7 +69,6 @@ const Banner = () => {
             <p>After a decade of community building, we launched Silicon Roundabout Ventures as a Deeptech Super-Angel VC in 2023. The fund is backed by top-tier VC Molten Ventures (LSE:GROW) and exited founders, engineers and execs: including ex googlers, amazonians and from 2 unicorns.</p>
             <p>Our main focus within deeptech is on startups building infrastructure technologies in Computing, Impact in Climate or Health, and Defence.</p>
           </Text>
-
           <Box sx={styles.startups}>
             {portfolioItems.length > 0 ? (
               portfolioItems.map(({ data: company }) => (
