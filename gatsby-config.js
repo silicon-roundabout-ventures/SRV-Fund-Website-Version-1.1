@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
     title: "Silicon Roundabout Ventures",
@@ -9,13 +13,25 @@ module.exports = {
     twitterUsername: "@siliconLondon",
   },
   plugins: [
-    // {
-    //   resolve: "gatsby-plugin-google-tagmanager",
-    //   options: {
-    //     id: "GTM-PHR8C7F",
-    //     includeInDevelopment: false,
-    //   },
-    // },
+    {
+      resolve: `gatsby-source-airtable`,
+      options: {
+        apiKey: process.env.AIRTABLE_API_KEY,
+        tables: [
+          {
+            baseId: process.env.AIRTABLE_BASE_ID,
+            tableName: `Dealflow/Portfolio Pipelines`,
+            tableView: `Portfolio`,
+            queryName: `Portfolio`,
+            mapping: {
+              Logo: `fileNode`
+            },
+            //tableLinks: [],
+            separateNodeType: true
+          }
+        ]
+      }
+    },
     {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
@@ -106,6 +122,5 @@ module.exports = {
     //     policy: [{ userAgent: '*', allow: '/' }],
     //   },
     // },
-
-  ],
+  ]
 };
