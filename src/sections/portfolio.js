@@ -1,10 +1,9 @@
 //src/sections/portfolio.js
 
-import React, { useState } from 'react';
-import { Box, Container, Flex, Text, Image, Link } from 'theme-ui';
-import { useStaticQuery, graphql } from 'gatsby';
+import React, { useState, useEffect } from 'react';
+import { Box, Container, Flex, Text, Image, Link, Spinner, Button } from 'theme-ui';
 import styled from 'styled-components';
-import { FaAtom /*, FaBatteryFull, FaSatellite, FaPlane, FaMicrochip*/ } from 'react-icons/fa';
+import { FaAtom } from 'react-icons/fa';
 import Footer from '../components/footer/footer';
 import Stealth from '../assets/stealth-bomber.png';
 import Causalens from '../assets/startups/community/causalens.png';
@@ -13,41 +12,118 @@ import Zego from '../assets/startups/community/zego.png';
 import Proximie from '../assets/startups/community/proximie.png';
 import CQ from '../assets/startups/community/cq.png';
 import Gardin from '../assets/startups/community/gardin.png';
+import { graphql, useStaticQuery } from 'gatsby';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+import Modal from 'react-modal';
+import { IoMdClose } from 'react-icons/io';
+import Slide from 'react-reveal/Slide';
+
+// Import portfolio data with safety mechanism
+// Using require with try/catch to handle potential file not found issues
+let portfolioData = [];
+try {
+  portfolioData = require('../data/portfolio.json');
+  console.log(`Loaded ${portfolioData.length} portfolio items from JSON`);
+} catch (e) {
+  console.warn('Could not load portfolio data:', e.message);
+  portfolioData = [];
+}
+
+// Static portfolio data as fallback
+const staticPortfolioData = [
+  {
+    fields: {
+      Deal_Name: "Finchetto",
+      Summary: "Financial technology company",
+      domain__from_Company_: "https://finchetto.com",
+      Status: "COMPLETED",
+      Announced: "Yes",
+    }
+  },
+  {
+    fields: {
+      Deal_Name: "Origin Robotics",
+      Summary: "Advanced robotics solutions",
+      domain__from_Company_: "https://originrobotics.com",
+      Status: "COMPLETED",
+      Announced: "Yes",
+    }
+  },
+  {
+    fields: {
+      Deal_Name: "Stealth AI Company",
+      Summary: "A stealth company working on cutting-edge AI technology",
+      domain__from_Company_: "",
+      Status: "COMPLETED",
+      Announced: "No",
+    }
+  }
+];
+
+const customStyles = {
+  overlay: {
+    backgroundColor: 'rgba(0,0,0,0.75)',
+    zIndex: 100,
+  },
+  content: {
+    border: 'none',
+    background: 'transparent',
+    overflow: 'auto',
+    WebkitOverflowScrolling: 'touch',
+    borderRadius: '0',
+    top: '0',
+    left: '0',
+    right: '0',
+    bottom: '0',
+  },
+};
+
+const masonryOptions = {
+  transitionDuration: 0,
+};
+
+// Set Modal app element if in browser environment
+if (typeof window !== 'undefined' && document.getElementById('___gatsby')) {
+  Modal.setAppElement('#___gatsby');
+}
 
 const Banner = () => {
+  const [isOpen, setIsOpen] = useState(false);
   const [selectedCompany, setSelectedCompany] = useState(null);
+  const [portfolioItems, setPortfolioItems] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
 
-  const { allAirtablePortfolio } = useStaticQuery(graphql`
-    query PortfolioQuery {
-      allAirtablePortfolio(
-        filter: {
-          table: { eq: "Dealflow/Portfolio Pipelines" }
-          data: { 
-            Status: { eq: "COMPLETED" }
-          }
-        }
-      ) {
-        edges {
-          node {
-            data {
-              Deal_Name
-              Summary
-              domain__from_Company_
-              Status
-              Announced
-              Logo {
-                localFiles {
-                  publicURL
-                }
-              }
-            }
-          }
-        }
-      }
+  useEffect(() => {
+    // Use the prefetched data from portfolio.json if available
+    if (portfolioData && portfolioData.length > 0) {
+      setPortfolioItems(portfolioData);
+    } else {
+      // Otherwise fall back to static data
+      setPortfolioItems(staticPortfolioData);
     }
-  `);
+    setIsLoading(false);
+  }, []);
 
-  const portfolioItems = allAirtablePortfolio?.edges?.map(edge => edge.node) || [];
+  function toggleModal(company = null) {
+    setIsOpen(!isOpen);
+    setSelectedCompany(company);
+  }
+
+  // Filter for public portfolio companies
+  const publicPortfolio = portfolioItems
+    .filter(item => item.fields?.Status === 'COMPLETED')
+    .filter(item => item.fields?.Announced === 'Yes');
+
+  const renderLogo = (company) => {
+    // For stealth mode companies or when no logo is available
+    return (
+      <Image 
+        src={Stealth} 
+        alt={company.fields.Deal_Name} 
+        sx={styles.logo} 
+      />
+    );
+  };
 
   const commonTextStyles = {
     color: "#fff",
@@ -57,6 +133,18 @@ const Banner = () => {
       marginTop: "20px",
     }
   };
+
+  if (isLoading) {
+    return (
+      <Box as="section" id="banner" sx={styles.banner}>
+        <Container sx={styles.container}>
+          <Flex sx={{ justifyContent: 'center', alignItems: 'center', height: '50vh' }}>
+            <Spinner />
+          </Flex>
+        </Container>
+      </Box>
+    );
+  }
 
   return (
     <Box as="section" id="banner" sx={styles.banner}>
@@ -70,18 +158,19 @@ const Banner = () => {
             <p>Our main focus within deeptech is on startups building infrastructure technologies in Computing, Impact in Climate or Health, and Defence.</p>
           </Text>
           <Box sx={styles.startups}>
-            {portfolioItems.length > 0 ? (
-              portfolioItems.map(({ data: company }) => (
-                <Box as="span" sx={styles.avatar} key={company.Deal_Name} onClick={() => setSelectedCompany(company)}>
-                  <Image
-                    src={company.Announced === 'Yes' ? company.Logo?.localFiles[0]?.publicURL : Stealth}
-                    alt={company.Announced === 'Yes' ? company.Deal_Name : 'Stealth Company'}
-                  />
-                  <Text as="H3">{company.Announced === 'Yes' ? company.Deal_Name : 'Stealth'}</Text>
+            {publicPortfolio.length > 0 ? (
+              publicPortfolio.map((company, index) => (
+                <Box as="span" sx={styles.avatar} key={index} onClick={() => toggleModal(company)}>
+                  {renderLogo(company)}
+                  <Text as="H3">{company.fields.Deal_Name}</Text>
                   <Box as="p" sx={styles.title}>
                     <Box sx={styles.socials}>
-                      {company.Announced === 'Yes' && (
-                        <Link target="_blank" to={company.domain_from_Company}>
+                      {company.fields.domain__from_Company_ && (
+                        <Link target="_blank" href={
+                          company.fields.domain__from_Company_.startsWith('http')
+                            ? company.fields.domain__from_Company_
+                            : `https://${company.fields.domain__from_Company_}`
+                        }>
                           <FaAtom sx={styles.icons} />
                         </Link>
                       )}
@@ -90,7 +179,7 @@ const Banner = () => {
                 </Box>
               ))
             ) : (
-              <Text>No Portfolio Company Found</Text>
+              <Text sx={{ color: '#fff' }}>No Portfolio Companies Found</Text>
             )}
           </Box>
         </Flex>
@@ -116,65 +205,56 @@ const Banner = () => {
           </Box>
         </Flex>
 
-        {selectedCompany && (
-          <ModalBackground onClick={() => setSelectedCompany(null)}>
-            <ModalWrapper onClick={e => e.stopPropagation()}>
-              <Image
-                src={selectedCompany.Logo?.localFiles[0]?.publicURL || Stealth}
-                alt={selectedCompany.Deal_Name}
-                sx={{ maxWidth: '200px', height: 'auto' }}
-              />
-              <Text as="h2" sx={{ color: '#fff' }}>{selectedCompany.Deal_Name}</Text>
-              <Text sx={{ color: '#fff' }}>
-                {selectedCompany.Status === 'Stealth'
-                  ? 'Stealth Mode Company'
-                  : selectedCompany.Summary}
-              </Text>
-              {selectedCompany.Status !== 'Stealth' && (
-                <Link
-                  target="_blank"
-                  to={selectedCompany.domain_from_Company}
-                  sx={{ color: '#fff', textDecoration: 'underline' }}
-                >
-                  Visit Website
-                </Link>
-              )}
-            </ModalWrapper>
-          </ModalBackground>
-        )}
+        <Modal
+          isOpen={isOpen}
+          onRequestClose={() => toggleModal()}
+          style={customStyles}
+          contentLabel="Company Details"
+        >
+          <Container sx={styles.modalContent}>
+            {selectedCompany && (
+              <Box sx={styles.modalInner}>
+                <Button sx={styles.closeButton} onClick={() => toggleModal()}>
+                  <IoMdClose size="24px" color="#fff" />
+                </Button>
+                <Box sx={styles.modalImageContainer}>
+                  {renderLogo(selectedCompany)}
+                </Box>
+                <Box sx={styles.companyDetails}>
+                  <h2>{selectedCompany.fields.Deal_Name}</h2>
+                  <p>{selectedCompany.fields.Summary}</p>
+                  {selectedCompany.fields.domain__from_Company_ && (
+                    <a
+                      href={
+                        selectedCompany.fields.domain__from_Company_.startsWith('http')
+                          ? selectedCompany.fields.domain__from_Company_
+                          : `https://${selectedCompany.fields.domain__from_Company_}`
+                      }
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Visit Website
+                    </a>
+                  )}
+                  <Box sx={styles.tags}>
+                    {selectedCompany.fields.Stage && (
+                      <span sx={styles.tag}>{selectedCompany.fields.Stage}</span>
+                    )}
+                    {selectedCompany.fields.Sector && (
+                      <span sx={styles.tag}>{selectedCompany.fields.Sector}</span>
+                    )}
+                  </Box>
+                </Box>
+              </Box>
+            )}
+          </Container>
+        </Modal>
 
         <Footer />
       </Container>
     </Box>
   );
 };
-
-const ModalBackground = styled.div`
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.7);
-  z-index: 999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
-
-const ModalWrapper = styled.div`
-  background: #000;
-  padding: 2rem;
-  border-radius: 8px;
-  max-width: 500px;
-  width: 90%;
-  z-index: 1000;
-  border: 1px solid #333;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-`;
 
 const styles = {
   banner: {
@@ -285,6 +365,88 @@ const styles = {
     "@media only screen and (max-width: 992px)": {
       fontSize: "20px !important",
     },
+  },
+  modalContent: {
+    backgroundColor: '#fff',
+    borderRadius: '10px',
+    position: 'relative',
+    maxWidth: '800px',
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    marginTop: '50px',
+    marginBottom: '50px',
+  },
+  modalInner: {
+    position: 'relative',
+    padding: ['20px', null, null, '30px'],
+    display: 'flex',
+    flexDirection: ['column', null, null, 'row'],
+    alignItems: ['center', null, null, 'flex-start'],
+    textAlign: ['center', null, null, 'left'],
+  },
+  closeButton: {
+    position: 'absolute',
+    top: '10px',
+    right: '10px',
+    backgroundColor: 'transparent',
+    border: 'none',
+    cursor: 'pointer',
+    padding: 0,
+  },
+  modalImageContainer: {
+    flex: ['1 1 100%', null, null, '0 0 250px'],
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    mb: [4, null, null, 0],
+    mr: [0, null, null, 4],
+  },
+  companyDetails: {
+    flex: 1,
+    h2: {
+      fontSize: [3, null, null, 4],
+      fontWeight: 'bold',
+      mb: 3,
+      color: '#0F2137',
+    },
+    p: {
+      fontSize: [1, null, null, 2],
+      lineHeight: 1.6,
+      color: '#343D48',
+      mb: 4,
+    },
+    a: {
+      display: 'inline-block',
+      backgroundColor: '#EBF2FF',
+      color: '#3A7EFF',
+      borderRadius: '5px',
+      py: 2,
+      px: 3,
+      fontSize: 1,
+      fontWeight: 'bold',
+      textDecoration: 'none',
+      mb: 4,
+    },
+  },
+  tags: {
+    display: 'flex',
+    flexWrap: 'wrap',
+  },
+  tag: {
+    backgroundColor: '#F6F8FB',
+    color: '#343D48',
+    borderRadius: '30px',
+    fontSize: 0,
+    py: 1,
+    px: 3,
+    mr: 2,
+    mb: 2,
+  },
+  logo: {
+    width: '150px',
+    height: '150px',
+    objectFit: 'contain',
+    mb: 3,
   },
 };
 

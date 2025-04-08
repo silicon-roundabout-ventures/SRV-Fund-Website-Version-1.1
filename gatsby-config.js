@@ -1,6 +1,13 @@
+// Disable LMDB storage to avoid buffer issues
+process.env.GATSBY_EXPERIMENTAL_LMDB_STORE = false;
+
 require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 })
+
+// Get Airtable API key and base ID from environment variables
+const airtableApiKey = process.env.AIRTABLE_API_KEY;
+const airtableBaseId = process.env.AIRTABLE_BASE_ID;
 
 module.exports = {
   siteMetadata: {
@@ -13,25 +20,6 @@ module.exports = {
     twitterUsername: "@siliconLondon",
   },
   plugins: [
-    {
-      resolve: `gatsby-source-airtable`,
-      options: {
-        apiKey: process.env.AIRTABLE_API_KEY,
-        tables: [
-          {
-            baseId: process.env.AIRTABLE_BASE_ID,
-            tableName: `Dealflow/Portfolio Pipelines`,
-            tableView: `Portfolio`,
-            queryName: `Portfolio`,
-            mapping: {
-              Logo: `fileNode`
-            },
-            //tableLinks: [],
-            separateNodeType: true
-          }
-        ]
-      }
-    },
     {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
@@ -49,6 +37,13 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/assets`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `data`,
+        path: `${__dirname}/src/data`,
       },
     },
     `gatsby-transformer-sharp`,
@@ -122,5 +117,25 @@ module.exports = {
     //     policy: [{ userAgent: '*', allow: '/' }],
     //   },
     // },
+
+    // Source Airtable data
+    {
+      resolve: `gatsby-source-airtable`,
+      options: {
+        apiKey: airtableApiKey,
+        tables: [
+          {
+            baseId: airtableBaseId,
+            tableName: `Startups`,
+            tableView: `Portfolio`,
+            mapping: {
+              Logo: `fileNode`,
+            },
+            separateNodeType: false,
+            separateMapType: false,
+          },
+        ],
+      },
+    },
   ]
 };

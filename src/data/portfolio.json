@@ -1,0 +1,1438 @@
+[
+  {
+    "id": "recDiWhem2ezlEmZt",
+    "fields": {
+      "Deal Name": "Anaphite",
+      "Source": "Intro",
+      "Status": "COMPLETED",
+      "Stage": "Seed",
+      "Deal Value": 250000,
+      "Close Date": "2022-07-01",
+      "Main Contact": [
+        "recXRD2gu4iQdP6xp",
+        "recSX5bMPT9ZX7vkP",
+        "recbkUju7IgCrYBCt",
+        "rechiz94rBriab3bA"
+      ],
+      "Google Drive Documents": "https://drive.google.com/drive/folders/1pM8E_x18nG74urgYqIv8New2Xe6DmxMH?usp=drive_link",
+      "email (from Contacts)": [
+        "alex@anaphite.com",
+        "sam@anaphite.com",
+        "dick@anaphite.com",
+        "joe@anaphite.com"
+      ],
+      "Company": [
+        "rec0zoSKO6uHMwtbG"
+      ],
+      "social_profiles_0.url (from Company)": [
+        "https://www.facebook.com/anaphite"
+      ],
+      "domain (from Company)": [
+        "anaphite.com"
+      ],
+      "salesflare.id": 10050434,
+      "SHARING: Display Name": "Anaphite",
+      "Announced": "Yes",
+      "Sector": [
+        "Climate",
+        "Material Science",
+        "Batteries"
+      ],
+      "Led by": "Francesco",
+      "Initial Round Size": 4250000,
+      "Security Type": "Preferred Shares",
+      "Entry Valuation": 10450000,
+      "Valuation type": "Pre-Money",
+      "Currency": "£ GBP",
+      "Final ticket invested": 250000,
+      "Ownership post 1st round": 0.017006802721088437,
+      "Allocation for the fund": 500000,
+      "Summary": "Novel chemical additive plus dry coating processes to enhance Li-ion batteries with the use of Graphene in their Cathode)\n",
+      "Deal investment thesis": "1\\. QuantumScape & the likes (new battery tech altogether) are too far away from mass production and will not replace Li-ion even once they do start to hit production: Anaphite can get there faster and aims to be the ARM of Battery IP development for manufacturers today. tomorrow, and beyond.\n\n2\\. The current competitors are focusing either on building their own battery models, mostly using Graphene Oxide and building their own production factories (e.g. Nanotech Energy from the U.S. that raised in 2021 a $64m series D at a $550m valuation to do just that), or on working as an integrated lab facility for individual players at a reduced scale (e.g. the Chinese GAC that manufactures both batteries and vehicles), or on working on different graphene composition types either better suited for different purposes altogether and/or unable to reach the scale and cost-effectiveness of the company (like Australia based GMG Graphene, Luxembourg based OCSiAl Group, or US based Lyten).\n\n3\\. The company is showing an incredible velocity in moving from lab to market in only 2 years and is the only focusing on embedding its technology into battery production from multiple players at scale.\\*\n\n4\\. The founders are amazing at \\*\\*pulling key people into the project\\*\\* and the company has matured to the point to have industry experts either joining and opening doors for them from the inside, or advising them and opening them from the outside\n",
+      "Value-add notes": "1\\. Unbiased advice to the \"new\" CEO on board composition, team building and other investors requirements.\n\n2\\. Community integration and brand awareness building (inc. PR support)\n\n3\\. Connections within the automotive industry (e.g. Stellantis), first, and material manufacturing industry (e.g. BASF, Mitsubishi Chemicals).\n\n4\\. Help hiring PhDs and engineers post round\n\n5\\. Preparation for Series A/Series B and investor introductions\n",
+      "Logo": {
+        "localFilePath": "images/recDiWhem2ezlEmZt_logo",
+        "type": "image/png"
+      },
+      "Name": [
+        "Alex",
+        "Sam",
+        "Dick",
+        "Joe"
+      ],
+      "Contacts (n) (from Company)": [
+        "recXRD2gu4iQdP6xp",
+        "recSX5bMPT9ZX7vkP",
+        "recbkUju7IgCrYBCt",
+        "rechiz94rBriab3bA"
+      ],
+      "One Line Summary": "Novel graphene-based chemistry and process to enhance Li-Ion batteries and reduce costs",
+      "Created on": "2024-12-04T11:33:25.000Z",
+      "Follow on Rounds": [
+        "recjTAc9L1blSPknf"
+      ],
+      "Current N# of Shares Held": 77915.88764044944,
+      "N# of Shares Issued At Round (inc conversions)": 2795400,
+      "N# of Shares Issued to us": 49826,
+      "Total Shares Issued to us (from Rounds)": [
+        28089.887640449437
+      ],
+      "Total N# Shares Issued in the Round (inc conversions) (from Rounds)": [
+        2918175
+      ],
+      "Current N# of Shares Issued (Grand Total)": 5713575,
+      "Current Fair Value Assessment": 20340327,
+      "Initial Round Post Money Val": 14700000,
+      "Current Ownership": 0.013636976436022881,
+      "Invested from fund": [
+        "recPOzbCwVqJEFITf"
+      ],
+      "Follow on Investment (from Rounds)": [
+        100000
+      ],
+      "Current Shares Owned Value": 277380.56,
+      "GP Portfolio Notes": "UPDATED: 24/02/2025\nCompleted Series A (priced) on August 2024. Runway for 24 months excluding revenue or grants to be converted post round. No main event to chance price value internally since.\n",
+      "Total Invested": 350000,
+      "NET MOIC": 0.7925158857142857,
+      "Latest Follow On Stage": [
+        "Series A"
+      ],
+      "Current Stage": "Series A",
+      "Post Money (from Follow on Rounds)": [
+        20340327
+      ],
+      "Currency (from Follow on Rounds)": [
+        "£ GBP"
+      ],
+      "Run DD Search": {
+        "label": "Run Script",
+        "url": "https://airtable.com/tblROCOQqj0yEUZlc/recDiWhem2ezlEmZt?blocks=bliyekWLVkmYV8tM7"
+      },
+      "Deal_Name": [
+        "Alex",
+        "Sam",
+        "Dick",
+        "Joe"
+      ],
+      "domain__from_Company_": ""
+    }
+  },
+  {
+    "id": "recALl4YsgkYpC8TE",
+    "fields": {
+      "Deal Name": "Archangel Lightworks",
+      "Source": "Our Event",
+      "Status": "COMPLETED",
+      "Stage": "Seed",
+      "Deal Value": 150000,
+      "Close Date": "2023-01-01",
+      "Google Drive Documents": "https://drive.google.com/drive/folders/12996yZCLQhWqFUb_2DuTtnrlioDQNoNr",
+      "Company": [
+        "recU2c4KmBi2KXcru"
+      ],
+      "social_profiles_0.url (from Company)": [
+        "http://www.crunchbase.com/organization/archangel-lightworks"
+      ],
+      "domain (from Company)": [
+        "archangel.works"
+      ],
+      "salesflare.id": 13872443,
+      "SHARING: Display Name": "Archangel Lightworks",
+      "Announced": "Yes",
+      "Sector": [
+        "Hardware",
+        "Space",
+        "Networks & Telecom"
+      ],
+      "Led by": "Francesco",
+      "Initial Round Size": 4000000,
+      "Security Type": "Preferred Shares",
+      "Entry Valuation": 9000000,
+      "Valuation type": "Pre-Money",
+      "Currency": "£ GBP",
+      "Final ticket invested": 150000,
+      "Ownership post 1st round": 0.011538461538461539,
+      "Allocation for the fund": 500000,
+      "Summary": "Laser communications company (lasercom) building high-volume, secure, wireless technology (both hardware and software) to create the space-enabled networks of the future.\n",
+      "Deal investment thesis": "1\\. Problem validated by the CTO of Satellite Applications Catapult (UK government arm for commercialisation of satellite applications), and also by the CEO of D-Orbit (Space Logistics)\n\n2\\. On-track on securing two $1m contracts.\n\n3\\. Technical leadership with Founder-market fit\n\n4\\. Protected technology through 1 approved US patent + 2 patent pending\n",
+      "Value-add notes": "1\\. Introductions to upstream satellite providers (D-orbit, Telespazio, and OneWeb)\n\n2\\. Help hiring developers post round\n\n3\\. Help shaping and running marketing story and PR pre and post round\n",
+      "Logo": {
+        "localFilePath": "images/recALl4YsgkYpC8TE_logo",
+        "type": "image/png"
+      },
+      "Contacts (n) (from Company)": [
+        "recXvDWLtMsKjLp2n"
+      ],
+      "One Line Summary": "Lasercom company linking satellites to Earth with both laser ground stations and control software suites",
+      "Created on": "2024-12-04T13:13:04.000Z",
+      "Current N# of Shares Held": 0,
+      "Current N# of Shares Issued (Grand Total)": 0,
+      "Current Fair Value Assessment": 13000000,
+      "Initial Round Post Money Val": 13000000,
+      "Current Ownership": 0.011538461538461539,
+      "Invested from fund": [
+        "recPOzbCwVqJEFITf"
+      ],
+      "Current Shares Owned Value": 150000,
+      "Total Invested": 150000,
+      "NET MOIC": 1,
+      "Current Stage": "Seed",
+      "Run DD Search": {
+        "label": "Run Script",
+        "url": "https://airtable.com/tblROCOQqj0yEUZlc/recALl4YsgkYpC8TE?blocks=bliyekWLVkmYV8tM7"
+      },
+      "Deal_Name": "Unnamed Company",
+      "domain__from_Company_": ""
+    }
+  },
+  {
+    "id": "recjBJgyPzdKawYT3",
+    "fields": {
+      "Deal Name": "Greenjets",
+      "Source": "Our Event",
+      "Status": "COMPLETED",
+      "Stage": "Pre-seed",
+      "Deal Value": 150000,
+      "Close Date": "2023-02-01",
+      "Google Drive Documents": "https://drive.google.com/drive/folders/1d0lU16vWg8erosW7Ws2t48slQ97Rwj0k",
+      "Company": [
+        "rec9SMfdkYzW0V5fG"
+      ],
+      "custom.italian (from Company)": [
+        "False"
+      ],
+      "domain (from Company)": [
+        "greenjets.com"
+      ],
+      "salesflare.id": 13872401,
+      "SHARING: Display Name": "Greenjets",
+      "Announced": "Yes",
+      "Sector": [
+        "Defence",
+        "Aerospace",
+        "Manufacturing"
+      ],
+      "Led by": "Francesco",
+      "Initial Round Size": 1200000,
+      "Security Type": "SAFE",
+      "Entry Valuation": 8000000,
+      "Valuation type": "Post-Money",
+      "Currency": "£ GBP",
+      "Final ticket invested": 150000,
+      "Ownership post 1st round": 0.01875,
+      "Allocation for the fund": 500000,
+      "Summary": "Full-electric aerospace propulsion engines for drones, hovercrafts, eVTOLs and aircrafts using patented technology to reduce both noise (psycho-acoustically) and energy consumption. \n",
+      "Deal investment thesis": "1\\. Combination of team from Automotive, Defence and Aerospace (both supply and propulsion R&D) having come up with a unique approach to reduce a) perceived noise, b) energy consumption, and c) time to market (via inherently safe design requiring less testing for certification + strong supply chain partnerships)\n\n2\\. Growing demand for energy efficient drones (military and delivery) and incoming regulations (eg in Germany) restricting noise based on psychoaousic instead of pure dB (volume)\n\n3\\. Potential to enter the eVTOL and electric aircraft aviation space as a 'picks and shovels' player with revenues coming in from another, existing, billion-dollar market (drones)\n\n--\n\nThe end-to-end creation of electric engines for aerospace is extremely hard and in the context of electric aircraft, they also need to be quiet, efficient, safe and cost effective. \n\nRolls Royce tried to do so while the founder led their air taxi project and they gave up, which is why he started the business. The co-founders have been working on this challenge for 3 years and their first product is already 3X quieter and 2X more efficient than competition. \n\nThe company is in the GP the only credible startup in this market that has the combination of strong team + deep expertise + supply chain exclusivity + critical academic partnerships + manufacturing processes + IP + insights to build a full stack electric propulsion company of the future. \n",
+      "Value-add notes": "1\\. Mentoring (insights into VC world & unbiased financing advisory)\n\n2\\. Helping put together Seed round (inc story, deck and process)\n\n3\\. Intro to Seed VCs (and later Series A)\n",
+      "Logo": {
+        "localFilePath": "images/recjBJgyPzdKawYT3_logo",
+        "type": "image/png"
+      },
+      "Contacts (n) (from Company)": [
+        "recqNA2x2HaDFnEmJ",
+        "recMkB0AsfPGM1vUQ"
+      ],
+      "Created on": "2024-12-04T11:33:25.000Z",
+      "Follow on Rounds": [
+        "recqoIBIXgmmRRA1Z",
+        "reczuQZMJfOrrsyhF"
+      ],
+      "Current N# of Shares Held": 2055,
+      "N# of Shares Issued Pre-Round": 91700,
+      "Total Shares Issued to us (from Rounds)": [
+        0,
+        2055
+      ],
+      "Total N# Shares Issued in the Round (inc conversions) (from Rounds)": [
+        49836,
+        0
+      ],
+      "Current N# of Shares Issued (Grand Total)": 141536,
+      "Current Fair Value Assessment": 27240000,
+      "Initial Round Post Money Val": 8000000,
+      "Current Ownership": 0.014519274248247796,
+      "Invested from fund": [
+        "recPOzbCwVqJEFITf"
+      ],
+      "Follow on Investment (from Rounds)": [
+        50000
+      ],
+      "Current Shares Owned Value": 395505.03052226995,
+      "GP Portfolio Notes": "UPDATED: 24/02/2025\nCompleted Seed (priced) on November 2024. Runway for 24 months excluding revenue or grants to be converted post round. No main event to chance price value internally since.\n",
+      "Total Invested": 200000,
+      "NET MOIC": 1.9775251526113498,
+      "Latest Follow On Stage": [
+        "Seed"
+      ],
+      "Current Stage": "Seed",
+      "Post Money (from Follow on Rounds)": [
+        27235814,
+        10500000
+      ],
+      "Currency (from Follow on Rounds)": [
+        "£ GBP",
+        "£ GBP"
+      ],
+      "Run DD Search": {
+        "label": "Run Script",
+        "url": "https://airtable.com/tblROCOQqj0yEUZlc/recjBJgyPzdKawYT3?blocks=bliyekWLVkmYV8tM7"
+      },
+      "Deal_Name": "Unnamed Company",
+      "domain__from_Company_": ""
+    }
+  },
+  {
+    "id": "recoFfcu6ibnIeE78",
+    "fields": {
+      "Deal Name": "Ephos (prev. Faro)",
+      "Source": "Intro",
+      "Status": "COMPLETED",
+      "Stage": "Pre-seed",
+      "Deal Value": 145000,
+      "Close Date": "2023-03-01",
+      "Main Contact": [
+        "rec5FCy37e6xnyZ0a"
+      ],
+      "Google Drive Documents": "https://drive.google.com/drive/folders/1mTqX0A_X466C9d0QXD0wa6AvlfWvT6m5",
+      "email (from Contacts)": [
+        "andrea@ephos.io"
+      ],
+      "Company": [
+        "recKT2LEy1qdgPDHV"
+      ],
+      "domain (from Company)": [
+        "ephos.io"
+      ],
+      "Notes": "round in USD - conversion may not reflect actual values in cash\n",
+      "salesflare.id": 11357643,
+      "SHARING: Display Name": "Ephos (prev. Faro)",
+      "Announced": "Yes",
+      "Sector": [
+        "Hardware",
+        "Quantum Computing",
+        "Semiconductor",
+        "Photonics"
+      ],
+      "Led by": "Francesco",
+      "Initial Round Size": 3500000,
+      "Security Type": "Preferred Shares",
+      "Entry Valuation": 11000000,
+      "Valuation type": "Pre-Money",
+      "Currency": "£ GBP",
+      "Final ticket invested": 145000,
+      "Ownership post 1st round": 0.01,
+      "Allocation for the fund": 250000,
+      "Summary": "Quantum semiconductor manufacturer 1st to commercialise [REDACTED]-cut Waveguide based quantum processors ([REDACTED]W) with the aim of (a) supplying quantum computing, research and sensing market players (now) and (b) scaling a modular 3D glass-based quantum architecture to deliver a fault-tolerant quantum computer (over the next 2 decades)\n",
+      "Deal investment thesis": "1\\. \"Picks and shovels\" approach to building a quantum computing business by building a revenue-making \"semiconductor\" startup\n\n2\\. Potential to enter quantum sensor market ahead of quantum computing development with a very strong technical team to deliver (potential risk: lack of strong commercial figure and initial customers mostly in the academia and research space)\n\n3\\. Unique Photonics Quantum technology that has fast-prototyping and development timelines with (as of now) no other other commercial competitor (all competition develops, or integrates, either non-photonics tech such as trapped-iron or silicon / silica based photonic chips)\n",
+      "Value-add notes": "1\\. Connections to UK quantum ecosystem\n\n2\\. Connection to Massimo Carnelos and Ita startup programmes/budgets\n\n3\\. Tech-to-PR knowledge and contacts to create some hype and momentum at the right time\n",
+      "Logo": {
+        "localFilePath": "images/recoFfcu6ibnIeE78_logo",
+        "type": "image/png"
+      },
+      "Name": [
+        "Andrea"
+      ],
+      "Contacts (n) (from Company)": [
+        "rec5FCy37e6xnyZ0a"
+      ],
+      "Created on": "2024-12-04T14:50:55.000Z",
+      "Current N# of Shares Held": 0,
+      "Current N# of Shares Issued (Grand Total)": 0,
+      "Current Fair Value Assessment": 14500000,
+      "Initial Round Post Money Val": 14500000,
+      "Current Ownership": 0.01,
+      "Invested from fund": [
+        "recPOzbCwVqJEFITf"
+      ],
+      "Current Shares Owned Value": 145000,
+      "Total Invested": 145000,
+      "NET MOIC": 1,
+      "Current Stage": "Pre-seed",
+      "Run DD Search": {
+        "label": "Run Script",
+        "url": "https://airtable.com/tblROCOQqj0yEUZlc/recoFfcu6ibnIeE78?blocks=bliyekWLVkmYV8tM7"
+      },
+      "Deal_Name": [
+        "Andrea"
+      ],
+      "domain__from_Company_": ""
+    }
+  },
+  {
+    "id": "recOCxtTAKgomsgy5",
+    "fields": {
+      "Deal Name": "Infiniti Recycling (prev TBRC)",
+      "Source": "Intro",
+      "Status": "COMPLETED",
+      "Stage": "Angel",
+      "Deal Value": 250000,
+      "Close Date": "2023-03-01",
+      "Main Contact": [
+        "rec9Jr5w0hf5ySwtk"
+      ],
+      "Google Drive Documents": "https://drive.google.com/drive/folders/17H4Vjg4i9SPwC7BDBVg25n91kwR7EG2N",
+      "email (from Contacts)": [
+        "keith@infinitirecycling.com"
+      ],
+      "Company": [
+        "rec3SkWDOGkW7q3w1"
+      ],
+      "domain (from Company)": [
+        "infinitirecycling.com"
+      ],
+      "salesflare.id": 11944188,
+      "SHARING: Display Name": "Stealth",
+      "Announced": "No",
+      "Sector": [
+        "Batteries",
+        "Hardware",
+        "Robotics",
+        "Climate"
+      ],
+      "Led by": "Francesco",
+      "Initial Round Size": 150000,
+      "Security Type": "Ordinary Shares",
+      "Entry Valuation": 4000000,
+      "Valuation type": "Pre-Money",
+      "Currency": "£ GBP",
+      "Final ticket invested": 150000,
+      "Ownership post 1st round": 0.03614457831325301,
+      "Allocation for the fund": 250000,
+      "Summary": "Direct Recycling company for Li-Ion batteries: currently focused on Gigafactory scraps (at present 40% of global production), eventually also extending to end-of-life recycling\n",
+      "Deal investment thesis": "Unique technology (never seen before on disclosed papers or commercial applications -this has been thoroughly researched in DD) for Direct Recycling [details still confidential outside of the fund DD]\n\nA single large client in exclusivity contract could generate up to $100m in revenue: 1 UK based client signed up for paid pilot but on hold due to customer's internal issues, a 2nd US-based one is now in LoI procurement phase [details still confidential outside of the fund DD]\n\nDisruptive business approach that focuses on a higher supply chain step than the existing recycling market [details still confidential outside of the fund DD]\n",
+      "Value-add notes": "1\\. Help shaping Seed round\n\n2\\. Connections to CVCs and corporates\n\n3\\. Connection to fellow startups in the space\n",
+      "Logo": {
+        "localFilePath": "images/recOCxtTAKgomsgy5_logo",
+        "type": "image/png"
+      },
+      "Name": [
+        "Keith"
+      ],
+      "Contacts (n) (from Company)": [
+        "rec9Jr5w0hf5ySwtk"
+      ],
+      "Created on": "2024-12-04T15:07:08.000Z",
+      "Follow on Rounds": [
+        "rec2dCZKyD30vWBcr"
+      ],
+      "Current N# of Shares Held": 34500,
+      "N# of Shares Issued At Round (inc conversions)": 1038769,
+      "N# of Shares Issued to us": 34500,
+      "Total Shares Issued to us (from Rounds)": [
+        0
+      ],
+      "Current N# of Shares Issued (Grand Total)": 1038769,
+      "Current Fair Value Assessment": 10500000,
+      "Initial Round Post Money Val": 4150000,
+      "Current Ownership": 0.03321238889493237,
+      "Invested from fund": [
+        "recPOzbCwVqJEFITf"
+      ],
+      "Follow on Investment (from Rounds)": [
+        0
+      ],
+      "Current Shares Owned Value": 348730.08339678985,
+      "GP Portfolio Notes": "UPDATED: 24/02/2025\nCompleted secondary sale of founder share (priced) on March 2024. Used price for valuation. No main event to chance price value internally since. Business is progressing positively with runways still having over 6 months without including revenue or grants.\n",
+      "Total Invested": 150000,
+      "NET MOIC": 2.3248672226452656,
+      "Latest Follow On Stage": [
+        "Angel"
+      ],
+      "Current Stage": "Angel",
+      "Post Money (from Follow on Rounds)": [
+        10500000
+      ],
+      "Currency (from Follow on Rounds)": [
+        "£ GBP"
+      ],
+      "Run DD Search": {
+        "label": "Run Script",
+        "url": "https://airtable.com/tblROCOQqj0yEUZlc/recOCxtTAKgomsgy5?blocks=bliyekWLVkmYV8tM7"
+      },
+      "Deal_Name": [
+        "Keith"
+      ],
+      "domain__from_Company_": ""
+    }
+  },
+  {
+    "id": "recm8SWWgYWXHq6Zz",
+    "fields": {
+      "Deal Name": "Vypercore",
+      "Source": "Our Event",
+      "Status": "COMPLETED",
+      "Stage": "Pre-seed",
+      "Deal Value": 150000,
+      "Close Date": "2023-05-01",
+      "Google Drive Documents": "https://drive.google.com/drive/folders/1EOg8eE9LOkFedA7g8TLfoW17u8gwKDnP",
+      "Company": [
+        "recRCWc6E2NXUU4Bk"
+      ],
+      "domain (from Company)": [
+        "vypercore.com"
+      ],
+      "salesflare.id": 13872467,
+      "SHARING: Display Name": "Vypercore",
+      "Announced": "Yes",
+      "Sector": [
+        "Hardware",
+        "Cybersecurity",
+        "Semiconductor"
+      ],
+      "Led by": "Francesco",
+      "Initial Round Size": 4000000,
+      "Security Type": "Preferred Shares",
+      "Entry Valuation": 8500000,
+      "Valuation type": "Pre-Money",
+      "Currency": "£ GBP",
+      "Final ticket invested": 150000,
+      "Ownership post 1st round": 0.012,
+      "Allocation for the fund": 300000,
+      "Summary": "Semiconductor company using a vertically integrated approach of both Software and Hardware considerations to build a new approach for the \"classical\" processors of the future: \n\n\\- Starting by building the world's 1st RISC-V CPU with integrated hardware garbage collection (based on the founder's research and IP)\n\n\\- Aiming to accelerate all workloads by an order of magnitude, and remove one of the biggest causes of cyber-security risks in performance-based CPUs\n",
+      "Deal investment thesis": "\\- Founder impressed the GP on the technical side: a) the founder's been obsessed with this topic for years and is probably one of the top experts in the world by now... and he is still in his 20s, b) he actually cofounded and exited a software company (small exit but showing entrepreneurial spirit), c) the founder's bachelor's thesis on this very topic was PhD level (no jokes), d) the co-funding early employee and now tech lead also has shown great understanding of the topic with his PhD, e) the company is supported by an industry veteran as exec chairman, f) the founder's capacity to convey stories and explain a difficult topic in easier terms is demonstrated by his niche youtube channel on OS, hardware and computation\n\n\\- IP backed by Prof [REDACTED] (Semiconductor legend) and top-tier UK semiconductor engineers talent wanting to join the team before it's even formed\n\n\\- Other Deep Tech investors interested and there is potential for a well capitalised pre-seed round with top-tier partners of those funds (in the UK semiconductor space and whom the GP knows personally) willing to get involved and help the company [actually the GP helped one of them get conviction to come in and in doing so replace the existing initial lead that wanted to charge fees to the company :) ]\n\n\\- Huge market potential if they can take it to market: with both large M&As from incumbents or even public listing possible IF the IP is proven to work at scale (without even needing much revenue looking at precedents in the industry)\n",
+      "Value-add notes": "1\\. Help ensure round terms are fair [completed already]\n\n2\\. Support early business landscape definition\n\n3\\. Helping internal organisational direction and hiring (esp via community events)\n\n4\\. Hype up the company ahead of the next round\n",
+      "Logo": {
+        "localFilePath": "images/recm8SWWgYWXHq6Zz_logo",
+        "type": "image/png"
+      },
+      "Contacts (n) (from Company)": [
+        "recFUj7o3xeowIIvI",
+        "recSYga0OrcZjxzhm"
+      ],
+      "Created on": "2024-12-04T13:46:50.000Z",
+      "Current N# of Shares Held": 0,
+      "Current N# of Shares Issued (Grand Total)": 0,
+      "Current Fair Value Assessment": 12500000,
+      "Initial Round Post Money Val": 12500000,
+      "Current Ownership": 0.012,
+      "Invested from fund": [
+        "recPOzbCwVqJEFITf"
+      ],
+      "Current Shares Owned Value": 150000,
+      "Total Invested": 150000,
+      "NET MOIC": 1,
+      "Current Stage": "Pre-seed",
+      "Run DD Search": {
+        "label": "Run Script",
+        "url": "https://airtable.com/tblROCOQqj0yEUZlc/recm8SWWgYWXHq6Zz?blocks=bliyekWLVkmYV8tM7"
+      },
+      "Deal_Name": "Unnamed Company",
+      "domain__from_Company_": ""
+    }
+  },
+  {
+    "id": "reckOWHYEuxh3S6Ud",
+    "fields": {
+      "Deal Name": "Panakeia",
+      "Source": "Our Event",
+      "Status": "COMPLETED",
+      "Stage": "Seed",
+      "Deal Value": 150000,
+      "Close Date": "2023-06-01",
+      "Main Contact": [
+        "recXLVpRQrt7OlElf"
+      ],
+      "Google Drive Documents": "https://drive.google.com/drive/folders/1K3JvmvlqYp8OyNLYkOxN8H1EAKlkvCFq",
+      "email (from Contacts)": [
+        "pahini@panakeia.ai"
+      ],
+      "Company": [
+        "recr96E2qFscmGNp9"
+      ],
+      "social_profiles_0.url (from Company)": [
+        "http://www.crunchbase.com/organization/panakeia-technologies"
+      ],
+      "domain (from Company)": [
+        "panakeia.ai"
+      ],
+      "salesflare.id": 10050418,
+      "SHARING: Display Name": "Panakeia",
+      "Announced": "Yes",
+      "Sector": [
+        "Health",
+        "Software",
+        "AI"
+      ],
+      "Led by": "Francesco",
+      "Initial Round Size": 4000000,
+      "Security Type": "Preferred Shares",
+      "Entry Valuation": 10000000,
+      "Valuation type": "Pre-Money",
+      "Currency": "£ GBP",
+      "Final ticket invested": 150000,
+      "Ownership post 1st round": 0.010714285714285714,
+      "Allocation for the fund": 400000,
+      "Summary": "Novel ML approach + full stack software platform that can offer molecular information directly from routinely used tissue images. Allowing the company to offer multi-omics detection and molecular results entirely digitally and in minutes: hence eliminating the need for lab-based, chemical testing which can take days to weeks to return results. \n",
+      "Deal investment thesis": "1\\. Pilot in progress with NHS\n\n2\\. Existing investors considering to follow-on\n\n3\\. Backed by angels with industry-specific expertise (NHS and Bio-Tech)\n\n4\\. Technical founding team: CEO’s PhD linked biomarkers to tissue shapes and CTO has built computer vision solutions to link cell shapes to drug response\n\n5\\. Inflection point if shifting from just medical care pilots (UK NHS) to Pharma usage in trials (huge and faster revenue growth potential): Indication for this to be a serous possibility from Positive feedback from 1 US Pharma about starting commercial use and ex VP from tier-1 Pharma joining as commercial adviser in the US\n",
+      "Value-add notes": "1\\. Help put together a strong seed round of co-investors (esp w/ Deep Tech background)\n\n2\\. Intro's to pharma companies (or people connected to that world)\n\n2\\. Spreading word\n",
+      "Logo": {
+        "localFilePath": "images/reckOWHYEuxh3S6Ud_logo",
+        "type": "image/png"
+      },
+      "Name": [
+        "Pahini"
+      ],
+      "Contacts (n) (from Company)": [
+        "recXLVpRQrt7OlElf"
+      ],
+      "Created on": "2024-12-04T14:05:34.000Z",
+      "Current N# of Shares Held": 0,
+      "Current N# of Shares Issued (Grand Total)": 0,
+      "Current Fair Value Assessment": 14000000,
+      "Initial Round Post Money Val": 14000000,
+      "Current Ownership": 0.010714285714285714,
+      "Invested from fund": [
+        "recPOzbCwVqJEFITf"
+      ],
+      "Current Shares Owned Value": 150000,
+      "Total Invested": 150000,
+      "NET MOIC": 1,
+      "Current Stage": "Seed",
+      "Run DD Search": {
+        "label": "Run Script",
+        "url": "https://airtable.com/tblROCOQqj0yEUZlc/reckOWHYEuxh3S6Ud?blocks=bliyekWLVkmYV8tM7"
+      },
+      "Deal_Name": [
+        "Pahini"
+      ],
+      "domain__from_Company_": ""
+    }
+  },
+  {
+    "id": "recwEN1a3R1IdNukv",
+    "fields": {
+      "Deal Name": "NuQuantum",
+      "Source": "Intro",
+      "Status": "COMPLETED",
+      "Stage": "Seed+",
+      "Deal Value": 250000,
+      "Close Date": "2023-12-15",
+      "Main Contact": [
+        "rec1Lx46zGNa6xsvw"
+      ],
+      "Google Drive Documents": "https://drive.google.com/drive/folders/1-78ooCtP8efKFMp0xekK9mz84G4p5hJm",
+      "email (from Contacts)": [
+        "carmen@nu-quantum.com"
+      ],
+      "Company": [
+        "rec1K6cgHoKUO0JGK"
+      ],
+      "social_profiles_0.url (from Company)": [
+        "http://www.crunchbase.com/organization/nu-quantum"
+      ],
+      "domain (from Company)": [
+        "nu-quantum.com"
+      ],
+      "salesflare.id": 11962430,
+      "SHARING: Display Name": "NuQuantum",
+      "Announced": "Yes",
+      "Sector": [
+        "Hardware",
+        "Quantum Computing",
+        "Networks & Telecom"
+      ],
+      "Led by": "Francesco",
+      "Initial Round Size": 8000000,
+      "Security Type": "Preferred Shares",
+      "Entry Valuation": 17000000,
+      "Valuation type": "Pre-Money",
+      "Currency": "£ GBP",
+      "Final ticket invested": 250000,
+      "Ownership post 1st round": 0.01,
+      "Allocation for the fund": 500000,
+      "Summary": "Quantum networking hardware and software platform to connect and orchestrate computation across multiple quantum cores \n",
+      "Deal investment thesis": "1\\. Strong technical progress in an area (quantum interconnects) that the field (from operators like our existing portfolio founders to large corporations like BT, IBM and CISCO) considers a must-happen for quantum computing to move forward but where competition is still low (most existing quantum computing companies focus on scaling the qubits number in individual cores or building software or hardware for cores to operate)\n\n2\\. Capacity to unlock adjacent markets such as hybrid computing or sensing, that require networking with a quantum processing unit.\n\n3\\. Patented or trade-secret technology based on quantum microcavities and photonic interconnects to \"pair\" the entanglement of different quantum cores: after verifying with experts, references and a lab visit, the potential seems derisked from a pure research point of view and already transitioning to \"engineering\" the solution with the right fidelity, reliability and precision.\n\n4\\. Revenue-making project linked with the UK MoD that has the specific goal to build a demonstrator for the technology the company wants to build (£8m over 2 years)\n\n5\\. Strong co-investors able to follow on and add brand recognition (probably one of the reasons the round and company is getting outsized media attention when it wants to promote something) [e.g. IQ Capital, Amadeus and Presidio)\n\n6\\. Strong corporate engagement (the founder co-founded the UK quantum industry association and has direct access to CISCO, IBM and the other major players) [BT confirmed they are interested in doing increasingly more work together]\n\n7\\. Founder is driven and able to pull in talent, capital and media/conference/corporate attention when needed: punching way above her weight.\n",
+      "Value-add notes": "1\\. Connections to the European and US quantum system (via portfolio company)\n\n2\\. Community support for visibility and hiring\n\n3\\. \"super-angel\" bridge between institutional VCs / corporations / board and the founders, as well as the broader tech community\n",
+      "Logo": {
+        "localFilePath": "images/recwEN1a3R1IdNukv_logo",
+        "type": "image/png"
+      },
+      "Name": [
+        "Carmen"
+      ],
+      "Contacts (n) (from Company)": [
+        "rec1Lx46zGNa6xsvw"
+      ],
+      "Created on": "2024-12-04T15:01:51.000Z",
+      "Current N# of Shares Held": 0,
+      "Current N# of Shares Issued (Grand Total)": 0,
+      "Current Fair Value Assessment": 25000000,
+      "Initial Round Post Money Val": 25000000,
+      "Current Ownership": 0.01,
+      "Invested from fund": [
+        "recPOzbCwVqJEFITf"
+      ],
+      "Current Shares Owned Value": 250000,
+      "Total Invested": 250000,
+      "NET MOIC": 1,
+      "Current Stage": "Seed+",
+      "Run DD Search": {
+        "label": "Run Script",
+        "url": "https://airtable.com/tblROCOQqj0yEUZlc/recwEN1a3R1IdNukv?blocks=bliyekWLVkmYV8tM7"
+      },
+      "Deal_Name": [
+        "Carmen"
+      ],
+      "domain__from_Company_": ""
+    }
+  },
+  {
+    "id": "receXa5rM8EmGtBct",
+    "fields": {
+      "Deal Name": "Finchetto",
+      "Source": "External Event",
+      "Status": "COMPLETED",
+      "Stage": "Pre-seed",
+      "Deal Value": 150000,
+      "Close Date": "2024-07-01",
+      "Google Drive Documents": "https://drive.google.com/drive/folders/1CfcIEBm_vx2mmivptBuAV9aqZkn_I9Aq",
+      "Company": [
+        "rec0g5wJQXettbhBB"
+      ],
+      "domain (from Company)": [
+        "finchetto.com"
+      ],
+      "SHARING: Display Name": "Finchetto",
+      "Announced": "Yes",
+      "Sector": [
+        "Hardware",
+        "Semiconductor",
+        "Photonics"
+      ],
+      "Led by": "Francesco",
+      "Initial Round Size": 1500000,
+      "Security Type": "Ordinary Shares",
+      "Entry Valuation": 5000000,
+      "Valuation type": "Pre-Money",
+      "Currency": "£ GBP",
+      "Final ticket invested": 150000,
+      "Ownership post 1st round": 0.023076923076923078,
+      "Allocation for the fund": 500000,
+      "Contacts (n) (from Company)": [
+        "recmWz2wKFyhbuf6B",
+        "recJKyd7UC4aHIYdQ",
+        "receWXQnCtGaRjMaW"
+      ],
+      "Created on": "2024-12-06T19:36:53.000Z",
+      "Current N# of Shares Held": 0,
+      "Current N# of Shares Issued (Grand Total)": 0,
+      "Current Fair Value Assessment": 6500000,
+      "Initial Round Post Money Val": 6500000,
+      "Current Ownership": 0.023076923076923078,
+      "Invested from fund": [
+        "recPOzbCwVqJEFITf"
+      ],
+      "Current Shares Owned Value": 150000,
+      "Total Invested": 150000,
+      "NET MOIC": 1,
+      "Current Stage": "Pre-seed",
+      "Run DD Search": {
+        "label": "Run Script",
+        "url": "https://airtable.com/tblROCOQqj0yEUZlc/receXa5rM8EmGtBct?blocks=bliyekWLVkmYV8tM7"
+      },
+      "Deal_Name": "Unnamed Company",
+      "Summary": "",
+      "domain__from_Company_": ""
+    }
+  },
+  {
+    "id": "recw8Chm0PRqw38I0",
+    "fields": {
+      "Deal Name": "Origin Robotics",
+      "Source": "Intro",
+      "Status": "COMPLETED",
+      "Stage": "Pre-seed",
+      "Deal Value": 175000,
+      "Close Date": "2024-08-01",
+      "Main Contact": [
+        "recgfzrv8RuftL8Pz"
+      ],
+      "Google Drive Documents": "https://drive.google.com/drive/folders/1i1AhzqKK2OcZUBhNq6nFFd_WeF6gi-nh",
+      "email (from Contacts)": [
+        "agris@origin-robotics.com"
+      ],
+      "Company": [
+        "recPKMr30hI1HUS2m"
+      ],
+      "domain (from Company)": [
+        "originuav.com"
+      ],
+      "salesflare.id": 13470815,
+      "SHARING: Display Name": "Origin Robotics",
+      "Announced": "Yes",
+      "Sector": [
+        "Defence",
+        "AI",
+        "Aerospace",
+        "Hardware"
+      ],
+      "Led by": "Francesco",
+      "Initial Round Size": 1000000,
+      "Security Type": "CLA / CLN",
+      "Entry Valuation": 9000000,
+      "Valuation type": "Pre-Money",
+      "Currency": "£ GBP",
+      "Final ticket invested": 175000,
+      "Ownership post 1st round": 0.0175,
+      "Allocation for the fund": 500000,
+      "Name": [
+        "Agris"
+      ],
+      "Contacts (n) (from Company)": [
+        "recG3tWHNbxr2f4qI"
+      ],
+      "Created on": "2024-12-05T18:34:31.000Z",
+      "Current N# of Shares Held": 0,
+      "Current N# of Shares Issued (Grand Total)": 0,
+      "Current Fair Value Assessment": 10000000,
+      "Initial Round Post Money Val": 10000000,
+      "Current Ownership": 0.0175,
+      "Invested from fund": [
+        "recPOzbCwVqJEFITf"
+      ],
+      "Current Shares Owned Value": 175000.00000000003,
+      "Total Invested": 175000,
+      "NET MOIC": 1.0000000000000002,
+      "Current Stage": "Pre-seed",
+      "Run DD Search": {
+        "label": "Run Script",
+        "url": "https://airtable.com/tblROCOQqj0yEUZlc/recw8Chm0PRqw38I0?blocks=bliyekWLVkmYV8tM7"
+      },
+      "Deal_Name": [
+        "Agris"
+      ],
+      "Summary": "",
+      "domain__from_Company_": ""
+    }
+  },
+  {
+    "id": "recuDBx9D9MFNTFEX",
+    "fields": {
+      "Deal Name": "Gama",
+      "Source": "Intro",
+      "Status": "COMPLETED",
+      "Stage": "Seed",
+      "Deal Value": 200000,
+      "Close Date": "2024-09-01",
+      "Main Contact": [
+        "recdxz2ydnfrlmVGM"
+      ],
+      "Tasks": [
+        "recB7H79PIrQ4OOKT"
+      ],
+      "Introduced by? (Optional)": [
+        "recveZ3ujEgcAIgrW"
+      ],
+      "email (from Contacts)": [
+        "andrew@gamaspace.com"
+      ],
+      "Company": [
+        "rec9FDwidIrj6J3VU"
+      ],
+      "social_profiles_0.url (from Company)": [
+        "https://www.linkedin.com/company/gamaspace"
+      ],
+      "domain (from Company)": [
+        "gamaspace.com"
+      ],
+      "Notes": "Azava link: <https://azava.com/share/yd3qgr>\nRaising: €1.5M \nStage: Pre Seed round\n\n- \n\nDevelops Astrobrake module for deorbiting satellites using drag sails.\n- \n\nGama Alpha mission in orbit as of January 2023, 70% effectiveness.\n- \n\nRaising 1.5M EUR in pre-seed\nSummary: \n- \n\nSupported by CNES and DLR; advisors from NASA, CNRS, and Delft\nUniversity of Technology.\n\nTeam: \n- Andrew Nutter (Co-Founder)\n<https://d457851a.streaklinks.com/CIBrSnb-vqZvV55pqgprqeu4/https%3A%2F%2F891-siliconroundabout.trakqit.com%2F%3Fu%3Dhttps%3A%252F%252Femail.mg.azava.com%252Fc%252FeJwUyTtyxCAMANDTQMkImY9dUKTxPUDIWSZekcHYRU6f2frVxJVW1pxsxOBXDxvoV-JCnjYMzBQ8RcQjVGe31TJ54gV0SwjoYLPROr9aMNHnAqEU4iM6v2Tl4P1t8l9-sqH-1md6zfl7qeVL4a5wP4Y5m_xwbfJxhXsThXuWe04eeqRjZCG-qCsHVzsbdRn9lppLv6d5WOY9-NJPwv8AAAD__8RFPWI%26e%3D3d00d500fa0ace339740b3f28b912787>\n- Thibaud Elzière (Co-Founder and Advisor)\n<https://d457851a.streaklinks.com/CIBrSnbkJK00AFLjcwL161ZI/https%3A%2F%2F891-siliconroundabout.trakqit.com%2F%3Fu%3Dhttps%3A%252F%252Femail.mg.azava.com%252Fc%252FeJwUyT1yhSAQAODTQBcGlz8tKNJ4j2VZIhMfZBAt3ukzr_5y5EwrS45LAO9Wpzctj0hcki1UtoSeDWaCUDyuejPF-ByKrBE0WL0tYbFuXbQKDpP2KRGXYJ1BYfXrR-EbH1TUX_KMx5x_lzDfAnYBe2J11vbLubaPC9hrE7DPoya88xef78qD5YhlYCO-qAurr3pW6m30u2VM_Z7q4TbvwZd8IvwHAAD__zkqQRM%26e%3D3d00d500fa0ace339740b3f28b912787>\n",
+      "References": [
+        "recvf49LIrpNdLC7w",
+        "recQvCBgNjioUTpfj"
+      ],
+      "DDQ": [
+        "recu9H1OwjLkOx0Hw"
+      ],
+      "SHARING: Display Name": "Stealth",
+      "Announced": "No",
+      "Sector": [
+        "Space",
+        "Hardware"
+      ],
+      "Led by": "Francesco",
+      "Initial Round Size": 700000,
+      "Security Type": "SAFE",
+      "Entry Valuation": 12000000,
+      "Valuation type": "Post-Money",
+      "Currency": "€ EUR",
+      "Final ticket invested": 220000,
+      "Ownership post 1st round": 0.018333333333333333,
+      "Allocation for the fund": 500000,
+      "Logo": {
+        "localFilePath": "images/recuDBx9D9MFNTFEX_logo",
+        "type": "image/png"
+      },
+      "Name": [
+        "Andrew"
+      ],
+      "Contacts (n) (from Company)": [
+        "recdxz2ydnfrlmVGM"
+      ],
+      "Created on": "2024-09-11T17:24:53.000Z",
+      "Current N# of Shares Held": 0,
+      "Current N# of Shares Issued (Grand Total)": 0,
+      "Current Fair Value Assessment": 12000000,
+      "Initial Round Post Money Val": 12000000,
+      "Current Ownership": 0.018333333333333333,
+      "Invested from fund": [
+        "recPOzbCwVqJEFITf"
+      ],
+      "Current Shares Owned Value": 220000,
+      "Total Invested": 220000,
+      "NET MOIC": 1,
+      "Current Stage": "Seed",
+      "Run DD Search": {
+        "label": "Run Script",
+        "url": "https://airtable.com/tblROCOQqj0yEUZlc/recuDBx9D9MFNTFEX?blocks=bliyekWLVkmYV8tM7"
+      },
+      "Deal_Name": [
+        "Andrew"
+      ],
+      "Summary": "",
+      "domain__from_Company_": ""
+    }
+  },
+  {
+    "id": "recXPrb2YWeUrkpzL",
+    "fields": {
+      "Deal Name": "Hippos Exoskeleton",
+      "Source": "Intro",
+      "Status": "COMPLETED",
+      "Stage": "Angel",
+      "Deal Value": 150000,
+      "Close Date": "2024-10-01",
+      "Main Contact": [
+        "recgvcjBPkpo7HN1X"
+      ],
+      "Tasks": [
+        "recbT8gZWQGCeLiLi"
+      ],
+      "Google Drive Documents": "https://drive.google.com/drive/folders/1odi3BQSCKK3Z3l4xV4ht95GUd2YAfDja",
+      "Introduced by? (Optional)": [
+        "recdQfzRcxFGMk5ug"
+      ],
+      "email (from Contacts)": [
+        "kylin@hippos.life"
+      ],
+      "Company": [
+        "rec8jLRO8cH30dLEG"
+      ],
+      "custom.italian (from Company)": [
+        "False"
+      ],
+      "social_profiles_0.url (from Company)": [
+        "https://www.linkedin.com/company/hippos-exoskeleton"
+      ],
+      "domain (from Company)": [
+        "hippos.life"
+      ],
+      "Notes": "Hippos\nRaising: 500k \nStage: Angel round\nSummary: \nxWlSHPNLMGWTwCagWgFOIL7aR1sq\\_IC2vF2UYQGo6viX7ppim2Q\n\nHippos\n\n🔗 https://hippos.life\n💰 Pre Seed round\n\nHealth robotics to eliminate physical injuries; first product: AI-powered knee airbag.\n\n209 clinics on waitlist; $100k pre-order from Cleveland Clinic London; targeting $500k in pre-orders by Q4.\n\nCEO sold a business at 17; co-founder developed and scaled a bionic arm prototype.\n\nCurrently raising funds; space available; aiming to close by next Tuesday; potential EIS availability.\n\nTeam: \n👥 Team Kylin Shaw (Co-Founder & CEO) (https://email.mg.azava.com/c/eJwUyr1uxCAMAOCnga0IfA4kA0MX3oMzpkGXM1XIj9qnr7p_JXKhmTVHFyCEeZrmRa9xCuAe7NA-LUGthKUgBu_QL76iL7pFsIDOWucAPASDWIInXhgd10BWoX1_mfybr2yov_UW1-P4HurxqSApSPd9m63Ji0uTf6AgNVGQXj9bk4-x5ltB0nusexbiQV2hHW1r1GXvp5T87OdhLpbj3HnoK8JfAAAA**_Xwj6p) Bhavy Metakar (CTO & Co-Founder) (https://email.mg.azava.com/c/eJwUyjFyhSAQANDTQBdnWeGDBUUa7rHCEpmvkEHUSU6fSf-S5xQdSbKorXOGLfIzckFsNowOQ4OzT0guxWlSHPNLMGWTwCagWgFOIL7aR1sqIC2vF2UYQGo6viX7ppim2Q-5-G-P7FPOnwCAwPM8z7aW-OZX6DwSGUgWGdaP75-PgQWqAoPsPneqkcYhIaz7CW22ttVE63tGtPNdVydT3l7AsAAP_**_se4_9w)\n",
+      "Azava link": "https://azava.com/d/hippos-y7mp9y",
+      "salesflare.id": 13872388,
+      "SHARING: Display Name": "Hippos Exoskeleton",
+      "Announced": "Yes",
+      "Sector": [
+        "Health",
+        "Robotics",
+        "Hardware"
+      ],
+      "Led by": "Francesco",
+      "Initial Round Size": 600000,
+      "Security Type": "SAFE",
+      "Entry Valuation": 3000000,
+      "Valuation type": "Post-Money",
+      "Currency": "$ USD",
+      "Final ticket invested": 195000,
+      "Ownership post 1st round": 0.065,
+      "Allocation for the fund": 500000,
+      "Value-add notes": "\n",
+      "Logo": {
+        "localFilePath": "images/recXPrb2YWeUrkpzL_logo",
+        "type": "image/png"
+      },
+      "Name": [
+        "Kylin"
+      ],
+      "Contacts (n) (from Company)": [
+        "rec0G5K8bbYrgTWyx",
+        "recgvcjBPkpo7HN1X"
+      ],
+      "Created on": "2024-12-04T11:09:31.000Z",
+      "Current N# of Shares Held": 0,
+      "Current N# of Shares Issued (Grand Total)": 0,
+      "Current Fair Value Assessment": 3000000,
+      "Initial Round Post Money Val": 3000000,
+      "Current Ownership": 0.065,
+      "Invested from fund": [
+        "recPOzbCwVqJEFITf"
+      ],
+      "Current Shares Owned Value": 195000,
+      "Total Invested": 195000,
+      "NET MOIC": 1,
+      "Current Stage": "Angel",
+      "Run DD Search": {
+        "label": "Run Script",
+        "url": "https://airtable.com/tblROCOQqj0yEUZlc/recXPrb2YWeUrkpzL?blocks=bliyekWLVkmYV8tM7"
+      },
+      "Deal_Name": [
+        "Kylin"
+      ],
+      "Summary": "",
+      "domain__from_Company_": ""
+    }
+  },
+  {
+    "id": "recrFvOu6YR0FOht2",
+    "fields": {
+      "Deal Name": "Astral Systems",
+      "Source": "Intro",
+      "Status": "COMPLETED",
+      "Stage": "Seed",
+      "Deal Value": 200000,
+      "Close Date": "2024-12-12",
+      "Main Contact": [
+        "recBGSTx1bQ4Wrnny",
+        "recUSXwEF4oJRPhNe"
+      ],
+      "Co-Investors": [
+        "recmoX3M27cu3QaN7"
+      ],
+      "email (from Contacts)": [
+        "talmon@astralneutronics.com",
+        "tomws@astralsystems.com"
+      ],
+      "Company": [
+        "recw5lZ1gCrqOZnDZ"
+      ],
+      "domain (from Company)": [
+        "astralneutronics.com"
+      ],
+      "salesflare.id": 13246523,
+      "SHARING: Display Name": "Astral Systems",
+      "Announced": "Yes",
+      "Sector": [
+        "Health",
+        "Nuclear Fusion",
+        "Hardware",
+        "Climate"
+      ],
+      "Led by": "Francesco",
+      "Initial Round Size": 4750000,
+      "Security Type": "Ordinary Shares",
+      "Entry Valuation": 10976195.82,
+      "Valuation type": "Pre-Money",
+      "Currency": "£ GBP",
+      "Final ticket invested": 200000,
+      "Ownership post 1st round": 0.012717633831422048,
+      "Allocation for the fund": 350000,
+      "Logo": {
+        "localFilePath": "images/recrFvOu6YR0FOht2_logo",
+        "type": "image/svg+xml"
+      },
+      "Name": [
+        "Talmon",
+        "Tom"
+      ],
+      "Contacts (n) (from Company)": [
+        "recBGSTx1bQ4Wrnny",
+        "recUSXwEF4oJRPhNe"
+      ],
+      "Created on": "2024-12-03T12:56:05.000Z",
+      "Current N# of Shares Held": 0,
+      "Current N# of Shares Issued (Grand Total)": 0,
+      "Current Fair Value Assessment": 15726195.82,
+      "Initial Round Post Money Val": 15726195.82,
+      "Current Ownership": 0.012717633831422048,
+      "Invested from fund": [
+        "recPOzbCwVqJEFITf"
+      ],
+      "Current Shares Owned Value": 200000,
+      "Total Invested": 200000,
+      "NET MOIC": 1,
+      "Current Stage": "Seed",
+      "Run DD Search": {
+        "label": "Run Script",
+        "url": "https://airtable.com/tblROCOQqj0yEUZlc/recrFvOu6YR0FOht2?blocks=bliyekWLVkmYV8tM7"
+      },
+      "Deal_Name": [
+        "Talmon",
+        "Tom"
+      ],
+      "Summary": "",
+      "domain__from_Company_": ""
+    }
+  },
+  {
+    "id": "recLF7MLZSeYRANkJ",
+    "fields": {
+      "Deal Name": "Haiqu",
+      "Source": "Outbound",
+      "Status": "COMPLETED",
+      "Stage": "Seed+",
+      "Deal Value": 320000,
+      "Close Date": "2025-01-02",
+      "Google Drive Documents": "https://drive.google.com/drive/folders/1SGA7KzFATFAD7QEFIt1EshEYD6eTBdH-?usp=sharing",
+      "Deck": [
+        {
+          "id": "attVYPQ7g6LMPEF8z",
+          "url": "https://v5.airtableusercontent.com/v3/u/40/40/1744149600000/h6JFLOxZhDyECmSZrbuzSw/pMRULggOLy_DNR9zBOakYHb-4MYCRpjH2dINwsJYwiB-qZ4oTt1rl6dokF3oj7ALwZ5dN1PfcC9FG9fazh7NkXLnhUerhrpMxLzTsmrU0cJDCLAdxoupFG8tHSwdepzQjkyqfyXq-9rH4fZMb0WxfUtMQEDWcXOAcFLMUAWFDIY/ZjawE0Ge9JOtA27SS3zyoeZCO-OkzgGxpxXhng1_7Zo",
+          "filename": "HaiquSeedINTRO.pdf",
+          "size": 11221087,
+          "type": "application/pdf",
+          "thumbnails": {
+            "small": {
+              "url": "https://v5.airtableusercontent.com/v3/u/40/40/1744149600000/LxudMAWZTl6zXBkTMlmOGQ/sw3NY5saFK6gZBq6mNzuXZ5elq8MdnhYSdqoaLRs2S4NUO4jJWtuD3TlZXOD58VEMKcVW7261SXdrKGe7AHQm3re3QdXsy_j0VS5n-pGrTsj4Y7dWNX3rRBEQZNw_lecikgcse2m8xonCqMxi0pOZw/ucaqmCSsSSGZjNc6EHxbaXQV3O7mdoYSltrRpkdKGXg",
+              "width": 64,
+              "height": 36
+            },
+            "large": {
+              "url": "https://v5.airtableusercontent.com/v3/u/40/40/1744149600000/YPnjSUncwddXQVH_77hj5Q/25Vx3cTrZuuttU7epeDhBYsjXkxMRP31EaSJY8NSPU7qJXPlOqskUrUhGd96vQRkowiIgnjW72O9Tz9KGg20SyQkmWpemR4iCCW5zNy0s44QnjqSoCZUJs91zP7SaCsBAOczYluZkCgd5khjre0Png/VHZDSt9lBvnWYbh7xSnwmQzCmaB6_wwXokXq6Z0Sv84",
+              "width": 910,
+              "height": 512
+            }
+          }
+        }
+      ],
+      "Introduced by? (Optional)": [
+        "rec7zNDLvzo2ZiNAv"
+      ],
+      "Company": [
+        "recic69R1BzJixb9D"
+      ],
+      "custom.italian (from Company)": [
+        "False"
+      ],
+      "social_profiles_0.url (from Company)": [
+        "https://www.linkedin.com/company/haiquai"
+      ],
+      "domain (from Company)": [
+        "haiqu.ai"
+      ],
+      "Notes": "HALF COMPLETED ON Feb 4th (200k out of 400k USD)\n\nHaiqu is an enabling quantum software company aiming to be the first to near-term quantum advantage. Their hardware-agnostic, QML-powered stack has enabled world-first results with HSBC on financial algorithms, with Airbus & BMW on aerodynamics simulations, and with Capgemini on chemical simulation. Their software can run algorithms with 100x more operations on real quantum hardware.\n\nHaiqu was started in 2023 by a Stanford physics alum and an R&D leader with 10+ years in quantum research. They raised a $4M pre-seed from MaC & Toyota. \n\n## Notes\n\nRichard call:\n\n\\- Current UE/Revenue model and how you plan to scale it up\n- Aim for cloud **consumption metering charges**\n- 1) use cloud infra pricing model\n- for majority of applications\n- warning: this is an issue for research stuff that can unleash huge revenue, like developing a drug\n- 2) Solving the above with Co-Design -> if you're the only company that can help in some high value application, this can be used to do a royalty or profit share JV on developing a specific asset (eg a financial tool or drug)\n- 3) platform subscription (just to ensure some stickiness)\n- 4) consulting revenue (don't like it but thinks it's useful to monetise in the short term, and build relationships with people like HSBC to implement a \"2\" and help customers create a roadmap together)\n\nIBM: 1.40 usd to run algos on their hardware (14 to 20 usd to run 1 circuit) -> the majority of the consumption will come from large enterprises with budgets -> they are adding 20% on top of the bare hardware cost\n\nWho has the most formidable IP + best product -> wins the long term stickiness -> best performance across hardware modalities -> what about leverage oats \"a la Microsoft?\" => IP to know which hardware to deploy models to solve whatever issue [inc getting data to initialising application, automatically, rather than having people] -> seamless app across hardware modalities to disintermediate the end user from the hardware provider\n\n\\- noise resilience QM today\n\\- Data loading chema in the world validated with HSBC\n\\- System that can. combine and run things across hardware modalities\n\nCan we develop a superior technology base, and can we validate it with credible customers? [done in the 1st 2 yrs]\n\nCan we now create a top product that does something commercially useful?\n\nHost an app somewhere and deploy it is something no one else can do and they are taking it live\n\nAgentic -> next phase of the company -> who is the person who is going to use the application within the company? \n\nIf anything QuantrolOx is focused on controls they won't bother because they think very low level stacks will be commoditised (probably acquired by a hardware player)\n\nNote: Don't think error correction is a good model to make a lot of money because you're stuck between the app devs and the hardware devs\n\nRevenue:\n\\- Last year: 50k from HSBC to steal Quantinuum -> renewal is between 750k and 1.5m (swallo...(truncated)",
+      "salesflare.id": 13893549,
+      "SHARING: Display Name": "Stealth",
+      "Announced": "No",
+      "Sector": [
+        "Quantum Computing",
+        "Software"
+      ],
+      "Led by": "Francesco",
+      "Initial Round Size": 600000,
+      "Security Type": "SAFE",
+      "Entry Valuation": 50000000,
+      "Valuation type": "Post-Money",
+      "Currency": "$ USD",
+      "Final ticket invested": 400000,
+      "Ownership post 1st round": 0.008,
+      "Allocation for the fund": 500000,
+      "Contacts (n) (from Company)": [
+        "recIRWejL6zfJ2fZA",
+        "reciaz0c86Hc4Y76y"
+      ],
+      "Interactions": [
+        "rectEmfx4NcR4cIJj"
+      ],
+      "Created on": "2024-12-18T15:38:03.000Z",
+      "Current N# of Shares Held": 0,
+      "Current N# of Shares Issued (Grand Total)": 0,
+      "Initial Round Post Money Val": 50000000,
+      "Current Ownership": 0.008,
+      "Invested from fund": [
+        "recPOzbCwVqJEFITf"
+      ],
+      "Current Shares Owned Value": 0,
+      "Total Invested": 400000,
+      "NET MOIC": 0,
+      "Current Stage": "Seed+",
+      "Run DD Search": {
+        "label": "Run Script",
+        "url": "https://airtable.com/tblROCOQqj0yEUZlc/recLF7MLZSeYRANkJ?blocks=bliyekWLVkmYV8tM7"
+      },
+      "Deal_Name": "Unnamed Company",
+      "Summary": "",
+      "domain__from_Company_": ""
+    }
+  },
+  {
+    "id": "rec1vIANNYDUgeeel",
+    "fields": {
+      "Deal Name": "SpiNNcloud",
+      "Source": "External Event",
+      "Status": "COMPLETED",
+      "Stage": "Seed",
+      "Deal Value": 250000,
+      "Close Date": "2025-02-04",
+      "Google Drive Documents": "https://drive.google.com/drive/folders/1tHQh9cCxH5AvfdgfegPy4PjHLHAmaTdg",
+      "Company": [
+        "recDWMdRmbC3Enggu"
+      ],
+      "custom.italian (from Company)": [
+        "False"
+      ],
+      "social_profiles_0.url (from Company)": [
+        "https://www.linkedin.com/company/spinncloud-systems-gmbh"
+      ],
+      "domain (from Company)": [
+        "spinncloud.com"
+      ],
+      "Notes": "Met in Dubai 2024 but should have seen them from Arm accelerator and from Benjamin newsletter \n",
+      "salesflare.id": 13879812,
+      "SHARING: Display Name": "Stealth",
+      "Announced": "No",
+      "Sector": [
+        "Hardware",
+        "Semiconductor",
+        "AI"
+      ],
+      "Led by": "Francesco",
+      "Initial Round Size": 500000,
+      "Security Type": "CLA / CLN",
+      "Entry Valuation": 19600000,
+      "Valuation type": "Pre-Money",
+      "Currency": "€ EUR",
+      "Final ticket invested": 300000,
+      "Ownership post 1st round": 0.014925373134328358,
+      "Allocation for the fund": 500000,
+      "Contacts (n) (from Company)": [
+        "recwrMdYy3fP2jLuZ",
+        "recYdm1thftErHpJS",
+        "recyirYnBi5iqJ6Wl"
+      ],
+      "One Line Summary": "Brain-inspired Chips for the Artificial Intelligence Age",
+      "Created on": "2024-12-06T12:56:17.000Z",
+      "Current N# of Shares Held": 0,
+      "Current N# of Shares Issued (Grand Total)": 0,
+      "Initial Round Post Money Val": 20100000,
+      "Current Ownership": 0.014925373134328358,
+      "Invested from fund": [
+        "recPOzbCwVqJEFITf"
+      ],
+      "Current Shares Owned Value": 0,
+      "Total Invested": 300000,
+      "NET MOIC": 0,
+      "Current Stage": "Seed",
+      "Run DD Search": {
+        "label": "Run Script",
+        "url": "https://airtable.com/tblROCOQqj0yEUZlc/rec1vIANNYDUgeeel?blocks=bliyekWLVkmYV8tM7"
+      },
+      "Deal_Name": "Unnamed Company",
+      "Summary": "",
+      "domain__from_Company_": ""
+    }
+  },
+  {
+    "id": "rec3MHeaxqcvETTyk",
+    "fields": {
+      "Deal Name": "SCI Semi",
+      "Source": "Intro",
+      "Status": "COMPLETED",
+      "Stage": "Pre-seed",
+      "Deal Value": 200000,
+      "Close Date": "2025-02-14",
+      "Main Contact": [
+        "recvdnHWshxSWvERJ"
+      ],
+      "Tasks": [
+        "recPm9oisrWtOo0jA"
+      ],
+      "Google Drive Documents": "https://drive.google.com/drive/folders/1p1b64DQ95I3gtYtjyiuC_38W5Jo1HLno?usp=sharing",
+      "Introduced by? (Optional)": [
+        "recxxRcw1G7hsjBiy"
+      ],
+      "email (from Contacts)": [
+        "haydn.povey@scisemi.com"
+      ],
+      "Company": [
+        "recQj8UnIA9Mycvgm"
+      ],
+      "custom.italian (from Company)": [
+        "False"
+      ],
+      "domain (from Company)": [
+        "scisemi.com"
+      ],
+      "Notes": "SCI Semi - SEIS Pitch\nRaising: £2M • Se \nStage: Seed round\n\n- \n\nProvides memory-safe IP, silicon, and software solutions using CHERI\narchitecture.\n- \n\nPartnerships with Google, Microsoft, and lowRISC; leveraging $250M+\ninitial\nSummary: \nVrPLd2-2b8CwAA\\_\\_-f2jZo>\n\nTeam: \n💰 £2M • Seed round\n\nUPDATE 16/12/2024: \nCall with Haydn\n- £2m from Mercia\n    - Ash\n    - Will Shaffer & Will Clark\n- 13X Labs (US HNWs)\n- 13X Labs (US HNWs) - N# of HNWs out of NVIDIA: £350k\n- Roadmap until 2027\n- In-Q-Tel is interested + Google Ventures\n- Some small investors like Neil Dickins + a colleague are coming in for £50k\n- Principal Visionary and technologist: David Chisnel(?) from Microsoft\n- Got 100k contract from Darpa to do development of CHERI for them\n- Francesco mentions min would be 150k, ideally 200\n- Valuation: £6 pre-money >> [~8.5 post]\n- TODOs:\n    - Haydn to send over docs\n    - F to provide feedback on terms and finish work to be ready to invest - this week is possible\n- Sees eye to eye on how big memory management is as a security issue\n\n\n",
+      "Azava link": "https://azava.com/share/y584gr",
+      "DDQ": [
+        "recGDFZ0ZpbTzwsrz"
+      ],
+      "SHARING: Display Name": "SCI Semi",
+      "Announced": "Yes",
+      "Sector": [
+        "Cybersecurity",
+        "Hardware",
+        "Software"
+      ],
+      "Led by": "Francesco",
+      "Initial Round Size": 2500000,
+      "Security Type": "Ordinary Shares",
+      "Entry Valuation": 6000000,
+      "Valuation type": "Pre-Money",
+      "Currency": "£ GBP",
+      "Final ticket invested": 200000,
+      "Ownership post 1st round": 0.023529411764705882,
+      "Allocation for the fund": 500000,
+      "Name": [
+        "Haydn"
+      ],
+      "Contacts (n) (from Company)": [
+        "recvdnHWshxSWvERJ"
+      ],
+      "Created on": "2024-09-11T10:15:29.000Z",
+      "Current N# of Shares Held": 0,
+      "Current N# of Shares Issued (Grand Total)": 0,
+      "Initial Round Post Money Val": 8500000,
+      "Current Ownership": 0.023529411764705882,
+      "Invested from fund": [
+        "recPOzbCwVqJEFITf"
+      ],
+      "Current Shares Owned Value": 0,
+      "Total Invested": 200000,
+      "NET MOIC": 0,
+      "Current Stage": "Pre-seed",
+      "Run DD Search": {
+        "label": "Run Script",
+        "url": "https://airtable.com/tblROCOQqj0yEUZlc/rec3MHeaxqcvETTyk?blocks=bliyekWLVkmYV8tM7"
+      },
+      "Deal_Name": [
+        "Haydn"
+      ],
+      "Summary": "",
+      "domain__from_Company_": ""
+    }
+  },
+  {
+    "id": "recY3fnbAbR9ZHDda",
+    "fields": {
+      "Deal Name": "Hop Aero",
+      "Source": "Intro",
+      "Status": "COMPLETED",
+      "Stage": "Pre-seed",
+      "Deal Value": 165000,
+      "Close Date": "2025-03-07",
+      "Google Drive Documents": "https://drive.google.com/drive/folders/1-FHTBZPiN9set4VPivkXj-sXIf8YHJ9N",
+      "Introduced by? (Optional)": [
+        "recxi5ZWFBcd92QyQ"
+      ],
+      "Company": [
+        "recVLafvNnWXjNx8J"
+      ],
+      "custom.italian (from Company)": [
+        "False"
+      ],
+      "domain (from Company)": [
+        "hop-aero.com"
+      ],
+      "salesflare.id": 13967309,
+      "SHARING: Display Name": "Stealth",
+      "Announced": "No",
+      "Sector": [
+        "Aerospace",
+        "Defence",
+        "Manufacturing",
+        "Space",
+        "Hardware",
+        "Logistics"
+      ],
+      "Led by": "Francesco",
+      "Initial Round Size": 2000000,
+      "Security Type": "SAFE",
+      "Entry Valuation": 12000000,
+      "Valuation type": "Post-Money",
+      "Currency": "$ USD",
+      "Final ticket invested": 200000,
+      "Ownership post 1st round": 0.016666666666666666,
+      "Last Modified (Send Decline Email)": "2025-01-31T17:39:36.000Z",
+      "Send Decline Email": "N/A",
+      "Contacts (n) (from Company)": [
+        "rec1EvDAw4AdabHe2"
+      ],
+      "Created on": "2025-01-31T17:39:36.000Z",
+      "Current N# of Shares Held": 0,
+      "Current N# of Shares Issued (Grand Total)": 0,
+      "Initial Round Post Money Val": 12000000,
+      "Current Ownership": 0.016666666666666666,
+      "Invested from fund": [
+        "recPOzbCwVqJEFITf"
+      ],
+      "Current Shares Owned Value": 0,
+      "Total Invested": 200000,
+      "NET MOIC": 0,
+      "Current Stage": "Pre-seed",
+      "Run DD Search": {
+        "label": "Run Script",
+        "url": "https://airtable.com/tblROCOQqj0yEUZlc/recY3fnbAbR9ZHDda?blocks=bliyekWLVkmYV8tM7"
+      },
+      "Deal_Name": "Unnamed Company",
+      "Summary": "",
+      "domain__from_Company_": ""
+    }
+  },
+  {
+    "id": "recVlrN5jYb0KO2PU",
+    "fields": {
+      "Deal Name": "Swisspod",
+      "Source": "Intro",
+      "Status": "COMPLETED",
+      "Stage": "Seed+",
+      "Deal Value": 300000,
+      "Close Date": "2025-04-30",
+      "Main Contact": [
+        "rechFGDAH8zYAb3zS"
+      ],
+      "Google Drive Documents": "https://drive.google.com/drive/folders/159wQ5DhtHOAR3Alw0uY-QVloS7zyrrSt",
+      "email (from Contacts)": [
+        "denis@swisspod.com"
+      ],
+      "Link to Data Room": "https://drive.google.com/drive/folders/159wQ5DhtHOAR3Alw0uY-QVloS7zyrrSt?usp=sharing",
+      "Company": [
+        "reclzKlZkmfE0FpAD"
+      ],
+      "custom.italian (from Company)": [
+        "False"
+      ],
+      "domain (from Company)": [
+        "swisspod.com"
+      ],
+      "salesflare.id": 13893602,
+      "SHARING: Display Name": "Stealth",
+      "Announced": "No",
+      "Sector": [
+        "Logistics",
+        "Hardware"
+      ],
+      "Led by": "Francesco",
+      "Valuation type": "Pre-Money",
+      "Currency": "£ GBP",
+      "Ownership post 1st round": {
+        "specialValue": "NaN"
+      },
+      "Contacts (n) (from Company)": [
+        "rectl5R7mdVqKETJJ",
+        "rechFGDAH8zYAb3zS"
+      ],
+      "Created on": "2024-12-18T17:13:44.000Z",
+      "Current N# of Shares Held": 0,
+      "Current N# of Shares Issued (Grand Total)": 0,
+      "Initial Round Post Money Val": 0,
+      "Current Ownership": {
+        "specialValue": "NaN"
+      },
+      "Current Shares Owned Value": {
+        "specialValue": "NaN"
+      },
+      "Total Invested": 0,
+      "NET MOIC": {
+        "specialValue": "NaN"
+      },
+      "Current Stage": "Seed+",
+      "Run DD Search": {
+        "label": "Run Script",
+        "url": "https://airtable.com/tblROCOQqj0yEUZlc/recVlrN5jYb0KO2PU?blocks=bliyekWLVkmYV8tM7"
+      },
+      "Deal_Name": "Unnamed Company",
+      "Summary": "",
+      "domain__from_Company_": ""
+    }
+  }
+]
